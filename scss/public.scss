@@ -848,6 +848,10 @@ header {
 				letter-spacing: 0.72px;
 				text-align: center;
 				color: #5b5d63;
+
+				@include range-width(0, 376px) {
+					font-size: 30px;
+				}
 			}
 		}
 
