@@ -3198,6 +3198,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
 @media screen and (max-width: 375px) and (min-width: 0) { .hs_s3 .title .title_text > h2, .hs_s3 .title .title_text > .h2 { font-size: 46px; } }
 .hs_s3 .title .title_text > h2 > span, .hs_s3 .title .title_text > .h2 > span { font-family: 'Lato', sans-serif; font-size: 60px; }
 .hs_s3 .title .title_text > h3, .hs_s3 .title .title_text > .h3 { font-family: 'Noto Sans TC', sans-serif; font-size: 37px; font-weight: bold; letter-spacing: 0.93px; color: rgba(114, 112, 220, 0.1); }
+@media screen and (max-width: 393px) and (min-width: 376px) { .hs_s3 .title .title_text > h3, .hs_s3 .title .title_text > .h3 { font-size: 35px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .hs_s3 .title .title_text > h3, .hs_s3 .title .title_text > .h3 { font-size: 31px; } }
 .hs_s3 .content { position: relative; }
 .hs_s3 .content .slick-items { position: relative; padding: 65px 40px; }
