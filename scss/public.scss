@@ -35,6 +35,10 @@ header {
 			letter-spacing: 1.11px;
 			color: #777575;
 
+			@include range-width(376px, 394px) {
+				font-size: 19px;
+			}
+
 			@include range-width(0, 376px) {
 				font-size: 17px;
 			}

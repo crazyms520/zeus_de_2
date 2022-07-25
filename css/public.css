@@ -3096,6 +3096,7 @@ header { border-left: 4px solid #de0717; }
 header .ShinKong { padding: 15px 20px; }
 header .ShinKong > img { width: 80px; height: 25px; }
 header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px; font-weight: 500; letter-spacing: 1.11px; color: #777575; }
+@media screen and (max-width: 393px) and (min-width: 376px) { header .ShinKong .text { font-size: 19px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { header .ShinKong .text { font-size: 17px; } }
 
 .banner { padding-top: 60px; background-color: #e4f543; border-left: 4px solid #de0717; }
