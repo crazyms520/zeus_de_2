@@ -665,7 +665,7 @@ header {
 				color: rgba(114, 112, 220, 0.1);
 
 				@include range-width(0, 376px) {
-					font-size: 48px;
+					font-size: 46px;
 				}
 
 				> span {
@@ -682,7 +682,7 @@ header {
 				color: rgba(114, 112, 220, 0.1);
 
 				@include range-width(0, 376px) {
-					font-size: 33px;
+					font-size: 31px;
 				}
 			}
 		}

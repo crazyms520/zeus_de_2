@@ -26,8 +26,8 @@
 		infinite: true,
 		slidesToShow: 2,
   		slidesToScroll: 2,
-		prevArrow:"<img class='a-left control-c prev slick-prev' src='../img/arrow_l.svg'>",
-      	nextArrow:"<img class='a-right control-c next slick-next' src='../img/arrow_r.svg'>"
+		prevArrow:"<img class='a-left control-c prev slick-prev' src='img/arrow_l.svg'>",
+      	nextArrow:"<img class='a-right control-c next slick-next' src='img/arrow_r.svg'>"
 	});
 	
 	
