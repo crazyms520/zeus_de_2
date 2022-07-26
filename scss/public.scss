@@ -469,6 +469,10 @@ header {
 					font-weight: bold;
 					line-height: 1.33;
 					letter-spacing: 1.6px;
+
+					@include range-width(0, 376px) {
+						font-size: 40px;
+					}
 				}
 			}
 		}

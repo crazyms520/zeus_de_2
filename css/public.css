@@ -3168,6 +3168,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
 .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { margin-left: 12px; font-family: 'Poppins', sans-serif; font-size: 58px; font-weight: 500; line-height: 1.14; letter-spacing: .7px; color: #bde2f5; }
 @media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { font-size: 50px; } }
 .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { margin-top: 1rem; font-size: 43px; font-weight: bold; line-height: 1.33; letter-spacing: 1.6px; }
+@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { font-size: 40px; } }
 .mixing .title .title_img { position: relative; top: 55px; }
 .mixing .container { padding-top: 45px; }
 .mixing .container .item { padding: 0 15px; }
