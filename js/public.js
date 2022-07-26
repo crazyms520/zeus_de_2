@@ -4,6 +4,8 @@
 	$('.brand-origin-show').click(function() {
 		$('#happy-skin').hide();
 		$('#special-feature').hide();
+		$('.navbar').removeClass('spceial_color');
+		$('.navbar').addClass('origin_color');
 		$('#brand-origin').show("slide", { direction: "left" }, 400);
 		// window.scrollTo({ top: 0, behavior: 'smooth' });
 	})
@@ -11,6 +13,8 @@
 	$('.happy-skin-show').click(function() {
 		$('#special-feature').hide();
 		$('#brand-origin').hide();
+		$('.navbar').removeClass('spceial_color');
+		$('.navbar').removeClass('origin_color');
 		$('#happy-skin').show("slide", { direction: "down" }, 10);
 		// window.scrollTo({ top: 0, behavior: 'smooth' });
 	})
@@ -18,6 +22,8 @@
 	$('.special-feature-show').click(function() {
 		$('#happy-skin').hide();
 		$('#brand-origin').hide();
+		$('.navbar').removeClass('origin_color');
+		$('.navbar').addClass('spceial_color');
 		$('#special-feature').show("slide", { direction: "right" }, 400);
 		// window.scrollTo({ top: 0, behavior: 'smooth' });
 	})
