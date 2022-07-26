@@ -135,7 +135,11 @@ header {
 
 		.tiffany_img {
 			position: relative;
-			left: -24px;
+			left: -25px;
+
+			@include range-width(0, 393px) {
+				left: -22px;
+			}
 		}
 		.container {
 			padding: 0 46px;
@@ -229,11 +233,13 @@ header {
 			top: -140px;
 			left: 5%;
 
+			@include range-width(0, 394px) {
+				left: 0;
+			}
+
 			> span {
 				font-family: 'Lato', sans-serif;	
 				color: #e0ff00;
-				width: 320px;
-				height: 445px;
 				font-size: 650px;
 			}
 		}

@@ -3116,7 +3116,8 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
   to { opacity: 1; transform: translateY(0); } }
 .brand-origin { display: none; width: 100%; background-color: #91d9ed; border-left: 4px solid #de0717; }
 .brand-origin .bo_s1 { padding-top: 15px; position: relative; background-color: #ffef02; z-index: 0; }
-.brand-origin .bo_s1 .tiffany_img { position: relative; left: -24px; }
+.brand-origin .bo_s1 .tiffany_img { position: relative; left: -25px; }
+@media screen and (max-width: 392px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { left: -22px; } }
 .brand-origin .bo_s1 .container { padding: 0 46px; }
 .brand-origin .bo_s1 .container > h4, .brand-origin .bo_s1 .container > .h4 { margin-top: 30px; font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: 500; line-height: 1.75; letter-spacing: 0.8px; text-align: justify; color: #4a4a4a; }
 .brand-origin .bo_s1 .container > p { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; line-height: 1.75; letter-spacing: 0.8px; text-align: justify; color: #5b5d63; }
@@ -3130,7 +3131,8 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
 .happy-skin { border-left: 4px solid #de0717; }
 .happy-skin .hs_s1 { position: relative; background-color: #facae7; padding: 15px 0 30px 0; }
 .happy-skin .hs_s1 .background_6 { position: absolute; top: -140px; left: 5%; }
-.happy-skin .hs_s1 .background_6 > span { font-family: 'Lato', sans-serif; color: #e0ff00; width: 320px; height: 445px; font-size: 650px; }
+@media screen and (max-width: 393px) and (min-width: 0) { .happy-skin .hs_s1 .background_6 { left: 0; } }
+.happy-skin .hs_s1 .background_6 > span { font-family: 'Lato', sans-serif; color: #e0ff00; font-size: 650px; }
 .happy-skin .hs_s1 .title { margin-bottom: 20px; font-family: 'NotoSans TC', sans-serif; font-size: 36px; font-weight: bold; line-height: 1.25; letter-spacing: 4px; opacity: 0; color: #ff25ae; }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .title { font-size: 34px; } }
 .happy-skin .hs_s1 .item { margin-bottom: 30px; opacity: 0; }
