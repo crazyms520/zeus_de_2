@@ -3117,7 +3117,9 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
 .brand-origin { display: none; width: 100%; background-color: #91d9ed; border-left: 4px solid #de0717; }
 .brand-origin .bo_s1 { padding-top: 15px; position: relative; background-color: #ffef02; z-index: 0; }
 .brand-origin .bo_s1 .tiffany_img { position: relative; left: -25px; }
-@media screen and (max-width: 392px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { left: -22px; } }
+@media screen and (max-width: 393px) and (min-width: 376px) { .brand-origin .bo_s1 .tiffany_img { left: -22px; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { left: -22px; }
+  .brand-origin .bo_s1 .tiffany_img > img { max-width: 99%; } }
 .brand-origin .bo_s1 .container { padding: 0 46px; }
 .brand-origin .bo_s1 .container > h4, .brand-origin .bo_s1 .container > .h4 { margin-top: 30px; font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: 500; line-height: 1.75; letter-spacing: 0.8px; text-align: justify; color: #4a4a4a; }
 .brand-origin .bo_s1 .container > p { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; line-height: 1.75; letter-spacing: 0.8px; text-align: justify; color: #5b5d63; }
@@ -3149,6 +3151,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
 .special-feature { display: none; width: 100%; border-left: 4px solid #de0717; position: relative; }
 .special-feature .sf_s1 { padding: 15px 0 30px 0; background-color: #f6d6f7; }
 .special-feature .sf_s1 .title { font-size: 70px; font-weight: 600; opacity: 0.66; line-height: 0.87; color: #ffebfd; text-align: left; }
+@media screen and (max-width: 375px) and (min-width: 0) { .special-feature .sf_s1 .title { font-size: 65px; } }
 .special-feature .sf_s1 h3, .special-feature .sf_s1 .h3 { margin: 5px 0 16px 0; font-family: 'Noto Sans TC', sans-serif; font-size: 38px; font-weight: 900; letter-spacing: 2.87px; color: #dcfc25; text-shadow: 2px 2px 0 #F58663, 4px 4px 0 #F58663; text-align: left; }
 .special-feature .sf_s1 h4, .special-feature .sf_s1 .h4 { text-align: left; font-family: 'Noto Sans TC', sans-serif; font-size: 20px; font-weight: bold; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
 .special-feature .sf_s1 h4 > span, .special-feature .sf_s1 .h4 > span { font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 600; letter-spacing: 0.6px; text-align: justify; color: #4a4a4a; }
@@ -3157,6 +3160,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
 .special-feature .sf_s2 .container { padding: 10px .75rem; }
 .special-feature .sf_s2 .container h2, .special-feature .sf_s2 .container .h2 { font-family: 'Noto Sans TC', sans-serif; font-size: 26px; font-weight: bold; letter-spacing: 1px; text-align: center; color: #ff7679; }
 .special-feature .sf_s2 .container .ph_text { margin-top: 30px; }
+@media screen and (max-width: 393px) and (min-width: 0) { .special-feature .sf_s2 .container .ph_text > img { max-width: 99%; } }
 .special-feature .sf_s2 .container .ph_pic01 { margin-top: 30px; padding: 16px 0 40px 0; background-color: rgba(255, 255, 255, 0.6); border-radius: 94px; }
 .special-feature .sf_s2 .container .ph_pic01 h3, .special-feature .sf_s2 .container .ph_pic01 .h3 { margin: 15px 0; font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: 500; text-align: center; color: #ff7679; }
 .special-feature .sf_s2 .container .ph_pic02 { margin: 30px auto 0 auto; padding: 16px 0 40px 0; max-width: 240px; background-color: rgba(255, 255, 255, 0.6); border-radius: 94px; }
@@ -3165,8 +3169,9 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
 .mixing { background-color: #ff9dd3; padding: 25px 0; border-left: 4px solid #de0717; }
 .mixing .title { padding: 50px 0; background-image: linear-gradient(-45deg, #e3f2fa 8%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 58%, #ffffff 58%, #ffffff 100%); background-size: 20px 20px; }
 .mixing .title .hand { margin-top: 35px; text-align: left; }
+@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .hand > img { max-width: 99%; } }
 .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { margin-left: 12px; font-family: 'Poppins', sans-serif; font-size: 58px; font-weight: 500; line-height: 1.14; letter-spacing: .7px; color: #bde2f5; }
-@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { font-size: 50px; } }
+@media screen and (max-width: 393px) and (min-width: 0) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { font-size: 50px; } }
 .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { margin-top: 1rem; font-size: 43px; font-weight: bold; line-height: 1.33; letter-spacing: 1.6px; }
 @media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { font-size: 40px; } }
 .mixing .title .title_img { position: relative; top: 55px; }
@@ -3181,6 +3186,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
 .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { display: flex; align-items: baseline; font-family: 'Noto Sans TC', sans-serif; font-size: 50px; font-weight: 900; letter-spacing: 6px; color: rgba(114, 112, 220, 0.1); }
 @media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { font-size: 48px; } }
 .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-family: 'Lato', sans-serif; font-size: 60px; }
+@media screen and (max-width: 393px) and (min-width: 376px) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 55px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 50px; } }
 .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-family: 'Noto Sans TC', sans-serif; font-size: 37px; font-weight: bold; letter-spacing: 0.93px; color: rgba(114, 112, 220, 0.1); }
 @media screen and (max-width: 393px) and (min-width: 376px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-size: 35px; } }

@@ -137,8 +137,17 @@ header {
 			position: relative;
 			left: -25px;
 
-			@include range-width(0, 393px) {
+			@include range-width(376px, 394px) {
 				left: -22px;
+
+			}
+
+			@include range-width(0, 376px) {
+				left: -22px;
+
+				> img {
+					max-width: 99%;
+				}
 			}
 		}
 		.container {
@@ -334,6 +343,10 @@ header {
 			line-height: 0.87;
 			color: #ffebfd;
 			text-align: left;
+
+			@include range-width(0, 376px) {
+				font-size: 65px;
+			}
 		}
 
 		h3 {
@@ -395,6 +408,12 @@ header {
 
 			.ph_text {
 				margin-top: 30px;
+
+				> img {
+					@include range-width(0, 394px) {
+						max-width: 99%;
+					}
+				}
 			}
 
 			.ph_pic01 {
@@ -448,6 +467,12 @@ header {
 		.hand {
 			margin-top: 35px;
 			text-align: left;
+
+			@include range-width(0, 376px) {
+				> img {
+					max-width: 99%;
+				}
+			}
 		}
 		.title_text {
 			> h2 {
@@ -459,7 +484,7 @@ header {
 				letter-spacing: .7px;
 				color: #bde2f5;
 
-				@include range-width(0, 376px) {
+				@include range-width(0, 394px) {
 					font-size: 50px;
 				}
 
@@ -538,6 +563,10 @@ header {
 				> span {
 					font-family: 'Lato', sans-serif;
 					font-size: 60px;
+
+					@include range-width(376px, 394px) {
+						font-size: 55px;
+					}
 
 					@include range-width(0, 376px) {
 						font-size: 50px;
