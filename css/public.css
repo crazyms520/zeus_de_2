@@ -3178,8 +3178,9 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 20px
 
 .elephant { padding: 30px 0; border-left: 4px solid #de0717; }
 .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { display: flex; align-items: baseline; font-family: 'Noto Sans TC', sans-serif; font-size: 50px; font-weight: 900; letter-spacing: 6px; color: rgba(114, 112, 220, 0.1); }
-@media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { font-size: 46px; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { font-size: 48px; } }
 .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-family: 'Lato', sans-serif; font-size: 60px; }
+@media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 50px; } }
 .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-family: 'Noto Sans TC', sans-serif; font-size: 37px; font-weight: bold; letter-spacing: 0.93px; color: rgba(114, 112, 220, 0.1); }
 @media screen and (max-width: 393px) and (min-width: 376px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-size: 35px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-size: 31px; } }
