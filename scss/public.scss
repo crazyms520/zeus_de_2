@@ -19,7 +19,7 @@ body {
     @include selection(rgba(120, 186, 255, 1), rgba(255, 255, 255, 1));
 }
 header {
-	border-left: 4px solid #de0717;
+	// border-left: 4px solid #de0717;
 	.ShinKong {
 		padding: 30px 60px;
 
@@ -29,11 +29,11 @@ header {
 		
 
 		> img {
-			width: 210px;
-			height: 65px;
+			width: 200px;
+			height: 100px;
 			@include range-width(0, 450px) {
 				width: 80px;
-				height: 25px;
+				height: 50px;
 			}
 			
 		}
@@ -44,14 +44,22 @@ header {
 			letter-spacing: 2.4px;
 			color: #777575;
 
-			@include range-width(376px, 450px) {
-				font-size: 19px;
+			@include range-width(402px, 451px) {
+				font-size: 18px;
+				font-weight: 500;
+				letter-spacing: 1.11px;
+			}
+
+			@include range-width(376px, 402px) {
+				font-size: 17px;
 				font-weight: 500;
 				letter-spacing: 1.11px;
 			}
 
 			@include range-width(0, 376px) {
-				font-size: 17px;
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: 1.11px;
 			}
 		}
 	}
@@ -60,7 +68,7 @@ header {
 .banner {
 	padding-top: 60px;
 	background-color: #e4f543;
-	border-left: 4px solid #de0717;
+	// border-left: 4px solid #de0717;
 
 	.banner_box {
 		position: relative;
@@ -132,7 +140,7 @@ header {
 .navbar {
 	padding: 60px 0 15px 0;
 	background-color: #facae7;
-	border-left: 4px solid #de0717;
+	// border-left: 4px solid #de0717;
 	z-index: 1;
 
 	@include range-width(0, 451px) {
@@ -198,7 +206,7 @@ header {
 	display: none;
 	width: 100%;
 	background-color: #91d9ed;
-	border-left: 4px solid #de0717;	
+	// border-left: 4px solid #de0717;	
 
 	.bo_s1 {
 		position: relative;
@@ -223,16 +231,18 @@ header {
 
 			@include range-width(394px, 451px) {
 				width: auto;
-				left: -25px;
+				left: -27px;
 
 			}
 
 			@include range-width(376px, 394px) {
-				left: -22px;
+				width: auto;
+				left: -21px;
 
 			}
 
 			@include range-width(0, 376px) {
+				width: auto;
 				left: -22px;
 
 				img {
@@ -376,7 +386,7 @@ header {
 }
 
 .happy-skin {
-	border-left: 4px solid #de0717;
+	// border-left: 4px solid #de0717;
 
 	.hs_s1 {
 		position: relative;
@@ -488,10 +498,17 @@ header {
 					text-align: justify;
 					color: #717076;
 
-					@include range-width(0, 451px) {
+					@include range-width(394px, 451px) {
 						font-size: 18px;	
 						line-height: 1.76;
 					}
+
+					@include range-width(0, 394px) {
+						font-size: 17px;	
+						line-height: 1.76;
+					}
+
+
 				}
 				
 				.svg_item {
@@ -599,7 +616,7 @@ header {
 .special-feature {
 	display: none;
 	width: 100%;
-	border-left: 4px solid #de0717;
+	// border-left: 4px solid #de0717;
 	position: relative;
 
 	.sf_s1 {
@@ -827,7 +844,8 @@ header {
 .mixing {
 	background-color: #ff9dd3;
 	padding: 50px 0;	
-	border-left: 4px solid #de0717;
+	// border-left: 4px solid #de0717;
+
 	@include range-width(0, 451px) {
 		padding: 25px 0;
 	}
@@ -845,7 +863,7 @@ header {
 			text-align: left;
 
 			@include range-width(0, 376px) {
-				> img {
+				img {
 					max-width: 99%;
 				}
 			}
@@ -868,6 +886,7 @@ header {
 				@include range-width(394px, 451px) {
 					left: unset;
 					bottom: unset;
+					display: block;
 					margin-left: 12px;
 					font-size: 58px;
 					line-height: 1.14;
@@ -878,6 +897,7 @@ header {
 				@include range-width(0, 394px) {
 					left: unset;
 					bottom: unset;
+					display: block;
 					margin-left: 12px;
 					font-size: 50px;
 					line-height: 1.14;
@@ -890,7 +910,8 @@ header {
 					font-size: 86px;
 					font-weight: bold;
 
-					@include range-width(376px, 451px) {
+					@include range-width(394px, 451px) {
+						display: block;
 						margin-top: 1rem;
 						margin-left: 12px;
 						font-size: 43px;	
@@ -898,10 +919,20 @@ header {
 						letter-spacing: 1.6px;
 					}
 
-					@include range-width(0, 376px) {
+					@include range-width(376px, 394px) {
+						display: block;
 						margin-top: 1rem;
 						margin-left: 12px;
-						font-size: 40px;
+						font-size: 39px;	
+						line-height: 1.33;
+						letter-spacing: 1.6px;
+					}
+
+					@include range-width(0, 376px) {
+						display: block;
+						margin-top: 1rem;
+						margin-left: 12px;
+						font-size: 39px;
 						line-height: 1.33;
 						letter-spacing: 1.6px;
 					}
@@ -959,7 +990,7 @@ header {
 
 .elephant {
 	padding: 30px 0;
-	border-left: 4px solid #de0717;
+	// border-left: 4px solid #de0717;
 
 	.title {
 		.title_text {
@@ -1362,7 +1393,7 @@ header {
 	padding: 127px 110px;
 	background-image: url(../img/BG_VIP_w.png);
 	height: 100%;
-	border-left: 4px solid #de0717;
+	// border-left: 4px solid #de0717;
 
 	@include range-width(0, 769px) {
 		padding: 40px 20px;
@@ -1797,8 +1828,13 @@ header {
 			padding: 34px 0;
 	
 			> img {
-				width: 100px;
-				height: 31px;
+				width: 150px;
+				height: 88px;
+
+				@include range-width(0, 451px) {
+					width: 100px;
+					height: 50px;
+				}
 			}
 		}
 	}

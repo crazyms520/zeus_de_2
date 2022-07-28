@@ -3092,16 +3092,16 @@ body { position: relative; display: inline-block; width: 100%; margin: 0; paddin
 body::-moz-selection { color: white; background-color: #78baff; }
 body::selection { color: white; background-color: #78baff; }
 
-header { border-left: 4px solid #de0717; }
 header .ShinKong { padding: 30px 60px; }
 @media screen and (max-width: 449px) and (min-width: 0) { header .ShinKong { padding: 15px 20px; } }
-header .ShinKong > img { width: 210px; height: 65px; }
-@media screen and (max-width: 449px) and (min-width: 0) { header .ShinKong > img { width: 80px; height: 25px; } }
+header .ShinKong > img { width: 200px; height: 100px; }
+@media screen and (max-width: 449px) and (min-width: 0) { header .ShinKong > img { width: 80px; height: 50px; } }
 header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px; letter-spacing: 2.4px; color: #777575; }
-@media screen and (max-width: 449px) and (min-width: 376px) { header .ShinKong .text { font-size: 19px; font-weight: 500; letter-spacing: 1.11px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { header .ShinKong .text { font-size: 17px; } }
+@media screen and (max-width: 450px) and (min-width: 402px) { header .ShinKong .text { font-size: 18px; font-weight: 500; letter-spacing: 1.11px; } }
+@media screen and (max-width: 401px) and (min-width: 376px) { header .ShinKong .text { font-size: 17px; font-weight: 500; letter-spacing: 1.11px; } }
+@media screen and (max-width: 375px) and (min-width: 0) { header .ShinKong .text { font-size: 16px; font-weight: 500; letter-spacing: 1.11px; } }
 
-.banner { padding-top: 60px; background-color: #e4f543; border-left: 4px solid #de0717; }
+.banner { padding-top: 60px; background-color: #e4f543; }
 .banner .banner_box { position: relative; }
 .banner .banner_box .banner_logo { position: absolute; top: 20%; right: 20%; }
 @media screen and (max-width: 1440px) and (min-width: 1200px) { .banner .banner_box .banner_logo { top: 20%; right: 5%; } }
@@ -3115,7 +3115,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .banner .banner_img { width: 100%; height: 100%; }
 .banner .banner_img picture > img { width: 100%; max-width: 100%; object-fit: cover; }
 
-.navbar { padding: 60px 0 15px 0; background-color: #facae7; border-left: 4px solid #de0717; z-index: 1; }
+.navbar { padding: 60px 0 15px 0; background-color: #facae7; z-index: 1; }
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar { padding: 30px 0 15px 0; } }
 .navbar.origin_color { background-color: #ffef02; }
 .navbar.spceial_color { background-color: #f6d6f7; }
@@ -3129,14 +3129,14 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 
 @keyframes slide-up { from { opacity: 0; transform: translateY(100px); }
   to { opacity: 1; transform: translateY(0); } }
-.brand-origin { display: none; width: 100%; background-color: #91d9ed; border-left: 4px solid #de0717; }
+.brand-origin { display: none; width: 100%; background-color: #91d9ed; }
 .brand-origin .bo_s1 { position: relative; display: flex; align-items: center; padding-top: 15px; background-color: #ffef02; z-index: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 { flex-direction: column; } }
 .brand-origin .bo_s1 .tiffany_img { width: 50%; position: relative; left: 0; }
 .brand-origin .bo_s1 .tiffany_img img { width: 100%; }
-@media screen and (max-width: 450px) and (min-width: 394px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -25px; } }
-@media screen and (max-width: 393px) and (min-width: 376px) { .brand-origin .bo_s1 .tiffany_img { left: -22px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { left: -22px; }
+@media screen and (max-width: 450px) and (min-width: 394px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -27px; } }
+@media screen and (max-width: 393px) and (min-width: 376px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -21px; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -22px; }
   .brand-origin .bo_s1 .tiffany_img img { max-width: 99%; } }
 .brand-origin .bo_s1 .container { padding: 0 46px; width: 50%; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 .container { width: auto; } }
@@ -3158,7 +3158,6 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .brand-origin .bo_s2 .container .name_origin > p { font-family: 'Noto Sans TC', sans-serif; font-size: 21px; font-weight: 500; line-height: 2; letter-spacing: 1px; text-align: justify; color: #636363; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s2 .container .name_origin > p { font-size: 16px; line-height: 1.75; letter-spacing: 0.8px; } }
 
-.happy-skin { border-left: 4px solid #de0717; }
 .happy-skin .hs_s1 { position: relative; background-color: #facae7; padding: 35px 0 60px 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 { padding: 15px 0 30px 0; } }
 .happy-skin .hs_s1 .container { max-width: 1200px; }
@@ -3177,7 +3176,8 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .item_title { margin: 0 0 8px 0; font-size: 22px; line-height: 1.45; letter-spacing: 1.1px; text-align: center; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_title { margin: 0 0 8px 0; font-size: 19px; line-height: 1.45; letter-spacing: 1.1px; text-align: center; } }
 .happy-skin .hs_s1 .container .item .item_text { font-family: 'NotoSans TC', sans-serif; font-size: 29px; font-weight: 500; line-height: 1.89; letter-spacing: 1.4px; text-align: justify; color: #717076; }
-@media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_text { font-size: 18px; line-height: 1.76; } }
+@media screen and (max-width: 450px) and (min-width: 394px) { .happy-skin .hs_s1 .container .item .item_text { font-size: 18px; line-height: 1.76; } }
+@media screen and (max-width: 393px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_text { font-size: 17px; line-height: 1.76; } }
 .happy-skin .hs_s1 .container .item .svg_item { display: flex; justify-content: center; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(1) { justify-content: space-between; } }
 .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(1) .svg:nth-of-type(2) { margin: 15px 120px 0 120px; }
@@ -3197,7 +3197,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .happy-skin .hs_s1 .container .item .svg_item .svg p > span { font-size: 20px; vertical-align: baseline; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item .svg p > span { display: block; font-size: 10px; } }
 
-.special-feature { display: none; width: 100%; border-left: 4px solid #de0717; position: relative; }
+.special-feature { display: none; width: 100%; position: relative; }
 .special-feature .sf_s1 { padding: 15px 0 30px 0; background-color: #f6d6f7; }
 .special-feature .sf_s1 .title { font-size: 245px; font-weight: 600; opacity: 0.66; line-height: 0.81; color: #ffebfd; text-align: left; }
 @media screen and (max-width: 450px) and (min-width: 376px) { .special-feature .sf_s1 .title { font-size: 70px; line-height: 0.87; } }
@@ -3234,18 +3234,19 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .special-feature .sf_s2 .container .item .ph_pic02 h3, .special-feature .sf_s2 .container .item .ph_pic02 .h3 { margin: 15px 0; font-family: 'Noto Sans TC', sans-serif; font-size: 24px; font-weight: 500; text-align: center; color: #ff7679; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s2 .container .item .ph_pic02 h3, .special-feature .sf_s2 .container .item .ph_pic02 .h3 { font-size: 18px; } }
 
-.mixing { background-color: #ff9dd3; padding: 50px 0; border-left: 4px solid #de0717; }
+.mixing { background-color: #ff9dd3; padding: 50px 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing { padding: 25px 0; } }
 .mixing .title { padding: 50px 0 0 0; background-image: linear-gradient(-45deg, #e3f2fa 8%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 58%, #ffffff 58%, #ffffff 100%); background-size: 20px 20px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .title { padding: 50px 0; } }
 .mixing .title .hand { margin-top: 35px; text-align: left; }
-@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .hand > img { max-width: 99%; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .hand img { max-width: 99%; } }
 .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { position: relative; left: 220px; bottom: 80px; display: inline-block; font-family: 'Poppins', sans-serif; font-size: 110px; font-weight: 500; line-height: 1.15; letter-spacing: 4px; color: #bde2f5; text-align: left; }
-@media screen and (max-width: 450px) and (min-width: 394px) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { left: unset; bottom: unset; margin-left: 12px; font-size: 58px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
-@media screen and (max-width: 393px) and (min-width: 0) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { left: unset; bottom: unset; margin-left: 12px; font-size: 50px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
+@media screen and (max-width: 450px) and (min-width: 394px) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { left: unset; bottom: unset; display: block; margin-left: 12px; font-size: 58px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
+@media screen and (max-width: 393px) and (min-width: 0) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { left: unset; bottom: unset; display: block; margin-left: 12px; font-size: 50px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
 .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { margin-top: 34px; font-size: 86px; font-weight: bold; }
-@media screen and (max-width: 450px) and (min-width: 376px) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { margin-top: 1rem; margin-left: 12px; font-size: 43px; line-height: 1.33; letter-spacing: 1.6px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { margin-top: 1rem; margin-left: 12px; font-size: 40px; line-height: 1.33; letter-spacing: 1.6px; } }
+@media screen and (max-width: 450px) and (min-width: 394px) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { display: block; margin-top: 1rem; margin-left: 12px; font-size: 43px; line-height: 1.33; letter-spacing: 1.6px; } }
+@media screen and (max-width: 393px) and (min-width: 376px) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { display: block; margin-top: 1rem; margin-left: 12px; font-size: 39px; line-height: 1.33; letter-spacing: 1.6px; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { display: block; margin-top: 1rem; margin-left: 12px; font-size: 39px; line-height: 1.33; letter-spacing: 1.6px; } }
 .mixing .container { width: 996px; margin: 0 auto; padding: 60px 0 10px 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .container { padding-top: 45px; width: 100%; } }
 .mixing .container .item { padding: 0 15px; }
@@ -3254,7 +3255,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .mixing .container .item .item_text { font-family: 'Noto Sans TC', sans-serif; font-size: 22px; font-weight: 500; line-height: 2; text-align: justify; color: #fff; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .container .item .item_text { font-size: 18px; line-height: 1.78; } }
 
-.elephant { padding: 30px 0; border-left: 4px solid #de0717; }
+.elephant { padding: 30px 0; }
 .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { display: flex; align-items: baseline; font-family: 'Noto Sans TC', sans-serif; font-size: 200px; font-weight: 900; letter-spacing: 6px; color: rgba(114, 112, 220, 0.1); }
 @media screen and (max-width: 450px) and (min-width: 376px) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { font-size: 50px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { font-size: 48px; } }
@@ -3329,7 +3330,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .elephant .content .modal_content_mobile .modal_effect_mobile.ph55 { background-color: #fca941; }
 .elephant .content .modal_content_mobile .modal_text_mobile { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; line-height: 1.63; letter-spacing: 0.89px; text-align: center; color: #636363; }
 
-.form { padding: 127px 110px; background-image: url(../img/BG_VIP_w.png); height: 100%; border-left: 4px solid #de0717; }
+.form { padding: 127px 110px; background-image: url(../img/BG_VIP_w.png); height: 100%; }
 @media screen and (max-width: 768px) and (min-width: 0) { .form { padding: 40px 20px; background-image: url(../img/BG_VIP.png); height: 100%; } }
 .form .container { padding-top: 80px; background-color: #e4f5fc; max-width: calc(100%); }
 @media screen and (max-width: 450px) and (min-width: 0) { .form .container { padding-top: 45px; } }
@@ -3396,4 +3397,5 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .form .container .fill_items .notice ol { margin-bottom: 0; padding-left: 16px; }
 .form .container .fill_items .notice ol li { font-size: 14px; line-height: 1.71; letter-spacing: 0.7px; color: #636363; text-align: left; }
 .form .container .ShinKong { padding: 34px 0; }
-.form .container .ShinKong > img { width: 100px; height: 31px; }
+.form .container .ShinKong > img { width: 150px; height: 88px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form .container .ShinKong > img { width: 100px; height: 50px; } }
