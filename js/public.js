@@ -9,8 +9,7 @@
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#brand-origin').show("slide", { direction: "left" }, 400);
-		$('*').removeClass('slide-up');
-		$('*').removeClass('slide-up-2');
+		$('*').removeClass('slide-up slide-up-2 slide-right slide-left');
 	})
 
 	$('.happy-skin-show').click(function() {
@@ -21,8 +20,7 @@
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#happy-skin').show("slide", { direction: "down" }, 10);
-		$('*').removeClass('slide-up');
-		$('*').removeClass('slide-up-2');
+		$('*').removeClass('slide-up slide-up-2 slide-right slide-left');
 	})
 
 	$('.special-feature-show').click(function() {
@@ -33,8 +31,7 @@
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#special-feature').show("slide", { direction: "right" }, 400);
-		$('*').removeClass('slide-up');
-		$('*').removeClass('slide-up-2');
+		$('*').removeClass('slide-up slide-up-2 slide-right slide-left');
 	})
 
 	$('.slick-items').slick({
