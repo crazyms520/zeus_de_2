@@ -42,7 +42,7 @@
       	nextArrow:"<img class='slick-next' src='img/arrow_r.svg'>",
 		responsive: [
 			{
-				breakpoint: 769,
+				breakpoint: 1025,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2

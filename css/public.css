@@ -3097,6 +3097,8 @@ header .ShinKong { padding: 30px 60px; }
 header .ShinKong > img { width: 200px; height: 100px; }
 @media screen and (max-width: 449px) and (min-width: 0) { header .ShinKong > img { width: 80px; height: 50px; } }
 header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px; letter-spacing: 2.4px; color: #777575; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { header .ShinKong .text { font-size: 20px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { header .ShinKong .text { font-size: 26px; } }
 @media screen and (max-width: 450px) and (min-width: 402px) { header .ShinKong .text { font-size: 18px; font-weight: 500; letter-spacing: 1.11px; } }
 @media screen and (max-width: 401px) and (min-width: 376px) { header .ShinKong .text { font-size: 17px; font-weight: 500; letter-spacing: 1.11px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { header .ShinKong .text { font-size: 16px; font-weight: 500; letter-spacing: 1.11px; } }
@@ -3105,12 +3107,18 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .banner .banner_box { position: relative; }
 .banner .banner_box .banner_logo { position: absolute; top: 20%; right: 20%; }
 @media screen and (max-width: 1440px) and (min-width: 1200px) { .banner .banner_box .banner_logo { top: 20%; right: 5%; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box .banner_logo { top: 20%; right: 5%; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box .banner_logo { position: relative; top: unset; right: unset; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box .banner_logo { position: relative; top: unset; right: unset; } }
 .banner .banner_box .banner_logo > img { width: 500px; }
 @media screen and (max-width: 1440px) and (min-width: 1200px) { .banner .banner_box .banner_logo > img { width: 300px; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box .banner_logo > img { width: 250px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box .banner_logo > img { width: 400px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box .banner_logo > img { width: auto; } }
 .banner .banner_box .banner_logo .text > p { margin: 1rem .5rem; font-family: 'NotoSans TC', sans-serif; font-size: 75px; font-weight: bold; letter-spacing: 1.21px; text-align: center; color: #f12e9c; }
 @media screen and (max-width: 1440px) and (min-width: 1200px) { .banner .banner_box .banner_logo .text > p { font-size: 65px; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box .banner_logo .text > p { font-size: 45px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box .banner_logo .text > p { font-size: 60px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box .banner_logo .text > p { font-size: 34px; } }
 .banner .banner_img { width: 100%; height: 100%; }
 .banner .banner_img picture { display: inline-block; }
@@ -3144,8 +3152,10 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
   to { opacity: 1; transform: translateX(0); } }
 .brand-origin { display: none; width: 100%; background-color: #91d9ed; }
 .brand-origin .bo_s1 { position: relative; display: flex; align-items: center; padding-top: 15px; background-color: #ffef02; z-index: 0; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .brand-origin .bo_s1 { flex-direction: column; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 { flex-direction: column; } }
 .brand-origin .bo_s1 .tiffany_img { width: 50%; position: relative; left: 0; opacity: 0; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -27px; } }
 @media screen and (max-width: 450px) and (min-width: 394px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -27px; } }
 @media screen and (max-width: 393px) and (min-width: 376px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -21px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -22px; } }
@@ -3153,12 +3163,16 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .brand-origin .bo_s1 .tiffany_img picture img { width: 100%; }
 @media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img picture img img { max-width: 99%; } }
 .brand-origin .bo_s1 .container { padding: 0 46px; width: 50%; opacity: 0; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .brand-origin .bo_s1 .container { width: auto; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 .container { width: auto; } }
 .brand-origin .bo_s1 .container > h4, .brand-origin .bo_s1 .container > .h4 { margin-top: 30px; font-family: 'Noto Sans TC', sans-serif; font-size: 24px; font-weight: 500; line-height: 1.75; letter-spacing: 0.8px; text-align: justify; color: #4a4a4a; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 .container > h4, .brand-origin .bo_s1 .container > .h4 { font-size: 16px; line-height: 1.17; letter-spacing: 1.2px; } }
 .brand-origin .bo_s1 .container > p { font-family: 'Noto Sans TC', sans-serif; font-size: 21px; line-height: 1.91; letter-spacing: 1.2px; text-align: justify; color: #5b5d63; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .brand-origin .bo_s1 .container > p { font-size: 16px; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .brand-origin .bo_s1 .container > p { font-size: 16px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 .container > p { font-size: 16px; line-height: 1.75; letter-spacing: 0.8px; } }
 .brand-origin .bo_s1 .container .sign_item { margin-top: 55px; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .brand-origin .bo_s1 .container .sign_item { margin-top: 20px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 .container .sign_item { margin-top: 10px; } }
 .brand-origin .bo_s1 .container .sign_item > p { display: inline-block; width: 240px; font-size: 14px; font-weight: 500; line-height: 1.71; text-align: left; color: #4a4a4a; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 .container .sign_item > p { font-size: 10px; font-weight: 600; line-height: 1.6; text-align: right; } }
@@ -3168,8 +3182,10 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s2 .container { max-width: auto; } }
 .brand-origin .bo_s2 .container .name_origin { position: relative; padding: 50px 0; text-align: left; opacity: 0; z-index: 1; }
 .brand-origin .bo_s2 .container .name_origin > h3 > span, .brand-origin .bo_s2 .container .name_origin > .h3 > span { position: relative; right: 0; padding: 10px 30px; font-family: 'Noto Sans TC', sans-serif; font-size: 28px; font-weight: bold; line-height: 2.21; letter-spacing: 2px; text-align: center; color: #fff; background-color: #ff9500; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .brand-origin .bo_s2 .container .name_origin > h3 > span, .brand-origin .bo_s2 .container .name_origin > .h3 > span { font-size: 24px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s2 .container .name_origin > h3 > span, .brand-origin .bo_s2 .container .name_origin > .h3 > span { right: 30px; font-size: 20px; line-height: 2.38; letter-spacing: 1.43px; } }
 .brand-origin .bo_s2 .container .name_origin > p { font-family: 'Noto Sans TC', sans-serif; font-size: 21px; font-weight: 500; line-height: 2; letter-spacing: 1px; text-align: justify; color: #636363; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .brand-origin .bo_s2 .container .name_origin > p { font-size: 16px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s2 .container .name_origin > p { font-size: 16px; line-height: 1.75; letter-spacing: 0.8px; } }
 
 .happy-skin .hs_s1 { position: relative; background-color: #facae7; padding: 35px 0 60px 0; z-index: 1; }
@@ -3180,6 +3196,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .happy-skin .hs_s1 .container .background_6 > img { width: 700px; height: 800px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .background_6 > img { width: 320px; height: 445px; } }
 .happy-skin .hs_s1 .container .title { margin: 35px 0 50px 0; font-family: 'NotoSans TC', sans-serif; font-size: 90px; font-weight: bold; letter-spacing: 20px; opacity: 0; color: #ff25ae; text-align: justify; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .title { font-size: 60px; text-align: center; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .title { margin: 0 0 8px 0; font-size: 36px; line-height: 1.25; letter-spacing: 4px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .title { margin: 0 0 8px 0; font-size: 34px; line-height: 1.25; letter-spacing: 4px; } }
 .happy-skin .hs_s1 .container .item { margin-bottom: 30px; opacity: 0; }
@@ -3187,46 +3204,67 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .happy-skin .hs_s1 .container .item:nth-of-type(3) .item_title { letter-spacing: normal; text-align: center; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item:nth-of-type(3) .item_title { text-align: left; } }
 .happy-skin .hs_s1 .container .item .item_title { margin: 30px 0; font-family: 'NotoSans TC', sans-serif; font-size: 39px; font-weight: bold; letter-spacing: 1.6px; color: #ff25ae; text-align: left; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .item_title { font-size: 32px; text-align: center; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .item_title { margin: 0 0 8px 0; font-size: 22px; line-height: 1.45; letter-spacing: 1.1px; text-align: center; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_title { margin: 0 0 8px 0; font-size: 19px; line-height: 1.45; letter-spacing: 1.1px; text-align: center; } }
 .happy-skin .hs_s1 .container .item .item_text { font-family: 'NotoSans TC', sans-serif; font-size: 29px; font-weight: 500; line-height: 1.89; letter-spacing: 1.4px; text-align: justify; color: #717076; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .item_text { font-size: 20px; } }
 @media screen and (max-width: 450px) and (min-width: 394px) { .happy-skin .hs_s1 .container .item .item_text { font-size: 18px; line-height: 1.76; } }
 @media screen and (max-width: 393px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_text { font-size: 17px; line-height: 1.76; } }
 .happy-skin .hs_s1 .container .item .svg_item { display: flex; justify-content: center; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(1) { justify-content: space-between; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(1) { justify-content: space-between; } }
 .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(1) .svg:nth-of-type(2) { margin: 15px 120px 0 120px; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(1) .svg:nth-of-type(2) { margin: 15px 0 0 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(1) .svg:nth-of-type(2) { margin: 15px 0 0 0; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(2) { justify-content: space-between; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(2) { justify-content: space-between; } }
 .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(2) .svg { margin: 40px 0 0 0; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(2) .svg { margin: 15px 0 0 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(2) .svg { margin: 15px 0 0 0; } }
 .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(2) .svg:nth-of-type(2) { margin: 40px 50px 0 50px; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(2) .svg:nth-of-type(2) { margin: 15px 0 0 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item:nth-of-type(2) .svg:nth-of-type(2) { margin: 15px 0 0 0; } }
 .happy-skin .hs_s1 .container .item .svg_item .svg { display: flex; align-items: center; margin-top: 15px; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_item .svg { width: 30%; flex-direction: column; align-items: center; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item .svg { width: 30%; flex-direction: column; align-items: center; } }
 .happy-skin .hs_s1 .container .item .svg_item .svg > img { width: 102px; height: 96px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item .svg > img { width: 88px; height: 83px; } }
 .happy-skin .hs_s1 .container .item .svg_item .svg p { position: relative; margin: .5rem 0 .5rem 1rem; font-size: 28px; font-weight: 500; color: #717076; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .item .svg_item .svg p { font-size: 22px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_item .svg p { margin: .5rem auto; font-size: 24px; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .svg_item .svg p { margin: .5rem auto; font-size: 14px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item .svg p { margin: .5rem auto; font-size: 13px; } }
 .happy-skin .hs_s1 .container .item .svg_item .svg p > span { font-size: 20px; vertical-align: baseline; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_item .svg p > span { display: block; font-size: 18px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_item .svg p > span { display: block; font-size: 10px; } }
 
 .special-feature { display: none; width: 100%; position: relative; }
 .special-feature .sf_s1 { padding: 15px 0 30px 0; background-color: #f6d6f7; }
 .special-feature .sf_s1 .title { font-size: 245px; font-weight: 600; opacity: 0; line-height: 0.81; color: #ffebfd; text-align: left; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .special-feature .sf_s1 .title { font-size: 180px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .special-feature .sf_s1 .title { font-size: 135px; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .special-feature .sf_s1 .title { font-size: 70px; line-height: 0.87; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .special-feature .sf_s1 .title { font-size: 65px; line-height: 0.87; } }
 .special-feature .sf_s1 .item { display: flex; margin-top: 70px; opacity: 0; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .special-feature .sf_s1 .item { flex-direction: column; margin-top: 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .item { flex-direction: column; margin-top: 0; } }
 .special-feature .sf_s1 .item h3.item_title, .special-feature .sf_s1 .item .item_title.h3 { width: 50%; font-family: 'Noto Sans TC', sans-serif; font-size: 90px; font-weight: bold; letter-spacing: 8.08px; color: #dcfc25; text-shadow: 2px 2px 0 #F58663, 4px 4px 0 #F58663; text-align: left; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .special-feature .sf_s1 .item h3.item_title, .special-feature .sf_s1 .item .item_title.h3 { font-size: 65px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .special-feature .sf_s1 .item h3.item_title, .special-feature .sf_s1 .item .item_title.h3 { width: auto; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .item h3.item_title, .special-feature .sf_s1 .item .item_title.h3 { margin: 5px 0 16px 0; width: auto; font-size: 38px; font-weight: 900; letter-spacing: 2.87px; } }
 .special-feature .sf_s1 .item .item_content { width: 50%; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .special-feature .sf_s1 .item .item_content { width: auto; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .item .item_content { width: auto; } }
 .special-feature .sf_s1 .item .item_content h4, .special-feature .sf_s1 .item .item_content .h4 { margin-top: 15px; font-family: 'Noto Sans TC', sans-serif; font-size: 32px; font-weight: bold; line-height: 1.38; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .special-feature .sf_s1 .item .item_content h4, .special-feature .sf_s1 .item .item_content .h4 { font-size: 26px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .item .item_content h4, .special-feature .sf_s1 .item .item_content .h4 { margin-top: 0; font-size: 20px; line-height: normal; letter-spacing: 1px; } }
-.special-feature .sf_s1 .item .item_content h4 > span, .special-feature .sf_s1 .item .item_content .h4 > span { font-family: 'Poppins', sans-serif; font-size: 32px; font-weight: bold; line-height: 1.38; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
+.special-feature .sf_s1 .item .item_content h4 > span, .special-feature .sf_s1 .item .item_content .h4 > span { font-family: 'Poppins', sans-serif; font-size: 32px; font-weight: bold; line-height: 1.38; letter-spacing: 1px; text-align: justify; color: #4a4a4a; vertical-align: baseline; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .special-feature .sf_s1 .item .item_content h4 > span, .special-feature .sf_s1 .item .item_content .h4 > span { font-size: 26px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .item .item_content h4 > span, .special-feature .sf_s1 .item .item_content .h4 > span { font-size: 22px; font-weight: 600; line-height: normal; letter-spacing: 0.6px; } }
 .special-feature .sf_s1 .item .item_content p { font-family: 'Noto Sans TC', sans-serif; font-size: 22px; line-height: 1.85; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .special-feature .sf_s1 .item .item_content p { font-size: 18px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .special-feature .sf_s1 .item .item_content p { font-size: 21px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .item .item_content p { font-size: 16px; line-height: 1.75; letter-spacing: 0.8px; } }
 .special-feature .sf_s2 { position: relative; padding: 30px 0; background-color: #ffebfd; }
 .special-feature .sf_s2 .container { padding: 10px .75rem; }
@@ -3258,11 +3296,14 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 @media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .hand picture img { max-width: 99%; } }
 .mixing .title .title_text { display: inline-flex; flex-direction: column; align-items: center; position: relative; bottom: 50px; opacity: 0; }
 @media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text { left: 200px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .mixing .title .title_text { bottom: 40px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text { bottom: 0; } }
 .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { font-family: 'Poppins', sans-serif; font-size: 110px; font-weight: 500; line-height: 1.15; letter-spacing: 4px; color: #bde2f5; text-align: left; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { font-size: 100px; } }
 @media screen and (max-width: 450px) and (min-width: 394px) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { left: unset; bottom: unset; display: block; margin-left: 12px; font-size: 58px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
 @media screen and (max-width: 393px) and (min-width: 0) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { left: unset; bottom: unset; display: block; margin-left: 12px; font-size: 50px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
 .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { margin-top: 34px; font-size: 86px; font-weight: bold; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { font-size: 78px; } }
 @media screen and (max-width: 450px) and (min-width: 394px) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { display: block; margin-top: 1rem; margin-left: 12px; font-size: 43px; line-height: 1.33; letter-spacing: 1.6px; } }
 @media screen and (max-width: 393px) and (min-width: 376px) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { display: block; margin-top: 1rem; margin-left: 12px; font-size: 39px; line-height: 1.33; letter-spacing: 1.6px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { display: block; margin-top: 1rem; margin-left: 12px; font-size: 39px; line-height: 1.33; letter-spacing: 1.6px; } }
@@ -3276,13 +3317,19 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 
 .elephant { padding: 30px 0; }
 .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { display: flex; align-items: baseline; font-family: 'Noto Sans TC', sans-serif; font-size: 200px; font-weight: 900; letter-spacing: 6px; color: rgba(114, 112, 220, 0.1); }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { justify-content: center; font-size: 100px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { justify-content: center; font-size: 100px; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { font-size: 50px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { font-size: 48px; } }
 .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-family: 'Lato', sans-serif; font-size: 210px; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 150px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 110px; } }
 @media screen and (max-width: 450px) and (min-width: 394px) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 60px; } }
 @media screen and (max-width: 393px) and (min-width: 376px) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 55px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 50px; } }
 .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-family: 'Noto Sans TC', sans-serif; font-size: 120px; font-weight: bold; letter-spacing: 5px; text-align: justify; color: rgba(114, 112, 220, 0.1); }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-size: 85px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-size: 60px; text-align: center; } }
 @media screen and (max-width: 450px) and (min-width: 394px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { letter-spacing: 0.93px; font-size: 37px; } }
 @media screen and (max-width: 393px) and (min-width: 376px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { letter-spacing: 0.93px; font-size: 35px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { letter-spacing: 0.93px; font-size: 31px; } }
@@ -3325,6 +3372,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .elephant .content .slick-items .item .modal_content_hover .modal_text_hover { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; line-height: 1.56; letter-spacing: 1px; text-align: center; color: #636363; }
 .elephant .content .modal_mask { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: transparent; z-index: 100; }
 .elephant .content .modal_content_mobile { display: none; position: absolute; top: 0; border-radius: 100px; background-color: #f6dcff; padding: 25px 40px; z-index: 1000; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .elephant .content .modal_content_mobile { top: calc(50% - 125px); width: 100%; } }
 .elephant .content .modal_content_mobile .modal_ph_mobile { font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: bold; text-align: center; color: #fff; }
 .elephant .content .modal_content_mobile .modal_ph_mobile.ph57 { text-shadow: -1px -1px 0 #83cdee, 1px -1px 0 #83cdee, -1px 1px 0 #83cdee, 1px 1px 0 #83cdee; }
 .elephant .content .modal_content_mobile .modal_ph_mobile.ph40 { text-shadow: -1px -1px 0 #50e3c2, 1px -1px 0 #50e3c2, -1px 1px 0 #50e3c2, 1px 1px 0 #50e3c2; }
@@ -3364,9 +3412,13 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .form .container .text > h3, .form .container .text > .h3 { font-family: 'Noto Sans TC', sans-serif; font-size: 48px; font-weight: 500; letter-spacing: 0.8px; text-align: center; color: #636363; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form .container .text > h3, .form .container .text > .h3 { font-size: 24px; letter-spacing: 1px; } }
 .form .container .text > p { font-family: 'Noto Sans TC', sans-serif; font-size: 32px; letter-spacing: 0.53px; text-align: center; color: #636363; }
-.form .container .text > p > span { font-family: 'Poppins', sans-serif; font-size: 32px; letter-spacing: 0.53px; color: #636363; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .text > p { font-size: 17px; letter-spacing: 0.28px; } }
 .form .container .text > p:nth-of-type(1) { margin-bottom: 0; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .form .container .text > p { font-size: 25px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .form .container .text > p { font-size: 25px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .form .container .text > p { font-size: 17px; letter-spacing: 0.28px; } }
+.form .container .text > p > span { font-family: 'Poppins', sans-serif; font-size: 32px; letter-spacing: 0.53px; color: #636363; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .form .container .text > p > span { font-size: 25px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .form .container .text > p > span { font-size: 25px; } }
 .form .container .text_span { max-width: 816px; margin: 25px auto; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form .container .text_span { max-width: auto; margin: 1rem auto; } }
 .form .container .text_span > span { font-family: 'Noto Sans TC', sans-serif; font-size: 24px; line-height: 1.5; letter-spacing: 0.86px; text-align: center; color: #85899f; }
@@ -3396,6 +3448,8 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .form .container .fill_items > form .input-box { margin: 1.5rem 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > form .input-box { margin: 0 0 1rem 0; } }
 .form .container .fill_items > form .input-box .row label { display: flex; justify-content: space-between; font-size: 26px; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .form .container .fill_items > form .input-box .row label { font-size: 18px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .form .container .fill_items > form .input-box .row label { font-size: 16px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > form .input-box .row label { font-size: 16px; } }
 .form .container .fill_items > form .input-box .row input { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 2.08px; text-align: justify; color: #0275c9; }
 .form .container .fill_items > form .input-box .row select { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 1.08px; text-align: justify; }

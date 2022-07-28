@@ -45,6 +45,14 @@ header {
 			letter-spacing: 2.4px;
 			color: #777575;
 
+			@include range-width(769px, 1025px) {
+				font-size: 20px;
+			}
+
+			@include range-width(451px, 769px) {
+				font-size: 26px;				
+			}
+
 			@include range-width(402px, 451px) {
 				font-size: 18px;
 				font-weight: 500;
@@ -83,6 +91,18 @@ header {
 				top: 20%;
 				right: 5%;
 			}
+
+			@include range-width(769px, 1025px) {
+				top: 20%;
+				right: 5%;
+			}
+	
+			@include range-width(451px, 769px) {
+				position: relative;				
+				top: unset;
+				right: unset;
+			}
+
 			@include range-width(0, 451px) {
 				position: relative;
 				top: unset;
@@ -94,6 +114,14 @@ header {
 
 				@include range-width(1200px, 1441px) {
 					width: 300px;
+				}
+
+				@include range-width(769px, 1025px) {
+					width: 250px;
+				}
+
+				@include range-width(451px, 769px) {
+					width: 400px;					
 				}
 
 				@include range-width(0, 451px) {
@@ -114,6 +142,14 @@ header {
 
 					@include range-width(1200px, 1441px) {
 						font-size: 65px;
+					}
+
+					@include range-width(769px, 1025px) {
+						font-size: 45px;
+					}
+
+					@include range-width(451px, 769px) {
+						font-size: 60px;	
 					}
 
 					@include range-width(0, 451px) {
@@ -265,6 +301,10 @@ header {
 		background-color: #ffef02;
 		z-index: 0;
 
+		@include range-width(451px, 769px) {
+			flex-direction: column;
+		}
+
 		@include range-width(0, 451px) {
 			flex-direction: column;
 		}
@@ -274,17 +314,20 @@ header {
 			position: relative;
 			left: 0;
 			opacity: 0;
+
+			@include range-width(451px, 769px) {
+				width: auto;
+				left: -27px;
+			}
 			
 			@include range-width(394px, 451px) {
 				width: auto;
 				left: -27px;
-
 			}
 
 			@include range-width(376px, 394px) {
 				width: auto;
 				left: -21px;
-
 			}
 
 			@include range-width(0, 376px) {
@@ -311,6 +354,10 @@ header {
 			padding: 0 46px;
 			width: 50%;
 			opacity: 0;
+
+			@include range-width(451px, 769px) {
+				width: auto;
+			}
 
 			@include range-width(0, 451px) {
 				width: auto;
@@ -341,6 +388,14 @@ header {
 				text-align: justify;
 				color: #5b5d63;
 
+				@include range-width(769px, 1025px) {
+					font-size: 16px;
+				}	
+
+				@include range-width(769px, 1025px) {
+					font-size: 16px;
+				}	
+
 				@include range-width(0, 451px) {
 					font-size: 16px;
 					line-height: 1.75;
@@ -350,6 +405,10 @@ header {
 
 			.sign_item {
 				margin-top: 55px;				
+
+				@include range-width(769px, 1025px) {
+					margin-top: 20px;
+				}
 
 				@include range-width(0, 451px) {
 					margin-top: 10px;
@@ -413,6 +472,10 @@ header {
 						color: #fff;
 						background-color: #ff9500;
 
+						@include range-width(769px, 1025px) {
+							font-size: 24px;	
+						}
+
 						@include range-width(0, 451px) {
 							right: 30px;
 							font-size: 20px;
@@ -430,6 +493,10 @@ header {
 					letter-spacing: 1px;
 					text-align: justify;
 					color: #636363;
+
+					@include range-width(769px, 1025px) {
+						font-size: 16px;	
+					}
 
 					@include range-width(0, 451px) {
 						font-size: 16px;	
@@ -491,6 +558,11 @@ header {
 				opacity: 0;
 				color: #ff25ae;	
 				text-align: justify;
+
+				@include range-width(451px, 769px) {
+					font-size: 60px;
+					text-align: center;
+				}
 				
 				@include range-width(376px, 451px) {
 					margin: 0 0 8px 0;
@@ -532,6 +604,10 @@ header {
 					color: #ff25ae;
 					text-align: left;
 
+					@include range-width(451px, 769px) {
+						font-size: 32px;
+						text-align: center;			
+					}
 	
 					@include range-width(376px, 451px) {
 						margin: 0 0 8px 0;
@@ -559,6 +635,10 @@ header {
 					text-align: justify;
 					color: #717076;
 
+					@include range-width(451px, 769px) {
+						font-size: 20px;	
+					}
+
 					@include range-width(394px, 451px) {
 						font-size: 18px;	
 						line-height: 1.76;
@@ -578,6 +658,10 @@ header {
 
 					&:nth-of-type(1) {
 
+						@include range-width(451px, 769px) {
+							justify-content: space-between;	
+						}
+
 						@include range-width(0, 451px) {
 							justify-content: space-between;
 						}
@@ -585,6 +669,10 @@ header {
 						.svg {
 							&:nth-of-type(2) {
 								margin: 15px 120px 0 120px;
+
+								@include range-width(451px, 769px) {
+									margin: 15px 0 0 0;
+								}
 
 								@include range-width(0, 451px) {
 									margin: 15px 0 0 0;
@@ -594,6 +682,10 @@ header {
 					}
 
 					&:nth-of-type(2) {
+						
+						@include range-width(451px, 769px) {
+							justify-content: space-between;	
+						}
 
 						@include range-width(0, 451px) {
 							justify-content: space-between;
@@ -602,12 +694,20 @@ header {
 						.svg {
 							margin: 40px 0 0 0;
 
+							@include range-width(451px, 769px) {
+								margin: 15px 0 0 0;	
+							}
+
 							@include range-width(0, 451px) {
 								margin: 15px 0 0 0;
 							}
 
 							&:nth-of-type(2) {
 								margin: 40px 50px 0 50px;
+
+								@include range-width(451px, 769px) {
+									margin: 15px 0 0 0;	
+								}
 
 								@include range-width(0, 451px) {
 									margin: 15px 0 0 0;
@@ -620,7 +720,14 @@ header {
 						display: flex;
 						align-items: center;
 						margin-top: 15px;
-	
+						
+
+						@include range-width(451px, 769px) {
+							width: 30%;
+							flex-direction: column;	
+							align-items: center;
+						}
+
 						@include range-width(0, 451px) {
 							width: 30%;
 							flex-direction: column;
@@ -644,6 +751,15 @@ header {
 							font-size: 28px;
 							font-weight: 500;
 							color: #717076;
+
+							@include range-width(769px, 1025px) {
+								font-size: 22px;
+							}
+
+							@include range-width(451px, 769px) {
+								margin: .5rem auto;
+								font-size: 24px;
+							}
 							
 							@include range-width(376px, 451px) {
 								margin: .5rem auto;
@@ -658,6 +774,12 @@ header {
 							> span {
 								font-size: 20px;
 								vertical-align: baseline;
+
+								@include range-width(451px, 769px) {
+									display: block;	
+									font-size: 18px;
+
+								}
 
 								@include range-width(0, 451px) {
 									display: block;
@@ -693,6 +815,14 @@ header {
 			color: #ffebfd;
 			text-align: left;
 
+			@include range-width(769px, 1025px) {
+				font-size: 180px ;
+			}	
+
+			@include range-width(451px, 769px) {
+				font-size: 135px;
+			}
+
 			@include range-width(376px, 451px) {
 				font-size: 70px;
 				line-height: 0.87;
@@ -709,6 +839,11 @@ header {
 			margin-top: 70px;
 			opacity: 0;
 
+			@include range-width(451px, 769px) {
+				flex-direction: column;	
+				margin-top: 0;
+			}
+
 			@include range-width(0, 451px) {
 				flex-direction: column;
 				margin-top: 0;
@@ -724,6 +859,14 @@ header {
 				text-shadow: 2px 2px 0 #F58663, 4px 4px 0 #F58663;
 				text-align: left;
 
+				@include range-width(769px, 1025px) {
+					font-size: 65px;
+				}	
+
+				@include range-width(451px, 769px) {
+					width: auto;
+				}
+
 				@include range-width(0, 451px) {
 					margin: 5px 0 16px 0;
 					width: auto;
@@ -735,6 +878,10 @@ header {
 			
 			.item_content {
 				width: 50%;
+
+				@include range-width(451px, 769px) {
+					width: auto;		
+				}
 
 				@include range-width(0, 451px) {
 					width: auto;
@@ -749,6 +896,10 @@ header {
 					letter-spacing: 1px;
 					text-align: justify;
 					color: #4a4a4a;
+
+					@include range-width(769px, 1025px) {
+						font-size: 26px;
+					}	
 
 					@include range-width(0, 451px) {
 						margin-top: 0;
@@ -765,6 +916,11 @@ header {
 						letter-spacing: 1px;
 						text-align: justify;
 						color: #4a4a4a;
+						vertical-align: baseline;
+
+						@include range-width(769px, 1025px) {
+							font-size: 26px;
+						}	
 
 						@include range-width(0, 451px) {
 							font-size: 22px;
@@ -782,6 +938,14 @@ header {
 					letter-spacing: 1px;
 					text-align: justify;
 					color: #4a4a4a;
+
+					@include range-width(769px, 1025px) {
+						font-size: 18px;
+					}	
+
+					@include range-width(451px, 769px) {
+						font-size: 21px;	
+					}
 
 					@include range-width(0, 451px) {
 						font-size: 16px;
@@ -897,11 +1061,8 @@ header {
 					}
 				}
 			}
-			
 		}
 	}
-
-	
 }
 
 .mixing {
@@ -950,6 +1111,10 @@ header {
 				left: 200px;
 			}
 
+			@include range-width(451px, 769px) {
+				bottom: 40px;	
+			}
+
 			@include range-width(0, 451px) {
 				bottom: 0;
 			}
@@ -964,7 +1129,11 @@ header {
 				letter-spacing: 4px;
 				color: #bde2f5;
 				text-align: left;
-				
+
+				@include range-width(451px, 769px) {
+					font-size: 100px;	
+				}
+
 				@include range-width(394px, 451px) {
 					left: unset;
 					bottom: unset;
@@ -991,6 +1160,11 @@ header {
 					margin-top: 34px;
 					font-size: 86px;
 					font-weight: bold;
+
+
+					@include range-width(451px, 769px) {
+						font-size: 78px;			
+					}
 
 					@include range-width(394px, 451px) {
 						display: block;
@@ -1085,6 +1259,16 @@ header {
 				letter-spacing: 6px;
 				color: rgba(114, 112, 220, 0.1);
 
+				@include range-width(769px, 1025px) {
+					justify-content: center;
+					font-size: 100px;
+				}
+
+				@include range-width(451px, 769px) {
+					justify-content: center;
+					font-size: 100px;	
+				}
+
 				@include range-width(376px, 451px) {
 					font-size: 50px;	
 				}
@@ -1096,6 +1280,14 @@ header {
 				> span {
 					font-family: 'Lato', sans-serif;
 					font-size: 210px;
+
+					@include range-width(769px, 1025px) {
+						font-size: 150px
+					}
+
+					@include range-width(451px, 769px) {
+						font-size: 110px;			
+					}
 
 					@include range-width(394px, 451px) {
 						font-size: 60px;
@@ -1118,6 +1310,15 @@ header {
 				letter-spacing: 5px;
   				text-align: justify;
 				color: rgba(114, 112, 220, 0.1);
+
+				@include range-width(769px, 1025px) {
+					font-size: 85px
+				}
+
+				@include range-width(451px, 769px) {
+					font-size: 60px;	
+					text-align: center;
+				}
 
 				@include range-width(394px, 451px) {
 					letter-spacing: 0.93px;
@@ -1356,6 +1557,11 @@ header {
 			padding: 25px 40px;
 			z-index: 1000;
 
+			@include range-width(451px, 769px) {
+				top: calc(50% - 125px);
+				width: 100%;
+			}
+
 			.modal_ph_mobile {
 				font-family: 'Poppins', sans-serif;
 				font-size: 28px;
@@ -1555,20 +1761,40 @@ header {
 				text-align: center;
 				color: #636363;
 
+				&:nth-of-type(1) {
+					margin-bottom: 0;
+				}
+
+				@include range-width(769px, 1025px) {
+					font-size: 25px;
+				}
+
+				@include range-width(451px, 769px) {
+					font-size: 25px;
+				}
+
+				@include range-width(0, 451px) {
+					font-size: 17px;
+					letter-spacing: 0.28px;	
+				}
+				
+
 				> span {
 					font-family: 'Poppins', sans-serif;
 					font-size: 32px;
 					letter-spacing: 0.53px;
 					color: #636363;
+
+					@include range-width(769px, 1025px) {
+						font-size: 25px;
+					}
+
+					@include range-width(451px, 769px) {
+						font-size: 25px;
+					}
 				}
 
-				@include range-width(0, 451px) {
-					font-size: 17px;
-				letter-spacing: 0.28px;	
-				}
-				&:nth-of-type(1) {
-					margin-bottom: 0;
-				}
+				
 			}
 		}
 
@@ -1736,7 +1962,15 @@ header {
 							display: flex;
 							justify-content: space-between;
 							font-size: 26px;
-		
+							
+							@include range-width(769px, 1025px) {
+								font-size: 18px;
+							}
+
+							@include range-width(451px, 769px) {
+								font-size: 16px;
+							}
+
 							@include range-width(0, 451px) {
 								font-size: 16px;
 							}
