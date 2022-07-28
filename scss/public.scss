@@ -128,6 +128,7 @@ header {
 		height: 100%;
 
 		picture {
+			display: inline-block;
 			> img {
 				width: 100%;
 				max-width: 100%;
@@ -224,11 +225,7 @@ header {
 			width: 50%;
 			position: relative;
 			left: 0;
-
-			img {
-				width: 100%;
-			}
-
+			
 			@include range-width(394px, 451px) {
 				width: auto;
 				left: -27px;
@@ -244,10 +241,21 @@ header {
 			@include range-width(0, 376px) {
 				width: auto;
 				left: -22px;
+			}
+
+			picture {
+				display: inline-block;
 
 				img {
-					max-width: 99%;
+					width: 100%;
+
+					@include range-width(0, 376px) {
+						img {
+							max-width: 99%;
+						}
+					}
 				}
+
 			}
 		}
 		.container {
@@ -862,19 +870,37 @@ header {
 			margin-top: 35px;
 			text-align: left;
 
-			@include range-width(0, 376px) {
+			picture {
+				display: inline-block;
 				img {
-					max-width: 99%;
+					width: 100%;
+
+					@include range-width(0, 376px) {
+						max-width: 99%;
+					}
 				}
+				
 			}
+			
 		}
 		.title_text {
+			display: inline-flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+			bottom: 50px;
+
+			@include range-width(1281px, 1441px) {
+				left: 200px;
+			}
+
+			@include range-width(0, 451px) {
+				bottom: 0;
+			}
+
+
+
 			> h2 {
-				position: relative;
-				left: 220px;
-				bottom: 80px;
-				display: inline-block;
-				
 				font-family: 'Poppins', sans-serif;
 				font-size: 110px;
 				font-weight: 500;
@@ -1436,7 +1462,11 @@ header {
 			margin-top: 40px;
 
 			@include range-width(0, 451px) {
-				margin-top: 25px;
+				margin-top: 33px;
+			}
+
+			picture {
+				display: inline-block;
 			}
 		}
 
@@ -1593,6 +1623,10 @@ header {
 					margin: 0 20px;
 					font-size: 28px;
 				}
+			}
+
+			picture {
+				display: inline-block;
 			}
 		}
 

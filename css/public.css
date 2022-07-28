@@ -3113,6 +3113,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 @media screen and (max-width: 1440px) and (min-width: 1200px) { .banner .banner_box .banner_logo .text > p { font-size: 65px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box .banner_logo .text > p { font-size: 34px; } }
 .banner .banner_img { width: 100%; height: 100%; }
+.banner .banner_img picture { display: inline-block; }
 .banner .banner_img picture > img { width: 100%; max-width: 100%; object-fit: cover; }
 
 .navbar { padding: 60px 0 15px 0; background-color: #facae7; z-index: 1; }
@@ -3133,11 +3134,12 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .brand-origin .bo_s1 { position: relative; display: flex; align-items: center; padding-top: 15px; background-color: #ffef02; z-index: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 { flex-direction: column; } }
 .brand-origin .bo_s1 .tiffany_img { width: 50%; position: relative; left: 0; }
-.brand-origin .bo_s1 .tiffany_img img { width: 100%; }
 @media screen and (max-width: 450px) and (min-width: 394px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -27px; } }
 @media screen and (max-width: 393px) and (min-width: 376px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -21px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -22px; }
-  .brand-origin .bo_s1 .tiffany_img img { max-width: 99%; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -22px; } }
+.brand-origin .bo_s1 .tiffany_img picture { display: inline-block; }
+.brand-origin .bo_s1 .tiffany_img picture img { width: 100%; }
+@media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img picture img img { max-width: 99%; } }
 .brand-origin .bo_s1 .container { padding: 0 46px; width: 50%; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 .container { width: auto; } }
 .brand-origin .bo_s1 .container > h4, .brand-origin .bo_s1 .container > .h4 { margin-top: 30px; font-family: 'Noto Sans TC', sans-serif; font-size: 24px; font-weight: 500; line-height: 1.75; letter-spacing: 0.8px; text-align: justify; color: #4a4a4a; }
@@ -3239,8 +3241,13 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .mixing .title { padding: 50px 0 0 0; background-image: linear-gradient(-45deg, #e3f2fa 8%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 58%, #ffffff 58%, #ffffff 100%); background-size: 20px 20px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .title { padding: 50px 0; } }
 .mixing .title .hand { margin-top: 35px; text-align: left; }
-@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .hand img { max-width: 99%; } }
-.mixing .title .title_text > h2, .mixing .title .title_text > .h2 { position: relative; left: 220px; bottom: 80px; display: inline-block; font-family: 'Poppins', sans-serif; font-size: 110px; font-weight: 500; line-height: 1.15; letter-spacing: 4px; color: #bde2f5; text-align: left; }
+.mixing .title .hand picture { display: inline-block; }
+.mixing .title .hand picture img { width: 100%; }
+@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .hand picture img { max-width: 99%; } }
+.mixing .title .title_text { display: inline-flex; flex-direction: column; align-items: center; position: relative; bottom: 50px; }
+@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text { left: 200px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text { bottom: 0; } }
+.mixing .title .title_text > h2, .mixing .title .title_text > .h2 { font-family: 'Poppins', sans-serif; font-size: 110px; font-weight: 500; line-height: 1.15; letter-spacing: 4px; color: #bde2f5; text-align: left; }
 @media screen and (max-width: 450px) and (min-width: 394px) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { left: unset; bottom: unset; display: block; margin-left: 12px; font-size: 58px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
 @media screen and (max-width: 393px) and (min-width: 0) { .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { left: unset; bottom: unset; display: block; margin-left: 12px; font-size: 50px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
 .mixing .title .title_text > h2:nth-of-type(2), .mixing .title .title_text > .h2:nth-of-type(2) { margin-top: 34px; font-size: 86px; font-weight: bold; }
@@ -3338,7 +3345,8 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 @media screen and (max-width: 450px) and (min-width: 376px) { .form .container .title .title_text { font-size: 32px; letter-spacing: 0.72px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .form .container .title .title_text { font-size: 30px; letter-spacing: 0.72px; } }
 .form .container .icon { margin-top: 40px; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .icon { margin-top: 25px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .form .container .icon { margin-top: 33px; } }
+.form .container .icon picture { display: inline-block; }
 .form .container .text { margin-top: 100px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form .container .text { margin-top: 50px; } }
 .form .container .text > h3, .form .container .text > .h3 { font-family: 'Noto Sans TC', sans-serif; font-size: 48px; font-weight: 500; letter-spacing: 0.8px; text-align: center; color: #636363; }
@@ -3365,6 +3373,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 @media screen and (max-width: 450px) and (min-width: 0) { .form .container .img_text .item > p { font-size: 10px; line-height: 1.4; letter-spacing: 0.17px; } }
 .form .container .img_text > span { display: inline-block; margin: 0 50px; font-size: 72px; color: #ff7955; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form .container .img_text > span { width: 18px; height: 18px; margin: 0 20px; font-size: 28px; } }
+.form .container .img_text picture { display: inline-block; }
 .form .container .fill_items { margin: 120px auto 35px auto; max-width: 1140px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items { margin: 35px auto 0 auto; } }
 .form .container .fill_items > h2, .form .container .fill_items > .h2 { position: relative; font-size: 33px; font-weight: bold; letter-spacing: 2.47px; text-align: center; color: #ff8768; border-bottom: 1px solid #ff8768; line-height: 0.1em; }
