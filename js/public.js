@@ -9,6 +9,8 @@
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#brand-origin').show("slide", { direction: "left" }, 400);
+		$('*').removeClass('slide-up');
+		$('*').removeClass('slide-up-2');
 	})
 
 	$('.happy-skin-show').click(function() {
@@ -19,6 +21,8 @@
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#happy-skin').show("slide", { direction: "down" }, 10);
+		$('*').removeClass('slide-up');
+		$('*').removeClass('slide-up-2');
 	})
 
 	$('.special-feature-show').click(function() {
@@ -29,6 +33,8 @@
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#special-feature').show("slide", { direction: "right" }, 400);
+		$('*').removeClass('slide-up');
+		$('*').removeClass('slide-up-2');
 	})
 
 	$('.slick-items').slick({
@@ -79,21 +85,48 @@
 
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
+		// $('#brand-origin').show("slide", { direction: "left" }, 400);
+
+		console.log(scroll, $('.navbar').offset().top);
+		// brand-origin 
 		
-		if(scroll > ($('.banner').height() / 3)) {
-			$('.slide-up-title').addClass('slide-up');
+		if(scroll > $('.navbar').offset().top) {
+			$('.tiffany_img').addClass('slide-right');	
+		}
+		if(scroll > $('.navbar').offset().top) {
+			$('.tiffany_text').addClass('slide-left');	
+		}		
+		if(scroll > $('.tiffany_img').offset().top) {
+			$('.name_origin').addClass('slide-up');	
+		}
+		// happy-skin
+		if(scroll > $('.navbar').offset().top) {
+			$('.happy-skin-title-slide-up').addClass('slide-up');	
+		}
+		
+		if(scroll > $('.happy-skin-title-slide-up').offset().top) {
+			$('.happy-skin-item1-slide-up').addClass('slide-up');
 		}
 
-		if(scroll > ($('.banner').height() / 2)) {
-			$('.slide-up-itme-1').addClass('slide-up');
+		if(scroll > $('.happy-skin-item1-slide-up').offset().top) {
+			$('.happy-skin-item2-slide-up').addClass('slide-up');
 		}
 
-		if(scroll > ($('.banner').height())) {
-			$('.slide-up-itme-2').addClass('slide-up');
+		// special-feature
+		if(scroll > $('.navbar').offset().top) {
+			$('.special-feature-title-slide-up').addClass('slide-up-2')
 		}
-		// if(scroll > ($('.happy_skin').offset().top)) {
-		// 	$('.slide-up-title').addClass('slide-up');
-		// }
+
+		if(scroll > $('.special-feature-title-slide-up').offset().top) {
+			$('.special-feature-item-slide-up').addClass('slide-up')
+		}
+
+		// mixing
+		if(scroll > $('.hand').offset().top) {
+			$('.mixing-title-slide-up').addClass('slide-up');
+		}
+
+		
 	})
 	
 });

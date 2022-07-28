@@ -3126,21 +3126,33 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item span { font-size: 16px; letter-spacing: 1px; } }
 .navbar .nav .nav-item span.active { color: #7e1fd2; background-color: #fff; }
 
-.slide-up { animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both; }
+.slide-up { animation: slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both; }
+
+.slide-up-2 { animation: slide-up-2 1s cubic-bezier(0.65, 0, 0.35, 1) both; }
+
+.slide-right { animation: slide-right 1s cubic-bezier(0.65, 0, 0.35, 1) both; }
+
+.slide-left { animation: slide-left 1s cubic-bezier(0.65, 0, 0.35, 1) both; animation-delay: 1s; }
 
 @keyframes slide-up { from { opacity: 0; transform: translateY(100px); }
   to { opacity: 1; transform: translateY(0); } }
+@keyframes slide-up-2 { from { opacity: 0; transform: translateY(100px); }
+  to { opacity: 0.66; transform: translateY(0); } }
+@keyframes slide-right { from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0); } }
+@keyframes slide-left { from { opacity: 0; transform: translateX(100%); }
+  to { opacity: 1; transform: translateX(0); } }
 .brand-origin { display: none; width: 100%; background-color: #91d9ed; }
 .brand-origin .bo_s1 { position: relative; display: flex; align-items: center; padding-top: 15px; background-color: #ffef02; z-index: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 { flex-direction: column; } }
-.brand-origin .bo_s1 .tiffany_img { width: 50%; position: relative; left: 0; }
+.brand-origin .bo_s1 .tiffany_img { width: 50%; position: relative; left: 0; opacity: 0; }
 @media screen and (max-width: 450px) and (min-width: 394px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -27px; } }
 @media screen and (max-width: 393px) and (min-width: 376px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -21px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -22px; } }
 .brand-origin .bo_s1 .tiffany_img picture { display: inline-block; }
 .brand-origin .bo_s1 .tiffany_img picture img { width: 100%; }
 @media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img picture img img { max-width: 99%; } }
-.brand-origin .bo_s1 .container { padding: 0 46px; width: 50%; }
+.brand-origin .bo_s1 .container { padding: 0 46px; width: 50%; opacity: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 .container { width: auto; } }
 .brand-origin .bo_s1 .container > h4, .brand-origin .bo_s1 .container > .h4 { margin-top: 30px; font-family: 'Noto Sans TC', sans-serif; font-size: 24px; font-weight: 500; line-height: 1.75; letter-spacing: 0.8px; text-align: justify; color: #4a4a4a; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s1 .container > h4, .brand-origin .bo_s1 .container > .h4 { font-size: 16px; line-height: 1.17; letter-spacing: 1.2px; } }
@@ -3154,16 +3166,16 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s2 { background-position: 100% 90%; background-repeat: no-repeat; } }
 .brand-origin .bo_s2 .container { padding: 0 46px; max-width: 1080px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s2 .container { max-width: auto; } }
-.brand-origin .bo_s2 .container .name_origin { position: relative; padding: 50px 0; text-align: left; z-index: 1; }
+.brand-origin .bo_s2 .container .name_origin { position: relative; padding: 50px 0; text-align: left; opacity: 0; z-index: 1; }
 .brand-origin .bo_s2 .container .name_origin > h3 > span, .brand-origin .bo_s2 .container .name_origin > .h3 > span { position: relative; right: 0; padding: 10px 30px; font-family: 'Noto Sans TC', sans-serif; font-size: 28px; font-weight: bold; line-height: 2.21; letter-spacing: 2px; text-align: center; color: #fff; background-color: #ff9500; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s2 .container .name_origin > h3 > span, .brand-origin .bo_s2 .container .name_origin > .h3 > span { right: 30px; font-size: 20px; line-height: 2.38; letter-spacing: 1.43px; } }
 .brand-origin .bo_s2 .container .name_origin > p { font-family: 'Noto Sans TC', sans-serif; font-size: 21px; font-weight: 500; line-height: 2; letter-spacing: 1px; text-align: justify; color: #636363; }
 @media screen and (max-width: 450px) and (min-width: 0) { .brand-origin .bo_s2 .container .name_origin > p { font-size: 16px; line-height: 1.75; letter-spacing: 0.8px; } }
 
-.happy-skin .hs_s1 { position: relative; background-color: #facae7; padding: 35px 0 60px 0; }
+.happy-skin .hs_s1 { position: relative; background-color: #facae7; padding: 35px 0 60px 0; z-index: 1; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 { padding: 15px 0 30px 0; } }
 .happy-skin .hs_s1 .container { max-width: 1200px; }
-.happy-skin .hs_s1 .container .background_6 { position: absolute; top: 50px; left: 0; }
+.happy-skin .hs_s1 .container .background_6 { position: absolute; top: 50px; left: 0; z-index: -1; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .background_6 { top: calc(50% - 445px / 2); left: calc(50% - 320px / 2); } }
 .happy-skin .hs_s1 .container .background_6 > img { width: 700px; height: 800px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .background_6 > img { width: 320px; height: 445px; } }
@@ -3201,10 +3213,10 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 
 .special-feature { display: none; width: 100%; position: relative; }
 .special-feature .sf_s1 { padding: 15px 0 30px 0; background-color: #f6d6f7; }
-.special-feature .sf_s1 .title { font-size: 245px; font-weight: 600; opacity: 0.66; line-height: 0.81; color: #ffebfd; text-align: left; }
+.special-feature .sf_s1 .title { font-size: 245px; font-weight: 600; opacity: 0; line-height: 0.81; color: #ffebfd; text-align: left; }
 @media screen and (max-width: 450px) and (min-width: 376px) { .special-feature .sf_s1 .title { font-size: 70px; line-height: 0.87; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .special-feature .sf_s1 .title { font-size: 65px; line-height: 0.87; } }
-.special-feature .sf_s1 .item { display: flex; margin-top: 70px; }
+.special-feature .sf_s1 .item { display: flex; margin-top: 70px; opacity: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .item { flex-direction: column; margin-top: 0; } }
 .special-feature .sf_s1 .item h3.item_title, .special-feature .sf_s1 .item .item_title.h3 { width: 50%; font-family: 'Noto Sans TC', sans-serif; font-size: 90px; font-weight: bold; letter-spacing: 8.08px; color: #dcfc25; text-shadow: 2px 2px 0 #F58663, 4px 4px 0 #F58663; text-align: left; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .item h3.item_title, .special-feature .sf_s1 .item .item_title.h3 { margin: 5px 0 16px 0; width: auto; font-size: 38px; font-weight: 900; letter-spacing: 2.87px; } }
@@ -3244,7 +3256,7 @@ header .ShinKong .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px
 .mixing .title .hand picture { display: inline-block; }
 .mixing .title .hand picture img { width: 100%; }
 @media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .hand picture img { max-width: 99%; } }
-.mixing .title .title_text { display: inline-flex; flex-direction: column; align-items: center; position: relative; bottom: 50px; }
+.mixing .title .title_text { display: inline-flex; flex-direction: column; align-items: center; position: relative; bottom: 50px; opacity: 0; }
 @media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text { left: 200px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text { bottom: 0; } }
 .mixing .title .title_text > h2, .mixing .title .title_text > .h2 { font-family: 'Poppins', sans-serif; font-size: 110px; font-weight: 500; line-height: 1.15; letter-spacing: 4px; color: #bde2f5; text-align: left; }

@@ -18,6 +18,7 @@ body {
     // 文字染色，背景色、文字色
     @include selection(rgba(120, 186, 255, 1), rgba(255, 255, 255, 1));
 }
+
 header {
 	// border-left: 4px solid #de0717;
 	.ShinKong {
@@ -129,7 +130,7 @@ header {
 
 		picture {
 			display: inline-block;
-			
+
 			> img {
 				width: 100%;
 				max-width: 100%;
@@ -190,7 +191,20 @@ header {
 }
 
 .slide-up {
-	animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both
+	animation: slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.slide-up-2 {
+	animation: slide-up-2 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.slide-right {
+	animation: slide-right 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.slide-left {
+	animation: slide-left 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+	animation-delay: 1s;
 }
 
 @keyframes slide-up {
@@ -201,6 +215,39 @@ header {
 	to {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes slide-up-2 {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to {
+		opacity: 0.66;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slide-right {
+	from {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slide-left {
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
 
@@ -226,6 +273,7 @@ header {
 			width: 50%;
 			position: relative;
 			left: 0;
+			opacity: 0;
 			
 			@include range-width(394px, 451px) {
 				width: auto;
@@ -262,6 +310,7 @@ header {
 		.container {
 			padding: 0 46px;
 			width: 50%;
+			opacity: 0;
 
 			@include range-width(0, 451px) {
 				width: auto;
@@ -347,6 +396,7 @@ header {
 				position: relative;
 				padding: 50px 0;
 				text-align: left;
+				opacity: 0;
 				z-index: 1;
 	
 				> h3 {
@@ -401,6 +451,7 @@ header {
 		position: relative;
 		background-color: #facae7;
 		padding: 35px 0 60px 0;
+		z-index: 1;
 
 		@include range-width(0, 451px) {
 			padding: 15px 0 30px 0;
@@ -413,6 +464,7 @@ header {
 				position: absolute;
 				top: 50px;
 				left: 0;
+				z-index: -1;
 
 				@include range-width(0, 451px) {
 					top: calc(50% - 445px / 2);		
@@ -635,7 +687,8 @@ header {
 		.title {
 			font-size: 245px;
 			font-weight: 600;
-			opacity: 0.66;
+			// opacity: 0.66;
+			opacity: 0;
 			line-height: 0.81;
 			color: #ffebfd;
 			text-align: left;
@@ -654,6 +707,7 @@ header {
 		.item {
 			display: flex;
 			margin-top: 70px;
+			opacity: 0;
 
 			@include range-width(0, 451px) {
 				flex-direction: column;
@@ -890,6 +944,7 @@ header {
 			align-items: center;
 			position: relative;
 			bottom: 50px;
+			opacity: 0;
 
 			@include range-width(1281px, 1441px) {
 				left: 200px;
