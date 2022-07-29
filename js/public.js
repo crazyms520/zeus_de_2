@@ -103,15 +103,31 @@
 		}
 
 		// happy-skin
-		if(scroll > $('.navbar').offset().top) {
+		// if(scroll > $('.navbar').offset().top) {
+		// 	$('.happy-skin-title-slide-up').addClass('slide-up');	
+		// }
+		
+		// if(scroll > $('.happy-skin-title-slide-up').offset().top) {
+		// 	$('.happy-skin-item1-slide-up').addClass('slide-up');
+		// }
+
+		// if(scroll > $('.happy-skin-item1-slide-up').eq(2).offset().top) {
+		// 	$('.happy-skin-item2-slide-up').addClass('slide-up');
+		// }
+
+		console.log(scroll, $('.happy-skin-item1-slide-up').offset().top)
+
+		if(scroll > $('.happy-skin-title-slide-up').offset().top) {
 			$('.happy-skin-title-slide-up').addClass('slide-up');	
 		}
 		
-		if(scroll > $('.happy-skin-title-slide-up').offset().top) {
+		if(scroll > $('.happy-skin-item1-slide-up').offset().top) {
 			$('.happy-skin-item1-slide-up').addClass('slide-up');
 		}
 
-		if(scroll > $('.happy-skin-item1-slide-up').offset().top) {
+		
+
+		if(scroll > $('.happy-skin-item2-slide-up').offset().top) {
 			$('.happy-skin-item2-slide-up').addClass('slide-up');
 		}
 
