@@ -1129,23 +1129,30 @@ header {
 	@include range-width(0, 451px) {
 		padding: 25px 0;
 	}
+
 	.title {
 		padding: 50px 0 0 0;
 		background-image: linear-gradient(-45deg, #e3f2fa 8%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 58%, #ffffff 58%, #ffffff 100%);
-		background-size: 25px 25px;
+		background-size: 30px 30px;
 
 		@include range-width(0, 451px) {
+			background-size: 25px 25px;
 			padding: 50px 0;
 		}	
 
 		.hand {
 			margin-top: 35px;
+			opacity: 0;
 			text-align: left;
 
 			picture {
 				display: inline-block;
 				img {
 					width: 100%;
+
+					@include range-width(1281px, 1441px) {
+						width: 80%;
+					}
 
 					@include range-width(0, 376px) {
 						max-width: 90%;
@@ -1155,16 +1162,16 @@ header {
 			}
 			
 		}
+		
 		.title_text {
 			display: inline-flex;
 			flex-direction: column;
 			align-items: center;
 			position: relative;
 			bottom: 50px;
-			opacity: 0;
 
 			@include range-width(1281px, 1441px) {
-				left: 200px;
+				left: 100px;
 			}
 
 			@include range-width(451px, 769px) {
@@ -1175,92 +1182,52 @@ header {
 				bottom: 0;
 			}
 
-
 			.container {
 				@include range-width(0, 451px) {
 					padding: 0 1rem;
 				}
 
 				> h2 {
-					font-family: 'Poppins', sans-serif;
-					font-size: 110px;
-					font-weight: 500;
-					line-height: 1.15;
-					letter-spacing: 4px;
-					color: #bde2f5;
+					margin-top: -4%;
+					margin-left: 12%;
 					text-align: left;
-	
-					&:nth-of-type(2) {
-						margin-top: 34px;
-						font-size: 86px;
-						font-weight: bold;
-	
-	
-						@include range-width(451px, 769px) {
-							font-size: 78px;			
-						}
-	
-						@include range-width(394px, 451px) {
-							display: block;
-							margin-top: 1rem;
-							// margin-left: 12px;
-							font-size: 43px;	
-							line-height: 1.33;
-							letter-spacing: 1.6px;
-						}
-	
-						@include range-width(376px, 394px) {
-							display: block;
-							margin-top: 1rem;
-							// margin-left: 12px;
-							font-size: 39px;	
-							line-height: 1.33;
-							letter-spacing: 1.6px;
-						}
-	
-						@include range-width(0, 376px) {
-							display: block;
-							margin-top: 1rem;
-							// margin-left: 12px;
-							font-size: 39px;
-							line-height: 1.33;
-							letter-spacing: 1.6px;
-						}
+					opacity: 0;
+
+					@include range-width(769px, 1025px) {
+						margin-top: 0;
+						margin-left: 0;
 					}
 	
 					@include range-width(451px, 769px) {
-						font-size: 100px;	
+						margin-top: 0;
+						margin-left: 0;	
 					}
 	
-					@include range-width(394px, 451px) {
-						left: unset;
-						bottom: unset;
-						display: block;
-						// margin-left: 12px;
-						font-size: 58px;
-						line-height: 1.14;
-						letter-spacing: .7px;
-						text-align: left;
+					@include range-width(0, 451px) {
+						margin-top: 0;
+						margin-left: 0;
+						text-align: center;
 					}
-	
-					@include range-width(0, 394px) {
-						left: unset;
-						bottom: unset;
-						display: block;
-						// margin-left: 12px;
-						font-size: 50px;
-						line-height: 1.14;
-						letter-spacing: .7px;
-						text-align: left;
+
+					&:nth-of-type(2) {
+						margin-top: 0;
 					}
 	
 					> img {
-						width: auto;
-						max-width: 100%;
+						width: 100%;
+
+						@include range-width(1281px, 1441px) {
+							width: 80%;
+						}
+
+						@include range-width(0, 451px) {
+							width: auto;
+							max-width: 100%;
+						}
+						
 					}
 				}
 			}
-			
 		}
 	}
 
@@ -1275,15 +1242,34 @@ header {
 		}
 
 		.item {
-			// padding: 0 16px;
+			display: inline-block;
+			position: relative;
+			left: 100px;
+			margin-left: 2%;
+			opacity: 0;
+
+			@include range-width(1281px, 1441px) {
+				margin-left: 12%;				
+			}
+
+			@include range-width(769px, 1025px) {
+				left: 0;
+				margin-left: 0;
+			}
+
+			@include range-width(0, 769px) {
+				left: 0;
+				margin-left: 0;
+			}
 
 			.item_title {
 				font-family: 'Poppins', sans-serif;
-				font-size: 34px;
+				font-size: 30px;
 				font-weight: bold;
 				letter-spacing: 2.13px;
 				text-align: justify;
 				color: #dfff00;
+				
 
 				@include range-width(0, 451px) {
 					font-size: 26px;	
@@ -1295,7 +1281,7 @@ header {
 			
 			.item_text {
 				font-family: 'Noto Sans TC', sans-serif;
-				font-size: 22px;
+				font-size: 18px;
 				font-weight: 500;
 				line-height: 2;
 				text-align: justify;
@@ -1312,99 +1298,23 @@ header {
 }
 
 .elephant {
-	padding: 30px 0;
+	padding: 90px 0;
 	// border-left: 4px solid #de0717;
+
+	@include range-width(0, 451px) {
+		padding: 30px 0;
+	}
 
 	.title {
 		.title_text {
 			> h2 {
-				display: flex;
-				align-items: baseline;
-				font-family: 'Noto Sans TC', sans-serif;
-				font-size: 200px;
-				font-weight: 900;
-				letter-spacing: 6px;
-				color: rgba(114, 112, 220, 0.1);
-
-				@include range-width(769px, 1025px) {
-					justify-content: center;
-					font-size: 100px;
-				}
-
-				@include range-width(451px, 769px) {
-					justify-content: center;
-					font-size: 100px;	
-				}
-
-				@include range-width(376px, 451px) {
-					font-size: 50px;	
-				}
-
-				@include range-width(0, 376px) {
-					font-size: 48px;
-				}
-
-				> span {
-					font-family: 'Lato', sans-serif;
-					font-size: 210px;
-
-					@include range-width(769px, 1025px) {
-						font-size: 150px
-					}
-
-					@include range-width(451px, 769px) {
-						font-size: 110px;			
-					}
-
-					@include range-width(394px, 451px) {
-						font-size: 60px;
-					}
-
-					@include range-width(376px, 394px) {
-						font-size: 55px;
-					}
-
-					@include range-width(0, 376px) {
-						font-size: 50px;
-					}
-				}
-
 				> img {
-					width: auto;
-					max-width: 100%;
-				}
-			}
+					width: 100%;
 
-			> h3 {
-				font-family: 'Noto Sans TC', sans-serif;
-				font-size: 120px;
-				font-weight: bold;
-				letter-spacing: 5px;
-  				text-align: justify;
-				color: rgba(114, 112, 220, 0.1);
-
-				@include range-width(769px, 1025px) {
-					font-size: 85px
-				}
-
-				@include range-width(451px, 769px) {
-					font-size: 60px;	
-					text-align: center;
-				}
-
-				@include range-width(394px, 451px) {
-					letter-spacing: 0.93px;
-					font-size: 37px;
-				}
-
-				@include range-width(376px, 394px) {
-					letter-spacing: 0.93px;
-					font-size: 35px;
-				}
-
-				@include range-width(0, 376px) {
-					letter-spacing: 0.93px;
-					font-size: 31px;
+					@include range-width(0, 451px) {
+						width: auto;
+						max-width: 100%;
+					}
 				}
 			}
 		}
@@ -1416,6 +1326,12 @@ header {
 		.slick-items {
 			position: relative;
 			padding: 65px 40px;
+			margin-top: -9%;
+			opacity: 0;
+
+			@include range-width(0, 451px) {
+				margin-top: 0;
+			}
 			
 			.slick-prev {
 				width: auto;
@@ -1755,7 +1671,7 @@ header {
 }
 
 .form {
-	padding: 127px 110px;
+	padding: 65px 55px;
 	background-image: url(../img/BG_VIP_w.png);
 	height: 100%;
 	// border-left: 4px solid #de0717;
@@ -1766,7 +1682,7 @@ header {
 		height: 100%;
 	}
 
-	.container {
+	> .container {
 		padding-top: 80px;
 		background-color: #e4f5fc;
 		max-width: calc(100%);
@@ -1775,43 +1691,37 @@ header {
 			padding-top: 45px;
 		}
 
+		.title_box {
+			opacity: 0;
+			
+			h2 {
+				
+				> img {
+					width: 30%;
+					// width: 100%;
 
-		.title {
-			.title_text {
-				font-family: 'Poppins', sans-serif;
-				font-size: 68px;
-				font-weight: 600;
-				letter-spacing: 1.53px;	
-				text-align: center;
-				color: #5b5d63;
-
-				@include range-width(376px, 451px) {
-					font-size: 32px;
-					letter-spacing: 0.72px;
-				}	
-
-				@include range-width(0, 376px) {
-					font-size: 30px;
-					letter-spacing: 0.72px;
+					@include range-width(0, 451px) {
+						width: 90%;
+					}
+				}
+			}
+	
+			.icon {
+				margin-top: 40px;
+				@include range-width(0, 451px) {
+					margin-top: 33px;
+				}
+	
+				picture {
+					display: inline-block;
 				}
 			}
 		}
-
-		.icon {
-			margin-top: 40px;
-
-			@include range-width(0, 451px) {
-				margin-top: 33px;
-			}
-
-			picture {
-				display: inline-block;
-			}
-		}
+		
 
 		.text {
-			margin-top: 100px;
-
+			margin-top: 70px;
+			opacity: 0;
 			@include range-width(0, 451px) {
 				margin-top: 50px;
 			}
@@ -1819,7 +1729,7 @@ header {
 
 			> h3 {
 				font-family: 'Noto Sans TC', sans-serif;
-				font-size: 48px;
+				font-size: 32px;
 				font-weight: 500;
 				letter-spacing: 0.8px;
 				text-align: center;
@@ -1833,7 +1743,7 @@ header {
 
 			> p {
 				font-family: 'Noto Sans TC', sans-serif;
-				font-size: 32px;
+				font-size: 24px;
 				letter-spacing: 0.53px;
 				text-align: center;
 				color: #636363;
@@ -1857,8 +1767,8 @@ header {
 				
 
 				> span {
-					font-family: 'Poppins', sans-serif;
-					font-size: 32px;
+					font-family: 'Noto Sans TC', sans-serif;
+					font-size: 24px;
 					letter-spacing: 0.53px;
 					color: #636363;
 
@@ -1872,30 +1782,6 @@ header {
 				}
 
 				
-			}
-		}
-
-		.text_span {
-			max-width: 816px;
-			margin: 25px auto;
-			@include range-width(0, 451px) {
-				max-width: auto;
-				margin: 1rem auto;
-			}
-
-			> span {
-				font-family: 'Noto Sans TC', sans-serif;
-				font-size: 24px;
-				line-height: 1.5;
-				letter-spacing: 0.86px;
-				text-align: center;
-				color: #85899f;
-
-				@include range-width(0, 451px) {
-					font-size: 14px;
-					line-height: 1.57;
-					letter-spacing: 0.23px;	
-				}
 			}
 		}
 
@@ -1913,6 +1799,7 @@ header {
 				position: relative;
 				display: flex;
 				align-items: baseline;
+				opacity: 0;
 
 				@include range-width(0, 451px) {
 					align-items: center;
@@ -1975,6 +1862,7 @@ header {
 				margin: 0 50px;
 				font-size: 72px;
 				color: #ff7955;
+				opacity: 0;
 
 				@include range-width(0, 451px) {
 					width: 18px;
@@ -1986,13 +1874,52 @@ header {
 
 			picture {
 				display: inline-block;
+
+				> img {
+					width: 80%;
+
+					@include range-width(0, 451px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.text_span {
+			max-width: 816px;
+			margin: 25px auto;
+			padding: 0 105px;
+			opacity: 0;
+
+			@include range-width(451px, 769px) {
+				padding: 0 35px;
+			}
+
+			@include range-width(0, 451px) {
+				padding: 0;
+				max-width: auto;
+				margin: 1rem auto;
+			}
+
+			> span {
+				font-family: 'Noto Sans TC', sans-serif;
+				font-size: 20px;
+				line-height: 1.5;
+				letter-spacing: 0.86px;
+				text-align: center;
+				color: #85899f;
+
+				@include range-width(0, 451px) {
+					font-size: 14px;
+					line-height: 1.57;
+					letter-spacing: 0.23px;	
+				}
 			}
 		}
 
 		.fill_items {
-			// margin-top: 35px;
-			margin: 120px auto 35px auto;
-			max-width: 1140px;
+			margin: 100px auto 35px auto;
+			max-width: 900px;
 
 			@include range-width(0, 451px) {
 				margin: 35px auto 0 auto;
@@ -2000,7 +1927,7 @@ header {
 
 			> h2 {
 				position: relative;
-				font-size: 33px;
+				font-size: 30px;
 				font-weight: bold;
 				letter-spacing: 2.47px;
 				text-align: center;
@@ -2033,12 +1960,17 @@ header {
 					@include range-width(0 ,451px) {
 						margin: 0 0 1rem 0;
 					}
-					.row {
 
+					.row {
+						// padding: 0 30px;
+
+						// @include range-width(0, 451px) {
+						// 	padding: 0;
+						// }
 						label {
 							display: flex;
 							justify-content: space-between;
-							font-size: 26px;
+							font-size: 20px;
 							
 							@include range-width(769px, 1025px) {
 								font-size: 18px;
@@ -2091,7 +2023,7 @@ header {
 					.label {
 						display: block;
 						position: relative;
-						padding-left: 55px;
+						padding-left: 45px;
 						margin-bottom: 12px;
 						-webkit-user-select: none;
 						-moz-user-select: none;
@@ -2099,7 +2031,7 @@ header {
 						user-select: none;
 						cursor: pointer;
 						font-family: 'Noto Sans TC', sans-serif;
-						font-size: 26px;
+						font-size: 20px;
 						letter-spacing: 1px;
 						text-align: justify;
 						color: #4a4a4a;
@@ -2124,8 +2056,8 @@ header {
 								position: absolute;
 								top: 5px;
 								left: 5px;
-								width: 29px;
-								height: 29px;
+								width: 19px;
+								height: 19px;
 								background-color: #ff8768;
 
 								@include range-width(0, 451px) {
@@ -2153,8 +2085,8 @@ header {
 						position: absolute;
 						top: 0;
 						left: 0;
-						height: 40px;
-						width: 40px;
+						height: 30px;
+						width: 30px;
 						border: solid 1px #ff8768;
 						background-color: #fff;
 
@@ -2170,7 +2102,7 @@ header {
 				.button {
 					padding: 5px 0;
 					width: 100%;
-					max-width: 300px;
+					max-width: 250px;
 					max-height: 65px;
 					border: 0;
 					background-color: #ff8768;
@@ -2180,8 +2112,6 @@ header {
 					letter-spacing: 0.7px;
 					text-align: center;
 					color: #dfff00;
-
-					
 				}
 			}
 
@@ -2229,12 +2159,12 @@ header {
 			padding: 34px 0;
 	
 			> img {
-				width: 150px;
-				height: 88px;
+				width: 70px;
+				height: 40px;
 
 				@include range-width(0, 451px) {
-					width: 100px;
-					height: 50px;
+					width: 42px;
+					height: 24px;
 				}
 			}
 		}
@@ -2262,6 +2192,10 @@ header {
 
 .slide-right-2 {
 	animation: slide-right-2 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.slide-right-3 {
+	animation: slide-right-3 1s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 .slide-left {
@@ -2360,14 +2294,6 @@ header {
 }
 
 @keyframes slide-right {
-	// from {
-	// 	opacity: 0;
-	// 	transform: translateX(-100%);
-	// }
-	// to {
-	// 	opacity: 1;
-	// 	transform: translateX(0);
-	// }
 	0% {
 		opacity: 0;
 	}
@@ -2387,8 +2313,6 @@ header {
 	}
 
 	99% {
-		// opacity: 1;
-		// transform: translateX(0);
 		opacity: 1;
 		z-index: 1;
 		transform: translateX(100%);
@@ -2397,7 +2321,17 @@ header {
 	100% {
 		opacity: 0;
 		z-index: 0;
-		// transform: translateX(100%);
+	}
+}
+
+@keyframes slide-right-3 {
+	from {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
 

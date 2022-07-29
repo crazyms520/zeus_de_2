@@ -3294,55 +3294,44 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 
 .mixing { background-color: #ff9dd3; padding: 50px 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing { padding: 25px 0; } }
-.mixing .title { padding: 50px 0 0 0; background-image: linear-gradient(-45deg, #e3f2fa 8%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 58%, #ffffff 58%, #ffffff 100%); background-size: 25px 25px; }
-@media screen and (max-width: 450px) and (min-width: 0) { .mixing .title { padding: 50px 0; } }
-.mixing .title .hand { margin-top: 35px; text-align: left; }
+.mixing .title { padding: 50px 0 0 0; background-image: linear-gradient(-45deg, #e3f2fa 8%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 58%, #ffffff 58%, #ffffff 100%); background-size: 30px 30px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .mixing .title { background-size: 25px 25px; padding: 50px 0; } }
+.mixing .title .hand { margin-top: 35px; opacity: 0; text-align: left; }
 .mixing .title .hand picture { display: inline-block; }
 .mixing .title .hand picture img { width: 100%; }
+@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .hand picture img { width: 80%; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .hand picture img { max-width: 90%; } }
-.mixing .title .title_text { display: inline-flex; flex-direction: column; align-items: center; position: relative; bottom: 50px; opacity: 0; }
-@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text { left: 200px; } }
+.mixing .title .title_text { display: inline-flex; flex-direction: column; align-items: center; position: relative; bottom: 50px; }
+@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text { left: 100px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .mixing .title .title_text { bottom: 40px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text { bottom: 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text .container { padding: 0 1rem; } }
-.mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { font-family: 'Poppins', sans-serif; font-size: 110px; font-weight: 500; line-height: 1.15; letter-spacing: 4px; color: #bde2f5; text-align: left; }
-.mixing .title .title_text .container > h2:nth-of-type(2), .mixing .title .title_text .container > .h2:nth-of-type(2) { margin-top: 34px; font-size: 86px; font-weight: bold; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .mixing .title .title_text .container > h2:nth-of-type(2), .mixing .title .title_text .container > .h2:nth-of-type(2) { font-size: 78px; } }
-@media screen and (max-width: 450px) and (min-width: 394px) { .mixing .title .title_text .container > h2:nth-of-type(2), .mixing .title .title_text .container > .h2:nth-of-type(2) { display: block; margin-top: 1rem; font-size: 43px; line-height: 1.33; letter-spacing: 1.6px; } }
-@media screen and (max-width: 393px) and (min-width: 376px) { .mixing .title .title_text .container > h2:nth-of-type(2), .mixing .title .title_text .container > .h2:nth-of-type(2) { display: block; margin-top: 1rem; font-size: 39px; line-height: 1.33; letter-spacing: 1.6px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .mixing .title .title_text .container > h2:nth-of-type(2), .mixing .title .title_text .container > .h2:nth-of-type(2) { display: block; margin-top: 1rem; font-size: 39px; line-height: 1.33; letter-spacing: 1.6px; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { font-size: 100px; } }
-@media screen and (max-width: 450px) and (min-width: 394px) { .mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { left: unset; bottom: unset; display: block; font-size: 58px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
-@media screen and (max-width: 393px) and (min-width: 0) { .mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { left: unset; bottom: unset; display: block; font-size: 50px; line-height: 1.14; letter-spacing: .7px; text-align: left; } }
-.mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: auto; max-width: 100%; }
+.mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { margin-top: -4%; margin-left: 12%; text-align: left; opacity: 0; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { margin-top: 0; margin-left: 0; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { margin-top: 0; margin-left: 0; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { margin-top: 0; margin-left: 0; text-align: center; } }
+.mixing .title .title_text .container > h2:nth-of-type(2), .mixing .title .title_text .container > .h2:nth-of-type(2) { margin-top: 0; }
+.mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: 100%; }
+@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: 80%; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: auto; max-width: 100%; } }
 .mixing .container { width: 996px; margin: 0 auto; padding: 60px 16px 10px 16px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .container { padding-top: 45px; width: 100%; } }
-.mixing .container .item .item_title { font-family: 'Poppins', sans-serif; font-size: 34px; font-weight: bold; letter-spacing: 2.13px; text-align: justify; color: #dfff00; }
+.mixing .container .item { display: inline-block; position: relative; left: 100px; margin-left: 2%; opacity: 0; }
+@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .container .item { margin-left: 12%; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .mixing .container .item { left: 0; margin-left: 0; } }
+@media screen and (max-width: 768px) and (min-width: 0) { .mixing .container .item { left: 0; margin-left: 0; } }
+.mixing .container .item .item_title { font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: bold; letter-spacing: 2.13px; text-align: justify; color: #dfff00; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .container .item .item_title { font-size: 26px; font-weight: bold; line-height: 1.21; letter-spacing: normal; } }
-.mixing .container .item .item_text { font-family: 'Noto Sans TC', sans-serif; font-size: 22px; font-weight: 500; line-height: 2; text-align: justify; color: #fff; }
+.mixing .container .item .item_text { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: 500; line-height: 2; text-align: justify; color: #fff; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .container .item .item_text { font-size: 18px; line-height: 1.78; } }
 
-.elephant { padding: 30px 0; }
-.elephant .title .title_text > h2, .elephant .title .title_text > .h2 { display: flex; align-items: baseline; font-family: 'Noto Sans TC', sans-serif; font-size: 200px; font-weight: 900; letter-spacing: 6px; color: rgba(114, 112, 220, 0.1); }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { justify-content: center; font-size: 100px; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { justify-content: center; font-size: 100px; } }
-@media screen and (max-width: 450px) and (min-width: 376px) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { font-size: 50px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2, .elephant .title .title_text > .h2 { font-size: 48px; } }
-.elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-family: 'Lato', sans-serif; font-size: 210px; }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 150px; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 110px; } }
-@media screen and (max-width: 450px) and (min-width: 394px) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 60px; } }
-@media screen and (max-width: 393px) and (min-width: 376px) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 55px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h2 > span, .elephant .title .title_text > .h2 > span { font-size: 50px; } }
-.elephant .title .title_text > h2 > img, .elephant .title .title_text > .h2 > img { width: auto; max-width: 100%; }
-.elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-family: 'Noto Sans TC', sans-serif; font-size: 120px; font-weight: bold; letter-spacing: 5px; text-align: justify; color: rgba(114, 112, 220, 0.1); }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-size: 85px; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { font-size: 60px; text-align: center; } }
-@media screen and (max-width: 450px) and (min-width: 394px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { letter-spacing: 0.93px; font-size: 37px; } }
-@media screen and (max-width: 393px) and (min-width: 376px) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { letter-spacing: 0.93px; font-size: 35px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .elephant .title .title_text > h3, .elephant .title .title_text > .h3 { letter-spacing: 0.93px; font-size: 31px; } }
+.elephant { padding: 90px 0; }
+@media screen and (max-width: 450px) and (min-width: 0) { .elephant { padding: 30px 0; } }
+.elephant .title .title_text > h2 > img, .elephant .title .title_text > .h2 > img { width: 100%; }
+@media screen and (max-width: 450px) and (min-width: 0) { .elephant .title .title_text > h2 > img, .elephant .title .title_text > .h2 > img { width: auto; max-width: 100%; } }
 .elephant .content { position: relative; }
-.elephant .content .slick-items { position: relative; padding: 65px 40px; }
+.elephant .content .slick-items { position: relative; padding: 65px 40px; margin-top: -9%; opacity: 0; }
+@media screen and (max-width: 450px) and (min-width: 0) { .elephant .content .slick-items { margin-top: 0; } }
 .elephant .content .slick-items .slick-prev { width: auto; height: auto; font-size: 40px; left: 7px; }
 .elephant .content .slick-items .slick-next { width: auto; height: auto; font-size: 40px; right: 7px; }
 .elephant .content .slick-items .item { position: relative; display: flex; align-items: center; }
@@ -3406,83 +3395,86 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .elephant .content .modal_content_mobile .modal_effect_mobile.ph55 { background-color: #fca941; }
 .elephant .content .modal_content_mobile .modal_text_mobile { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; line-height: 1.63; letter-spacing: 0.89px; text-align: center; color: #636363; }
 
-.form { padding: 127px 110px; background-image: url(../img/BG_VIP_w.png); height: 100%; }
+.form { padding: 65px 55px; background-image: url(../img/BG_VIP_w.png); height: 100%; }
 @media screen and (max-width: 768px) and (min-width: 0) { .form { padding: 40px 20px; background-image: url(../img/BG_VIP.png); height: 100%; } }
-.form .container { padding-top: 80px; background-color: #e4f5fc; max-width: calc(100%); }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container { padding-top: 45px; } }
-.form .container .title .title_text { font-family: 'Poppins', sans-serif; font-size: 68px; font-weight: 600; letter-spacing: 1.53px; text-align: center; color: #5b5d63; }
-@media screen and (max-width: 450px) and (min-width: 376px) { .form .container .title .title_text { font-size: 32px; letter-spacing: 0.72px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .form .container .title .title_text { font-size: 30px; letter-spacing: 0.72px; } }
-.form .container .icon { margin-top: 40px; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .icon { margin-top: 33px; } }
-.form .container .icon picture { display: inline-block; }
-.form .container .text { margin-top: 100px; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .text { margin-top: 50px; } }
-.form .container .text > h3, .form .container .text > .h3 { font-family: 'Noto Sans TC', sans-serif; font-size: 48px; font-weight: 500; letter-spacing: 0.8px; text-align: center; color: #636363; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .text > h3, .form .container .text > .h3 { font-size: 24px; letter-spacing: 1px; } }
-.form .container .text > p { font-family: 'Noto Sans TC', sans-serif; font-size: 32px; letter-spacing: 0.53px; text-align: center; color: #636363; }
-.form .container .text > p:nth-of-type(1) { margin-bottom: 0; }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .form .container .text > p { font-size: 25px; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .form .container .text > p { font-size: 25px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .text > p { font-size: 17px; letter-spacing: 0.28px; } }
-.form .container .text > p > span { font-family: 'Poppins', sans-serif; font-size: 32px; letter-spacing: 0.53px; color: #636363; }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .form .container .text > p > span { font-size: 25px; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .form .container .text > p > span { font-size: 25px; } }
-.form .container .text_span { max-width: 816px; margin: 25px auto; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .text_span { max-width: auto; margin: 1rem auto; } }
-.form .container .text_span > span { font-family: 'Noto Sans TC', sans-serif; font-size: 24px; line-height: 1.5; letter-spacing: 0.86px; text-align: center; color: #85899f; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .text_span > span { font-size: 14px; line-height: 1.57; letter-spacing: 0.23px; } }
-.form .container .img_text { display: flex; justify-content: center; align-items: center; margin-top: 30px; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .img_text { margin-top: 0; } }
-.form .container .img_text .item { position: relative; display: flex; align-items: baseline; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .img_text .item { align-items: center; } }
-.form .container .img_text .item:nth-of-type(1) > p { text-align: right; margin-right: 30px; }
-@media screen and (max-width: 450px) and (min-width: 376px) { .form .container .img_text .item:nth-of-type(1) > p { margin-right: 10px; margin-bottom: 0; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .form .container .img_text .item:nth-of-type(1) > p { margin-right: 5px; margin-bottom: 0; } }
-.form .container .img_text .item:nth-of-type(2) > p { text-align: left; margin-left: 30px; }
-@media screen and (max-width: 450px) and (min-width: 376px) { .form .container .img_text .item:nth-of-type(2) > p { margin-left: 10px; margin-bottom: 0; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .form .container .img_text .item:nth-of-type(2) > p { margin-left: 5px; margin-bottom: 0; } }
-.form .container .img_text .item > p { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: 500; line-height: 1.44; letter-spacing: 0.3px; color: #85899f; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .img_text .item > p { font-size: 10px; line-height: 1.4; letter-spacing: 0.17px; } }
-.form .container .img_text > span { display: inline-block; margin: 0 50px; font-size: 72px; color: #ff7955; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .img_text > span { width: 18px; height: 18px; margin: 0 20px; font-size: 28px; } }
-.form .container .img_text picture { display: inline-block; }
-.form .container .fill_items { margin: 120px auto 35px auto; max-width: 1140px; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items { margin: 35px auto 0 auto; } }
-.form .container .fill_items > h2, .form .container .fill_items > .h2 { position: relative; font-size: 33px; font-weight: bold; letter-spacing: 2.47px; text-align: center; color: #ff8768; border-bottom: 1px solid #ff8768; line-height: 0.1em; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > h2, .form .container .fill_items > .h2 { font-size: 23.1px; letter-spacing: 1.73px; } }
-.form .container .fill_items > h2 > span, .form .container .fill_items > .h2 > span { background: #e4f5fc; padding: 0 30px; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > h2 > span, .form .container .fill_items > .h2 > span { padding: 0 10px; } }
-.form .container .fill_items > form { margin-top: 30px; padding: 0 10px; }
-.form .container .fill_items > form .input-box { margin: 1.5rem 0; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > form .input-box { margin: 0 0 1rem 0; } }
-.form .container .fill_items > form .input-box .row label { display: flex; justify-content: space-between; font-size: 26px; }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .form .container .fill_items > form .input-box .row label { font-size: 18px; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .form .container .fill_items > form .input-box .row label { font-size: 16px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > form .input-box .row label { font-size: 16px; } }
-.form .container .fill_items > form .input-box .row input { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 2.08px; text-align: justify; color: #0275c9; }
-.form .container .fill_items > form .input-box .row select { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 1.08px; text-align: justify; }
-.form .container .fill_items > form .input-box .row .form-select { padding-right: 1.25em; background-position: right 0.5rem center; }
-@media screen and (max-width: 375px) and (min-width: 0) { .form .container .fill_items > form .input-box .row .form-select { padding-right: 1em; background-position: right 0.1rem center; font-size: 14px; } }
-.form .container .fill_items > form .form-check-item .label { display: block; position: relative; padding-left: 55px; margin-bottom: 12px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; font-family: 'Noto Sans TC', sans-serif; font-size: 26px; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > form .form-check-item .label { padding-left: 35px; font-size: 14px; font-weight: 500; letter-spacing: 0.54px; } }
-.form .container .fill_items > form .form-check-item .label input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
-.form .container .fill_items > form .form-check-item .label input:checked ~ .checkmark::after { content: ''; display: inline-block; position: absolute; top: 5px; left: 5px; width: 29px; height: 29px; background-color: #ff8768; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > form .form-check-item .label input:checked ~ .checkmark::after { top: 2px; left: 2px; width: 19px; height: 19px; } }
-.form .container .fill_items > form .form-check-item .label img { width: 65px; height: 39px; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > form .form-check-item .label img { width: auto; height: auto; } }
-.form .container .fill_items > form .form-check-item .checkmark { position: absolute; top: 0; left: 0; height: 40px; width: 40px; border: solid 1px #ff8768; background-color: #fff; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .fill_items > form .form-check-item .checkmark { height: 25px; width: 25px; } }
-.form .container .fill_items > form .button { padding: 5px 0; width: 100%; max-width: 300px; max-height: 65px; border: 0; background-color: #ff8768; font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 0.7px; text-align: center; color: #dfff00; }
-.form .container .fill_items .notice { margin-top: 40px; }
-.form .container .fill_items .notice:nth-of-type(2) { margin-top: 0; }
-.form .container .fill_items .notice .title { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: 500; line-height: 1.63; letter-spacing: 0.73px; color: #f750c2; text-align: left; }
-.form .container .fill_items .notice p { font-size: 14px; line-height: 1.71; letter-spacing: 0.7px; color: #636363; text-align: left; }
-.form .container .fill_items .notice ol { margin-bottom: 0; padding-left: 16px; }
-.form .container .fill_items .notice ol li { font-size: 14px; line-height: 1.71; letter-spacing: 0.7px; color: #636363; text-align: left; }
-.form .container .ShinKong { padding: 34px 0; }
-.form .container .ShinKong > img { width: 150px; height: 88px; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form .container .ShinKong > img { width: 100px; height: 50px; } }
+.form > .container { padding-top: 80px; background-color: #e4f5fc; max-width: calc(100%); }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container { padding-top: 45px; } }
+.form > .container .title_box { opacity: 0; }
+.form > .container .title_box h2 > img, .form > .container .title_box .h2 > img { width: 30%; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box h2 > img, .form > .container .title_box .h2 > img { width: 90%; } }
+.form > .container .title_box .icon { margin-top: 40px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .icon { margin-top: 33px; } }
+.form > .container .title_box .icon picture { display: inline-block; }
+.form > .container .text { margin-top: 70px; opacity: 0; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .text { margin-top: 50px; } }
+.form > .container .text > h3, .form > .container .text > .h3 { font-family: 'Noto Sans TC', sans-serif; font-size: 32px; font-weight: 500; letter-spacing: 0.8px; text-align: center; color: #636363; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .text > h3, .form > .container .text > .h3 { font-size: 24px; letter-spacing: 1px; } }
+.form > .container .text > p { font-family: 'Noto Sans TC', sans-serif; font-size: 24px; letter-spacing: 0.53px; text-align: center; color: #636363; }
+.form > .container .text > p:nth-of-type(1) { margin-bottom: 0; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .form > .container .text > p { font-size: 25px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .text > p { font-size: 25px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .text > p { font-size: 17px; letter-spacing: 0.28px; } }
+.form > .container .text > p > span { font-family: 'Noto Sans TC', sans-serif; font-size: 24px; letter-spacing: 0.53px; color: #636363; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .form > .container .text > p > span { font-size: 25px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .text > p > span { font-size: 25px; } }
+.form > .container .img_text { display: flex; justify-content: center; align-items: center; margin-top: 30px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .img_text { margin-top: 0; } }
+.form > .container .img_text .item { position: relative; display: flex; align-items: baseline; opacity: 0; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .img_text .item { align-items: center; } }
+.form > .container .img_text .item:nth-of-type(1) > p { text-align: right; margin-right: 30px; }
+@media screen and (max-width: 450px) and (min-width: 376px) { .form > .container .img_text .item:nth-of-type(1) > p { margin-right: 10px; margin-bottom: 0; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .form > .container .img_text .item:nth-of-type(1) > p { margin-right: 5px; margin-bottom: 0; } }
+.form > .container .img_text .item:nth-of-type(2) > p { text-align: left; margin-left: 30px; }
+@media screen and (max-width: 450px) and (min-width: 376px) { .form > .container .img_text .item:nth-of-type(2) > p { margin-left: 10px; margin-bottom: 0; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .form > .container .img_text .item:nth-of-type(2) > p { margin-left: 5px; margin-bottom: 0; } }
+.form > .container .img_text .item > p { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: 500; line-height: 1.44; letter-spacing: 0.3px; color: #85899f; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .img_text .item > p { font-size: 10px; line-height: 1.4; letter-spacing: 0.17px; } }
+.form > .container .img_text > span { display: inline-block; margin: 0 50px; font-size: 72px; color: #ff7955; opacity: 0; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .img_text > span { width: 18px; height: 18px; margin: 0 20px; font-size: 28px; } }
+.form > .container .img_text picture { display: inline-block; }
+.form > .container .img_text picture > img { width: 80%; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .img_text picture > img { width: 100%; } }
+.form > .container .text_span { max-width: 816px; margin: 25px auto; padding: 0 105px; opacity: 0; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .text_span { padding: 0 35px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .text_span { padding: 0; max-width: auto; margin: 1rem auto; } }
+.form > .container .text_span > span { font-family: 'Noto Sans TC', sans-serif; font-size: 20px; line-height: 1.5; letter-spacing: 0.86px; text-align: center; color: #85899f; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .text_span > span { font-size: 14px; line-height: 1.57; letter-spacing: 0.23px; } }
+.form > .container .fill_items { margin: 100px auto 35px auto; max-width: 900px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items { margin: 35px auto 0 auto; } }
+.form > .container .fill_items > h2, .form > .container .fill_items > .h2 { position: relative; font-size: 30px; font-weight: bold; letter-spacing: 2.47px; text-align: center; color: #ff8768; border-bottom: 1px solid #ff8768; line-height: 0.1em; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > h2, .form > .container .fill_items > .h2 { font-size: 23.1px; letter-spacing: 1.73px; } }
+.form > .container .fill_items > h2 > span, .form > .container .fill_items > .h2 > span { background: #e4f5fc; padding: 0 30px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > h2 > span, .form > .container .fill_items > .h2 > span { padding: 0 10px; } }
+.form > .container .fill_items > form { margin-top: 30px; padding: 0 10px; }
+.form > .container .fill_items > form .input-box { margin: 1.5rem 0; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .input-box { margin: 0 0 1rem 0; } }
+.form > .container .fill_items > form .input-box .row label { display: flex; justify-content: space-between; font-size: 20px; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .form > .container .fill_items > form .input-box .row label { font-size: 18px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .fill_items > form .input-box .row label { font-size: 16px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .input-box .row label { font-size: 16px; } }
+.form > .container .fill_items > form .input-box .row input { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 2.08px; text-align: justify; color: #0275c9; }
+.form > .container .fill_items > form .input-box .row select { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 1.08px; text-align: justify; }
+.form > .container .fill_items > form .input-box .row .form-select { padding-right: 1.25em; background-position: right 0.5rem center; }
+@media screen and (max-width: 375px) and (min-width: 0) { .form > .container .fill_items > form .input-box .row .form-select { padding-right: 1em; background-position: right 0.1rem center; font-size: 14px; } }
+.form > .container .fill_items > form .form-check-item .label { display: block; position: relative; padding-left: 45px; margin-bottom: 12px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; font-family: 'Noto Sans TC', sans-serif; font-size: 20px; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .label { padding-left: 35px; font-size: 14px; font-weight: 500; letter-spacing: 0.54px; } }
+.form > .container .fill_items > form .form-check-item .label input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+.form > .container .fill_items > form .form-check-item .label input:checked ~ .checkmark::after { content: ''; display: inline-block; position: absolute; top: 5px; left: 5px; width: 19px; height: 19px; background-color: #ff8768; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .label input:checked ~ .checkmark::after { top: 2px; left: 2px; width: 19px; height: 19px; } }
+.form > .container .fill_items > form .form-check-item .label img { width: 65px; height: 39px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .label img { width: auto; height: auto; } }
+.form > .container .fill_items > form .form-check-item .checkmark { position: absolute; top: 0; left: 0; height: 30px; width: 30px; border: solid 1px #ff8768; background-color: #fff; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .checkmark { height: 25px; width: 25px; } }
+.form > .container .fill_items > form .button { padding: 5px 0; width: 100%; max-width: 250px; max-height: 65px; border: 0; background-color: #ff8768; font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 0.7px; text-align: center; color: #dfff00; }
+.form > .container .fill_items .notice { margin-top: 40px; }
+.form > .container .fill_items .notice:nth-of-type(2) { margin-top: 0; }
+.form > .container .fill_items .notice .title { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: 500; line-height: 1.63; letter-spacing: 0.73px; color: #f750c2; text-align: left; }
+.form > .container .fill_items .notice p { font-size: 14px; line-height: 1.71; letter-spacing: 0.7px; color: #636363; text-align: left; }
+.form > .container .fill_items .notice ol { margin-bottom: 0; padding-left: 16px; }
+.form > .container .fill_items .notice ol li { font-size: 14px; line-height: 1.71; letter-spacing: 0.7px; color: #636363; text-align: left; }
+.form > .container .ShinKong { padding: 34px 0; }
+.form > .container .ShinKong > img { width: 70px; height: 40px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .ShinKong > img { width: 42px; height: 24px; } }
 
 .marquee { animation: marquee 10s linear both infinite; }
 
@@ -3495,6 +3487,8 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .slide-right { animation: slide-right 1s cubic-bezier(0.65, 0, 0.35, 1) both; }
 
 .slide-right-2 { animation: slide-right-2 1s cubic-bezier(0.65, 0, 0.35, 1) both; }
+
+.slide-right-3 { animation: slide-right-3 1s cubic-bezier(0.65, 0, 0.35, 1) both; }
 
 .slide-left { animation: slide-left 1s cubic-bezier(0.65, 0, 0.35, 1) both; }
 
@@ -3538,5 +3532,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @keyframes slide-right-2 { 0% { opacity: 0; transform: translateX(-100%); }
   99% { opacity: 1; z-index: 1; transform: translateX(100%); }
   100% { opacity: 0; z-index: 0; } }
+@keyframes slide-right-3 { from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0); } }
 @keyframes slide-left { from { opacity: 0; transform: translateX(100%); }
   to { opacity: 1; transform: translateX(0); } }
