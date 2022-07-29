@@ -30,54 +30,68 @@ header {
 
 		@include range-width(0, 450px) {
 			padding: 15px 20px;
+			// justify-content: space-between;
 		}
 		
+		.ShinKong_img {
+			padding-right: 1rem;
+			> img {
+				width: 112px;
+				height: 64px;
 
-		> img {
-			width: 200px;
-			height: 100px;
+				@include range-width(0, 451px) {
+					width: 42px;
+					height: 24px;
+				}
+				
+			}
+		}
+		
+		.text_box {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
 			@include range-width(0, 451px) {
-				width: 42px;
-				height: 24px;
-			}
-			
-		}
-
-		.text {
-			font-family: 'NotoSans TC', sans-serif;
-			font-size: 30px;
-			letter-spacing: 2.4px;
-			color: #777575;
-
-			@include range-width(769px, 1025px) {
-				font-size: 20px;
+				width: auto;
 			}
 
-			@include range-width(451px, 769px) {
-				font-size: 26px;				
-			}
-
-			@include range-width(402px, 451px) {
-				margin-right: 30px;
-				font-size: 18px;
-				font-weight: 500;
-				letter-spacing: 1.11px;
-			}
-
-			@include range-width(376px, 402px) {
-				margin-right: 30px;
-				font-size: 17px;
-				font-weight: 500;
-				letter-spacing: 1.11px;
-			}
-
-			@include range-width(0, 376px) {
-				margin-right: 30px;
-				font-size: 16px;
-				font-weight: 500;
-				letter-spacing: 1.11px;
+			.text {
+				font-family: 'NotoSans TC', sans-serif;
+				font-size: 30px;
+				letter-spacing: 2.4px;
+				color: #777575;
+	
+				@include range-width(769px, 1025px) {
+					font-size: 20px;
+				}
+	
+				@include range-width(451px, 769px) {
+					font-size: 26px;				
+				}
+	
+				@include range-width(402px, 451px) {
+					margin-right: 30px;
+					font-size: 18px;
+					font-weight: 500;
+					letter-spacing: 1.11px;
+				}
+	
+				@include range-width(376px, 402px) {
+					margin-right: 30px;
+					font-size: 17px;
+					font-weight: 500;
+					letter-spacing: 1.11px;
+				}
+	
+				@include range-width(0, 376px) {
+					margin-right: 30px;
+					font-size: 16px;
+					font-weight: 500;
+					letter-spacing: 1.11px;
+				}
 			}
 		}
+		
 	}
 }
 
@@ -118,6 +132,7 @@ header {
 
 			> img {
 				width: 310px;
+				opacity: 0;
 
 				@include range-width(1200px, 1441px) {
 					width: 310px;
@@ -138,6 +153,7 @@ header {
 			}
 
 			.text {
+				opacity: 0;
 				> p {
 					margin: 1.5rem .5rem;
 					font-family: 'NotoSans TC', sans-serif;
@@ -148,7 +164,7 @@ header {
 					color: #f12e9c;
 
 					@include range-width(1200px, 1441px) {
-						font-size: 65px;
+						font-size: 60px;
 					}
 
 					@include range-width(769px, 1025px) {
@@ -210,17 +226,21 @@ header {
 
 	.nav {
 		.nav-item {
-			width: 230px;
+			width: 200px;
 
 			@include range-width(0, 451px) {
 				flex: 1;
 				width: auto;
 			}
 
+			&:nth-of-type(2) {
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;
+			}
 			span {
 				font-family: 'NotoSans TC', sans-serif;
 				font-size: 28px;
-				font-weight: 500;
+				// font-weight: 500;
 				letter-spacing: 1.75px;
 				text-align: center;
 				color: #b695c2;
@@ -235,89 +255,10 @@ header {
 					// opacity: 1;
 					color: #7e1fd2;
 					background-color: #fff;
+					font-weight: bolder;
 				}
 			}
 		}
-	}
-}
-
-.slide-up {
-	animation: slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both;
-}
-
-.slide-up-2 {
-	animation: slide-up-2 1s cubic-bezier(0.65, 0, 0.35, 1) both;
-}
-
-.slide-right {
-	animation: slide-right 1s cubic-bezier(0.65, 0, 0.35, 1) both;
-}
-
-.slide-left {
-	animation: slide-left 1s cubic-bezier(0.65, 0, 0.35, 1) both;
-	animation-delay: 1s;
-}
-
-.delay-1 {
-	animation-delay: 1s;	
-}
-.delay-15 {
-	animation-delay: 1.5s;	
-}
-.delay-2 {
-	animation-delay: 2s;	
-}
-.delay-25 {
-	animation-delay: 2.5s;	
-}
-.delay-3 {
-	animation-delay: 3s;	
-}
-.delay-35 {
-	animation-delay: 3.5s;	
-}
-
-@keyframes slide-up {
-	from {
-		opacity: 0;
-		transform: translateY(100px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes slide-up-2 {
-	from {
-		opacity: 0;
-		transform: translateY(100px);
-	}
-	to {
-		opacity: 0.66;
-		transform: translateY(0);
-	}
-}
-
-@keyframes slide-right {
-	from {
-		opacity: 0;
-		transform: translateX(-100%);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-
-@keyframes slide-left {
-	from {
-		opacity: 0;
-		transform: translateX(100%);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0);
 	}
 }
 
@@ -347,7 +288,7 @@ header {
 			width: 50%;
 			position: relative;
 			left: 0;
-			opacity: 0;
+			overflow: hidden;
 
 			@include range-width(451px, 769px) {
 				width: auto;
@@ -369,12 +310,21 @@ header {
 				left: -22px;
 			}
 
+			.background_color {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: #F449B7;
+				opacity: 0;
+			}
 			picture {
 				display: inline-block;
 
 				img {
 					width: 100%;
-
+					opacity: 0;
 					@include range-width(0, 376px) {
 						img {
 							max-width: 99%;
@@ -387,7 +337,6 @@ header {
 		.container {
 			padding: 0 46px;
 			width: 50%;
-			opacity: 0;
 
 			@include range-width(451px, 769px) {
 				width: auto;
@@ -406,9 +355,11 @@ header {
 				letter-spacing: 0.8px;
 				text-align: justify;
 				color: #4a4a4a;
+				opacity: 0;
 
 				@include range-width(0, 451px) {
 					font-size: 16px;
+					font-weight: bolder;
 					line-height: 1.17;
 					letter-spacing: 1.2px;	
 				}
@@ -416,11 +367,12 @@ header {
 
 			> p {
 				font-family: 'Noto Sans TC', sans-serif;
-				font-size: 21px;
+				font-size: 18px;
 				line-height: 1.91;
 				letter-spacing: 1.2px;
 				text-align: justify;
 				color: #5b5d63;
+				opacity: 0;
 
 				@include range-width(769px, 1025px) {
 					font-size: 16px;
@@ -431,7 +383,7 @@ header {
 				}	
 
 				@include range-width(0, 451px) {
-					font-size: 16px;
+					font-size: 14px;
 					line-height: 1.75;
 					letter-spacing: 0.8px;	
 				}
@@ -439,6 +391,7 @@ header {
 
 			.sign_item {
 				margin-top: 55px;				
+				opacity: 0;
 
 				@include range-width(769px, 1025px) {
 					margin-top: 20px;
@@ -446,6 +399,16 @@ header {
 
 				@include range-width(0, 451px) {
 					margin-top: 10px;
+				}
+
+				> img {
+					width: 244px;
+					height: 101px;
+
+					@include range-width(0, 451px) {
+						width: 145px;
+						height: 60px;
+					}
 				}
 
 				> p {
@@ -470,6 +433,7 @@ header {
 
 	.bo_s2 {
 		background-color: #ffef02;
+		background-size: contain;
 		background-image: url(../img/BG_wave.svg);
 
 		@include range-width(0, 451px) {
@@ -487,12 +451,17 @@ header {
 
 			.name_origin {
 				position: relative;
+				margin-left: 134px;
 				padding: 50px 0;
 				text-align: left;
-				opacity: 0;
 				z-index: 1;
+
+				@include range-width(0, 451px) {
+					margin-left: 0;
+				}
 	
 				> h3 {
+					opacity: 0;
 					> span {
 						position: relative;
 						right: 0;
@@ -513,6 +482,7 @@ header {
 						@include range-width(0, 451px) {
 							right: 30px;
 							font-size: 20px;
+							font-weight: bolder;
 							line-height: 2.38;
 							letter-spacing: 1.43px;
 						}
@@ -521,11 +491,12 @@ header {
 	
 				> p {
 					font-family: 'Noto Sans TC', sans-serif;
-					font-size: 21px;
+					font-size: 18px;
 					font-weight: 500;
 					line-height: 2;
 					letter-spacing: 1px;
 					text-align: justify;
+					opacity: 0;
 					color: #636363;
 
 					@include range-width(769px, 1025px) {
@@ -533,9 +504,9 @@ header {
 					}
 
 					@include range-width(0, 451px) {
-						font-size: 16px;	
+						font-size: 14px;	
 						line-height: 1.75;
-						letter-spacing: 0.8px;
+						letter-spacing: .9px;
 					}
 					
 				}
@@ -567,8 +538,8 @@ header {
 
 			.background_6 {
 				position: absolute;
-				top: 50px;
-				left: 0;
+				top: 30px;
+				left: -40px;
 				z-index: -1;
 
 				@include range-width(0, 451px) {
@@ -578,7 +549,7 @@ header {
 
 				> img {
 					width: 700px;
-					height: 800px;
+					height: 750px;
 
 					@include range-width(0, 451px) {
 						width: 320px;
@@ -590,12 +561,12 @@ header {
 			.title {
 				margin: 35px 0 50px 0;
 				font-family: 'NotoSans TC', sans-serif;
-				font-size: 90px;
+				font-size: 70px;
 				font-weight: bold;
 				letter-spacing: 20px;
 				opacity: 0;
 				color: #ff25ae;	
-				text-align: justify;
+				text-align: center;
 
 				@include range-width(451px, 769px) {
 					font-size: 60px;
@@ -645,13 +616,13 @@ header {
 				}
 	
 				.item_title {
-					margin: 30px 0;
+					margin: 0 0 30px 0;
 					font-family: 'NotoSans TC', sans-serif;
-					font-size: 39px;
+					font-size: 32px;
 					font-weight: bold;
 					letter-spacing: 1.6px;
 					color: #ff25ae;
-					text-align: left;
+					text-align: center;
 					opacity: 0;
 
 					@include range-width(451px, 769px) {
@@ -669,7 +640,7 @@ header {
 	
 					@include range-width(0, 376px) {
 						margin: 0 0 8px 0;
-						font-size: 22px;
+						font-size: 19px;
 						// line-height: 1.45;
 						letter-spacing: 1.1px;
 						text-align: center;
@@ -677,8 +648,9 @@ header {
 				}
 				
 				.item_text {
+					padding: 0 185px;
 					font-family: 'NotoSans TC', sans-serif;
-					font-size: 29px;
+					font-size: 20px;
 					font-weight: 500;
 					line-height: 1.89;
 					letter-spacing: 1.4px;
@@ -687,18 +659,21 @@ header {
 					opacity: 0;
 
 					@include range-width(451px, 769px) {
+						padding: 0;
 						font-size: 20px;	
 					}
 
 					@include range-width(394px, 451px) {
+						padding: 0;
 						font-size: 17px;
 						letter-spacing: 2.2px;
 						line-height: 1.76;
 					}
 
 					@include range-width(0, 394px) {
-						font-size: 17px;	
-						letter-spacing: 2.2px;
+						padding: 0;
+						font-size: 15px;	
+						letter-spacing: 1.5px;
 						line-height: 1.76;
 					}
 
@@ -801,7 +776,7 @@ header {
 						p {
 							position: relative;
 							margin: .5rem 0 .5rem 1rem;
-							font-size: 28px;
+							font-size: 20px;
 							font-weight: 500;
 							color: #717076;
 
@@ -858,158 +833,180 @@ header {
 	.sf_s1 {
 		padding: 15px 0 30px 0;
 		background-color: #f6d6f7;
-
-		.title {
-			font-size: 245px;
-			font-weight: 600;
-			// opacity: 0.66;
-			opacity: 0;
-			line-height: 0.81;
-			color: #ffebfd;
-			text-align: left;
-
-			@include range-width(769px, 1025px) {
-				font-size: 180px ;
-			}	
-
-			@include range-width(451px, 769px) {
-				font-size: 135px;
-			}
-
-			@include range-width(376px, 451px) {
-				font-size: 70px;
-				line-height: 0.87;
-			}	
-
-			@include range-width(0, 376px) {
-				font-size: 65px;
-				line-height: 0.87;
-			}
-		}
-
-		.item {
-			display: flex;
-			margin-top: 70px;
-			opacity: 0;
-
-			@include range-width(451px, 769px) {
-				flex-direction: column;	
-				margin-top: 0;
-			}
+		.container {
+			max-width: 1300;
 
 			@include range-width(0, 451px) {
-				flex-direction: column;
-				margin-top: 0;
+				padding: 0 1rem;
 			}
 
-			h3.item_title {
-				width: 50%;
-				font-family: 'Noto Sans TC', sans-serif;
-				font-size: 90px;
-				font-weight: bold;
-				letter-spacing: 8.08px;
-				color: #dcfc25;
-				text-shadow: 2px 2px 0 #F58663, 4px 4px 0 #F58663;
+			.title {
+				font-size: 245px;
+				font-weight: 600;
+				// opacity: 0.66;
+				opacity: 0;
+				line-height: 0.81;
+				color: #ffebfd;
 				text-align: left;
-
+	
 				@include range-width(769px, 1025px) {
+					font-size: 180px ;
+				}	
+	
+				@include range-width(451px, 769px) {
+					font-size: 135px;
+				}
+	
+				@include range-width(376px, 451px) {
+					font-size: 70px;
+					line-height: 0.87;
+				}	
+	
+				@include range-width(0, 376px) {
 					font-size: 65px;
-				}	
-
-				@include range-width(451px, 769px) {
-					width: auto;
+					line-height: 0.87;
 				}
 
-				@include range-width(0, 451px) {
-					margin: 5px 0 16px 0;
-					width: auto;
-					font-size: 38px;
-					font-weight: 900;
-					letter-spacing: 2.87px;
-				}	
-			}
-			
-			.item_content {
-				width: 50%;
-
-				@include range-width(451px, 769px) {
-					width: auto;		
-				}
-
-				@include range-width(0, 451px) {
-					width: auto;
-				}
-
-				h4 {
-					margin-top: 15px;
-					font-family: 'Noto Sans TC', sans-serif;
-					font-size: 32px;
-					font-weight: bold;
-					line-height: 1.38;
-					letter-spacing: 1px;
-					text-align: justify;
-					color: #4a4a4a;
-
-					@include range-width(769px, 1025px) {
-						font-size: 26px;
-					}	
+				> img {
+					width: 100%;
 
 					@include range-width(0, 451px) {
-						margin-top: 0;
-						font-size: 20px;
-						line-height: normal;
-						letter-spacing: 1px;	
+						width: 100%;
 					}
-		
-					> span {
-						font-family: 'Poppins', sans-serif;
-						font-size: 32px;
+					
+				}
+			}
+	
+			.item {
+				display: flex;
+				margin-top: 40px;
+				opacity: 0;
+	
+				@include range-width(451px, 769px) {
+					flex-direction: column;	
+					margin-top: 0;
+				}
+	
+				@include range-width(0, 451px) {
+					flex-direction: column;
+					margin-top: 0;
+				}
+	
+				h3.item_title {
+					width: 50%;
+					font-family: 'Noto Sans TC', sans-serif;
+					font-size: 90px;
+					font-weight: bold;
+					letter-spacing: 8.08px;
+					color: #dcfc25;
+					text-shadow: 2px 2px 0 #F58663, 4px 4px 0 #F58663;
+					text-align: left;
+	
+					@include range-width(769px, 1025px) {
+						font-size: 65px;
+					}	
+	
+					@include range-width(451px, 769px) {
+						width: auto;
+					}
+	
+					@include range-width(0, 451px) {
+						margin: 5px 0 16px 0;
+						width: auto;
+						font-size: 38px;
+						font-weight: 900;
+						letter-spacing: 2.87px;
+					}	
+
+					> img {
+						width: 90%;
+
+						@include range-width(0, 451px) {
+							width: auto;
+						}
+					}
+				}
+				
+				.item_content {
+					width: 50%;
+	
+					@include range-width(451px, 769px) {
+						width: auto;		
+					}
+	
+					@include range-width(0, 451px) {
+						width: auto;
+					}
+	
+					h4 {
+						margin-top: 25px;
+						font-family: 'Noto Sans TC', sans-serif;
+						font-size: 28px;
 						font-weight: bold;
 						line-height: 1.38;
 						letter-spacing: 1px;
 						text-align: justify;
 						color: #4a4a4a;
-						vertical-align: baseline;
-
+	
 						@include range-width(769px, 1025px) {
 							font-size: 26px;
 						}	
-
+	
 						@include range-width(0, 451px) {
-							font-size: 22px;
-							font-weight: 600;
+							margin-top: 0;
+							font-size: 20px;
 							line-height: normal;
-							letter-spacing: 0.6px;
+							letter-spacing: 1px;	
+						}
+			
+						> span {
+							font-family: 'Poppins', sans-serif;
+							font-size: 28px;
+							font-weight: bold;
+							line-height: 1.38;
+							letter-spacing: 1px;
+							text-align: justify;
+							color: #4a4a4a;
+							vertical-align: baseline;
+	
+							@include range-width(769px, 1025px) {
+								font-size: 26px;
+							}	
+	
+							@include range-width(0, 451px) {
+								font-size: 22px;
+								font-weight: 600;
+								line-height: normal;
+								letter-spacing: 0.6px;
+							}	
+						}
+					}
+			
+					p {
+						font-family: 'Noto Sans TC', sans-serif;
+						font-size: 19px;
+						line-height: 1.85;
+						letter-spacing: 1px;
+						text-align: justify;
+						color: #4a4a4a;
+	
+						@include range-width(769px, 1025px) {
+							font-size: 18px;
 						}	
-					}
-				}
-		
-				p {
-					font-family: 'Noto Sans TC', sans-serif;
-					font-size: 22px;
-					line-height: 1.85;
-					letter-spacing: 1px;
-					text-align: justify;
-					color: #4a4a4a;
-
-					@include range-width(769px, 1025px) {
-						font-size: 18px;
-					}	
-
-					@include range-width(451px, 769px) {
-						font-size: 21px;	
-					}
-
-					@include range-width(0, 451px) {
-						font-size: 16px;
-						line-height: 1.75;
-						letter-spacing: 0.8px;	
+	
+						@include range-width(451px, 769px) {
+							font-size: 21px;	
+						}
+	
+						@include range-width(0, 451px) {
+							font-size: 16px;
+							line-height: 1.75;
+							letter-spacing: 0.8px;	
+						}
 					}
 				}
 			}
-			
 		}
-		
 	}
 
 	.sf_s2 {
@@ -1019,6 +1016,10 @@ header {
 
 		.container {
 			padding: 10px .75rem;
+
+			@include range-width(0, 451px) {
+				padding: 10px 1rem;	
+			}
 
 			h2 {
 				font-family: 'Noto Sans TC', sans-serif;
@@ -1042,12 +1043,13 @@ header {
 				}
 
 				> img {
-					width: 100%;
-					max-width: 1140px;
+					width: 80%;
+					// max-width: 1140px;
 
 					@include range-width(394px, 451px) {
 						max-width: 100%;
 					}
+
 					@include range-width(0, 394px) {
 						max-width: 99%;
 					}
@@ -1074,13 +1076,14 @@ header {
 					@include range-width(0, 451px) {
 						margin-right: 0;
 						width: 360px;
+						max-width: 100%;
 					}
 	
 					h3 {
 						margin: 15px 0;
 						font-family: 'Noto Sans TC', sans-serif;
 						font-size: 24px;
-						font-weight: 500;
+						font-weight: bold;
 						text-align: center;
 						color: #ff7679;
 
@@ -1104,7 +1107,7 @@ header {
 						margin: 15px 0;
 						font-family: 'Noto Sans TC', sans-serif;
 						font-size: 24px;
-						font-weight: 500;
+						font-weight: bold;
 						text-align: center;
 						color: #ff7679;
 
@@ -1129,7 +1132,7 @@ header {
 	.title {
 		padding: 50px 0 0 0;
 		background-image: linear-gradient(-45deg, #e3f2fa 8%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 58%, #ffffff 58%, #ffffff 100%);
-		background-size: 20px 20px;
+		background-size: 25px 25px;
 
 		@include range-width(0, 451px) {
 			padding: 50px 0;
@@ -1145,7 +1148,7 @@ header {
 					width: 100%;
 
 					@include range-width(0, 376px) {
-						max-width: 99%;
+						max-width: 90%;
 					}
 				}
 				
@@ -1173,87 +1176,98 @@ header {
 			}
 
 
-
-			> h2 {
-				font-family: 'Poppins', sans-serif;
-				font-size: 110px;
-				font-weight: 500;
-				line-height: 1.15;
-				letter-spacing: 4px;
-				color: #bde2f5;
-				text-align: left;
-
-				@include range-width(451px, 769px) {
-					font-size: 100px;	
+			.container {
+				@include range-width(0, 451px) {
+					padding: 0 1rem;
 				}
 
-				@include range-width(394px, 451px) {
-					left: unset;
-					bottom: unset;
-					display: block;
-					margin-left: 12px;
-					font-size: 58px;
-					line-height: 1.14;
-					letter-spacing: .7px;
+				> h2 {
+					font-family: 'Poppins', sans-serif;
+					font-size: 110px;
+					font-weight: 500;
+					line-height: 1.15;
+					letter-spacing: 4px;
+					color: #bde2f5;
 					text-align: left;
-				}
-
-				@include range-width(0, 394px) {
-					left: unset;
-					bottom: unset;
-					display: block;
-					margin-left: 12px;
-					font-size: 50px;
-					line-height: 1.14;
-					letter-spacing: .7px;
-					text-align: left;
-				}
-
-				&:nth-of-type(2) {
-					margin-top: 34px;
-					font-size: 86px;
-					font-weight: bold;
-
-
+	
+					&:nth-of-type(2) {
+						margin-top: 34px;
+						font-size: 86px;
+						font-weight: bold;
+	
+	
+						@include range-width(451px, 769px) {
+							font-size: 78px;			
+						}
+	
+						@include range-width(394px, 451px) {
+							display: block;
+							margin-top: 1rem;
+							// margin-left: 12px;
+							font-size: 43px;	
+							line-height: 1.33;
+							letter-spacing: 1.6px;
+						}
+	
+						@include range-width(376px, 394px) {
+							display: block;
+							margin-top: 1rem;
+							// margin-left: 12px;
+							font-size: 39px;	
+							line-height: 1.33;
+							letter-spacing: 1.6px;
+						}
+	
+						@include range-width(0, 376px) {
+							display: block;
+							margin-top: 1rem;
+							// margin-left: 12px;
+							font-size: 39px;
+							line-height: 1.33;
+							letter-spacing: 1.6px;
+						}
+					}
+	
 					@include range-width(451px, 769px) {
-						font-size: 78px;			
+						font-size: 100px;	
 					}
-
+	
 					@include range-width(394px, 451px) {
+						left: unset;
+						bottom: unset;
 						display: block;
-						margin-top: 1rem;
-						margin-left: 12px;
-						font-size: 43px;	
-						line-height: 1.33;
-						letter-spacing: 1.6px;
+						// margin-left: 12px;
+						font-size: 58px;
+						line-height: 1.14;
+						letter-spacing: .7px;
+						text-align: left;
 					}
-
-					@include range-width(376px, 394px) {
+	
+					@include range-width(0, 394px) {
+						left: unset;
+						bottom: unset;
 						display: block;
-						margin-top: 1rem;
-						margin-left: 12px;
-						font-size: 39px;	
-						line-height: 1.33;
-						letter-spacing: 1.6px;
+						// margin-left: 12px;
+						font-size: 50px;
+						line-height: 1.14;
+						letter-spacing: .7px;
+						text-align: left;
 					}
-
-					@include range-width(0, 376px) {
-						display: block;
-						margin-top: 1rem;
-						margin-left: 12px;
-						font-size: 39px;
-						line-height: 1.33;
-						letter-spacing: 1.6px;
+	
+					> img {
+						width: auto;
+						max-width: 100%;
 					}
 				}
 			}
+			
 		}
 	}
 
 	.container {
 		width: 996px;
 		margin: 0 auto;
-		padding: 60px 0 10px 0;
+		padding: 60px 16px 10px 16px;
 
 		@include range-width(0, 451px) {
 			padding-top: 45px;
@@ -1261,7 +1275,7 @@ header {
 		}
 
 		.item {
-			padding: 0 15px;
+			// padding: 0 16px;
 
 			.item_title {
 				font-family: 'Poppins', sans-serif;
@@ -1272,8 +1286,8 @@ header {
 				color: #dfff00;
 
 				@include range-width(0, 451px) {
-					font-size: 28px;	
-					font-weight: 600;
+					font-size: 26px;	
+					font-weight: bold;
 					line-height: 1.21;
 					letter-spacing: normal;
 				}
@@ -1353,6 +1367,11 @@ header {
 					@include range-width(0, 376px) {
 						font-size: 50px;
 					}
+				}
+
+				> img {
+					width: auto;
+					max-width: 100%;
 				}
 			}
 
@@ -1442,12 +1461,17 @@ header {
 						width: 100%;
 						
 						> img {
-							width: 100%;
+							width: auto;
+							max-width: 100%;
 						}
 						.btn_more {
 							position: absolute;
 							right: 0;
 							bottom: 0;
+
+							@include range-width(0, 451px) {
+								right: 1px;
+							}
 	
 							.btn {
 								outline: none;
@@ -2214,5 +2238,176 @@ header {
 				}
 			}
 		}
+	}
+}
+
+.marquee {
+	animation: marquee 10s linear both infinite;	
+}
+.fade-in {
+	animation: fade-in 1s cubic-bezier(0.65, 0, 0.35, 1) both;	
+}
+
+.slide-up {
+	animation: slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.slide-up-2 {
+	animation: slide-up-2 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.slide-right {
+	animation: slide-right 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.slide-right-2 {
+	animation: slide-right-2 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.slide-left {
+	animation: slide-left 1s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+.delay-0 {
+	animation-delay: .8s;	
+}
+
+.delay-1 {
+	animation-delay: 1s;	
+}
+
+.delay-15 {
+	animation-delay: 1.5s;	
+}
+
+.delay-2 {
+	animation-delay: 2s;	
+}
+
+.delay-25 {
+	animation-delay: 2.5s;	
+}
+
+.delay-3 {
+	animation-delay: 3s;	
+}
+
+.delay-35 {
+	animation-delay: 3.5s;	
+}
+
+.delay-4 {
+	animation-delay: 4s;	
+}
+
+.delay-45 {
+	animation-delay: 4.5s;	
+}
+
+.delay-5 {
+	animation-delay: 5s;	
+}
+
+.delay-55 {
+	animation-delay: 5.5s;	
+}
+
+.delay-6 {
+	animation-delay: 6s;	
+}
+
+.delay-65 {
+	animation-delay: 6.5s;	
+}
+
+@keyframes marquee {
+	from{
+	  transform: translateX(100%);
+	}  
+	to {
+		transform: translateX(-100%);
+	}
+  }
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slide-up {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slide-up-2 {
+	from {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to {
+		opacity: 0.66;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slide-right {
+	// from {
+	// 	opacity: 0;
+	// 	transform: translateX(-100%);
+	// }
+	// to {
+	// 	opacity: 1;
+	// 	transform: translateX(0);
+	// }
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slide-right-2 {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	99% {
+		// opacity: 1;
+		// transform: translateX(0);
+		opacity: 1;
+		z-index: 1;
+		transform: translateX(100%);
+	}
+
+	100% {
+		opacity: 0;
+		z-index: 0;
+		// transform: translateX(100%);
+	}
+}
+
+@keyframes slide-left {
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
