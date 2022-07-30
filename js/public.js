@@ -56,7 +56,7 @@
 	// slick end
 	
 	// mobile btn click start
-	$('.btn_more').click(function() {
+	$('.btn_m').click(function() {
 		let content = $(this).parents('.item').find('.modal_content_hover');
 		let color = content.attr('data-ph');
 		let ph = content.find('.modal_ph_hover').text();
@@ -103,17 +103,10 @@
 		if($('#happy-skin').css('display') != 'none') {
 			if(scroll > $('.navbar').offset().top) {
 				$('.happy-skin-title-slide-up').addClass('slide-up');	
-			}
-			
-			if(scroll > $('.happy-skin-title-slide-up').offset().top) {
-				$('.happy-skin-item1-slide-up').addClass('slide-up');
-			}
-	
-			if(scroll > $('.happy-skin-item1-slide-up').eq(2).offset().top) {
-				$('.happy-skin-item2-slide-up').addClass('slide-up');
+				$('.happy-skin-item1-slide-up').addClass('slide-up');	
+				$('.happy-skin-item2-slide-up').addClass('slide-up');	
 			}
 		}
-		
 
 		// special-feature
 		if($('#special-feature').css('display') != 'none') {

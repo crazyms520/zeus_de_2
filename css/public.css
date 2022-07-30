@@ -3341,8 +3341,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .elephant .content .slick-items .item .item_column .item_imgs > img { width: auto; max-width: 100%; }
 .elephant .content .slick-items .item .item_column .item_imgs .btn_more { position: absolute; right: 0; bottom: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .elephant .content .slick-items .item .item_column .item_imgs .btn_more { right: 1px; } }
-.elephant .content .slick-items .item .item_column .item_imgs .btn_more .btn { outline: none; }
-.elephant .content .slick-items .item .item_column .item_imgs .btn_more .btn:focus, .elephant .content .slick-items .item .item_column .item_imgs .btn_more .btn:active { outline: none !important; }
+.elephant .content .slick-items .item .item_column .item_imgs .btn_more.btn_w { right: 2px; }
 .elephant .content .slick-items .item .modal_content_hover { display: none; position: absolute; top: calc(50% - 150px); border-radius: 100px; background-color: #f6dcff; padding: 25px 40px; width: 375px; z-index: 1000; }
 .elephant .content .slick-items .item .modal_content_hover.special-height { top: calc(50% - 160px); }
 .elephant .content .slick-items .item .modal_content_hover .modal_ph_hover { font-family: 'Poppins', sans-serif; font-size: 32px; font-weight: bold; text-align: center; color: #fff; }
@@ -3492,7 +3491,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 
 .slide-left { animation: slide-left 1s cubic-bezier(0.65, 0, 0.35, 1) both; }
 
-.delay-0 { animation-delay: .8s; }
+.delay-05 { animation-delay: .5s; }
 
 .delay-1 { animation-delay: 1s; }
 

@@ -1388,12 +1388,9 @@ header {
 							@include range-width(0, 451px) {
 								right: 1px;
 							}
-	
-							.btn {
-								outline: none;
-								&:focus,&:active {
-									outline: none !important;
-								}
+							
+							&.btn_w {
+								right: 2px;
 							}
 						}		
 					}
@@ -2201,8 +2198,9 @@ header {
 .slide-left {
 	animation: slide-left 1s cubic-bezier(0.65, 0, 0.35, 1) both;
 }
-.delay-0 {
-	animation-delay: .8s;	
+
+.delay-05 {
+	animation-delay: .5s;	
 }
 
 .delay-1 {
