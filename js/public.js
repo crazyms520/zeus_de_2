@@ -123,9 +123,6 @@
 		if(scroll > $('.mixing').offset().top) {
 			$('.hand').addClass('fade-in');
 			$('.mixing-title-slide-up-1').addClass('fade-in');
-		}
-
-		if(scroll > $('.mixing-title-slide-up-1').eq(0).offset().top) {
 			$('.mixing-title-slide-up-2').addClass('fade-in');			
 		}
 
