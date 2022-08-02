@@ -644,13 +644,15 @@ header {
 				}
 
 				&:nth-of-type(3) {
+					padding-top: 30px;
 					margin-bottom: 0;
+					
 					.item_title {
 						letter-spacing: normal;
 						text-align: center;
 
 						@include range-width(0, 451px) {
-							padding: 30px 6px 0 6px;
+							padding: 0 6px 0 6px;
 							text-align: left;
 						}
 					}
@@ -707,6 +709,7 @@ header {
 					}
 
 					@include range-width(394px, 451px) {
+						margin-bottom: 0;
 						padding: 0 6px;
 						font-size: 17px;
 						letter-spacing: 2.2px;
@@ -714,6 +717,7 @@ header {
 					}
 
 					@include range-width(0, 394px) {
+						margin-bottom: 0;
 						padding: 0 6px;
 						font-size: 15px;	
 						letter-spacing: 1.5px;
