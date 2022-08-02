@@ -3484,7 +3484,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .form > .container .fill_items .notice { margin-top: 40px; }
 .form > .container .fill_items .notice:nth-of-type(2) { margin-top: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items .notice { padding: 0 12px; } }
-.form > .container .fill_items .notice .title { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: 500; line-height: 1.63; letter-spacing: 0.73px; color: #f750c2; text-align: left; }
+.form > .container .fill_items .notice .title { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: bold; line-height: 1.63; letter-spacing: 0.73px; color: #f750c2; text-align: left; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items .notice .title { font-weight: bold; } }
 .form > .container .fill_items .notice p { font-size: 14px; line-height: 1.71; letter-spacing: 0.7px; color: #636363; text-align: left; }
 .form > .container .fill_items .notice ol { margin-bottom: 0; padding-left: 16px; }
