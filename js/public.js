@@ -10,7 +10,7 @@
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#brand-origin').show("slide", { direction: "left" }, 400);
-		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-left');
+		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 
 		$('.brand-origin-slide-1').addClass('slide-right');	
 		$('.brand-origin-slide').addClass('slide-right-2')
@@ -27,7 +27,7 @@
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#happy-skin').show("slide", { direction: "down" }, 10);
-		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-left');
+		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 
 		$('.happy-skin-title-slide-up').addClass('slide-up');	
 		$('.happy-skin-item1-slide-up').addClass('slide-up');	
@@ -42,7 +42,7 @@
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#special-feature').show("slide", { direction: "right" }, 400);
-		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-left');
+		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 		$('.special-feature-title-slide-up').addClass('slide-up-2')
 		$('.special-feature-item-slide-up').addClass('slide-up')
 	})
@@ -51,7 +51,7 @@
 	// slick start
 	$('.slick-items').slick({
 		infinite: true,
-		slidesToShow: 3,
+		slidesToShow: 4,
   		slidesToScroll: 1,
 		prevArrow:"<img class='slick-prev' src='img/arrow_l.svg'>",
       	nextArrow:"<img class='slick-next' src='img/arrow_r.svg'>",
@@ -67,6 +67,13 @@
 	});
 	// slick end
 	
+	// web btn click start
+	$('.btn_w').click(function() {
+		$('.modal_content_hover').hide();
+		$(this).parents('.item').find('.modal_content_hover').show();
+	});
+	// web btn click end
+
 	// mobile btn click start
 	$('.btn_m').click(function() {
 		let content = $(this).parents('.item').find('.modal_content_hover');
@@ -96,7 +103,6 @@
 		})
 	})
 	// mobile btn click end
-	console.log($(window).scrollTop());
 	
 	// animation start
 	$(window).scroll(function() {

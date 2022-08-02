@@ -21,6 +21,7 @@
 	<script language="javascript" type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 	<script language="javascript" type="text/javascript" src="js/slick.min.js"></script>
 	<script language="javascript" type="text/javascript" src="js/public.js"></script>
+	
 </head>
 
 <body>
@@ -29,11 +30,13 @@
 			<div class="ShinKong_img">
 				<img src="img/ShinKong.png" alt="SHIN KONG MITSUKOSHI image">
 			</div>
-			<div class="text_box d-none d-lg-block">
-				<p class="m-0 d-flex justify-content-around marquee">
+			<div class="text_box d-none d-lg-block marquee">
+				<div class="m-0 d-flex justify-content-around align-items-center">
 					<span class="text">全新品牌醉象9/16  A11盛大登場</span>
 					<span class="text">全新品牌醉象9/16  A11盛大登場</span>
-				</p>
+					<span class="text">全新品牌醉象9/16  A11盛大登場</span>
+					<span class="text">全新品牌醉象9/16  A11盛大登場</span>
+				</div>
 			</div>
 			<div class="text_box d-block d-lg-none">
 				<span class="text">全新品牌醉象9/16  A11盛大登場</span>
@@ -141,29 +144,29 @@
 						<div class="svg_item">
 							<div class="svg happy-skin-item2-slide-up delay-35">
 								<img src="img/icon1.svg" alt="">
-								<p class="text-center">1 精油</p>
+								<p class=""><span class="svg_font">1</span> 精油</p>
 							</div>
 							<div class="svg happy-skin-item2-slide-up delay-4">
 								<img src="img/icon2.svg" alt="">
-								<p class="text-center">2 酒精</p>
+								<p class=""><span class="svg_font">2</span> 酒精</p>
 							</div>
 							<div class="svg happy-skin-item2-slide-up delay-45">
 								<img src="img/icon3.svg" alt="">
-								<p class="text-center">3 矽</p>
+								<p class=""><span class="svg_font">3</span> 矽</p>
 							</div>
 						</div>
 						<div class="svg_item">
 							<div class="svg happy-skin-item2-slide-up delay-5">
 								<img src="img/icon5.svg" alt="">
-								<p class="text-center">4 化學防曬成分</p>
+								<p class=""><span class="svg_font">4</span> 化學防曬成分</p>
 							</div>
 							<div class="svg happy-skin-item2-slide-up delay-55">
 								<img src="img/icon6.svg" alt="">
-								<p class="text-center">5 香氛色素</p>
+								<p class=""><span class="svg_font">5</span> 香氛色素</p>
 							</div>
 							<div class="svg happy-skin-item2-slide-up delay-6">
 								<img src="img/icon4.svg" alt="">
-								<p class="text-center">6 十二烷基硫酸鈉 <span>(合成洗劑)</span></p>
+								<p class=""><span class="svg_font">6</span> 十二烷基硫<span class="svg_br">酸鈉 (合成洗劑)</span></p>
 							</div>
 						</div>
 					</div>
@@ -199,16 +202,26 @@
 			<div class="container">
 				<h2>健康pH值</h2>
 				<div class="ph_text">
-					<img src="img/ph.svg" alt="">
+					<picture>
+						<source srcset="img/ph_m.svg" media="(max-width: 450px)">
+						<img src="img/ph_w.svg" alt="">
+					</picture>
 				</div>
 				<div class="item">
 					<div class="ph_pic01 col col-md-7">
-						<h3>適合肌膚的配方</h3>
-						<img src="img/ph-pic01.svg" alt="">
+						<!-- <h3>適合肌膚的配方</h3> -->
+						<picture>
+							<source srcset="img/skin_m.svg" media="(max-width: 450px)">
+							<img src="img/skin_w.svg" alt="">
+						</picture>
 					</div>
 					<div class="ph_pic02 col col-md-5">
-						<h3>小分子結構</h3>
-						<img src="img/ph-pic02.svg" alt="">
+						<!-- <h3>小分子結構</h3> -->
+						<picture>
+							<source srcset="img/skin_2_m.svg" media="(max-width: 450px)">
+							<img src="img/skin_2_w.svg" alt="">
+						</picture>
+						
 					</div>
 				</div>
 			</div>
@@ -485,7 +498,11 @@
 				<p class="d-md-none">#醉好輕斷食，感受 #醉美素顏！</p>
 			</div>
 			<div class="img_text">
-				<div class="item form-slide-up-item delay-1">
+				<picture>
+					<source srcset="img/gift.svg" media="(max-width: 450px)">
+    				<img src="img/gift.svg" alt="" />
+				</picture>
+				<!-- <div class="item form-slide-up-item delay-1">
 					<p class="item_text">
 						瑪魯拉奢華<br/>
 						美顏油<br/> 
@@ -508,13 +525,13 @@
 						抗老霜<br/>
 						5ml<br/>
 					</p>
-				</div>	
+				</div>	 -->
 			</div>
-			<div class="text_span form-slide-up-item delay-25">
+			<!-- <div class="text_span form-slide-up-item delay-25">
 				<span>
 					使用瑪魯拉奢華美顏油重拾肌膚光澤，或使用藍罐多胜肽緊緻抗老霜增加肌膚保水度和緊緻度，兩者混合使用能有加乘效果！
 				</span>
-			</div>
+			</div> -->
 			<div class="fill_items">
 				<h2>
 					<span>填寫資料</span>
