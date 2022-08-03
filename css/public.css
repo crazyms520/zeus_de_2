@@ -3155,7 +3155,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 393px) and (min-width: 376px) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -21px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img { width: auto; left: -22px; } }
 .brand-origin .bo_s1 .tiffany_img .background_color { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: #F449B7; opacity: 0; }
-.brand-origin .bo_s1 .tiffany_img picture { display: inline-block; }
+.brand-origin .bo_s1 .tiffany_img picture { display: inline-block; width: 100%; }
 .brand-origin .bo_s1 .tiffany_img picture img { width: 100%; opacity: 0; }
 @media screen and (max-width: 375px) and (min-width: 0) { .brand-origin .bo_s1 .tiffany_img picture img img { max-width: 99%; } }
 .brand-origin .bo_s1 .container { padding: 0 92px 0 46px; width: 40%; }
