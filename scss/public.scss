@@ -37,7 +37,7 @@ header {
 			padding-right: 120px;
 
 			@include range-width(0, 769px) {
-				padding-right: 1rem;
+				padding-right: 0;
 			}
 			> img {
 				width: 112px;
@@ -56,7 +56,7 @@ header {
 			width: 100%;
 			
 			@include range-width(0, 451px) {
-				padding-top: 2px;
+				padding-top: 5px;
 				width: auto;
 				height: auto;
 			}
@@ -76,22 +76,22 @@ header {
 				}
 	
 				@include range-width(402px, 451px) {
-					margin-right: 7px;
+					padding-right: 10px;
 					font-size: 18px;
 					font-weight: 500;
 					letter-spacing: 1.11px;
 				}
 	
 				@include range-width(376px, 402px) {
-					margin-right: 7px;
+					padding-right: 10px;
 					font-size: 17px;
 					font-weight: 500;
 					letter-spacing: 1.11px;
 				}
 	
 				@include range-width(0, 376px) {
-					margin-right: 7px;
-					font-size: 16px;
+					padding-right: 10px;
+					font-size: 17px;
 					font-weight: 500;
 					letter-spacing: 1.11px;
 				}
@@ -102,7 +102,7 @@ header {
 }
 
 .banner {
-	padding-top: 60px;
+	padding-top: 30px;
 	background-color: #e4f543;
 	// border-left: 4px solid #de0717;
 
@@ -116,11 +116,11 @@ header {
 		.banner_logo {
 			position: absolute;
 			top: 20%;
-			right: 5%;
+			right: 13%;
 
 			@include range-width(1200px, 1441px) {
 				top: 20%;
-				right: 5%;
+				right: 13%;
 			}
 
 			@include range-width(769px, 1025px) {
@@ -159,7 +159,7 @@ header {
 				}
 
 				@include range-width(0, 451px) {
-					width: 160px;
+					width: 200px;
 					// width: auto;
 				}
 
@@ -168,7 +168,7 @@ header {
 			.text {
 				opacity: 0;
 				> p {
-					margin: 1.5rem .5rem;
+					margin: 35px .5rem;
 					font-family: 'NotoSans TC', sans-serif;
 					font-size: 70px;
 					font-weight: bold;
@@ -193,7 +193,7 @@ header {
 					@include range-width(0, 451px) {
 						margin: 1rem .5rem 0 .5rem;
 						// font-size: 32px;	
-						font-size: 26px;
+						font-size: 34px;
 						letter-spacing: 3px;
 					}
 				}
@@ -204,7 +204,7 @@ header {
 	.banner_img {
 		width: 100%;
 		height: 100%;
-		margin-top: -50px;
+		// margin-top: -50px;
 
 		@include range-width(0, 451px) {
 			margin-top: 0;
@@ -214,7 +214,7 @@ header {
 			width: 100%;
 
 			@include range-width(0, 451px) {
-				margin-top: -35px;
+				margin-top: -20px;
 				width: 100%;
 			}
 
@@ -308,7 +308,7 @@ header {
 		}
 
 		.tiffany_img {
-			// width: 60%;
+			width: 60%;
 			position: relative;
 			left: 0;
 			overflow: hidden;
@@ -494,11 +494,16 @@ header {
 				> h3 {
 					opacity: 0;
 					> span {
+						display: flex;
+						justify-content: center;
+						align-items: center;
 						position: relative;
 						right: 0;
 						padding: 7px 20px;
+						width: 260px;
+						height: 62px;
 						font-family: 'Noto Sans TC', sans-serif;
-						font-size: 24px;
+						font-size: 28px;
 						font-weight: bold;
 						line-height: 2.21;
 						letter-spacing: 2px;
@@ -507,11 +512,17 @@ header {
 						background-color: #ff9500;
 
 						@include range-width(769px, 1025px) {
+							display: inline-block;
+							width: auto;
+							height: auto;
 							font-size: 24px;	
 						}
 
 						@include range-width(0, 451px) {
-							padding: 7px 20px;
+							display: inline-block;
+							width: auto;
+							height: auto;
+							padding: 7px 30px;
 							right: 30px;
 							font-size: 16px;
 							font-weight: bolder;
@@ -572,17 +583,18 @@ header {
 
 			.background_6 {
 				position: absolute;
-				top: 0;
+				top: 60px;
 				left: 0;
 				z-index: -1;
 
 				@include range-width(0, 451px) {
-					top: calc(50% - 445px / 2);		
+					top: 120px;
+					// top: calc(50% - 445px / 2);		
 					left: calc(50% - 320px / 2);
 				}
 
 				> img {
-					width: 65%;
+					width: 60%;
 					// width: 700px;
 					// height: 700px;
 
@@ -646,7 +658,7 @@ header {
 				&:nth-of-type(3) {
 					padding-top: 30px;
 					margin-bottom: 0;
-					
+
 					.item_title {
 						letter-spacing: normal;
 						text-align: center;
@@ -698,7 +710,7 @@ header {
 					font-size: 20px;
 					font-weight: 500;
 					line-height: 1.89;
-					letter-spacing: 1.4px;
+					letter-spacing: 1.5px;
 					text-align: justify;
 					color: #717076;
 					opacity: 0;
@@ -710,17 +722,25 @@ header {
 
 					@include range-width(394px, 451px) {
 						margin-bottom: 0;
-						padding: 0 6px;
+						padding: 16px 6px 0 6px;
 						font-size: 17px;
 						letter-spacing: 2.2px;
 						line-height: 1.76;
 					}
 
-					@include range-width(0, 394px) {
+					@include range-width(376px, 394px) {
 						margin-bottom: 0;
-						padding: 0 6px;
+						padding: 16px 6px 0 6px;
+						font-size: 16px;	
+						letter-spacing: 1.6px;
+						line-height: 1.76;
+					}
+
+					@include range-width(0, 376px) {
+						margin-bottom: 0;
+						padding: 16px 6px 0 6px;
 						font-size: 15px;	
-						letter-spacing: 1.5px;
+						letter-spacing: 1.6px;
 						line-height: 1.76;
 					}
 
@@ -826,6 +846,7 @@ header {
 							p {
 								position: relative;
 								margin: .5rem 0 .5rem 1rem;
+								font-family: 'NotoSans TC', sans-serif;
 								font-size: 20px;
 								font-weight: 500;
 								text-align: center;
@@ -841,34 +862,62 @@ header {
 								}
 								
 								@include range-width(376px, 451px) {
+									// display: flex;
+									// align-items: baseline;
 									margin: .5rem auto;
 									font-size: 14px;
 								}
 		
 								@include range-width(0, 376px) {
+									// display: flex;
+									// align-items: baseline;
 									margin: .5rem auto;
 									font-size: 13px;
 								}
 	
 								.svg_font {
+									font-family: 'Poppins', sans-serif;
+									font-size: 16px;
+									vertical-align: baseline;
 									@include range-width(0, 451px) {
 										font-size: 10px;
 									}
 								}
 			
 								.svg_br {
-									font-size: 20px;
+									font-size: 12px;
 									vertical-align: baseline;
 	
 									@include range-width(451px, 769px) {
 										display: block;	
 										font-size: 18px;
-	
 									}
 	
 									@include range-width(0, 451px) {
-										display: block;
+										display: flex;
+										align-items: baseline;
 										font-size: 10px;
+									}
+
+									> span {
+										font-size: 20px;
+										font-weight: 500;
+			
+										@include range-width(769px, 1025px) {
+											font-size: 22px;
+										}
+			
+										@include range-width(451px, 769px) {
+											font-size: 24px;
+										}
+										
+										@include range-width(376px, 451px) {
+											font-size: 14px;
+										}
+				
+										@include range-width(0, 376px) {
+											font-size: 13px;
+										}	
 									}
 								}
 							}
@@ -890,8 +939,12 @@ header {
 	position: relative;
 
 	.sf_s1 {
-		padding: 15px 0 30px 0;
+		padding: 28px 0 30px 0;
 		background-color: #f6d6f7;
+
+		@include range-width(0, 451px) {
+			padding: 15px 0 10px 0;	
+		}
 		.container {
 			max-width: 1300;
 
@@ -918,12 +971,14 @@ header {
 				}
 	
 				@include range-width(376px, 451px) {
+					margin-bottom: 0;
 					padding-top: 0;
 					font-size: 70px;
 					line-height: 0.87;
 				}	
 	
 				@include range-width(0, 376px) {
+					margin-bottom: 0;
 					padding-top: 0;
 					font-size: 65px;
 					line-height: 0.87;
@@ -973,7 +1028,7 @@ header {
 					}
 	
 					@include range-width(0, 451px) {
-						margin: 5px 0 16px 0;
+						margin: 0 0 8px 0;
 						width: auto;
 						font-size: 38px;
 						font-weight: 900;
@@ -984,7 +1039,7 @@ header {
 						width: 95%;
 
 						@include range-width(0, 451px) {
-							width: auto;
+							width: 89%;
 						}
 					}
 				}
@@ -1016,6 +1071,7 @@ header {
 	
 						@include range-width(0, 451px) {
 							margin-top: 0;
+							margin-bottom: 0;
 							font-size: 20px;
 							line-height: normal;
 							letter-spacing: 1px;	
@@ -1076,6 +1132,9 @@ header {
 		padding: 30px 0;
 		background-color: #ffebfd;
 
+		@include range-width(0, 451px) {
+			padding: 25px 0;
+		}
 		.container {
 			padding: 10px .75rem;
 
@@ -1146,6 +1205,7 @@ header {
 						margin-right: 0;
 						// width: 300px;
 						max-width: 100%;
+						padding: 0 0 15px 0;
 
 						img {
 							width: 100%;
@@ -1183,11 +1243,23 @@ header {
 					// background-color: rgba(255, 255, 255, .6);
 					// border-radius: 94px; 
 
+					@include range-width(0, 451px) {
+						padding: 16px 0 0 0;	
+					}
+
 					picture {
 						display: inline-block;
 
 						img {
-							width: 95%;
+							width: 91.8%;
+
+							@include range-width(769px, 1025px) {
+								width: 84%;
+							}
+
+							@include range-width(451px, 769px) {
+								width: 80%;
+							}
 
 							@include range-width(0, 451px) {
 								width: 100%;
@@ -1231,7 +1303,7 @@ header {
 		@include range-width(0, 451px) {
 			background-image: linear-gradient(-45deg, #e3f2fa 4%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 50%, #ffffff 58%, #ffffff 100%);
 			background-size: 25px 25px;
-			padding: 50px 0;
+			padding: 50px 0 35px 0;
 		}	
 
 		.hand {
@@ -1240,7 +1312,7 @@ header {
 			text-align: left;
 
 			@include range-width(0, 451px) {
-				margin-top: 20px;
+				margin-top: 35px;
 			}
 
 			picture {
@@ -1302,13 +1374,13 @@ header {
 					}
 	
 					@include range-width(0, 451px) {
-						margin-top: 0;
+						margin-top: 15px;
 						margin-left: 0;
 						text-align: center;
 					}
 
 					&:nth-of-type(2) {
-						margin-top: 1rem;
+						margin-top: 10px;
 					}
 	
 					> img {
@@ -1372,7 +1444,7 @@ header {
 				@include range-width(0, 451px) {
 					font-size: 24px;	
 					font-weight: bold;
-					line-height: 1.21;
+					line-height: 1.31;
 					letter-spacing: normal;
 				}
 			}
@@ -1429,6 +1501,7 @@ header {
 
 			@include range-width(0, 451px) {
 				margin-top: 0;
+				padding: 15px 0 20px 0;
 			}
 			
 			.slick-prev {
@@ -1436,6 +1509,7 @@ header {
 				height: auto;
 				font-size: 40px;
 				left: 7px;
+				z-index: 1;
 			}
 
 			.slick-next {
@@ -1443,6 +1517,7 @@ header {
 				height: auto;
 				font-size: 40px;
 				right: 7px;
+				z-index: 1;
 			}
 			
 			.item {
@@ -1515,11 +1590,13 @@ header {
 				.modal_content_hover {
 					display: none;
 					position: absolute;
-					top: calc(50% - 150px);
+					top: calc(50% - 155px);
 					border-radius: 110px;
 					background-color: #f6dcff;
-					padding: 20px;
+					padding: 32px 28px;
 					width: 100%;
+					min-height: 290px;
+					max-height: 320px;
 					// width: 375px;
 					// height: 300px;
 					z-index: 1000;
@@ -1530,11 +1607,15 @@ header {
 
 					.modal_ph_hover {
 						font-family: 'Poppins', sans-serif;
-						
 						font-size: 30px;
 						font-weight: bold;
+						letter-spacing: 2px;
 						text-align: center;
 						color: #fff;
+
+						&.ph0 {
+							opacity: 0;
+						}
 
 						&.ph57 {
 							text-shadow: -1px -1px 0 #83cdee, 1px -1px 0 #83cdee, -1px 1px 0 #83cdee, 1px 1px 0 #83cdee;	
@@ -1579,7 +1660,7 @@ header {
 						font-size: 20px;
 						font-weight: 500;
 						letter-spacing: 1px;
-						margin: 1rem 0;
+						margin: 10px 0;
 						text-align: center;
 						color: #4a4a4a;
 					}
@@ -1634,6 +1715,7 @@ header {
 					}
 
 					.modal_text_hover {
+						margin-bottom: 0;
 						font-family: 'Noto Sans TC', sans-serif;
 						font-size: 16px;
 						line-height: 1.4;
@@ -1655,14 +1737,18 @@ header {
 			background-color: transparent;
 			z-index: 100;
 		}
+		
 		.modal_content_mobile {
 			display: none;
 			position: absolute;
 			top: 0;
 			border-radius: 100px;
 			background-color: #f6dcff;
-			padding: 25px 40px;
+			padding: 25px 32px;
 			z-index: 1000;
+			width: 100%;
+			min-height: 280px;
+			max-height: 300px;
 
 			@include range-width(451px, 769px) {
 				top: calc(50% - 125px);
@@ -1670,11 +1756,17 @@ header {
 			}
 
 			.modal_ph_mobile {
+				margin-bottom: 15px;
 				font-family: 'Poppins', sans-serif;
 				font-size: 28px;
 				font-weight: bold;
+				letter-spacing: 2px;
 				text-align: center;
 				color: #fff;
+
+				&.ph0 {
+					opacity: 0;
+				}
 
 				&.ph57 {
 					text-shadow: -1px -1px 0 #83cdee, 1px -1px 0 #83cdee, -1px 1px 0 #83cdee, 1px 1px 0 #83cdee;	
@@ -1724,6 +1816,7 @@ header {
 
 			.modal_effect_mobile {
 				display: inline-block;
+				margin-bottom: 1.5rem;
 				padding: 0 15px;
 				font-family: 'Noto Sans TC', sans-serif;
 				font-size: 16px;
@@ -1755,7 +1848,7 @@ header {
 					background-color: #f98c2b;
 				}
 
-				&.ph{
+				&.ph0{
 					background-color: #cdca4e;
 				}
 
@@ -2160,7 +2253,8 @@ header {
 							padding-left: 35px;
 							font-size: 14px;	
 							font-weight: 500;
-							letter-spacing: 0.54px;
+							letter-spacing: normal;
+							
 						}
 
 						input {
@@ -2195,6 +2289,7 @@ header {
 							height: 39px;
 
 							@include range-width(0, 451px) {
+								margin-bottom: 3px;
 								width: auto;
 								height: auto;
 							}
@@ -2309,7 +2404,7 @@ header {
 		width: 200%;
 		height: 42px;
 		overflow: hidden;
-		animation: marquee 5s linear infinite;	
+		animation: marquee 10s linear infinite;	
 	}
 	.text {
 		display: inline-block;
