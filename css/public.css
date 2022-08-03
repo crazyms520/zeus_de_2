@@ -3337,7 +3337,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { margin-top: 15px; margin-left: 0; text-align: center; } }
 .mixing .title .title_text .container > h2:nth-of-type(2), .mixing .title .title_text .container > .h2:nth-of-type(2) { margin-top: 10px; }
 .mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: 100%; }
-@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: 85%; } }
+@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: 100%; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: auto; max-width: 100%; } }
 .mixing .container { width: 996px; margin: 0 auto; padding: 60px 16px 10px 16px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .container { padding-top: 35px; width: 100%; } }
@@ -3447,7 +3447,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .form > .container .text > p > span { font-family: 'Noto Sans TC', sans-serif; font-size: 24px; letter-spacing: 0.53px; color: #636363; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .form > .container .text > p > span { font-size: 25px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .text > p > span { font-size: 25px; } }
-.form > .container .img_text { display: flex; justify-content: center; align-items: center; margin-top: 30px; }
+.form > .container .img_text { display: flex; justify-content: center; align-items: center; margin-top: 30px; opacity: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .img_text { margin-top: 0; } }
 .form > .container .img_text .item { position: relative; display: flex; align-items: baseline; opacity: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .img_text .item { align-items: center; } }
