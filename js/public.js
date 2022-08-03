@@ -69,7 +69,7 @@
 	
 	// web btn click start
 	$('.btn_w').click(function() {
-		// $(".modal_mask").show();
+		$(".modal_mask").show();
 		$('.modal_content_hover').hide();
 		$(this).parents('.item').find('.modal_content_hover').show();
 		$(".modal_mask").click(function() {
