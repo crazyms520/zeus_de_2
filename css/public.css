@@ -3143,7 +3143,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .navbar .nav .nav-item { width: 180px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item { flex: 1; width: auto; } }
 .navbar .nav .nav-item:nth-of-type(2) { border-left: 1px solid #fff; border-right: 1px solid #fff; }
-.navbar .nav .nav-item span { padding: 4px 1rem; font-family: 'NotoSans TC', sans-serif; font-size: 24px; letter-spacing: 1.75px; text-align: center; color: #b695c2; background-color: #f9e5fa; }
+.navbar .nav .nav-item span { padding: 4px 1rem; font-family: 'NotoSans TC', sans-serif; font-size: 22px; letter-spacing: 1.75px; text-align: center; color: #b695c2; background-color: #f9e5fa; }
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item span { font-size: 16px; letter-spacing: 1px; } }
 .navbar .nav .nav-item span.active { color: #7e1fd2; background-color: #fff; font-weight: bolder; }
 
@@ -3192,36 +3192,39 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 
 .happy-skin .hs_s1 { position: relative; background-color: #facae7; padding: 35px 0 60px 0; z-index: 1; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 { padding: 0 0 30px 0; } }
-.happy-skin .hs_s1 .container { max-width: 1200px; }
+.happy-skin .hs_s1 .container { max-width: 900px; padding-left: 80px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container { padding: 0 1rem; } }
-.happy-skin .hs_s1 .container .background_6 { position: absolute; top: 60px; left: 0; z-index: -1; }
+.happy-skin .hs_s1 .container .background_6 { position: absolute; top: 60px; left: 22%; z-index: -1; }
+@media screen and (max-width: 1440px) and (min-width: 1025px) { .happy-skin .hs_s1 .container .background_6 { left: 0; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .background_6 { left: 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .background_6 { top: 120px; left: calc(50% - 320px / 2); } }
 .happy-skin .hs_s1 .container .background_6 > img { width: 60%; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .background_6 > img { width: 320px; height: 445px; } }
-.happy-skin .hs_s1 .container .title { margin: 35px 0 50px 0; font-family: 'NotoSans TC', sans-serif; font-size: 70px; font-weight: bold; letter-spacing: 15px; opacity: 0; color: #ff25ae; text-align: center; }
+.happy-skin .hs_s1 .container .title { margin: 35px 0 50px 0; font-family: 'NotoSans TC', sans-serif; font-size: 70px; font-weight: bold; letter-spacing: 15px; opacity: 0; color: #ff25ae; text-align: left; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .title { font-size: 60px; text-align: center; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .title { margin: 0; padding: 15px 6px 0 6px; font-size: 34px; line-height: 1.25; letter-spacing: 4px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .title { margin: 0; padding: 15px 6px 0 6px; font-size: 32px; line-height: 1.25; letter-spacing: 4px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item { padding-top: 30px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item:nth-of-type(2) .item_title { margin: 0 0 4px 0; letter-spacing: 0.7px; } }
 .happy-skin .hs_s1 .container .item:nth-of-type(3) { padding-top: 30px; margin-bottom: 0; }
-.happy-skin .hs_s1 .container .item:nth-of-type(3) .item_title { letter-spacing: normal; text-align: center; }
+.happy-skin .hs_s1 .container .item:nth-of-type(3) .item_title { letter-spacing: normal; text-align: left; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item:nth-of-type(3) .item_title { padding: 0 6px 0 6px; text-align: left; } }
-.happy-skin .hs_s1 .container .item .item_title { margin: 0 0 16px 0; font-family: 'NotoSans TC', sans-serif; font-size: 32px; font-weight: bold; letter-spacing: 1.6px; color: #ff25ae; text-align: center; opacity: 0; }
+.happy-skin .hs_s1 .container .item .item_title { margin: 0 0 16px 0; font-family: 'NotoSans TC', sans-serif; font-size: 32px; font-weight: bold; letter-spacing: 1.6px; color: #ff25ae; text-align: left; opacity: 0; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .item_title { font-size: 32px; text-align: center; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .item_title { margin: 0 0 8px 0; padding: 0 6px; font-size: 21px; letter-spacing: 1.1px; text-align: center; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_title { margin: 0 0 8px 0; padding: 0 6px; font-size: 19px; letter-spacing: 1.1px; text-align: center; } }
-.happy-skin .hs_s1 .container .item .item_text { padding: 0 0 0 185px; font-family: 'NotoSans TC', sans-serif; font-size: 20px; font-weight: 500; line-height: 1.89; letter-spacing: 1.5px; text-align: justify; color: #717076; opacity: 0; }
+.happy-skin .hs_s1 .container .item .item_text { font-family: 'NotoSans TC', sans-serif; font-size: 20px; font-weight: 500; line-height: 1.89; letter-spacing: 1.5px; text-align: justify; color: #717076; opacity: 0; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .item_text { padding: 0; font-size: 20px; } }
-@media screen and (max-width: 450px) and (min-width: 394px) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 16px 6px 0 6px; font-size: 17px; letter-spacing: 2.2px; line-height: 1.76; } }
-@media screen and (max-width: 393px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 16px 6px 0 6px; font-size: 16px; letter-spacing: 1.6px; line-height: 1.76; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 16px 6px 0 6px; font-size: 15px; letter-spacing: 1.6px; line-height: 1.76; } }
+@media screen and (max-width: 450px) and (min-width: 394px) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 14px 6px 0 6px; font-size: 17px; letter-spacing: 2.2px; line-height: 1.76; } }
+@media screen and (max-width: 393px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 14px 6px 0 6px; font-size: 16px; letter-spacing: 1.6px; line-height: 1.76; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 14px 6px 0 6px; font-size: 15px; letter-spacing: 1.6px; line-height: 1.76; } }
 .happy-skin .hs_s1 .container .item .svg_items .svg_item { display: flex; justify-content: center; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(1) { justify-content: space-between; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(1) { justify-content: space-between; } }
 .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(1) .svg:nth-of-type(2) { margin: 15px 120px 0 120px; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(1) .svg:nth-of-type(2) { margin: 15px 0 0 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(1) .svg:nth-of-type(2) { margin: 15px 0 0 0; } }
+.happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(2) { justify-content: space-around; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(2) { justify-content: space-between; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(2) { justify-content: space-between; } }
 .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(2) .svg { margin: 15px 0 0 0; }
@@ -3235,8 +3238,8 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg { width: 30%; flex-direction: column; align-items: center; } }
 .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg > img { width: 82px; height: 76px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg > img { width: 80px; height: 75px; } }
-.happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { position: relative; margin: .5rem 0 .5rem 1rem; font-family: 'NotoSans TC', sans-serif; font-size: 20px; font-weight: 500; text-align: center; color: #717076; }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { font-size: 22px; } }
+.happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { position: relative; margin: .5rem 0 .5rem .8rem; font-family: 'NotoSans TC', sans-serif; font-size: 18px; font-weight: 500; text-align: center; color: #717076; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { font-size: 18px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { margin: .5rem auto; font-size: 20px; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { margin: .5rem auto; font-size: 14px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { margin: .5rem auto; font-size: 13px; } }
@@ -3245,8 +3248,8 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br { font-size: 12px; vertical-align: baseline; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br { display: flex; align-items: baseline; font-size: 14px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br { display: flex; align-items: baseline; font-size: 10px; } }
-.happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 20px; font-weight: 500; }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 22px; } }
+.happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 18px; font-weight: 500; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 18px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 20px; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 14px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 13px; } }
@@ -3281,7 +3284,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .special-feature .sf_s1 .container .item .item_content h4 > span, .special-feature .sf_s1 .container .item .item_content .h4 > span { font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: bold; line-height: 1.38; letter-spacing: 1px; text-align: justify; color: #4a4a4a; vertical-align: baseline; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .special-feature .sf_s1 .container .item .item_content h4 > span, .special-feature .sf_s1 .container .item .item_content .h4 > span { font-size: 26px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .container .item .item_content h4 > span, .special-feature .sf_s1 .container .item .item_content .h4 > span { font-size: 22px; font-weight: 600; line-height: normal; letter-spacing: 0.6px; } }
-.special-feature .sf_s1 .container .item .item_content p { font-family: 'Noto Sans TC', sans-serif; font-size: 19px; line-height: 1.85; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
+.special-feature .sf_s1 .container .item .item_content p { font-family: 'Noto Sans TC', sans-serif; font-size: 20px; line-height: 1.85; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .special-feature .sf_s1 .container .item .item_content p { font-size: 18px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .special-feature .sf_s1 .container .item .item_content p { font-size: 21px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s1 .container .item .item_content p { font-size: 16px; line-height: 1.75; letter-spacing: 0.8px; } }
@@ -3352,10 +3355,11 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 
 .elephant { padding: 90px 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .elephant { padding: 30px 0; } }
-.elephant .title .title_text > h2 > img, .elephant .title .title_text > .h2 > img { width: 85%; }
-@media screen and (max-width: 450px) and (min-width: 0) { .elephant .title .title_text > h2 > img, .elephant .title .title_text > .h2 > img { width: auto; max-width: 100%; } }
+.elephant .title .title_text > h2 picture, .elephant .title .title_text > .h2 picture { display: inline-block; }
+.elephant .title .title_text > h2 picture > img, .elephant .title .title_text > .h2 picture > img { width: 85%; }
+@media screen and (max-width: 450px) and (min-width: 0) { .elephant .title .title_text > h2 picture > img, .elephant .title .title_text > .h2 picture > img { width: auto; max-width: 100%; } }
 .elephant .content { position: relative; }
-.elephant .content .slick-items { position: relative; padding: 65px 40px; margin-top: -9%; opacity: 0; }
+.elephant .content .slick-items { position: relative; padding: 30px 40px 0 40px; opacity: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .elephant .content .slick-items { margin-top: 0; padding: 15px 0 20px 0; } }
 .elephant .content .slick-items .slick-prev { width: auto; height: auto; font-size: 40px; left: 7px; z-index: 1; }
 .elephant .content .slick-items .slick-next { width: auto; height: auto; font-size: 40px; right: 7px; z-index: 1; }
@@ -3491,12 +3495,15 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .form > .container .fill_items > form .form-check-item .label input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
 .form > .container .fill_items > form .form-check-item .label input:checked ~ .checkmark::after { content: ''; display: inline-block; position: absolute; top: 5px; left: 5px; width: 19px; height: 19px; background-color: #ff8768; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .label input:checked ~ .checkmark::after { top: 2px; left: 2px; width: 19px; height: 19px; } }
-.form > .container .fill_items > form .form-check-item .label img { width: 65px; height: 39px; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .fill_items > form .form-check-item .label img { margin-bottom: 3px; width: 60px; height: 36px; } }
+.form > .container .fill_items > form .form-check-item .label img { margin-bottom: 4px; width: 55px; height: 35px; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .fill_items > form .form-check-item .label img { margin-bottom: 4px; width: 55px; height: 35px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .label img { margin-bottom: 3px; width: auto; height: auto; } }
 .form > .container .fill_items > form .form-check-item .checkmark { position: absolute; top: 0; left: 0; height: 30px; width: 30px; border: solid 1px #ff8768; background-color: #fff; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .checkmark { height: 25px; width: 25px; } }
 .form > .container .fill_items > form .button { padding: 5px 0; width: 100%; max-width: 250px; max-height: 65px; border: 0; background-color: #ff8768; font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 0.7px; text-align: center; color: #dfff00; }
+.form > .container .fill_items > form .button.delivery { position: relative; }
+.form > .container .fill_items > form .button.delivery:after { content: '支付百元運費直送到府​'; position: absolute; top: 100%; left: 0; width: 100%; font-size: 14px; font-weight: normal; color: #4a4a4a; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .button.delivery:after { font-size: 12px; } }
 .form > .container .fill_items .notice { margin-top: 40px; }
 .form > .container .fill_items .notice:nth-of-type(2) { margin-top: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items .notice { padding: 0 12px; } }
