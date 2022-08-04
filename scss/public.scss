@@ -16,6 +16,7 @@ body {
     font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue,
         Helvetica, Arial, sans-serif;
     // 文字染色，背景色、文字色
+	
     @include selection(rgba(120, 186, 255, 1), rgba(255, 255, 255, 1));
 }
 
@@ -592,6 +593,14 @@ header {
 			max-width: 900px;
 			padding-left: 120px;
 
+			@include range-width(769px, 1025px) {
+				padding: 0 1rem;
+			}
+
+			@include range-width(451px, 769px) {
+				padding: 0 1rem;
+			}
+
 			@include range-width(0, 451px) {
 				padding: 0 1rem;
 			}
@@ -607,11 +616,16 @@ header {
 				}
 
 				@include range-width(769px, 1025px) {
-					left: 0;
+					left: calc(50% - 351px);
+				}
+
+				@include range-width(451px, 769px) {
+					// top: calc(50% - 445px / 2);		
+					left: calc(50% - 342px);
 				}
 
 				@include range-width(0, 451px) {
-					top: 120px;
+					top: 80px;
 					// top: calc(50% - 445px / 2);		
 					left: calc(50% - 320px / 2);
 				}
@@ -665,7 +679,7 @@ header {
 				// margin-bottom: 30px;
 
 				@include range-width(0, 451px) {
-					padding-top: 30px;
+					padding-top: 15px;
 				}
 				
 				&:nth-of-type(2) {
@@ -685,7 +699,7 @@ header {
 					margin-bottom: 0;
 
 					@include range-width(0, 451px) {
-						padding-top: 28px;
+						padding-top: 14px;
 					}
 
 					.item_title {
@@ -694,6 +708,7 @@ header {
 
 						@include range-width(0, 451px) {
 							padding: 0 6px 0 6px;
+							margin-bottom: 0;
 							text-align: left;
 						}
 					}
@@ -766,7 +781,7 @@ header {
 
 					@include range-width(394px, 451px) {
 						margin-bottom: 0;
-						padding: 10px 6px 0 6px;
+						padding: 0 6px 0 6px;
 						font-size: 17px;
 						letter-spacing: 2.2px;
 						line-height: 1.76;
@@ -774,7 +789,7 @@ header {
 
 					@include range-width(376px, 394px) {
 						margin-bottom: 0;
-						padding: 10px 6px 0 6px;
+						padding: 0 6px 0 6px;
 						font-size: 16px;	
 						letter-spacing: 1.6px;
 						line-height: 1.76;
@@ -782,7 +797,7 @@ header {
 
 					@include range-width(0, 376px) {
 						margin-bottom: 0;
-						padding: 10px 6px 0 6px;
+						padding: 0 6px 0 6px;
 						font-size: 15px;	
 						letter-spacing: 1.6px;
 						line-height: 1.76;
@@ -1648,7 +1663,7 @@ header {
 					z-index: 1000;
 
 					&.special-height {
-						top: calc(50% - 160px);	
+						top: calc(50% - 155px);	
 					}
 
 					.modal_ph_hover {
@@ -1769,6 +1784,11 @@ header {
 						// letter-spacing: 1px;
 						text-align: center;
 						color: #636363;
+
+						.font-pops {
+							font-size: 16px;
+							vertical-align: baseline;
+						}
 					}
 				}
 			}
@@ -1920,6 +1940,11 @@ header {
 				letter-spacing: normal;
 				text-align: center;
 				color: #636363;
+
+				.font-pops {
+					font-size: 17px;
+					vertical-align: baseline;
+				}
 			}
 		}
 	}	

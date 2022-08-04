@@ -86,7 +86,7 @@
 		let ph = content.find('.modal_ph_hover').text();
 		let title = content.find('.modal_title_hover').text();
 		let effect = content.find('.modal_effect_hover').text();
-		let text = content.find('.modal_text_hover').text();
+		let text = content.find('.modal_text_hover').html();
 		let oldColor = $('.modal_content_mobile').attr('data-ph'); 
 
 		$('.modal_ph_mobile').removeClass(oldColor);
@@ -96,7 +96,7 @@
 		$('.modal_effect_mobile').removeClass(oldColor);
 		$('.modal_effect_mobile').addClass(color);
 		$('.modal_effect_mobile').text(effect);
-		$('.modal_text_mobile').text(text);
+		$('.modal_text_mobile').html(text);
 
 		$('.modal_content_mobile').attr('data-ph', color);
 		$(".modal_mask").show();
