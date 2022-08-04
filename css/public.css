@@ -3192,7 +3192,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 
 .happy-skin .hs_s1 { position: relative; background-color: #facae7; padding: 35px 0 60px 0; z-index: 1; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 { padding: 0 0 30px 0; } }
-.happy-skin .hs_s1 .container { max-width: 900px; padding-left: 80px; }
+.happy-skin .hs_s1 .container { max-width: 900px; padding-left: 120px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container { padding: 0 1rem; } }
 .happy-skin .hs_s1 .container .background_6 { position: absolute; top: 60px; left: 22%; z-index: -1; }
 @media screen and (max-width: 1440px) and (min-width: 1025px) { .happy-skin .hs_s1 .container .background_6 { left: 0; } }
@@ -3205,19 +3205,24 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .title { margin: 0; padding: 15px 6px 0 6px; font-size: 34px; line-height: 1.25; letter-spacing: 4px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .title { margin: 0; padding: 15px 6px 0 6px; font-size: 32px; line-height: 1.25; letter-spacing: 4px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item { padding-top: 30px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item:nth-of-type(2) .item_title { margin: 0 0 4px 0; letter-spacing: 0.7px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item:nth-of-type(2) .item_title { margin: 0 0 4px 0; letter-spacing: 0.7px; text-align: left; } }
 .happy-skin .hs_s1 .container .item:nth-of-type(3) { padding-top: 30px; margin-bottom: 0; }
-.happy-skin .hs_s1 .container .item:nth-of-type(3) .item_title { letter-spacing: normal; text-align: left; }
+@media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item:nth-of-type(3) { padding-top: 28px; } }
+.happy-skin .hs_s1 .container .item:nth-of-type(3) .item_title { letter-spacing: normal; text-align: center; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item:nth-of-type(3) .item_title { padding: 0 6px 0 6px; text-align: left; } }
 .happy-skin .hs_s1 .container .item .item_title { margin: 0 0 16px 0; font-family: 'NotoSans TC', sans-serif; font-size: 32px; font-weight: bold; letter-spacing: 1.6px; color: #ff25ae; text-align: left; opacity: 0; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .item_title { font-size: 32px; text-align: center; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .item_title { margin: 0 0 8px 0; padding: 0 6px; font-size: 21px; letter-spacing: 1.1px; text-align: center; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_title { margin: 0 0 8px 0; padding: 0 6px; font-size: 19px; letter-spacing: 1.1px; text-align: center; } }
+.happy-skin .hs_s1 .container .item .item_title > span { font-size: 33px; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .item_title > span { font-size: 33px; } }
+@media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .item_title > span { font-size: 22px; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_title > span { font-size: 20px; } }
 .happy-skin .hs_s1 .container .item .item_text { font-family: 'NotoSans TC', sans-serif; font-size: 20px; font-weight: 500; line-height: 1.89; letter-spacing: 1.5px; text-align: justify; color: #717076; opacity: 0; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .item_text { padding: 0; font-size: 20px; } }
-@media screen and (max-width: 450px) and (min-width: 394px) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 14px 6px 0 6px; font-size: 17px; letter-spacing: 2.2px; line-height: 1.76; } }
-@media screen and (max-width: 393px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 14px 6px 0 6px; font-size: 16px; letter-spacing: 1.6px; line-height: 1.76; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 14px 6px 0 6px; font-size: 15px; letter-spacing: 1.6px; line-height: 1.76; } }
+@media screen and (max-width: 450px) and (min-width: 394px) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 10px 6px 0 6px; font-size: 17px; letter-spacing: 2.2px; line-height: 1.76; } }
+@media screen and (max-width: 393px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 10px 6px 0 6px; font-size: 16px; letter-spacing: 1.6px; line-height: 1.76; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .item_text { margin-bottom: 0; padding: 10px 6px 0 6px; font-size: 15px; letter-spacing: 1.6px; line-height: 1.76; } }
 .happy-skin .hs_s1 .container .item .svg_items .svg_item { display: flex; justify-content: center; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(1) { justify-content: space-between; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item:nth-of-type(1) { justify-content: space-between; } }
@@ -3238,21 +3243,21 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg { width: 30%; flex-direction: column; align-items: center; } }
 .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg > img { width: 82px; height: 76px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg > img { width: 80px; height: 75px; } }
-.happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { position: relative; margin: .5rem 0 .5rem .8rem; font-family: 'NotoSans TC', sans-serif; font-size: 18px; font-weight: 500; text-align: center; color: #717076; }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { font-size: 18px; } }
+.happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { position: relative; margin: .5rem 0 .5rem .8rem; font-family: 'NotoSans TC', sans-serif; font-size: 16px; font-weight: 500; text-align: center; color: #717076; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { font-size: 16px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { margin: .5rem auto; font-size: 20px; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { margin: .5rem auto; font-size: 14px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { margin: .5rem auto; font-size: 13px; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p { margin: .5rem auto; font-size: 14px; } }
 .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_font { font-family: 'Poppins', sans-serif; font-size: 16px; vertical-align: baseline; }
-@media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_font { font-size: 10px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_font { font-size: 13px; } }
 .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br { font-size: 12px; vertical-align: baseline; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br { display: flex; align-items: baseline; font-size: 14px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br { display: flex; align-items: baseline; font-size: 10px; } }
-.happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 18px; font-weight: 500; }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 18px; } }
+.happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 16px; font-weight: 500; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 16px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 20px; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 14px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 13px; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .happy-skin .hs_s1 .container .item .svg_items .svg_item .svg p .svg_br > span { font-size: 14px; } }
 
 .special-feature { display: none; width: 100%; position: relative; }
 .special-feature .sf_s1 { padding: 28px 0 30px 0; background-color: #f6d6f7; }
@@ -3502,8 +3507,8 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .checkmark { height: 25px; width: 25px; } }
 .form > .container .fill_items > form .button { padding: 5px 0; width: 100%; max-width: 250px; max-height: 65px; border: 0; background-color: #ff8768; font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 0.7px; text-align: center; color: #dfff00; }
 .form > .container .fill_items > form .button.delivery { position: relative; }
-.form > .container .fill_items > form .button.delivery:after { content: '支付百元運費直送到府​'; position: absolute; top: 100%; left: 0; width: 100%; font-size: 14px; font-weight: normal; color: #4a4a4a; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .button.delivery:after { font-size: 12px; } }
+.form > .container .fill_items > form .button.delivery:after { content: '支付百元運費直送到府​'; position: absolute; top: 110%; left: 0; width: 100%; font-size: 14px; font-weight: normal; color: #4a4a4a; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .button.delivery:after { font-size: 12px; padding-left: 2px; } }
 .form > .container .fill_items .notice { margin-top: 40px; }
 .form > .container .fill_items .notice:nth-of-type(2) { margin-top: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items .notice { padding: 0 12px; } }

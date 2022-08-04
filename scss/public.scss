@@ -20,6 +20,7 @@ body {
 }
 
 .font-pops {
+	// vertical-align: baseline;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -589,7 +590,7 @@ header {
 
 		.container {
 			max-width: 900px;
-			padding-left: 80px;
+			padding-left: 120px;
 
 			@include range-width(0, 451px) {
 				padding: 0 1rem;
@@ -671,8 +672,10 @@ header {
 					
 					.item_title {
 						@include range-width(0, 451px) {
+
 							margin: 0 0 4px 0;
 							letter-spacing: 0.7px;							
+							text-align: left;
 						}
 					}
 				}
@@ -681,9 +684,13 @@ header {
 					padding-top: 30px;
 					margin-bottom: 0;
 
+					@include range-width(0, 451px) {
+						padding-top: 28px;
+					}
+
 					.item_title {
 						letter-spacing: normal;
-						text-align: left;
+						text-align: center;
 
 						@include range-width(0, 451px) {
 							padding: 0 6px 0 6px;
@@ -724,6 +731,22 @@ header {
 						letter-spacing: 1.1px;
 						text-align: center;
 					}
+
+					> span {
+						font-size: 33px;
+
+						@include range-width(451px, 769px) {
+							font-size: 33px;
+						}
+		
+						@include range-width(376px, 451px) {
+							font-size: 22px;
+						}
+
+						@include range-width(0, 376px) {
+							font-size: 20px;
+						}	
+					}
 				}
 				
 				.item_text {
@@ -743,7 +766,7 @@ header {
 
 					@include range-width(394px, 451px) {
 						margin-bottom: 0;
-						padding: 14px 6px 0 6px;
+						padding: 10px 6px 0 6px;
 						font-size: 17px;
 						letter-spacing: 2.2px;
 						line-height: 1.76;
@@ -751,7 +774,7 @@ header {
 
 					@include range-width(376px, 394px) {
 						margin-bottom: 0;
-						padding: 14px 6px 0 6px;
+						padding: 10px 6px 0 6px;
 						font-size: 16px;	
 						letter-spacing: 1.6px;
 						line-height: 1.76;
@@ -759,7 +782,7 @@ header {
 
 					@include range-width(0, 376px) {
 						margin-bottom: 0;
-						padding: 14px 6px 0 6px;
+						padding: 10px 6px 0 6px;
 						font-size: 15px;	
 						letter-spacing: 1.6px;
 						line-height: 1.76;
@@ -869,13 +892,13 @@ header {
 								position: relative;
 								margin: .5rem 0 .5rem .8rem;
 								font-family: 'NotoSans TC', sans-serif;
-								font-size: 18px;
+								font-size: 16px;
 								font-weight: 500;
 								text-align: center;
 								color: #717076;
 	
 								@include range-width(769px, 1025px) {
-									font-size: 18px;
+									font-size: 16px;
 								}
 	
 								@include range-width(451px, 769px) {
@@ -894,7 +917,7 @@ header {
 									// display: flex;
 									// align-items: baseline;
 									margin: .5rem auto;
-									font-size: 13px;
+									font-size: 14px;
 								}
 	
 								.svg_font {
@@ -902,7 +925,7 @@ header {
 									font-size: 16px;
 									vertical-align: baseline;
 									@include range-width(0, 451px) {
-										font-size: 10px;
+										font-size: 13px;
 									}
 								}
 			
@@ -923,11 +946,11 @@ header {
 									}
 
 									> span {
-										font-size: 18px;
+										font-size: 16px;
 										font-weight: 500;
 			
 										@include range-width(769px, 1025px) {
-											font-size: 18px;
+											font-size: 16px;
 										}
 			
 										@include range-width(451px, 769px) {
@@ -939,7 +962,7 @@ header {
 										}
 				
 										@include range-width(0, 376px) {
-											font-size: 13px;
+											font-size: 14px;
 										}	
 									}
 								}
@@ -2365,7 +2388,7 @@ header {
 						&:after {
 							content: '支付百元運費直送到府​';
 							position: absolute;
-							top: 100%;
+							top: 110%;
 							left: 0;
 							width: 100%;
 							font-size: 14px;
@@ -2374,6 +2397,7 @@ header {
 
 							@include range-width(0, 451px) {
 								font-size: 12px;
+								padding-left: 2px;
 							}
 						}
 					}
