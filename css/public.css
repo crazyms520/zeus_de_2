@@ -3408,7 +3408,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .elephant .content .slick-items .item .modal_content_hover .modal_effect_hover.ph55 { background-color: #fca941; }
 .elephant .content .slick-items .item .modal_content_hover .modal_text_hover { margin-bottom: 0; font-family: 'Noto Sans TC', sans-serif; font-size: 15px; line-height: 1.56; letter-spacing: 1px; text-align: center; color: #636363; }
 .elephant .content .slick-items .item .modal_content_hover .modal_text_hover .font-pops { font-size: 16px; vertical-align: baseline; }
-.elephant .content .modal_mask { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: transparent; z-index: 100; }
+.elephant .content .modal_mask { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: transparent; z-index: 100; opacity: .99; }
 .elephant .content .modal_content_mobile { display: none; position: absolute; top: 0; border-radius: 100px; background-color: #f6dcff; padding: 25px 32px; z-index: 1000; width: 100%; min-height: 280px; max-height: 300px; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .elephant .content .modal_content_mobile { top: calc(50% - 125px); width: 100%; } }
 .elephant .content .modal_content_mobile .modal_ph_mobile { font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: bold; letter-spacing: 2px; text-align: center; color: #fff; }
