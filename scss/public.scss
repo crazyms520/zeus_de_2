@@ -59,7 +59,7 @@ header {
 			
 			@include range-width(0, 451px) {
 				padding-top: 5px;
-				width: auto;
+				width: 100%;
 				height: auto;
 			}
 
@@ -173,14 +173,19 @@ header {
 				}
 
 				@include range-width(0, 451px) {
-					width: 200px;
-					// width: auto;
+					// width: 200px;
+					width: 150px;
 				}
 
 			}
 
 			.text {
 				opacity: 0;
+
+				@include range-width(0, 451px) {
+					margin-top: 2rem;
+				}
+
 				> p {
 					margin: 35px .5rem;
 					font-family: 'NotoSans TC', sans-serif;
@@ -188,7 +193,12 @@ header {
 					font-weight: bold;
 					letter-spacing: 6.18px;
 					text-align: center;
+					line-height: normal;
 					color: #f12e9c;
+
+					&:nth-of-type(2) {
+						margin-top: -.5rem;
+					}
 
 					@include range-width(1200px, 1441px) {
 						// font-size: 60px;
@@ -206,8 +216,8 @@ header {
 
 					@include range-width(0, 451px) {
 						margin: 1rem .5rem 0 .5rem;
-						// font-size: 32px;	
-						font-size: 34px;
+						// font-size: 34px;	
+						font-size: 44px;
 						letter-spacing: 3px;
 					}
 				}
@@ -288,7 +298,8 @@ header {
 
 				&.active {
 					// opacity: 1;
-					color: #7e1fd2;
+					// color: #7e1fd2;
+					color: #ff25ae;
 					background-color: #fff;
 					font-weight: bolder;
 				}
@@ -1441,19 +1452,21 @@ header {
 					&:nth-of-type(2) {
 						margin-top: 10px;
 					}
-	
-					> img {
-						width: 100%;
+					
+					picture {
+						display: inline-block;
 
-						@include range-width(1281px, 1441px) {
+						> img {
 							width: 100%;
+	
+							@include range-width(1281px, 1441px) {
+								width: 100%;
+							}
+	
+							@include range-width(0, 451px) {
+								width: 100%;
+							}
 						}
-
-						@include range-width(0, 451px) {
-							width: auto;
-							max-width: 100%;
-						}
-						
 					}
 				}
 			}
@@ -2279,7 +2292,9 @@ header {
 							font-weight: bold;
 							letter-spacing: 2.08px;
 							text-align: justify;
-							color: #0275c9;
+							// color: #0275c9;
+							color: #000;
+							background-color: #facae7;
 						}
 		
 						select {
@@ -2288,6 +2303,8 @@ header {
 							font-weight: bold;
 							letter-spacing: 1.08px;
 							text-align: justify;
+							color: #000;
+							background-color: #facae7;
 							// color: #0275c9;
 							
 						}
@@ -2295,7 +2312,8 @@ header {
 						.form-select {
 							padding-right: 1.25em;
 							background-position: right 0.5rem center;
-		
+							font-weight: normal;
+							// background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='white'  d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
 							@include range-width(0, 376px) {
 								padding-right: 1em;
 								background-position: right 0.1rem center;
@@ -2534,10 +2552,14 @@ header {
 				padding: 30px 12px;
 			}
 
+			.font-pops {
+				vertical-align: baseline;
+			}
+
 			.privacy_content_title {
 				h2 {
 					margin-bottom: 40px;
-					font-size: 44px;
+					font-size: 42px;
 					font-weight: 500;
 					letter-spacing: 1px;
 					color: #636363;
@@ -2552,7 +2574,7 @@ header {
 
 			.privacy_terms {
 				margin-bottom: 90px;
-				font-size: 20px;
+				font-size: 18px;
 				text-align: left;
 				line-height: 1.8;
 				letter-spacing: 1px;
@@ -2573,7 +2595,7 @@ header {
 					}
 
 					.privacy_term_title {
-						font-size: 24px;
+						font-size: 22px;
 
 						@include range-width(0, 451px) {
 							font-size: 16px;
@@ -2598,6 +2620,7 @@ header {
 	width: 100%;
 	overflow: hidden;
 	height: 42px;
+
 	> div {
 		position: absolute;
 		width: 200%;
@@ -2607,10 +2630,11 @@ header {
 	}
 	.text {
 		display: inline-block;
-		width: 50%;
+		width: 50%
 	}
 	
 }
+
 .fade-in {
 	animation: fade-in 1s cubic-bezier(0.65, 0, 0.35, 1) both;	
 }

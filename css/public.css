@@ -3101,7 +3101,7 @@ header .ShinKong .ShinKong_img { padding-right: 120px; }
 header .ShinKong .ShinKong_img > img { width: 112px; height: 64px; }
 @media screen and (max-width: 450px) and (min-width: 0) { header .ShinKong .ShinKong_img > img { width: 42px; height: 24px; } }
 header .ShinKong .text_box { position: relative; width: 100%; }
-@media screen and (max-width: 450px) and (min-width: 0) { header .ShinKong .text_box { padding-top: 5px; width: auto; height: auto; } }
+@media screen and (max-width: 450px) and (min-width: 0) { header .ShinKong .text_box { padding-top: 5px; width: 100%; height: auto; } }
 header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px; letter-spacing: 2.4px; color: #777575; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { header .ShinKong .text_box .text { font-size: 20px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { header .ShinKong .text_box .text { font-size: 26px; } }
@@ -3123,13 +3123,15 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 1440px) and (min-width: 1200px) { .banner .banner_box_m .banner_logo > img { width: 250px; } }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box_m .banner_logo > img { width: 250px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_m .banner_logo > img { width: 400px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box_m .banner_logo > img { width: 200px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box_m .banner_logo > img { width: 150px; } }
 .banner .banner_box_m .banner_logo .text { opacity: 0; }
-.banner .banner_box_m .banner_logo .text > p { margin: 35px .5rem; font-family: 'NotoSans TC', sans-serif; font-size: 70px; font-weight: bold; letter-spacing: 6.18px; text-align: center; color: #f12e9c; }
+@media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box_m .banner_logo .text { margin-top: 2rem; } }
+.banner .banner_box_m .banner_logo .text > p { margin: 35px .5rem; font-family: 'NotoSans TC', sans-serif; font-size: 70px; font-weight: bold; letter-spacing: 6.18px; text-align: center; line-height: normal; color: #f12e9c; }
+.banner .banner_box_m .banner_logo .text > p:nth-of-type(2) { margin-top: -.5rem; }
 @media screen and (max-width: 1440px) and (min-width: 1200px) { .banner .banner_box_m .banner_logo .text > p { font-size: 48px; } }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box_m .banner_logo .text > p { font-size: 45px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_m .banner_logo .text > p { font-size: 60px; letter-spacing: 3px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box_m .banner_logo .text > p { margin: 1rem .5rem 0 .5rem; font-size: 34px; letter-spacing: 3px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box_m .banner_logo .text > p { margin: 1rem .5rem 0 .5rem; font-size: 44px; letter-spacing: 3px; } }
 .banner .banner_img { width: 100%; height: 100%; }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_img { margin-top: 0; } }
 .banner .banner_img picture { display: inline-block; width: 100%; }
@@ -3145,7 +3147,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .navbar .nav .nav-item:nth-of-type(2) { border-left: 1px solid #fff; border-right: 1px solid #fff; }
 .navbar .nav .nav-item span { padding: 4px 1rem; font-family: 'NotoSans TC', sans-serif; font-size: 22px; letter-spacing: 1.75px; text-align: center; color: #b695c2; background-color: #f9e5fa; }
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item span { font-size: 16px; letter-spacing: 1px; } }
-.navbar .nav .nav-item span.active { color: #7e1fd2; background-color: #fff; font-weight: bolder; }
+.navbar .nav .nav-item span.active { color: #ff25ae; background-color: #fff; font-weight: bolder; }
 
 .brand-origin { display: none; width: 100%; background-color: #91d9ed; }
 .brand-origin .bo_s1 { position: relative; display: flex; align-items: center; padding-top: 60px; background-color: #ffef02; z-index: 0; }
@@ -3347,9 +3349,10 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 768px) and (min-width: 451px) { .mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { margin-top: 0; margin-left: 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text .container > h2, .mixing .title .title_text .container > .h2 { margin-top: 15px; margin-left: 0; text-align: center; } }
 .mixing .title .title_text .container > h2:nth-of-type(2), .mixing .title .title_text .container > .h2:nth-of-type(2) { margin-top: 10px; }
-.mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: 100%; }
-@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: 100%; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text .container > h2 > img, .mixing .title .title_text .container > .h2 > img { width: auto; max-width: 100%; } }
+.mixing .title .title_text .container > h2 picture, .mixing .title .title_text .container > .h2 picture { display: inline-block; }
+.mixing .title .title_text .container > h2 picture > img, .mixing .title .title_text .container > .h2 picture > img { width: 100%; }
+@media screen and (max-width: 1440px) and (min-width: 1281px) { .mixing .title .title_text .container > h2 picture > img, .mixing .title .title_text .container > .h2 picture > img { width: 100%; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .mixing .title .title_text .container > h2 picture > img, .mixing .title .title_text .container > .h2 picture > img { width: 100%; } }
 .mixing .container { width: 996px; margin: 0 auto; padding: 60px 16px 10px 16px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing .container { padding-top: 35px; width: 100%; } }
 .mixing .container .item { display: inline-block; position: relative; left: 100px; margin-left: 2%; opacity: 0; }
@@ -3496,9 +3499,9 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 1024px) and (min-width: 769px) { .form > .container .fill_items > form .input-box .row label { font-size: 18px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .fill_items > form .input-box .row label { font-size: 16px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .input-box .row label { font-size: 16px; } }
-.form > .container .fill_items > form .input-box .row input { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 2.08px; text-align: justify; color: #0275c9; }
-.form > .container .fill_items > form .input-box .row select { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 1.08px; text-align: justify; }
-.form > .container .fill_items > form .input-box .row .form-select { padding-right: 1.25em; background-position: right 0.5rem center; }
+.form > .container .fill_items > form .input-box .row input { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 2.08px; text-align: justify; color: #000; background-color: #facae7; }
+.form > .container .fill_items > form .input-box .row select { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 1.08px; text-align: justify; color: #000; background-color: #facae7; }
+.form > .container .fill_items > form .input-box .row .form-select { padding-right: 1.25em; background-position: right 0.5rem center; font-weight: normal; }
 @media screen and (max-width: 375px) and (min-width: 0) { .form > .container .fill_items > form .input-box .row .form-select { padding-right: 1em; background-position: right 0.1rem center; font-size: 14px; } }
 .form > .container .fill_items > form .form-check-item .label { display: block; position: relative; padding-left: 45px; margin-bottom: 12px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; font-family: 'Noto Sans TC', sans-serif; font-size: 20px; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .label { padding-left: 35px; font-size: 14px; font-weight: 500; letter-spacing: normal; } }
@@ -3534,13 +3537,14 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 1024px) and (min-width: 769px) { .privacy .container .privacy_content { padding: 50px 80px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .privacy .container .privacy_content { padding: 50px 16px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content { padding: 30px 12px; } }
-.privacy .container .privacy_content .privacy_content_title h2, .privacy .container .privacy_content .privacy_content_title .h2 { margin-bottom: 40px; font-size: 44px; font-weight: 500; letter-spacing: 1px; color: #636363; }
+.privacy .container .privacy_content .font-pops { vertical-align: baseline; }
+.privacy .container .privacy_content .privacy_content_title h2, .privacy .container .privacy_content .privacy_content_title .h2 { margin-bottom: 40px; font-size: 42px; font-weight: 500; letter-spacing: 1px; color: #636363; }
 @media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content .privacy_content_title h2, .privacy .container .privacy_content .privacy_content_title .h2 { margin-bottom: 30px; font-size: 22px; line-height: normal; } }
-.privacy .container .privacy_content .privacy_terms { margin-bottom: 90px; font-size: 20px; text-align: left; line-height: 1.8; letter-spacing: 1px; color: #636363; }
+.privacy .container .privacy_content .privacy_terms { margin-bottom: 90px; font-size: 18px; text-align: left; line-height: 1.8; letter-spacing: 1px; color: #636363; }
 @media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content .privacy_terms { margin-bottom: 50px; font-size: 14px; line-height: 1.71; letter-spacing: 0.7px; } }
 .privacy .container .privacy_content .privacy_terms .privacy_term { margin-bottom: 40px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content .privacy_terms .privacy_term { margin-bottom: 30px; } }
-.privacy .container .privacy_content .privacy_terms .privacy_term .privacy_term_title { font-size: 24px; }
+.privacy .container .privacy_content .privacy_terms .privacy_term .privacy_term_title { font-size: 22px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content .privacy_terms .privacy_term .privacy_term_title { font-size: 16px; } }
 .privacy .container .privacy_content .privacy_terms .privacy_term .privacy_term_ul { padding: 0; list-style: none; }
 
