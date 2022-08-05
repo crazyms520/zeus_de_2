@@ -13,13 +13,18 @@ body {
 
     font-size: medium;
     text-align: center;
-    font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue,
+    font-family: "NotoSans TC", "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue,
         Helvetica, Arial, sans-serif;
     // 文字染色，背景色、文字色
 	
     @include selection(rgba(120, 186, 255, 1), rgba(255, 255, 255, 1));
 }
 
+@font-face {
+	font-family: 'NotoSans TC';
+    src: url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap);
+    unicode-range: U+4E00-9FFF;
+}
 .font-pops {
 	// vertical-align: baseline;
 	font-family: 'Poppins', sans-serif;
@@ -2293,7 +2298,7 @@ header {
 							letter-spacing: 2.08px;
 							text-align: justify;
 							// color: #0275c9;
-							color: #000;
+							color: #4a4a4a;
 							background-color: #facae7;
 						}
 		
@@ -2303,7 +2308,7 @@ header {
 							font-weight: bold;
 							letter-spacing: 1.08px;
 							text-align: justify;
-							color: #000;
+							color: #4A4A4A;
 							background-color: #facae7;
 							// color: #0275c9;
 							

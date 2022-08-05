@@ -3088,10 +3088,11 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
   .d-print-none { display: none !important; } }
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: medium; text-align: center; font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: medium; text-align: center; font-family: "NotoSans TC", "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 body::-moz-selection { color: white; background-color: #78baff; }
 body::selection { color: white; background-color: #78baff; }
 
+@font-face { font-family: 'NotoSans TC'; src: url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap); unicode-range: U+4E00-9FFF; }
 .font-pops { font-family: 'Poppins', sans-serif; }
 
 header .ShinKong { padding: 30px 60px; }
@@ -3499,8 +3500,8 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 1024px) and (min-width: 769px) { .form > .container .fill_items > form .input-box .row label { font-size: 18px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .fill_items > form .input-box .row label { font-size: 16px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .input-box .row label { font-size: 16px; } }
-.form > .container .fill_items > form .input-box .row input { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 2.08px; text-align: justify; color: #000; background-color: #facae7; }
-.form > .container .fill_items > form .input-box .row select { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 1.08px; text-align: justify; color: #000; background-color: #facae7; }
+.form > .container .fill_items > form .input-box .row input { font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 2.08px; text-align: justify; color: #4a4a4a; background-color: #facae7; }
+.form > .container .fill_items > form .input-box .row select { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: bold; letter-spacing: 1.08px; text-align: justify; color: #4A4A4A; background-color: #facae7; }
 .form > .container .fill_items > form .input-box .row .form-select { padding-right: 1.25em; background-position: right 0.5rem center; font-weight: normal; }
 @media screen and (max-width: 375px) and (min-width: 0) { .form > .container .fill_items > form .input-box .row .form-select { padding-right: 1em; background-position: right 0.1rem center; font-size: 14px; } }
 .form > .container .fill_items > form .form-check-item .label { display: block; position: relative; padding-left: 45px; margin-bottom: 12px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; cursor: pointer; font-family: 'Noto Sans TC', sans-serif; font-size: 20px; letter-spacing: 1px; text-align: justify; color: #4a4a4a; }
