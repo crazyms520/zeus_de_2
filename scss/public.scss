@@ -2437,6 +2437,7 @@ header {
 
 					> p {
 						margin: 0 auto;
+						font-family: 'Noto Sans TC', sans-serif;
 						font-size: 14px;
 						font-weight: normal;
 						text-align: center;
@@ -2452,6 +2453,10 @@ header {
 							@include range-width(0, 451px) {
 								margin-top: .5rem;
 							}
+						}
+
+						> span {
+							vertical-align: baseline;
 						}
 					}
 				}

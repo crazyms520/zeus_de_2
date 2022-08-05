@@ -3515,10 +3515,11 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .checkmark { height: 25px; width: 25px; } }
 .form > .container .fill_items > form .button { padding: 5px 0; width: 100%; max-width: 250px; max-height: 65px; border: 0; background-color: #ff8768; font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 0.7px; text-align: center; color: #dfff00; }
 .form > .container .fill_items > form .delivery { position: relative; max-width: 250px; }
-.form > .container .fill_items > form .delivery > p { margin: 0 auto; font-size: 14px; font-weight: normal; text-align: center; color: #4a4a4a; }
+.form > .container .fill_items > form .delivery > p { margin: 0 auto; font-family: 'Noto Sans TC', sans-serif; font-size: 14px; font-weight: normal; text-align: center; color: #4a4a4a; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .delivery > p { font-size: 12px; } }
 .form > .container .fill_items > form .delivery > p:nth-of-type(1) { margin-top: 1rem; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .delivery > p:nth-of-type(1) { margin-top: .5rem; } }
+.form > .container .fill_items > form .delivery > p > span { vertical-align: baseline; }
 .form > .container .fill_items .notice { margin-top: 0px; }
 .form > .container .fill_items .notice:nth-of-type(2) { margin-top: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items .notice { padding: 0 12px; } }
