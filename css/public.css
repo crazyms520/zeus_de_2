@@ -3526,6 +3526,24 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .form > .container .ShinKong > img { width: 70px; height: 40px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .ShinKong > img { width: 42px; height: 24px; } }
 
+.privacy { padding: 70px 0; background-color: #e4f5fc; }
+@media screen and (max-width: 450px) and (min-width: 0) { .privacy { padding: 30px 0; } }
+.privacy .privacy_logo h2 img, .privacy .privacy_logo .h2 img { width: 260px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .privacy .privacy_logo h2 img, .privacy .privacy_logo .h2 img { width: 200px; } }
+.privacy .container .privacy_content { margin-top: 70px; padding: 50px 160px; background-color: #fff; font-family: 'Noto Sans TC', sans-serif; }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .privacy .container .privacy_content { padding: 50px 80px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .privacy .container .privacy_content { padding: 50px 16px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content { padding: 30px 12px; } }
+.privacy .container .privacy_content .privacy_content_title h2, .privacy .container .privacy_content .privacy_content_title .h2 { margin-bottom: 40px; font-size: 44px; font-weight: 500; letter-spacing: 1px; color: #636363; }
+@media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content .privacy_content_title h2, .privacy .container .privacy_content .privacy_content_title .h2 { margin-bottom: 30px; font-size: 22px; line-height: normal; } }
+.privacy .container .privacy_content .privacy_terms { margin-bottom: 90px; font-size: 20px; text-align: left; line-height: 1.8; letter-spacing: 1px; color: #636363; }
+@media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content .privacy_terms { margin-bottom: 50px; font-size: 14px; line-height: 1.71; letter-spacing: 0.7px; } }
+.privacy .container .privacy_content .privacy_terms .privacy_term { margin-bottom: 40px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content .privacy_terms .privacy_term { margin-bottom: 30px; } }
+.privacy .container .privacy_content .privacy_terms .privacy_term .privacy_term_title { font-size: 24px; }
+@media screen and (max-width: 450px) and (min-width: 0) { .privacy .container .privacy_content .privacy_terms .privacy_term .privacy_term_title { font-size: 16px; } }
+.privacy .container .privacy_content .privacy_terms .privacy_term .privacy_term_ul { padding: 0; list-style: none; }
+
 .marquee { position: relative; width: 100%; overflow: hidden; height: 42px; }
 .marquee > div { position: absolute; width: 200%; height: 42px; overflow: hidden; animation: marquee 10s linear infinite; }
 .marquee .text { display: inline-block; width: 50%; }
