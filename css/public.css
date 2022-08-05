@@ -3088,11 +3088,10 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
   .d-print-none { display: none !important; } }
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: medium; text-align: center; font-family: "NotoSans TC", "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+body { position: relative; display: inline-block; width: 100%; margin: 0; padding: 0; color: #5a5a5a; font-size: medium; text-align: center; font-family: "custom-serif", "NotoSans TC", "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
 body::-moz-selection { color: white; background-color: #78baff; }
 body::selection { color: white; background-color: #78baff; }
 
-@font-face { font-family: 'NotoSans TC'; src: url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap); unicode-range: U+4E00-9FFF; }
 .font-pops { font-family: 'Poppins', sans-serif; }
 
 header .ShinKong { padding: 30px 60px; }
@@ -3515,10 +3514,12 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .form > .container .fill_items > form .form-check-item .checkmark { position: absolute; top: 0; left: 0; height: 30px; width: 30px; border: solid 1px #ff8768; background-color: #fff; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .form-check-item .checkmark { height: 25px; width: 25px; } }
 .form > .container .fill_items > form .button { padding: 5px 0; width: 100%; max-width: 250px; max-height: 65px; border: 0; background-color: #ff8768; font-family: 'Noto Sans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 0.7px; text-align: center; color: #dfff00; }
-.form > .container .fill_items > form .button.delivery { position: relative; }
-.form > .container .fill_items > form .button.delivery:after { content: '支付百元運費直送到府​'; position: absolute; top: 110%; left: 0; width: 100%; font-size: 14px; font-weight: normal; color: #4a4a4a; }
-@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .button.delivery:after { font-size: 12px; padding-left: 2px; } }
-.form > .container .fill_items .notice { margin-top: 40px; }
+.form > .container .fill_items > form .delivery { position: relative; max-width: 250px; }
+.form > .container .fill_items > form .delivery > p { margin: 0 auto; font-size: 14px; font-weight: normal; text-align: center; color: #4a4a4a; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .delivery > p { font-size: 12px; } }
+.form > .container .fill_items > form .delivery > p:nth-of-type(1) { margin-top: 1rem; }
+@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items > form .delivery > p:nth-of-type(1) { margin-top: .5rem; } }
+.form > .container .fill_items .notice { margin-top: 0px; }
 .form > .container .fill_items .notice:nth-of-type(2) { margin-top: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .fill_items .notice { padding: 0 12px; } }
 .form > .container .fill_items .notice .title { font-family: 'Noto Sans TC', sans-serif; font-size: 16px; font-weight: bold; line-height: 1.63; letter-spacing: 0.73px; color: #f750c2; text-align: left; }

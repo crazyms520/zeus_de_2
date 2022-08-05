@@ -13,18 +13,13 @@ body {
 
     font-size: medium;
     text-align: center;
-    font-family: "NotoSans TC", "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue,
+    font-family: "custom-serif", "NotoSans TC", "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue,
         Helvetica, Arial, sans-serif;
     // 文字染色，背景色、文字色
 	
     @include selection(rgba(120, 186, 255, 1), rgba(255, 255, 255, 1));
 }
 
-@font-face {
-	font-family: 'NotoSans TC';
-    src: url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap);
-    unicode-range: U+4E00-9FFF;
-}
 .font-pops {
 	// vertical-align: baseline;
 	font-family: 'Poppins', sans-serif;
@@ -2431,22 +2426,31 @@ header {
 					letter-spacing: 0.7px;
 					text-align: center;
 					color: #dfff00;
+				}
 
-					&.delivery {
-						position: relative;
-						&:after {
-							content: '支付百元運費直送到府​';
-							position: absolute;
-							top: 110%;
-							left: 0;
-							width: 100%;
-							font-size: 14px;
-							font-weight: normal;
-							color: #4a4a4a;
+				.delivery {
+					position: relative;
+					max-width: 250px;
+
+					@include range-width(0, 451px) {
+					}
+
+					> p {
+						margin: 0 auto;
+						font-size: 14px;
+						font-weight: normal;
+						text-align: center;
+						color: #4a4a4a;
+
+						@include range-width(0, 451px) {
+							font-size: 12px;
+						}
+
+						&:nth-of-type(1) {
+							margin-top: 1rem;
 
 							@include range-width(0, 451px) {
-								font-size: 12px;
-								padding-left: 2px;
+								margin-top: .5rem;
 							}
 						}
 					}
@@ -2454,7 +2458,7 @@ header {
 			}
 
 			.notice {
-				margin-top: 40px;
+				margin-top: 0px;
 
 				&:nth-of-type(2) {
 					margin-top: 0;
