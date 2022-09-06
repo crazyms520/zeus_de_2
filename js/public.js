@@ -157,10 +157,6 @@
 				$(".slick-items").addClass('slide-right-3')
 			}
 
-			//form 
-			if(scroll > $('.form').offset().top - 200){
-				$(".form-slide-up-item").addClass('slide-up')
-			}
 		} else {
 			// brand-origin 
 			// console.log(scroll, $('.navbar').offset().top)		;
@@ -201,11 +197,6 @@
 			if(scroll > $('.elephant').offset().top - 350){
 				$(".slick-items").addClass('slide-right-3')
 			}
-
-			//form 
-			if(scroll > $('.elephant').offset().top){
-				$(".form-slide-up-item").addClass('slide-up')
-			}	
 		}
 	})
 	// animation end
