@@ -1490,6 +1490,7 @@ header {
 
 					.tags {
 						margin: 10px 0;
+						font-weight: bold;
 						text-align: left;
 
 						> span {
@@ -1542,7 +1543,7 @@ header {
 					.prices {
 						.special_price {
 							margin: 0;
-							font-size: 28px;
+							font-size: 24px;
 							font-weight: bold;
 							font-family: 'Poppins', sans-serif;
 							color: #e3007e;
@@ -1560,13 +1561,13 @@ header {
 							&:before {
 								content: attr(title);
 								margin-right: 5px;
-								font-size: 18px;
+								font-size: 16px;
 								font-weight: normal;
 								font-family: "NotoSans TC", "微軟正黑體", "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 								vertical-align: baseline;
 
 								@include range-width(0, 451px) {
-									font-size: 14px;
+									font-size: 12px;
 								}
 								
 							}
@@ -1585,7 +1586,7 @@ header {
 							}
 
 							@include range-width(321px, 451px) {
-								font-size: 13px;
+								font-size: 12px;
 							}
 
 							@include range-width(0, 321px) {
@@ -1618,7 +1619,7 @@ header {
 									}
 
 									@include range-width(321px, 451px) {
-										font-size: 13px;
+										font-size: 12px;
 										letter-spacing: 1.1px;
 									}
 
@@ -1634,7 +1635,7 @@ header {
 
 					.title {
 						margin: 10px 0;
-						font-size: 22px;
+						font-size: 20px;
 						font-weight: bold;
 						letter-spacing: 2.12px;
 						text-align: left;
@@ -1646,12 +1647,14 @@ header {
 						}
 
 						@include range-width(376px, 451px) {
-							font-size: 14px;
+							margin-bottom: 5px;
+							font-size: 16px;
 							letter-spacing: 1.1px;
 						}
 
 						@include range-width(0, 376px) {
-							font-size: 13px;
+							margin-bottom: 5px;
+							font-size: 14px;
 							letter-spacing: 1.1px;
 						}
 					}
@@ -1659,7 +1662,7 @@ header {
 					.contents {
 						> p {
 							margin: 0;
-							font-size: 18px;
+							font-size: 16px;
 							letter-spacing: 2px;
 							text-align: left;
 							color: #4a4a4a;
@@ -1679,7 +1682,7 @@ header {
 			}
 
 			.buy_now {
-				margin: 30px 0 0 0;
+				margin: 30px 0 30px 0;
 				text-align: center;
 
 				@include range-width(0, 451px) {
@@ -1691,7 +1694,7 @@ header {
 					padding: 10px 0;
 					width: 40%;
 					font-size: 20px;
-					font-weight: 500;
+					font-weight: bold;
 					letter-spacing: 1.82px;
 					color: #fff;
 					background-color: #ec8164;
@@ -2348,7 +2351,7 @@ header {
 				picture {
 					display: inline-block;
 					> img {
-						width: 100%;
+						width: 80%;
 					}
 				}
 				
