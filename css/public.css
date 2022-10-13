@@ -3368,6 +3368,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .special-offer .so_s1 .container .special_offer_items .special_offer_item .tags > span.empty { opacity: 0; }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item picture { display: inline-block; }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item picture > img { width: 80%; }
+@media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item picture > img { width: 100%; } }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item .prices .special_price { margin: 0; font-size: 24px; font-weight: bold; font-family: 'Poppins', sans-serif; color: #e3007e; text-align: left; vertical-align: baseline; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .prices .special_price { font-size: 20px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .prices .special_price { font-size: 16px; } }
@@ -3386,8 +3387,8 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 320px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .prices .sub_price .original_price:before, .special-offer .so_s1 .container .special_offer_items .special_offer_item .prices .sub_price .total:before { font-size: 12px; letter-spacing: 1.1px; } }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item .title { margin: 10px 0; font-size: 20px; font-weight: bold; letter-spacing: 2.12px; text-align: left; color: #4a4a4a; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .title { font-size: 16px; letter-spacing: 1.1px; } }
-@media screen and (max-width: 450px) and (min-width: 376px) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .title { margin-bottom: 5px; font-size: 16px; letter-spacing: 1.1px; } }
-@media screen and (max-width: 375px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .title { margin-bottom: 5px; font-size: 14px; letter-spacing: 1.1px; } }
+@media screen and (max-width: 450px) and (min-width: 376px) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .title { margin-bottom: 5px; font-size: 16px; letter-spacing: unset; } }
+@media screen and (max-width: 375px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .title { margin-bottom: 5px; font-size: 14px; letter-spacing: unset; } }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item .contents > p { margin: 0; font-size: 16px; letter-spacing: 2px; text-align: left; color: #4a4a4a; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .contents > p { font-size: 14px; letter-spacing: 1.1px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .contents > p { font-size: 12px; letter-spacing: 1.1px; } }
