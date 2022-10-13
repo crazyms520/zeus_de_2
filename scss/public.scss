@@ -1435,9 +1435,9 @@ header {
 							right: 10px;
 						}
 
-						@include range-width(376px, 451px) {
-							right: 8px;
-						}
+						// @include range-width(395px, 451px) {
+						// 	right: 8px;
+						// }
 
 					}
 
@@ -1473,7 +1473,7 @@ header {
 							&:before {
 								content: '';
 								position: absolute;
-								top: -10px;
+								top: -11px;
 								left: 0;
 								display: inline-block;
 								width: 100%;
