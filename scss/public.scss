@@ -121,7 +121,7 @@ header {
 	// border-left: 4px solid #de0717;
 
 	@include range-width(0, 769px) {
-		padding-top: 40px;
+		padding-top: 0;
 	}
 
 	.banner_box_w {
@@ -1536,7 +1536,7 @@ header {
 						display: inline-block;
 
 						> img {
-							width: 80%;
+							width: 100%;
 
 							@include range-width(0, 451px) {
 								width: 100%;
@@ -1638,7 +1638,7 @@ header {
 					}
 
 					.title {
-						margin: 10px 0;
+						margin: 10px 0 5px 0;
 						font-size: 20px;
 						font-weight: bold;
 						letter-spacing: 2.12px;
