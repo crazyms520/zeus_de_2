@@ -2389,7 +2389,11 @@ header {
 					}
 
 					img {
-						width: 100%;
+						width: 90%;
+
+						@include range-width(0, 769px) {
+							width: 100%;
+						}
 					}
 				}
 			}
