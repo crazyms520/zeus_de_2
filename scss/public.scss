@@ -1401,13 +1401,21 @@ header {
 				padding: 20px 0;
 				flex-wrap: wrap;
 
-				&:last-child {
-					border-top: 2px dotted #ededed;
-				}
-
 				@include range-width(0, 769px) {
 					padding: 10px 0;
 				}
+
+				&:nth-of-type(2) {
+					border-top: 2px dotted #ededed;
+
+					@include range-width(0, 769px) {
+						padding: 10px 0;
+					}
+
+					
+				}
+
+				
 
 				.special_offer_item {
 					position: relative;

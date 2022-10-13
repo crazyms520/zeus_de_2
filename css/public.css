@@ -3341,8 +3341,9 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 { padding: 15px 0 15px 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container { padding: 0 1rem; } }
 .special-offer .so_s1 .container .special_offer_items { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; }
-.special-offer .so_s1 .container .special_offer_items:last-child { border-top: 2px dotted #ededed; }
 @media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items { padding: 10px 0; } }
+.special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { border-top: 2px dotted #ededed; }
+@media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { padding: 10px 0; } }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item { position: relative; width: 24%; padding: 0 10px; }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item:after { content: ''; position: absolute; top: 0; right: 0; display: inline-block; height: 100%; border-right: 2px dotted #ededed; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .special-offer .so_s1 .container .special_offer_items .special_offer_item:after { right: 10px; } }
