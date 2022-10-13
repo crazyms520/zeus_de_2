@@ -5,6 +5,7 @@
 	$('.brand-origin-show').click(function() {
 		$('#happy-skin').hide();
 		$('#special-feature').hide();
+		$('#special-offer').hide();
 		$('.navbar').removeClass('spceial_color');
 		$('.navbar').addClass('origin_color');
 		$('.nav-link').removeClass('active');
@@ -22,6 +23,7 @@
 	$('.happy-skin-show').click(function() {
 		$('#special-feature').hide();
 		$('#brand-origin').hide();
+		$('#special-offer').hide();
 		$('.navbar').removeClass('spceial_color');
 		$('.navbar').removeClass('origin_color');
 		$('.nav-link').removeClass('active');
@@ -37,6 +39,7 @@
 	$('.special-feature-show').click(function() {
 		$('#happy-skin').hide();
 		$('#brand-origin').hide();
+		$('#special-offer').hide();
 		$('.navbar').removeClass('origin_color');
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
@@ -45,6 +48,18 @@
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 		$('.special-feature-title-slide-up').addClass('slide-up-2')
 		$('.special-feature-item-slide-up').addClass('slide-up')
+	})
+
+	$('.special-offer-show').click(function() {
+		$('#happy-skin').hide();
+		$('#brand-origin').hide();
+		$('#special-feature').hide();
+		$('.navbar').removeClass('origin_color');
+		$('.navbar').addClass('spceial_color');
+		$('.nav-link').removeClass('active');
+		$(this).find('.nav-link').addClass('active');
+		$('#special-offer').show("slide", { direction: "right" }, 400);
+		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 	})
 	// navbar end
 
@@ -157,6 +172,10 @@
 				$(".slick-items").addClass('slide-right-3')
 			}
 
+			//form 
+			if(scroll > $('.form').offset().top - 200){
+				$(".form-slide-up-item").addClass('slide-up')
+			}
 		} else {
 			// brand-origin 
 			// console.log(scroll, $('.navbar').offset().top)		;
@@ -197,6 +216,11 @@
 			if(scroll > $('.elephant').offset().top - 350){
 				$(".slick-items").addClass('slide-right-3')
 			}
+
+			//form 
+			if(scroll > $('.elephant').offset().top){
+				$(".form-slide-up-item").addClass('slide-up')
+			}	
 		}
 	})
 	// animation end
