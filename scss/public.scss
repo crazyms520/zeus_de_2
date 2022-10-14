@@ -68,9 +68,17 @@ header {
 				letter-spacing: 2.4px;
 				color: #777575;
 
-				@include range-width(1025px, 1441px) {
+				@include range-width(1361px, 1441px) {
 					font-size: 18px;
 					font-weight: bold;
+				}
+
+				@include range-width(1025px, 1361px) {
+					font-size: 18px;
+					font-weight: bold;
+					.span_br {
+						display: block;
+					}
 				}
 	
 				@include range-width(769px, 1025px) {

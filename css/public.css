@@ -3103,7 +3103,9 @@ header .ShinKong .ShinKong_img > img { width: 112px; height: 64px; }
 header .ShinKong .text_box { position: relative; width: 100%; }
 @media screen and (max-width: 450px) and (min-width: 0) { header .ShinKong .text_box { padding-top: 5px; width: 100%; height: auto; } }
 header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-size: 30px; letter-spacing: 2.4px; color: #777575; }
-@media screen and (max-width: 1440px) and (min-width: 1025px) { header .ShinKong .text_box .text { font-size: 18px; font-weight: bold; } }
+@media screen and (max-width: 1440px) and (min-width: 1361px) { header .ShinKong .text_box .text { font-size: 18px; font-weight: bold; } }
+@media screen and (max-width: 1360px) and (min-width: 1025px) { header .ShinKong .text_box .text { font-size: 18px; font-weight: bold; }
+  header .ShinKong .text_box .text .span_br { display: block; } }
 @media screen and (max-width: 1024px) and (min-width: 769px) { header .ShinKong .text_box .text { font-size: 20px; }
   header .ShinKong .text_box .text:nth-of-type(3), header .ShinKong .text_box .text:nth-of-type(4) { display: none; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { header .ShinKong .text_box .text { font-size: 26px; } }
