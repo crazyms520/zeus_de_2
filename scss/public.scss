@@ -73,9 +73,28 @@ header {
 					font-weight: bold;
 				}
 
-				@include range-width(1025px, 1361px) {
+				@include range-width(1121px, 1361) {
 					font-size: 18px;
 					font-weight: bold;
+					
+					.span_br {
+						display: block;
+					}
+				}
+
+				@include range-width(1041px, 1121px) {
+					font-size: 16px;
+					font-weight: bold;
+					
+					.span_br {
+						display: block;
+					}
+				}
+
+				@include range-width(1025px, 1041px) {
+					font-size: 15px;
+					font-weight: bold;
+
 					.span_br {
 						display: block;
 					}
