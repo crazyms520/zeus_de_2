@@ -3529,30 +3529,28 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .form > .container .title_box .icon picture img { width: 100%; }
 .form > .container .title_box .gift { margin-top: 40px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift { margin-top: 30px; } }
-.form > .container .title_box .gift .gift_h2_title { margin: 16px 0; font-size: 48px; font-family: 'Noto Sans TC', sans-serif; font-weight: bold; letter-spacing: .93px; color: #ff6d6d; }
+.form > .container .title_box .gift .gift_h2_title { margin: 16px 0; font-size: 56px; font-family: 'Noto Sans TC', sans-serif; font-weight: bold; letter-spacing: .93px; color: #ff6d6d; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .gift_h2_title { font-size: 32px; } }
-.form > .container .title_box .gift .gift_p_text { margin-bottom: 0; font-size: 32px; font-family: 'Noto Sans TC', sans-serif; letter-spacing: .57px; color: #6e6e6e; }
+.form > .container .title_box .gift .gift_p_text { margin-bottom: 0; font-size: 30px; font-family: 'Noto Sans TC', sans-serif; letter-spacing: .57px; color: #6e6e6e; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .gift_p_text { font-size: 18px; } }
 .form > .container .title_box .gift .gift_p_text span.gift_span_text { color: #e3007e; }
 .form > .container .title_box .gift picture { display: inline-block; margin: 50px 80px 45px 80px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift picture { margin: 30px 0 25px 0; } }
 .form > .container .title_box .gift picture img { width: 100%; }
 @media screen and (max-width: 768px) and (min-width: 0) { .form > .container .title_box .gift picture img { width: 100%; } }
-.form > .container .title_box .gift .gift_p_tip { margin-bottom: 0; font-size: 22px; font-family: 'Noto Sans TC', sans-serif; letter-spacing: 1px; color: #848484; }
+.form > .container .title_box .gift .gift_p_tip { margin-bottom: 0; font-size: 16px; font-family: 'Noto Sans TC', sans-serif; letter-spacing: 1px; color: #848484; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .gift_p_tip { font-size: 14px; } }
 .form > .container .title_box .gift .gift_dotted { margin: 0 auto; padding-bottom: 45px; max-width: 900px; background-image: linear-gradient(to right, #bbcdda 20%, rgba(255, 255, 255, 0) 0%); background-position: bottom; background-size: 10px 1px; background-repeat: repeat-x; }
 .form > .container .title_box .gift .checkIn { display: flex; align-items: center; justify-content: center; padding-top: 45px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .checkIn { flex-direction: column; } }
 .form > .container .title_box .gift .checkIn picture { display: inline-block; margin: 0; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .title_box .gift .checkIn picture img { width: 90%; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .checkIn picture img { width: 90%; } }
-.form > .container .title_box .gift .checkIn .checkIn_box { margin-left: 40px; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .title_box .gift .checkIn .checkIn_box { margin-left: 0; } }
+.form > .container .title_box .gift .checkIn picture img { width: 80%; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .title_box .gift .checkIn .checkIn_box { flex-basis: 60%; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .checkIn .checkIn_box { margin-left: 0; } }
 .form > .container .title_box .gift .checkIn .checkIn_box .checkIn_box_title { font-size: 40px; font-weight: 500; font-family: 'Noto Sans TC', sans-serif; letter-spacing: 1.82px; color: #e3007e; text-align: left; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .checkIn .checkIn_box .checkIn_box_title { font-size: 32px; text-align: center; }
   .form > .container .title_box .gift .checkIn .checkIn_box .checkIn_box_title:nth-of-type(1) { margin-top: 45px; } }
-.form > .container .title_box .gift .checkIn .checkIn_box .checkIn_box_tip { margin-top: 35px; font-size: 22px; font-family: 'Noto Sans TC', sans-serif; letter-spacing: 1px; color: #848484; text-align: left; }
+.form > .container .title_box .gift .checkIn .checkIn_box .checkIn_box_tip { margin-top: 35px; font-size: 16px; font-family: 'Noto Sans TC', sans-serif; letter-spacing: 1px; color: #848484; text-align: left; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .checkIn .checkIn_box .checkIn_box_tip { font-size: 14px; } }
 .form > .container .text { margin-top: 70px; opacity: 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .text { margin-top: 50px; } }
