@@ -3544,7 +3544,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .form > .container .title_box .gift .checkIn { display: flex; align-items: center; justify-content: center; padding-top: 45px; }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .checkIn { flex-direction: column; } }
 .form > .container .title_box .gift .checkIn picture { display: inline-block; margin: 0; }
-.form > .container .title_box .gift .checkIn picture img { width: 80%; }
+.form > .container .title_box .gift .checkIn picture img { width: 70%; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .form > .container .title_box .gift .checkIn .checkIn_box { flex-basis: 60%; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .form > .container .title_box .gift .checkIn .checkIn_box { margin-left: 0; } }
 .form > .container .title_box .gift .checkIn .checkIn_box .checkIn_box_title { font-size: 40px; font-weight: 500; font-family: 'Noto Sans TC', sans-serif; letter-spacing: 1.82px; color: #e3007e; text-align: left; }
