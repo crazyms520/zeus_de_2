@@ -3371,6 +3371,7 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 @media screen and (max-width: 320px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .tags > span { padding: 5px; font-size: 12px; } }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item .tags > span.yellow { background-color: #f8e71c; color: #e3007e; }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item .tags > span.pink { margin-left: 10px; background-color: #ff25ae; color: #fff; }
+@media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .tags > span.white { display: none; } }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item .tags > span.empty { opacity: 0; }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item picture { display: inline-block; }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item picture > img { width: 100%; }
@@ -3398,6 +3399,9 @@ header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-
 .special-offer .so_s1 .container .special_offer_items .special_offer_item .contents > p { margin: 0; font-size: 16px; letter-spacing: 2px; text-align: left; color: #4a4a4a; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .contents > p { font-size: 14px; letter-spacing: 1.1px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .contents > p { font-size: 12px; letter-spacing: 1.1px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .contents > p > .buy { display: block; margin: 5px 0; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .contents > p .gift { display: block; margin: 5px 0; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items .special_offer_item .contents > p > .ws { display: none; } }
 .special-offer .so_s1 .container .buy_now { margin: 30px 0 30px 0; text-align: center; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container .buy_now { margin: 30px 0 15px 0; } }
 .special-offer .so_s1 .container .buy_now > a { display: inline-block; padding: 10px 0; width: 40%; font-size: 20px; font-weight: bold; letter-spacing: 1.82px; color: #fff; background-color: #ec8164; text-decoration: none; }

@@ -1443,8 +1443,6 @@ header {
 					
 				}
 
-				
-
 				.special_offer_item {
 					position: relative;
 					width: 24%;
@@ -1552,6 +1550,11 @@ header {
 								margin-left: 10px;
 								background-color: #ff25ae;
 								color: #fff;
+							}
+							&.white {
+								@include range-width(0, 451px) {
+									display: none;
+								}
 							}
 
 							&.empty {
@@ -1707,6 +1710,26 @@ header {
 							@include range-width(0, 451px) {
 								font-size: 12px;
 								letter-spacing: 1.1px;
+							}
+
+							> .buy {
+								@include range-width(0, 451px) {
+									display: block;
+									margin: 5px 0;
+								}
+							}
+
+							.gift {
+								@include range-width(0, 451px) {
+									display: block;
+									margin: 5px 0;
+								}
+							}
+
+							> .ws {
+								@include range-width(0, 451px) {
+									display: none;
+								}
 							}
 						}
 					}
