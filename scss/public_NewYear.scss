@@ -153,7 +153,7 @@ header {
 
 .banner {
 	// padding-top: 30px;
-	background-color: #e4f543;
+	background-color: rgba(246, 202, 244, 1.00);
 	// border-left: 4px solid #de0717;
 
 	@include range-width(0, 769px) {
