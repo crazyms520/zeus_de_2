@@ -6,7 +6,8 @@
 		$('#happy-skin').hide();
 		$('#special-feature').hide();
 		$('#special-offer').hide();
-		$('.navbar').removeClass('spceial_color');
+		$('#where-buy').hide();
+		$('.navbar').removeClass('spceial_color where_color');
 		$('.navbar').addClass('origin_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -24,8 +25,8 @@
 		$('#special-feature').hide();
 		$('#brand-origin').hide();
 		$('#special-offer').hide();
-		$('.navbar').removeClass('spceial_color');
-		$('.navbar').removeClass('origin_color');
+		$('#where-buy').hide();
+		$('.navbar').removeClass('spceial_color origin_color where_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#happy-skin').show("slide", { direction: "down" }, 10);
@@ -40,7 +41,9 @@
 		$('#happy-skin').hide();
 		$('#brand-origin').hide();
 		$('#special-offer').hide();
-		$('.navbar').removeClass('origin_color');
+		$('#where-buy').hide();
+		$('.navbar').removeClass('origin_color where_color');
+		// $('.navbar').removeClass('where_color');
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -54,11 +57,25 @@
 		$('#happy-skin').hide();
 		$('#brand-origin').hide();
 		$('#special-feature').hide();
-		$('.navbar').removeClass('origin_color');
+		$('#where-buy').hide();
+		$('.navbar').removeClass('origin_color where_color');
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#special-offer').show("slide", { direction: "right" }, 400);
+		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
+	})
+
+	$('.where-buy-show').click(function() {
+		$('#happy-skin').hide();
+		$('#brand-origin').hide();
+		$('#special-feature').hide();
+		$('#special-offer').hide();
+		$('.navbar').removeClass('origin_color spceial_color');
+		$('.navbar').addClass('where_color');
+		$('.nav-link').removeClass('active');
+		$(this).find('.nav-link').addClass('active');
+		$('#where-buy').show("slide", { direction: "right" }, 400);
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 	})
 	// navbar end
