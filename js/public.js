@@ -6,8 +6,10 @@
 		$('#happy-skin').hide();
 		$('#special-feature').hide();
 		$('#special-offer').hide();
+		// 20221227 新年活動 隱藏哪裡買區塊 satrt
 		$('#where-buy').hide();
 		$('.navbar').removeClass('spceial_color where_color');
+		// 20221227 新年活動 隱藏哪裡買區塊 end
 		$('.navbar').addClass('origin_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -25,8 +27,10 @@
 		$('#special-feature').hide();
 		$('#brand-origin').hide();
 		$('#special-offer').hide();
+		// 20221227 新年活動 隱藏哪裡買區塊 satrt
 		$('#where-buy').hide();
 		$('.navbar').removeClass('spceial_color origin_color where_color');
+		// 20221227 新年活動 隱藏哪裡買區塊 end
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#happy-skin').show("slide", { direction: "down" }, 10);
@@ -41,9 +45,10 @@
 		$('#happy-skin').hide();
 		$('#brand-origin').hide();
 		$('#special-offer').hide();
+		// 20221227 新年活動 隱藏哪裡買區塊 satrt
 		$('#where-buy').hide();
 		$('.navbar').removeClass('origin_color where_color');
-		// $('.navbar').removeClass('where_color');
+		// 20221227 新年活動 隱藏哪裡買區塊 end
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -57,8 +62,10 @@
 		$('#happy-skin').hide();
 		$('#brand-origin').hide();
 		$('#special-feature').hide();
+		// 20221227 新年活動 隱藏哪裡買區塊 satrt
 		$('#where-buy').hide();
 		$('.navbar').removeClass('origin_color where_color');
+		// 20221227 新年活動 隱藏哪裡買區塊 end
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -66,6 +73,7 @@
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 	})
 
+	// 20221227 新年活動 新增哪裡買區塊 satrt
 	$('.where-buy-show').click(function() {
 		$('#happy-skin').hide();
 		$('#brand-origin').hide();
@@ -78,6 +86,8 @@
 		$('#where-buy').show("slide", { direction: "right" }, 400);
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 	})
+	// 20221227 新年活動 新增哪裡買區塊 end
+
 	// navbar end
 
 	// slick start
