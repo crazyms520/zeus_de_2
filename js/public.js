@@ -3,13 +3,10 @@
 
 	// navbar start
 	$('.brand-origin-show').click(function() {
-		$('#happy-skin').hide();
-		$('#special-feature').hide();
-		$('#special-offer').hide();
-		// 20221227 新年活動 隱藏哪裡買區塊 satrt
-		$('#where-buy').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		$('#happy-skin, #special-feature, #special-offer, #where-buy, #drunk-star').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 end
 		$('.navbar').removeClass('spceial_color where_color');
-		// 20221227 新年活動 隱藏哪裡買區塊 end
 		$('.navbar').addClass('origin_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -20,17 +17,18 @@
 		$('.brand-origin-slide').addClass('slide-right-2')
 		$('.brand-origin-slide-2').addClass('slide-left');	
 		$('.brand-origin-slide-3').addClass('slide-up');
+
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
+		$('.slider_nav').slick('slickPause');
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 		
 	})
 
 	$('.happy-skin-show').click(function() {
-		$('#special-feature').hide();
-		$('#brand-origin').hide();
-		$('#special-offer').hide();
-		// 20221227 新年活動 隱藏哪裡買區塊 satrt
-		$('#where-buy').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		$('#brand-origin, #special-feature, #special-offer, #where-buy, #drunk-star').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 end
 		$('.navbar').removeClass('spceial_color origin_color where_color');
-		// 20221227 新年活動 隱藏哪裡買區塊 end
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#happy-skin').show("slide", { direction: "down" }, 10);
@@ -39,16 +37,17 @@
 		$('.happy-skin-title-slide-up').addClass('slide-up');	
 		$('.happy-skin-item1-slide-up').addClass('slide-up');	
 		$('.happy-skin-item2-slide-up').addClass('slide-up');	
+
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
+		$('.slider_nav').slick('slickPause');
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
 	$('.special-feature-show').click(function() {
-		$('#happy-skin').hide();
-		$('#brand-origin').hide();
-		$('#special-offer').hide();
-		// 20221227 新年活動 隱藏哪裡買區塊 satrt
-		$('#where-buy').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		$('#brand-origin, #happy-skin, #special-offer, #where-buy, #drunk-star').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 end
 		$('.navbar').removeClass('origin_color where_color');
-		// 20221227 新年活動 隱藏哪裡買區塊 end
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -56,41 +55,104 @@
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 		$('.special-feature-title-slide-up').addClass('slide-up-2')
 		$('.special-feature-item-slide-up').addClass('slide-up')
+
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
+		$('.slider_nav').slick('slickPause');
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
 	$('.special-offer-show').click(function() {
-		$('#happy-skin').hide();
-		$('#brand-origin').hide();
-		$('#special-feature').hide();
-		// 20221227 新年活動 隱藏哪裡買區塊 satrt
-		$('#where-buy').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		$('#brand-origin, #happy-skin, #special-feature, #where-buy, #drunk-star').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 end
 		$('.navbar').removeClass('origin_color where_color');
-		// 20221227 新年活動 隱藏哪裡買區塊 end
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#special-offer').show("slide", { direction: "right" }, 400);
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
+
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
+		$('.slider_nav').slick('slickPause');
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
-	// 20221227 新年活動 新增哪裡買區塊 satrt
 	$('.where-buy-show').click(function() {
-		$('#happy-skin').hide();
-		$('#brand-origin').hide();
-		$('#special-feature').hide();
-		$('#special-offer').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		$('#brand-origin, #happy-skin, #special-feature, #special-offer, #drunk-star').hide();
+		// 20230214 小改版 調整隱藏區塊寫法加入 end 
 		$('.navbar').removeClass('origin_color spceial_color');
 		$('.navbar').addClass('where_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#where-buy').show("slide", { direction: "right" }, 400);
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
+
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
+		$('.slider_nav').slick('slickPause');
+		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
-	// 20221227 新年活動 新增哪裡買區塊 end
+
+	// 20230214 小改版 醉神修護雙星區塊 start
+	$('.drunk-star-show').click(function() {
+		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
+		$('#brand-origin, #happy-skin, #special-feature, #special-offer, #where-buy').hide();
+		$('.navbar').removeClass('origin_color spceial_color');
+		$('.navbar').addClass('where_color');
+		$('.nav-link').removeClass('active');
+		$(this).find('.nav-link').addClass('active');
+		$('.slider_nav').slick('slickGoTo', 0);
+		$('#drunk-star').show();
+	})
+	// 20230214 小改版 醉神修護雙星區塊 end
 
 	// navbar end
 
-	// slick start
+	// 20230214 小改版 banner 點擊跳至醉神修護雙星區塊 start
+	$('.banner').on('click', function() {
+		$('.drunk-star-show').click();
+		$('html,body').animate({
+			scrollTop: $('.navbar').offset().top - 200,
+		}, 700)
+	})
+	// 20230214 小改版 banner 點擊跳至醉神修護雙星區塊 end
+
+	// 20230214 小改版 醉神修護雙星區塊輪播 start
+	// drunk star slick start
+	$('.slider_for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		arrows: false,
+		asNavFor: '.slider_nav',
+	});
+
+	$('.slider_nav').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: '.slider_for',
+		dots: false,
+		focusOnSelect: true,
+		arrows: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		lazyLoad: 'progressive',
+		responsive: [{
+			breakpoint: 420,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+			}
+		}]
+	});
+
+	$('.slider_nav').on('afterChange', function(event, slick, direction){
+		$(this).slick('slickPlay')
+	})
+	// drunk star slick end
+	// 20230214 小改版 醉神修護雙星區塊輪播 end
+
+	// elephant slick start
 	$('.slick-items').slick({
 		infinite: true,
 		slidesToShow: 4,
@@ -107,7 +169,7 @@
 			}
 		]
 	});
-	// slick end
+	// elephant slick end
 	
 	// web btn click start
 	$('.btn_w').click(function() {
@@ -205,7 +267,6 @@
 			}
 		} else {
 			// brand-origin 
-			// console.log(scroll, $('.navbar').offset().top)		;
 			if($('#brand-origin').css('display') !== 'none') {
 				if(scroll > $('.navbar').offset().top - 460) {
 					$('.brand-origin-slide-1').addClass('slide-right');	
@@ -216,7 +277,6 @@
 			}
 			// happy-skin
 			if($('#happy-skin').css('display') != 'none') {
-				// $('.banner').offset().top && scroll > $('.banner').outerHeight() / 2
 				if(scroll > $('.navbar').offset().top - 350) {
 					$('.happy-skin-title-slide-up').addClass('slide-up');	
 					$('.happy-skin-item1-slide-up').addClass('slide-up');	
