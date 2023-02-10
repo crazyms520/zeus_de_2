@@ -3437,6 +3437,8 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 450px) and (min-width: 0) { .where-buy .wb_s1 .container .table tbody tr td { padding: 10px .5rem; font-size: 14px; }
   .where-buy .wb_s1 .container .table tbody tr td:nth-of-type(2) { text-align: center; } }
 .where-buy .wb_s1 .container .table tbody tr td a { color: #5c5c5c; text-decoration: none; }
+.where-buy .wb_s1 .container .table.online tbody tr:first-child td { border-top-width: 3px; }
+.where-buy .wb_s1 .container .table.online tbody tr td a:hover { color: #78baff; }
 
 .drunk-star { position: relative; width: 100%; }
 .drunk-star .ds_s1 { margin: 50px 0; }

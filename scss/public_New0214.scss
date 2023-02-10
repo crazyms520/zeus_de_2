@@ -1883,6 +1883,26 @@ header {
 						}
 					}
 				}
+
+				&.online {
+					tbody {
+						tr {
+							&:first-child {
+								td {
+									border-top-width: 3px;
+								}
+							}
+
+							td {
+								a {
+									&:hover {
+										color: rgba(120, 186, 255, 1);
+									}
+								}
+							}
+						}
+					}
+				}
 				
 			}
 		}

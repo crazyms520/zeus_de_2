@@ -108,18 +108,19 @@
 
 	// navbar end
 
-	// 20230214 小改版 banner 點擊跳至醉神修護雙星區塊 start
+	// 20230214 小改版 banner 點擊跳至表單區塊 start
 	$('.banner').on('click', function() {
 		// let navbarTop = $('.navbar').offset().top; 
 		// let top = $(window).width() > 450 ? navbarTop : navbarTop + 92;
-		let top = $('.navbar').offset().top + $('.navbar').outerHeight();
+		// let top = $('.navbar').offset().top + $('.navbar').outerHeight();
+		let top = $('.form').offset().top;
 	
 		$('.drunk-star-show').click();
 		$('html,body').animate({
 			scrollTop: top,
 		}, 700)
 	})
-	// 20230214 小改版 banner 點擊跳至醉神修護雙星區塊 end
+	// 20230214 小改版 banner 點擊跳至表單區塊 end
 
 	// 20230214 小改版 醉神修護雙星區塊輪播 start
 	// drunk star slick start
@@ -141,6 +142,7 @@
 		autoplay: true,
 		autoplaySpeed: 2000,
 		lazyLoad: 'progressive',
+		// vertical: true,
 		responsive: [{
 			breakpoint: 420,
 			settings: {

@@ -35,27 +35,21 @@
 </head>
 
 <body>
+	<!-- 20230214 小改版 web 刪除 Logo 和 跑馬燈內容 -->
+	
 	<header>
-		<div class="ShinKong col d-flex justify-content-between align-items-center">
-			<div class="ShinKong_img">
-				<img src="img/ShinKong.png" alt="SHIN KONG MITSUKOSHI image">
+		<section class="banner">
+			<h1 class="text-hidden">醉強護膚 隨性顛覆</h1>
+			<div class="banner_box_w">
+				<picture class="fade-in">
+					<!-- 20230214 小改版 banner 圖片更換 start -->
+					<source srcset="img/banner_0209_m.png" media="(max-width: 450px)">
+					<img src="img/banner_0209.png" alt="">
+					<!-- 20230214 小改版 banner 圖片調整 end -->
+				</picture>
 			</div>
-			<!-- 20230214 小改版 web 跑馬燈內容刪除 -->
-			<!-- 20230214 小改版 mobile 跑馬燈內容調整 -->
-		</div>
+		</section>
 	</header>
-
-	<section class="banner">
-		<h1 class="text-hidden">醉強護膚 隨性顛覆</h1>
-		<div class="banner_box_w">
-			<picture class="fade-in">
-				<!-- 20230214 小改版 banner 圖片更換 start -->
-				<source srcset="img/banner_0209_m.png" media="(max-width: 450px)">
-				<img src="img/banner_0209.png" alt="">
-				<!-- 20230214 小改版 banner 圖片調整 end -->
-			</picture>
-		</div>
-	</section>
 
 	<section class="navbar">
 		<div class="container d-inline-block">
@@ -387,7 +381,9 @@
 	<section id="where-buy" class="where-buy">
 		<div class="wb_s1">	
 			<div class="container">
-				<h2 class="wb-title">線下通路</h2>
+				<!-- 20230214 小改版 調整文字 satrt-->
+				<h2 class="wb-title">實體通路</h2>
+				<!-- 20230214 小改版 調整文字 satrt-->
 				<table class="table">
 					<thead>
 					  <tr>
@@ -435,23 +431,17 @@
 					</tbody>
 				</table>
 
-				<!-- 20230214 小改版 新增線上區塊 satrt-->
-				<h2 class="wb-title">線上通路</h2>
-				<table class="table">
-					<thead>
-					  <tr>
-						<th scope="col">專櫃名稱</th>
-						<th scope="col">CTA</th>
-					  </tr>
-					</thead>
+				<!-- 20230214 小改版 新增線上購買 satrt-->
+				<h2 class="wb-title">線上購買</h2>
+				<table class="table online">
 					<tbody>
 					  <tr>
-						<td>momo旗艦館</td>
-						<td><a href="https://jbeauty.com.tw/27xu87" target="blank">https://jbeauty.com.tw/27xu87</a></td>
+						<td width="30%">momo旗艦館</td>
+						<td width="70%"><a href="https://jbeauty.com.tw/27xu87" target="blank">立即前往</a></td>
 					  </tr>
 					  <tr>
-						<td>skm online旗艦館</td>
-						<td><a href="https://jbeauty.com.tw/RCF6uW" target="blank">https://jbeauty.com.tw/RCF6uW</a></td>
+						<td width="30%">skm online旗艦館</td>
+						<td width="70%"><a href="https://jbeauty.com.tw/RCF6uW" target="blank">立即前往</a></td>
 					  </tr>
 					</tbody>
 				</table>
@@ -464,6 +454,7 @@
 	<section id="drunk-star" class="drunk-star">
 		<div class="ds_s1">	
 			<div class="container">
+				<div style="position: relative;">
 				<div class="slider_for">
 					<div class="slider_for_item">
 						<img src="img/drunk_star01.png" alt="">
@@ -487,7 +478,6 @@
 						<img src="img/drunk_star10.png" alt="">
 					</div>
 				</div>	
-
 				<div class="slider_nav">
 					<div class="slider_nav_item">
 						<img src="img/drunk_star01.png" alt="">
@@ -511,6 +501,7 @@
 						<img src="img/drunk_star10.png" alt="">
 					</div>
 				</div>	
+				</div>
 			</div>
 		</div>
 	</section>
