@@ -110,8 +110,9 @@
 
 	// 20230214 小改版 banner 點擊跳至醉神修護雙星區塊 start
 	$('.banner').on('click', function() {
-		let navbarTop = $('.navbar').offset().top; 
-		let top = $(window).width() > 450 ? navbarTop - 230 : navbarTop + 92;
+		// let navbarTop = $('.navbar').offset().top; 
+		// let top = $(window).width() > 450 ? navbarTop : navbarTop + 92;
+		let top = $('.navbar').offset().top + $('.navbar').outerHeight();
 	
 		$('.drunk-star-show').click();
 		$('html,body').animate({
