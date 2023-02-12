@@ -3423,7 +3423,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 450px) and (min-width: 0) { .where-buy .wb_s1 .container { padding: 0 1rem; } }
 .where-buy .wb_s1 .container .wb-title { margin-bottom: 20px; font-size: 56px; font-family: 'Noto Sans TC', sans-serif; font-weight: bold; letter-spacing: 0.93px; text-align: left; color: #ff6d6d; }
 .where-buy .wb_s1 .container .wb-title:nth-of-type(2) { margin-top: 60px; }
-.where-buy .wb_s1 .container .table { text-align: left; }
+.where-buy .wb_s1 .container .table { text-align: left; /* 20230214 小改版 線上購買 start */ /* 20230214 小改版 線上購買 end */ }
 .where-buy .wb_s1 .container .table thead tr th { padding-bottom: 15px; font-size: 24px; color: #9970a7; border-bottom: 3px solid #98e0f6; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .where-buy .wb_s1 .container .table thead tr th { font-size: 22px; text-align: center; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .where-buy .wb_s1 .container .table thead tr th { font-size: 14px; text-align: center; } }
