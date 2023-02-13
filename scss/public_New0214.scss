@@ -149,9 +149,9 @@ header {
 
 .banner {
 	background-color: rgba(246, 202, 244, 1.00);
-	/* 20230214 新年活動 banner 遊標顯示可點擊狀態 start */	
+	/* 20230214 小改版 banner 遊標顯示可點擊狀態 start */	
 	cursor: pointer;
-	/* 20230214 新年活動 banner 遊標顯示可點擊狀態 end */
+	/* 20230214 小改版 banner 遊標顯示可點擊狀態 end */
 
 	@include range-width(0, 769px) {
 		padding-top: 0;
@@ -295,17 +295,17 @@ header {
 	background-color: #facae7;
 	z-index: 1;
 
-	/* 20230214 新年活動 手機版時 navbar 調整 padding 上下一樣 start */
+	/* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 start */
 	@include range-width(451px, 769px) {
 		padding: 15px 0;
 	}
-	/* 20230214 新年活動 手機版時 navbar 調整 padding 上下一樣 end */
+	/* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 end */
 
-	/* 20230214 新年活動 手機版時 navbar 調整 padding 上下一樣 start */
+	/* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 start */
 	@include range-width(0, 451px) {
 		padding: 15px 0;
 	}
-	/* 20230214 新年活動 手機版時 navbar 調整 padding 上下一樣 end */
+	/* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 end */
 
 	&.origin_color {
 		background-color: #ffef02;	
