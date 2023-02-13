@@ -6,7 +6,11 @@
 		// 20230214 小改版 調整隱藏區塊寫法加入 start
 		$('#happy-skin, #special-feature, #special-offer, #where-buy, #drunk-star').hide();
 		// 20230214 小改版 調整隱藏區塊寫法加入 end
-		$('.navbar').removeClass('spceial_color where_color');
+
+		// 20230214 小改版 加入 drunk_color start 
+		$('.navbar').removeClass('spceial_color where_color drunk_color');
+		// 20230214 小改版 加入 drunk_color end
+
 		$('.navbar').addClass('origin_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -28,7 +32,11 @@
 		// 20230214 小改版 調整隱藏區塊寫法加入 start
 		$('#brand-origin, #special-feature, #special-offer, #where-buy, #drunk-star').hide();
 		// 20230214 小改版 調整隱藏區塊寫法加入 end
-		$('.navbar').removeClass('spceial_color origin_color where_color');
+
+		// 20230214 小改版 加入 drunk_color start
+		$('.navbar').removeClass('spceial_color origin_color where_color drunk_color');
+		// 20230214 小改版 加入 drunk_color end 
+
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#happy-skin').show("slide", { direction: "down" }, 10);
@@ -47,7 +55,11 @@
 		// 20230214 小改版 調整隱藏區塊寫法加入 start
 		$('#brand-origin, #happy-skin, #special-offer, #where-buy, #drunk-star').hide();
 		// 20230214 小改版 調整隱藏區塊寫法加入 end
-		$('.navbar').removeClass('origin_color where_color');
+
+		// 20230214 小改版 加入 drunk_color start 
+		$('.navbar').removeClass('origin_color where_color drunk_color');
+		// 20230214 小改版 加入 drunk_color end
+
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -65,7 +77,11 @@
 		// 20230214 小改版 調整隱藏區塊寫法加入 start
 		$('#brand-origin, #happy-skin, #special-feature, #where-buy, #drunk-star').hide();
 		// 20230214 小改版 調整隱藏區塊寫法加入 end
-		$('.navbar').removeClass('origin_color where_color');
+
+		// 20230214 小改版 加入 drunk_color start 
+		$('.navbar').removeClass('origin_color where_color drunk_color');
+		// 20230214 小改版 加入 drunk_color end
+
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -81,7 +97,10 @@
 		// 20230214 小改版 調整隱藏區塊寫法加入 start
 		$('#brand-origin, #happy-skin, #special-feature, #special-offer, #drunk-star').hide();
 		// 20230214 小改版 調整隱藏區塊寫法加入 end 
-		$('.navbar').removeClass('origin_color spceial_color');
+
+		// 20230214 小改版 加入 drunk_color start 
+		$('.navbar').removeClass('origin_color spceial_color drunk_color');
+		// 20230214 小改版 加入 drunk_color end
 		$('.navbar').addClass('where_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -97,12 +116,13 @@
 	$('.drunk-star-show').click(function() {
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 		$('#brand-origin, #happy-skin, #special-feature, #special-offer, #where-buy').hide();
-		$('.navbar').removeClass('origin_color spceial_color');
-		$('.navbar').addClass('where_color');
+		$('.navbar').removeClass('origin_color spceial_color where_color');
+		$('.navbar').addClass('drunk_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('.slider_nav').slick('slickGoTo', 0);
-		$('#drunk-star').show();
+		$('#drunk-star').show("slide", { direction: "right" }, 400);
+		// $('#drunk-star').show();
 	})
 	// 20230214 小改版 醉神修護雙星區塊 end
 
@@ -124,33 +144,67 @@
 
 	// 20230214 小改版 醉神修護雙星區塊輪播 start
 	// drunk star slick start
-	$('.slider_for').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		fade: true,
-		arrows: false,
-		asNavFor: '.slider_nav',
-	});
+	// $('.slider_for').slick({
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	fade: true,
+	// 	arrows: false,
+	// 	asNavFor: '.slider_nav',
+	// });
 
-	$('.slider_nav').slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		asNavFor: '.slider_for',
-		dots: false,
-		focusOnSelect: true,
-		arrows: true,
+	// $('.slider_nav').slick({
+	// 	slidesToShow: 5,
+	// 	slidesToScroll: 1,
+	// 	asNavFor: '.slider_for',
+	// 	dots: false,
+	// 	focusOnSelect: true,
+	// 	arrows: true,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 2000,
+	// 	lazyLoad: 'progressive',
+	// 	// vertical: true,
+	// 	responsive: [{
+	// 		breakpoint: 420,
+	// 		settings: {
+	// 			slidesToShow: 3,
+	// 			slidesToScroll: 1,
+	// 		}
+	// 	}]
+	// });
+
+	console.log($('.slider_for_item').width())
+	
+	$('.slider_for').slick({
+		centerMode: true,
+		centerPadding: '100px',
+		slidesToShow: 1,
+		infinite: true,
+		dots: true,
+		draggable: false,
 		autoplay: true,
-		autoplaySpeed: 2000,
-		lazyLoad: 'progressive',
-		// vertical: true,
-		responsive: [{
-			breakpoint: 420,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 769,
+				settings: {
+					centerPadding: '50px',
+					slidesToShow: 1,
+					variableWidth: false,
+					draggable: true,
+				}
+			},
+			{
+				breakpoint: 451,
+				settings: {
+					centerPadding: '40px',
+					slidesToShow: 1,
+					variableWidth: false,
+					draggable: true,
+				}
 			}
-		}]
-	});
+		]
+	});	
+	console.log($('.slider_for_item').width())
 
 	$('.slider_nav').on('afterChange', function(event, slick, direction){
 		$(this).slick('slickPlay')
