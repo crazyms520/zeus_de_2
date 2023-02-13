@@ -171,8 +171,6 @@
 	// 		}
 	// 	}]
 	// });
-
-	console.log($('.slider_for_item').width())
 	
 	$('.slider_for').slick({
 		centerMode: true,
@@ -183,6 +181,7 @@
 		autoplay: true,
 		variableWidth: true,
 		arrows: false,
+		pauseOnFocus: false,
 		responsive: [
 			{
 				breakpoint: 769,
@@ -202,11 +201,14 @@
 			}
 		]
 	});	
-	console.log($('.slider_for_item').width())
 
-	$('.slider_nav').on('afterChange', function(event, slick, direction){
-		$(this).slick('slickPlay')
-	})
+	// $('.slider_for').on('swipe', function(event, slick, direction) {
+	// 	$(this).slick('slickPlay')
+	// })
+	// $('.slick-dots').on('click', function() {
+	// 	console.log(1);
+	// 	$('.slider_for').slick('slickPlay');
+	// });
 	// drunk star slick end
 	// 20230214 小改版 醉神修護雙星區塊輪播 end
 
