@@ -3156,7 +3156,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .navbar.origin_color { background-color: #ffef02; }
 .navbar.spceial_color { background-color: #f6d6f7; }
 .navbar.where_color { background-color: #ffebfd; }
-.navbar.drunk_color { background-color: #e2b9fa; }
+.navbar.drunk_color { background-color: #ffebfd; }
 .navbar .nav .nav-item { width: 180px; border-right: 1px solid #fff; cursor: pointer; /* 20230214 小改版 調整長度維持 navbar 為一行 start */ /* 20230214 小改版 調整長度維持 navbar 為一行 end */ /* 20230214 小改版 調整長度維持 navbar 為一行 start */ /* 20230214 小改版 調整長度維持 navbar 為一行 end */ /* 20230214 小改版 手機版時 navbar 調整成3個為一行 start */ /* 20230214 小改版 手機版時 navbar 調整成3個為一行 end */ }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .navbar .nav .nav-item { width: 155px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar .nav .nav-item { width: 116px; } }
@@ -3442,11 +3442,14 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .where-buy .wb_s1 .container .table.online tbody tr td a:hover { color: #78baff; }
 
 .drunk-star { position: relative; width: 100%; }
-.drunk-star .ds_s1 { padding: 50px 0; background-color: #eab6ff; }
-@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 { margin: 25px 0; } }
+.drunk-star .ds_s1 { padding: 0 0 60px 0; background-color: #ffebfd; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 { padding: 0 0 15px 0; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 { padding: 0 0 15px 0; } }
 .drunk-star .ds_s1 .container { max-width: 100%; padding: 0; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container { padding: 0; } }
-.drunk-star .ds_s1 .container .drunk-star_title { margin: 0; padding-bottom: 50px; font-size: 12vw; color: rgba(255, 255, 255, 0.2); }
+.drunk-star .ds_s1 .container .drunk-star_title { margin: 0; padding-bottom: 50px; font-size: 12vw; color: rgba(255, 255, 255, 0.7); }
+@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .drunk-star_title { padding-bottom: 15px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 .container .drunk-star_title { padding-bottom: 15px; } }
 .drunk-star .ds_s1 .container .slider_for .slider_for_item { position: relative; margin: 0 2rem; max-width: 1040px; max-height: 1040px; }
 @media screen and (max-width: 1440px) and (min-width: 1024px) { .drunk-star .ds_s1 .container .slider_for .slider_for_item { max-width: 700px; max-height: 700px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .slider_for .slider_for_item { margin: 0 1rem; } }

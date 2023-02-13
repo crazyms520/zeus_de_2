@@ -315,7 +315,9 @@ header {
 	}
 
 	&.drunk_color {
-		background-color: #e2b9fa;
+		// background-color: #e2b9fa;
+		// background-color: rgba(255, 199, 253, 1.00);
+		background-color: rgba(255, 235, 253, 1);
 	}
 
 	.nav {
@@ -1920,11 +1922,17 @@ header {
 	width: 100%;
 
 	.ds_s1 {
-		padding: 50px 0;
-		background-color: rgba(234, 182, 255, 1);
+		padding: 0 0 60px 0;
+		// background-color: rgba(234, 182, 255, 1);
+		// background-color: rgba(255, 199, 253, 1.00);
+		background-color: rgba(255, 235, 253, 1);
+
+		@include range-width(451px, 769px) {
+			padding: 0 0 15px 0;
+		}
 
 		@include range-width(0, 451px) {
-			margin: 25px 0;
+			padding: 0 0 15px 0;
 		}
 
 		.container {
@@ -1939,7 +1947,15 @@ header {
 				margin: 0;
 				padding-bottom: 50px;
 				font-size: 12vw;
-				color: rgba(255, 255, 255, .2)
+				color: rgba(255, 255, 255, .7);
+
+				@include range-width(451px, 769px) {
+					padding-bottom: 15px;
+				}
+
+				@include range-width(0, 451px) {
+					padding-bottom: 15px;
+				}
 			}
 			.slider_for {
 				.slider_for_item {
