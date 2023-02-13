@@ -1925,7 +1925,7 @@ header {
 	width: 100%;
 
 	.ds_s1 {
-		padding: 0 0 40px 0;
+		padding: 0 0 35px 0;
 		background-color: rgba(255, 235, 253, 1);
 
 		@include range-width(451px, 769px) {
@@ -1948,8 +1948,8 @@ header {
 				.slider_for_item {
 					position: relative;
 					margin: 0 2rem;
-					max-width: 1040px;
-					max-height: 1040px;
+					max-width: 1000px;
+					max-height: 1000px;
 
 					@include range-width(1024px, 1441px) {
 						max-width: 640px;
