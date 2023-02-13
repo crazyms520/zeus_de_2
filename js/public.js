@@ -3,9 +3,9 @@
 
 	// navbar start
 	$('.brand-origin-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#happy-skin, #special-feature, #special-offer, #where-buy, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法加入 end
+		// 20230214 小改版 調整隱藏區塊寫法修改 end
 
 		// 20230214 小改版 加入 drunk_color start 
 		$('.navbar').removeClass('spceial_color where_color drunk_color');
@@ -21,17 +21,12 @@
 		$('.brand-origin-slide').addClass('slide-right-2')
 		$('.brand-origin-slide-2').addClass('slide-left');	
 		$('.brand-origin-slide-3').addClass('slide-up');
-
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_for').slick('slickPause');
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
-		
 	})
 
 	$('.happy-skin-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#brand-origin, #special-feature, #special-offer, #where-buy, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法加入 end
+		// 20230214 小改版 調整隱藏區塊寫法修改 end
 
 		// 20230214 小改版 加入 drunk_color start
 		$('.navbar').removeClass('spceial_color origin_color where_color drunk_color');
@@ -45,16 +40,12 @@
 		$('.happy-skin-title-slide-up').addClass('slide-up');	
 		$('.happy-skin-item1-slide-up').addClass('slide-up');	
 		$('.happy-skin-item2-slide-up').addClass('slide-up');	
-
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_for').slick('slickPause');
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
 	$('.special-feature-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#brand-origin, #happy-skin, #special-offer, #where-buy, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法加入 end
+		// 20230214 小改版 調整隱藏區塊寫法修改 end
 
 		// 20230214 小改版 加入 drunk_color start 
 		$('.navbar').removeClass('origin_color where_color drunk_color');
@@ -67,16 +58,12 @@
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 		$('.special-feature-title-slide-up').addClass('slide-up-2')
 		$('.special-feature-item-slide-up').addClass('slide-up')
-
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_for').slick('slickPause');
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
 	$('.special-offer-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#brand-origin, #happy-skin, #special-feature, #where-buy, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法加入 end
+		// 20230214 小改版 調整隱藏區塊寫法修改 end
 
 		// 20230214 小改版 加入 drunk_color start 
 		$('.navbar').removeClass('origin_color where_color drunk_color');
@@ -87,16 +74,12 @@
 		$(this).find('.nav-link').addClass('active');
 		$('#special-offer').show("slide", { direction: "right" }, 400);
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
-
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_for').slick('slickPause');
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
 	$('.where-buy-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法加入 start
+		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#brand-origin, #happy-skin, #special-feature, #special-offer, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法加入 end 
+		// 20230214 小改版 調整隱藏區塊寫法修改 end 
 
 		// 20230214 小改版 加入 drunk_color start 
 		$('.navbar').removeClass('origin_color spceial_color drunk_color');
@@ -106,10 +89,6 @@
 		$(this).find('.nav-link').addClass('active');
 		$('#where-buy').show("slide", { direction: "right" }, 400);
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
-
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_for').slick('slickPause');
-		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
 	// 20230214 小改版 醉神修護雙星區塊 start
@@ -120,9 +99,7 @@
 		$('.navbar').addClass('drunk_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
-		$('.slider_for').slick('slickPlay');
 		$('#drunk-star').show("slide", { direction: "right" }, 400);
-		// $('#drunk-star').show();
 	})
 	// 20230214 小改版 醉神修護雙星區塊 end
 
