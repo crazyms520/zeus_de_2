@@ -318,10 +318,12 @@ header {
 	&.where_color {
 		background-color: #ffebfd;
 	}
-
+	
+	/* 20230214 小改版 新增 drunk_color start */
 	&.drunk_color {
 		background-color: rgba(255, 235, 253, 1);
 	}
+	/* 20230214 小改版 新增 drunk_color end */
 
 	.nav {
 		.nav-item {

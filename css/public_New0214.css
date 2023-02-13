@@ -3150,7 +3150,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_img picture { margin-top: -20px; width: 100%; } }
 .banner .banner_img picture > img { width: 100%; max-width: 100%; object-fit: cover; }
 
-.navbar { padding: 60px 0 60px 0; background-color: #facae7; z-index: 1; /* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 start */ /* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 end */ /* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 start */ /* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 end */ }
+.navbar { padding: 60px 0 60px 0; background-color: #facae7; z-index: 1; /* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 start */ /* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 end */ /* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 start */ /* 20230214 小改版 手機版時 navbar 調整 padding 上下一樣 end */ /* 20230214 小改版 新增 drunk_color start */ /* 20230214 小改版 新增 drunk_color end */ }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar { padding: 15px 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar { padding: 15px 0; } }
 .navbar.origin_color { background-color: #ffef02; }
