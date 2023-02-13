@@ -3443,8 +3443,9 @@ header .ShinKong .text_box .text .span_br { display: block; }
 
 .drunk-star { position: relative; width: 100%; }
 .drunk-star .ds_s1 { padding: 0 0 60px 0; background-color: #ffebfd; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 { padding: 0 0 15px 0; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 { padding: 0 0 15px 0; } }
+@media screen and (max-width: 1440px) and (min-width: 769px) { .drunk-star .ds_s1 { padding: 0 0 12px 0; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 { padding: 0 0 12px 0; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 { padding: 0 0 12px 0; } }
 .drunk-star .ds_s1 .container { max-width: 100%; padding: 0; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container { padding: 0; } }
 .drunk-star .ds_s1 .container .slider_for .slider_for_item { position: relative; margin: 0 2rem; max-width: 1040px; max-height: 1040px; }
