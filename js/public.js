@@ -180,9 +180,9 @@
 		slidesToShow: 1,
 		infinite: true,
 		dots: true,
-		draggable: false,
 		autoplay: true,
 		variableWidth: true,
+		arrows: false,
 		responsive: [
 			{
 				breakpoint: 769,
@@ -190,7 +190,6 @@
 					centerPadding: '50px',
 					slidesToShow: 1,
 					variableWidth: false,
-					draggable: true,
 				}
 			},
 			{
@@ -199,7 +198,6 @@
 					centerPadding: '40px',
 					slidesToShow: 1,
 					variableWidth: false,
-					draggable: true,
 				}
 			}
 		]
