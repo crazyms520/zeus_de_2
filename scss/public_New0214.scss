@@ -1986,7 +1986,11 @@ header {
 				}
 
 				.slick-dots {
-					bottom: -30px;
+					bottom: -60px;
+
+					@include range-width(0, 1441px) {
+						bottom: -36px;
+					}
 
 					li {
 
