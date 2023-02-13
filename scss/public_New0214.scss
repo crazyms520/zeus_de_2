@@ -1988,9 +1988,9 @@ header {
 				}
 
 				.slick-dots {
-					bottom: -60px;
+					bottom: -42px;
 
-					@include range-width(0, 1441px) {
+					@include range-width(0, 769px) {
 						bottom: -36px;
 					}
 
