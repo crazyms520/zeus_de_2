@@ -23,7 +23,7 @@
 		$('.brand-origin-slide-3').addClass('slide-up');
 
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_nav').slick('slickPause');
+		$('.slider_for').slick('slickPause');
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 		
 	})
@@ -47,7 +47,7 @@
 		$('.happy-skin-item2-slide-up').addClass('slide-up');	
 
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_nav').slick('slickPause');
+		$('.slider_for').slick('slickPause');
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
@@ -69,7 +69,7 @@
 		$('.special-feature-item-slide-up').addClass('slide-up')
 
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_nav').slick('slickPause');
+		$('.slider_for').slick('slickPause');
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
@@ -89,7 +89,7 @@
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_nav').slick('slickPause');
+		$('.slider_for').slick('slickPause');
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
@@ -108,7 +108,7 @@
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 start
-		$('.slider_nav').slick('slickPause');
+		$('.slider_for').slick('slickPause');
 		// 20230214 小改版 切換區塊時，先暫停醉神修護雙星輪播，防止切回醉神修護雙星區塊時輪播動畫異常 end
 	})
 
@@ -120,7 +120,7 @@
 		$('.navbar').addClass('drunk_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
-		$('.slider_nav').slick('slickGoTo', 0);
+		$('.slider_for').slick('slickPlay');
 		$('#drunk-star').show("slide", { direction: "right" }, 400);
 		// $('#drunk-star').show();
 	})
