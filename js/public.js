@@ -130,9 +130,6 @@
 
 	// 20230214 小改版 banner 點擊跳至表單區塊 start
 	$('.banner').on('click', function() {
-		// let navbarTop = $('.navbar').offset().top; 
-		// let top = $(window).width() > 450 ? navbarTop : navbarTop + 92;
-		// let top = $('.navbar').offset().top + $('.navbar').outerHeight();
 		let top = $('.form').offset().top;
 	
 		$('.drunk-star-show').click();
@@ -143,34 +140,6 @@
 	// 20230214 小改版 banner 點擊跳至表單區塊 end
 
 	// 20230214 小改版 醉神修護雙星區塊輪播 start
-	// drunk star slick start
-	// $('.slider_for').slick({
-	// 	slidesToShow: 1,
-	// 	slidesToScroll: 1,
-	// 	fade: true,
-	// 	arrows: false,
-	// 	asNavFor: '.slider_nav',
-	// });
-
-	// $('.slider_nav').slick({
-	// 	slidesToShow: 5,
-	// 	slidesToScroll: 1,
-	// 	asNavFor: '.slider_for',
-	// 	dots: false,
-	// 	focusOnSelect: true,
-	// 	arrows: true,
-	// 	autoplay: true,
-	// 	autoplaySpeed: 2000,
-	// 	lazyLoad: 'progressive',
-	// 	// vertical: true,
-	// 	responsive: [{
-	// 		breakpoint: 420,
-	// 		settings: {
-	// 			slidesToShow: 3,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	}]
-	// });
 	
 	$('.slider_for').slick({
 		centerMode: true,
@@ -178,9 +147,8 @@
 		slidesToShow: 1,
 		infinite: true,
 		dots: true,
-		autoplay: true,
 		variableWidth: true,
-		arrows: false,
+		arrows: true,
 		pauseOnFocus: false,
 		responsive: [
 			{
