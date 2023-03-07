@@ -10,7 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">	
 	<link rel="stylesheet" type="text/css" href="css/slick.css">	
 	<link rel="stylesheet" type="text/css" href="css/icon.css">
+	<!-- 20230307 母親節活動 調整 css 檔案 start -->
 	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<!-- 20230307 母親節活動 調整 css 檔案 end -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Noto+Sans+TC:wght@400;700&family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
@@ -34,58 +36,37 @@
 
 <body>
 	<header>
-		<div class="ShinKong col d-flex justify-content-between align-items-center">
-			<div class="ShinKong_img">
-				<img src="img/ShinKong.png" alt="SHIN KONG MITSUKOSHI image">
-			</div>
-			<div class="text_box d-none d-lg-block marquee">
-				<div class="m-0 d-flex justify-content-around align-items-center">
-					<span class="text">9/17 盛大開幕​</span>
-					<span class="text">9/17 盛大開幕​</span>
-					<span class="text">9/17 盛大開幕​</span>
-					<span class="text">9/17 盛大開幕​</span>
-				</div>
-			</div>
-			<div class="text_box d-block d-lg-none">
-				<span class="text">9/17 盛大開幕​</span>
-			</div>
-		</div>
-	</header>
-
-	<section class="banner">
-		<h1 class="text-hidden">醉強護膚 隨性顛覆</h1>
-		<div class="banner_box_w d-none d-lg-block">
-			<picture class="fade-in">
-				<img src="img/banner.png" alt="">
-			</picture>
-		</div>
-		<div class="banner_box_m d-lg-none">
-			<div class="banner_logo">
-					<img class="fade-in" src="img/logo.svg" alt="logo">
-					<div class="text fade-in delay-1">
-						<img src="img/banner_text.svg" alt="">
-					</div>
-				</div>
-			<div class="banner_img">
-				<picture>
-					<source srcset="img/pro_pic.jpg" media="(max-width: 450px)">
-					<img src="img/w-banner.jpg" alt="products">
+		<section class="banner">
+			<h1 class="text-hidden">醉強護膚 隨性顛覆</h1>
+			<div class="banner_box_w">
+				<picture class="fade-in">
+					<source srcset="img/banner_0209_m.png" media="(max-width: 450px)">
+					<img src="img/banner_0209.png" alt="">
 				</picture>
 			</div>
-		</div>
-	</section>
+		</section>
+	</header>
 
-	<section class="navbar">
+	<section class="navbar drunk_color">
 		<div class="container d-inline-block">
 			<ul class="nav justify-content-center">
 				<li class="nav-item brand-origin-show">
 					<span class="nav-link">品牌源起</span>
 				</li>
 				<li class="nav-item happy-skin-show">
-					<span class="nav-link active">快樂肌膚</span>
+					<span class="nav-link">快樂肌膚</span>
 				</li>
 				<li class="nav-item special-feature-show">
 					<span class="nav-link">獨特之處</span>
+				</li>
+				<li class="nav-item special-offer-show">
+					<span class="nav-link">特惠組合</span>
+				</li>
+				<li class="nav-item where-buy-show">
+					<span class="nav-link">哪裡買</span>
+				</li>
+				<li class="nav-item drunk-star-show">
+					<span class="nav-link active">醉神修護雙星</span>
 				</li>
 			</ul>
 		</div>
@@ -156,34 +137,28 @@
 						<div class="svg_item">
 							<div class="svg happy-skin-item2-slide-up delay-2">
 								<img src="img/icon_1n.png" alt="">
-								<!-- <img src="img/icon1.svg" alt=""> -->
 								<p class=""><span class="svg_font">1</span> 精油</p>
 							</div>
 							<div class="svg happy-skin-item2-slide-up delay-2">
 								<img src="img/icon_2n.png" alt="">
-								<!-- <img src="img/icon2.svg" alt=""> -->
 								<p class=""><span class="svg_font">2</span> 酒精</p>
 							</div>
 							<div class="svg happy-skin-item2-slide-up delay-2">
 								<img src="img/icon_3n.png" alt="">
-								<!-- <img src="img/icon3.svg" alt=""> -->
 								<p class=""><span class="svg_font">3</span> 矽</p>
 							</div>
 						</div>
 						<div class="svg_item">
 							<div class="svg happy-skin-item2-slide-up delay-2">
 								<img src="img/icon_4n.png" alt="">
-								<!-- <img src="img/icon5.svg" alt=""> -->
 								<p class=""><span class="svg_font">4</span> 化學防曬成分</p>
 							</div>
 							<div class="svg happy-skin-item2-slide-up delay-2">
 								<img src="img/icon_5n.png" alt="">
-								<!-- <img src="img/icon6.svg" alt=""> -->
 								<p class=""><span class="svg_font">5</span> 香氛色素</p>
 							</div>
 							<div class="svg happy-skin-item2-slide-up delay-2">
 								<img src="img/icon_6n.png" alt="">
-								<!-- <img src="img/icon4.svg" alt=""> -->
 								<p class=""><span class="svg_font">6</span> 十二烷基硫<span class="svg_br"><span>酸鈉</span> (合成洗劑)</span></p>
 							</div>
 						</div>
@@ -245,6 +220,271 @@
 						
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="special-offer" class="special-offer">
+		<div class="so_s1">	
+			<div class="container">
+				<div class="special_offer_items">
+					<div class="special_offer_item">
+						<picture>
+							<img src="img/pro-newyear01.png" alt="">
+						</picture>
+						<div class="prices">
+							<p class="special_price" title="優惠價">$2000</p>
+							<div class="sub_price">
+								<span class="original_price" title="價值">$2227</span>
+							</div>
+						</div>
+						<h2 class="title">
+							神經醯胺修護眼霜特惠組
+						</h2>
+						<div class="contents">
+							<p><img class="buy" src="img/buy.svg"> 神經醯修胺修護眼霜<span class="font-pops">15ml</span></p>
+							<p><img class="gift" src="img/gif.svg"> 拉拉全效修護霜<span class="font-pops">5ml</span></p>
+						</div>
+					</div>
+				
+					<div class="special_offer_item">
+						<picture>
+							<img src="img/pro-newyear02.png" alt="">
+						</picture>
+						<div class="prices">
+							<p class="special_price" title="優惠價">$4100</p>
+							<div class="sub_price">
+								<span class="original_price" title="價值">$5709</span>
+							</div>
+						</div>
+						<h2 class="title">
+							醉神修護雙星豪華組
+						</h2>
+						<div class="contents">
+							<p><img class="buy" src="img/buy.svg"> 神經醯修胺修護眼霜<span class="font-pops">15ml</span></p>
+							<p><img class="ws" src="img/ws.svg">  拉拉全效修護霜<span class="font-pops">50ml</span></p>
+							<p><img class="gift" src="img/gif.svg"> 拉拉全效修護霜<span class="font-pops">5ml</span></p>
+							<p><img class="ws" src="img/ws.svg">  綜合維他命眼霜<span class="font-pops">5ml</span></p>
+							<p><img class="ws" src="img/ws.svg">  晚安多酸調理精華<span class="font-pops">5ml</span></p>
+							<p><img class="ws" src="img/ws.svg">  水飽飽維他命B5保濕精華<span class="font-pops">5ml</span></p>
+						</div>
+					</div>
+				
+					<div class="special_offer_item">
+						<picture>
+							<img src="img/pro-max03.png" alt="">
+						</picture>
+						<div class="prices">
+							<p class="special_price" title="優惠價">$2100</p>
+							<div class="sub_price">
+								<span class="original_price" title="價值">$2600</span>
+							</div>
+						</div>
+						<h2 class="title">
+							急救修護穩膚組
+						</h2>
+						<div class="contents">
+							<p><img class="buy" src="img/buy.svg"> 拉拉全效修護霜<span class="font-pops">50ml</span></p>
+							<p><img class="gift" src="img/gif.svg"> 晚安多酸調理精華<span class="font-pops">5ml</span></p>
+						</div>
+					</div>
+
+					<div class="special_offer_item">
+						<picture>
+							<img src="img/pro-newyear03.png" alt="">
+						</picture>
+						<div class="prices">
+							<p class="special_price" title="優惠價">$3000</p>
+							<div class="sub_price">
+								<span class="original_price" title="價值">$3700</span>
+							</div>
+						</div>
+						<h2 class="title">
+							瞬效煥膚亮顏組
+						</h2>
+						<div class="contents">
+							<p><img class="buy" src="img/buy.svg"> 晚安多酸調理精華<span class="font-pops">30ml</span></p>
+							<p><img class="gift" src="img/gif.svg"> 晚安多酸調理精華<span class="font-pops">5ml</span></p>
+							<p><img class="ws" src="img/ws.svg">  電解質保濕水面膜<span class="font-pops">5ml</span></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="special_offer_items">
+					<div class="special_offer_item">
+						<div class="tags">
+							<span class="yellow">買 <span class="font-pops">2</span> 送 <span class="font-pops">4</span></span>
+						</div>
+						<picture>
+							<img src="img/pro-max01.png" alt="">
+						</picture>
+						<div class="prices">
+							<p class="special_price" title="優惠價">$5100</p>
+							<div class="sub_price">
+								<span class="original_price" title="價值">$6242</span>
+							</div>
+						</div>
+						<h2 class="title">
+							發光奶油肌果昔組
+						</h2>
+						<div class="contents">
+							<p><img class="buy" src="img/buy.svg"> 拉拉全效修護霜<span class="font-pops">50ml</span></p>
+							<p><img class="ws" src="img/ws.svg"> 晚安多酸調理精華<span class="font-pops">30ml</span></p>
+							<p><img class="gift" src="img/gif.svg"> 拉拉全效修護霜<span class="font-pops">5ml</span></p>
+							<p><img class="ws" src="img/ws.svg">  多胜肽緊緻抗老霜<span class="font-pops">5ml</span></p>
+							<p><img class="ws" src="img/ws.svg">  晚安多酸調理精華<span class="font-pops">5ml</span></p>
+							<p><img class="ws" src="img/ws.svg">  水飽飽維他命B5保濕精華<span class="font-pops">5ml</span></p>
+						</div>
+					</div>
+				
+					<div class="special_offer_item">
+						<div class="tags">
+							<span class="yellow">買 <span class="font-pops">3</span> 送 <span class="font-pops">6</span></span>
+						</div>
+						<picture>
+							<img src="img/pro-max02.png" alt="">
+						</picture>
+						<div class="prices">
+							<p class="special_price" title="優惠價">$6750</p>
+							<div class="sub_price">
+								<span class="original_price" title="價值">$8230</span>
+							</div>
+						</div>
+						<h2 class="title">
+							無敵發光奶油肌果昔組
+						</h2>
+						<div class="contents">
+							<p><img class="buy" src="img/buy.svg"> 發光奶油肌果昔組<span class="font-pops"></span></p>
+							<p><img class="ws" src="img/ws.svg">  水飽飽維他命B5保濕精華<span class="font-pops">50ml</span></p>
+							<p><img class="gift" src="img/gif.svg"> 電解質保濕水面膜<span class="font-pops">5ml</span></p>
+							<p><img class="ws" src="img/ws.svg">  No.9多效潔顏凝膠<span class="font-pops">15ml</span></p>
+						</div>
+					</div>
+
+					<div class="special_offer_item"></div>
+					<div class="special_offer_item"></div>
+				</div>
+
+				<div class="buy_now">
+					<a href="#" target="_blank" class="">立即購買</a>
+				</div>
+			</div>			
+		</div>
+	</section>
+
+	<section id="where-buy" class="where-buy">
+		<div class="wb_s1">	
+			<div class="container">
+				<h2 class="wb-title">實體通路</h2>
+				<table class="table">
+					<thead>
+					  <tr>
+						<th scope="col" colspan="1">專櫃名稱</th>
+						<th scope="col">樓層</th>
+						<th scope="col">地址</th>
+						<th scope="col">電話</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>新光三越信義新天地・A11</td>
+						<td>1F </td>
+						<td>台北市信義區松壽路11號</td>
+						<td>0937-862-676</td>
+					  </tr>
+					  <tr>
+						<td>新光三越南西店・3館</td>
+						<td>1F Beauty Stage</td>
+						<td>台北市中山區南京西路15號</td>
+						<td>0963-697-985</td>
+					  </tr>
+					  <tr>
+						<td>新北中和環球購物中心</td>
+						<td>1F Beauty Stage</td>
+						<td>新北市中和區中山路三段122號</td>
+						<td>0905-088-861</td>
+					  </tr>
+					  <tr>
+						<td>新光三越台中中港店</td>
+						<td>B1 Beauty Stage</td>
+						<td>台中市西屯區台灣大道三段301號</td>
+						<td>0965-325-718</td>
+					  </tr>
+					</tbody>
+				</table>
+
+				<h2 class="wb-title">線上購買</h2>
+				<table class="table online">
+					<tbody>
+					  <tr>
+						<td width="30%">momo旗艦館</td>
+						<td width="70%"><a href="https://jbeauty.com.tw/27xu87" target="blank">立即前往</a></td>
+					  </tr>
+					  <tr>
+						<td width="30%">skm online旗艦館</td>
+						<td width="70%"><a href="https://jbeauty.com.tw/RCF6uW" target="blank">立即前往</a></td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section id="drunk-star" class="drunk-star">
+		<div class="ds_s1">	
+			<div class="container">
+				<div class="slider_for">
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star01.png" alt="">
+						</picture>
+					</div>
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star02.png" alt="">
+						</picture>
+					</div>
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star03.png" alt="">
+						</picture>
+					</div>
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star04.png" alt="">
+						</picture>
+					</div>
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star05.png" alt="">
+						</picture>
+					</div>
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star06.png" alt="">
+						</picture>
+					</div>
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star07.png" alt="">
+						</picture>
+					</div>
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star08.png" alt="">
+						</picture>
+					</div>
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star09.png" alt="">
+						</picture>
+					</div>
+					<div class="slider_for_item">
+						<picture>
+							<img src="img/drunk_star10.png" alt="">
+						</picture>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</section>
@@ -514,31 +754,35 @@
 		<div class="container">
 			<div class="title_box form-slide-up-item">
 				<h2>
-					<img src="img/falldrunkinlove.svg" alt="">
-					<p class="text-hidden">DRUNK ELEPHANT醉象7日保養果昔</p>
-				</h2>
-				<div class="icon">
 					<picture>
-						<source srcset="img/icon_drunkinlove_m.png"
-								media="(max-width: 450px)">
-								<img src="img/icon_drunkinlove.png" alt="">
+						<source srcset="img/fall_m.png" media="(max-width: 450px)">
+						<img src="img/fall.png" alt="">
 						<p class="text-hidden">搶先體驗醉象高效護膚</p>
+						<p class="text-hidden">DRUNK ELEPHANT醉象7日保養果昔</p>
 					</picture>
+					
+				</h2>
+				<div class="gift">
+					<h2 class="gift_h2_title">
+						新品上市 立即體驗
+					</h2>
+					<p class="gift_p_text">
+						至醉象櫃位體驗保養諮詢 並綁定LINE會員
+					</p>
+					<p class="gift_p_text">
+						即可兌換 <span class="gift_span_text">醉神修護雙星體驗組 乙份</span>
+					</p>
+					<picture>
+						<source srcset="img/gift_product_newyear.png" media="(max-width: 450px)">
+						<img src="img/gift_product_newyear.png" alt="">
+					</picture>
+					<p class="gift_p_tip">
+						※ 體驗包數量有限，送完將以其他贈品替代
+					</p>
+					<p class="gift_p_tip">
+						※ 醉象保有最終活動解釋權與更換贈品之權利
+					</p>
 				</div>
-			</div>
-			<div class="text form-slide-up-item delay-05">
-				<h3>
-					7日份保養果昔  立即體驗
-				</h3>
-				<p>從現在開始跟我們一起 <span class="d-none d-md-inline"> #醉強護膚​，感受 #醉美素顏！</span></p>
-				<p class="d-md-none">#醉強護膚​，感受 #醉美素顏！</p>
-			</div>
-			<div class="img_text form-slide-up-item delay-1">
-				<picture>
-					<source srcset="img/gift.svg" media="(max-width: 450px)">
-    				<img src="img/gift.svg" alt="" />
-					<p class="text-hidden">瑪魯拉奢華美顏油+多胜肽緊緻抗老霜</p>
-				</picture>
 			</div>
 			<div class="fill_items">
 				<h2>
@@ -802,11 +1046,7 @@
 							<button type="button" class="button">回櫃領取</button>
 						</div>
 						<div class="col text-start position-relative">
-							<button type="button" class="button">宅配到家</button>
-							<div class="delivery">
-								<p><span class="font-pops">1. </span>進入購物網站加入會員</p>
-								<p><span class="font-pops">2. </span>支付百元運費直送到府​</p>
-							</div>
+							<button type="button" class="button">立即購買</button>
 						</div>
 					</div>
 				</form>
