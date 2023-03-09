@@ -1973,7 +1973,9 @@ header {
 
 			.slider_for {
 				// 20230307 母親節活動 
+				position: relative;
 				padding: 0 0 35px 0;
+				z-index: 1;
 
 				.slider_for_item {
 					// 20230307 母親節活動 
@@ -1981,7 +1983,6 @@ header {
 					margin: 0 auto;
 					max-width: 1000px;
 					max-height: 1000px;
-					z-index: 1;
 
 					@include range-width(1024px, 1441px) {
 						// max-width: 640px;
