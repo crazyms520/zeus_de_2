@@ -333,23 +333,19 @@ header {
 		.nav-item {
 			/* 20230307 母親節活動 調整長度維持 navbar 為一行 star */	
 			width: 210px;
-			/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */	
+			/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 			border-right: 1px solid #fff;
 			cursor: pointer;
 
-			/* 20230214 小改版 調整長度維持 navbar 為一行 start */
 			@include range-width(769px, 1025px) {
 				width: 155px;
 			}	
-			/* 20230214 小改版 調整長度維持 navbar 為一行 end */
 
-			/* 20230214 小改版 調整長度維持 navbar 為一行 start */
 			@include range-width(451px, 769px) {
 				width: 116px;
 			}
-			/* 20230214 小改版 調整長度維持 navbar 為一行 end */
 
-			/* 20230214 小改版 手機版時 navbar 調整成3個為一行 start */
+			/* 20230214 小改版 手機版時 navbar 調整成2個為一行 start */
 			@include range-width(0, 451px) {
 				flex: 1;
 				flex-basis: calc(100% / 2);
@@ -380,24 +376,24 @@ header {
 				color: #b695c2;
 				background-color: #f9e5fa;
 
-				/* 20230214 小改版 調整padding、font-size維持 navbar 為一行 start */
+				/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 				@include range-width(769px, 1025px) {
 					padding: 4px 8px;
 					font-size: 15px;
 				}
-				/* 20230214 小改版 調整padding、font-size維持 navbar 為一行 end */
+				/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 
-				/* 20230214 小改版 調整padding、font-size維持 navbar 為一行 start */
+				/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 				@include range-width(451px, 769px) {
 					padding: 4px 4px;
 					font-size: 12px;
 					letter-spacing: 1px;
 				}
-				/* 20230214 小改版 調整padding、font-size維持 navbar 為一行 end */
+				/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 
 				@include range-width(321px, 451px) {
-					padding: 4px 4px;
-					font-size: 12px;
+					padding: 4px 8px;
+					font-size: 14px;
 					letter-spacing: 1px;
 				}
 
@@ -1985,6 +1981,7 @@ header {
 					margin: 0 auto;
 					max-width: 1000px;
 					max-height: 1000px;
+					z-index: 1;
 
 					@include range-width(1024px, 1441px) {
 						// max-width: 640px;
