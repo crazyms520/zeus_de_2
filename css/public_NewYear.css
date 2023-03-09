@@ -3102,15 +3102,10 @@ header .ShinKong .ShinKong_img > img { width: 112px; height: 64px; }
 @media screen and (max-width: 450px) and (min-width: 0) { header .ShinKong .ShinKong_img > img { width: 42px; height: 24px; } }
 header .ShinKong .text_box { position: relative; width: 100%; }
 @media screen and (max-width: 450px) and (min-width: 0) { header .ShinKong .text_box { padding-top: 5px; width: 100%; height: auto; } }
-header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 2.4px; color: #777575;}
-/* 20221227 新年活動 跑馬燈強制斷行 start */
+header .ShinKong .text_box .text { font-family: 'NotoSans TC', sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 2.4px; color: #777575; /* 20221227 新年活動 跑馬燈強制斷行 start */ /* 20221227 新年活動 跑馬燈強制斷行 end */ }
 header .ShinKong .text_box .text .span_br { display: block; }
-/* 20221227 新年活動 跑馬燈強制斷行 end */
-@media screen and (max-width: 1440px) and (min-width: 1361px) { header .ShinKong .text_box .text { font-size: 18px; font-weight: bold;}
-  /* 20221227 新年活動 跑馬燈強制斷行 start */
-  header .ShinKong .text_box .text .span_br { display: block; } 
-  /* 20221227 新年活動 跑馬燈強制斷行 end */
-}
+@media screen and (max-width: 1440px) and (min-width: 1361px) { header .ShinKong .text_box .text { font-size: 18px; font-weight: bold; /* 20221227 新年活動 跑馬燈強制斷行 start */ /* 20221227 新年活動 跑馬燈強制斷行 end */ }
+  header .ShinKong .text_box .text .span_br { display: block; } }
 @media screen and (max-width: 1360px) and (min-width: 1121px) { header .ShinKong .text_box .text { font-size: 17px; font-weight: bold; }
   header .ShinKong .text_box .text .span_br { display: block; } }
 @media screen and (max-width: 1120px) and (min-width: 1041px) { header .ShinKong .text_box .text { font-size: 16px; font-weight: bold; }
@@ -3155,18 +3150,14 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_img picture { margin-top: -20px; width: 100%; } }
 .banner .banner_img picture > img { width: 100%; max-width: 100%; object-fit: cover; }
 
-.navbar { padding: 60px 0 60px 0; background-color: #facae7; z-index: 1;}
+.navbar { padding: 60px 0 60px 0; background-color: #facae7; z-index: 1; /* 20221227 新年活動 新增哪裡買 navbar 底色 start */ /* 20221227 新年活動 新增哪裡買 navbar 底色 end */ }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar { padding: 15px 0 15px 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar { padding: 30px 0 15px 0; } }
 .navbar.origin_color { background-color: #ffef02; }
 .navbar.spceial_color { background-color: #f6d6f7; }
-/* 20221227 新年活動 新增哪裡買 navbar 底色 start */
 .navbar.where_color { background-color: #ffebfd; }
-/* 20221227 新年活動 新增哪裡買 navbar 底色 end */
-.navbar .nav .nav-item { width: 180px; border-right: 1px solid #fff; /* 20221227 新年活動 修正指標 start */ cursor: pointer; /* 20221227 新年活動 修正指標 end */}
-/* 20221227 新年活動 調整長度維持 navbar 為一行 start */
+.navbar .nav .nav-item { width: 180px; border-right: 1px solid #fff; /* 20221227 新年活動 修正指標 start */ cursor: pointer; /* 20221227 新年活動 修正指標 end */ /* 20221227 新年活動 調整長度維持 navbar 為一行 start */ /* 20221227 新年活動 調整長度維持 navbar 為一行 end */ }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar .nav .nav-item { width: 130px; } }
-/* 20221227 新年活動 調整長度維持 navbar 為一行 end */
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item { flex: 1; width: auto; } }
 .navbar .nav .nav-item:last-child { border-right: 1px solid transparent; }
 .navbar .nav .nav-item span { padding: 4px 1rem; font-family: 'NotoSans TC', sans-serif; font-size: 22px; letter-spacing: 1.75px; text-align: center; color: #b695c2; background-color: #f9e5fa; }
@@ -3360,10 +3351,8 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container { padding: 0 1rem; } }
 .special-offer .so_s1 .container .special_offer_items { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; }
 @media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items { padding: 10px 0; } }
-.special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { border-top: 2px dotted #ededed;}
-/* 20221227 新年活動 去除 special_offder_item 沒內容時產生的 after 效果 start */
+.special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { border-top: 2px dotted #ededed; /* 20221227 新年活動 去除 special_offder_item 沒內容時產生的 after 效果 start */ /* 20221227 新年活動 去除 special_offder_item 沒內容時產生的 after 效果 end */ }
 .special-offer .so_s1 .container .special_offer_items:nth-of-type(2) .special_offer_item:nth-of-type(3):after { content: unset; }
-/* 20221227 新年活動 去除 special_offder_item 沒內容時產生的 after 效果 end */
 @media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { padding: 10px 0; } }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item { position: relative; width: 24%; padding: 0 10px; }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item:after { content: ''; position: absolute; top: 0; right: 0; display: inline-block; height: 100%; border-right: 2px dotted #ededed; }
@@ -3440,8 +3429,8 @@ header .ShinKong .text_box .text .span_br { display: block; }
   .where-buy .wb_s1 .container .table tbody tr td:nth-of-type(2) { text-align: center; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .where-buy .wb_s1 .container .table tbody tr td { padding: 10px .5rem; font-size: 14px; }
   .where-buy .wb_s1 .container .table tbody tr td:nth-of-type(2) { text-align: center; } }
-/* 20221227 新年活動 新增 where-buy 區塊 end */
 
+/* 20221227 新年活動 新增 where-buy 區塊 end */
 .mixing { background-color: #ff9dd3; padding: 50px 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing { padding: 25px 0; } }
 .mixing .title { padding: 50px 0 0 0; background-image: linear-gradient(-45deg, #e3f2fa 4%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 50%, #ffffff 58%, #ffffff 100%); background-size: 30px 30px; }
