@@ -3357,9 +3357,10 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container { padding: 0 1rem; } }
 .special-offer .so_s1 .container .special_offer_items { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; }
 @media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items { padding: 10px 0; } }
-.special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { border-top: 2px dotted #ededed; }
-.special-offer .so_s1 .container .special_offer_items:nth-of-type(2) .special_offer_item:nth-of-type(3):after { content: unset; }
-@media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { padding: 10px 0; } }
+.special-offer .so_s1 .container .special_offer_items:nth-of-type(2), .special-offer .so_s1 .container .special_offer_items:nth-of-type(3), .special-offer .so_s1 .container .special_offer_items:nth-of-type(4) { border-top: 2px dotted #ededed; }
+.special-offer .so_s1 .container .special_offer_items:nth-of-type(2) .special_offer_item:nth-of-type(3):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(3) .special_offer_item:nth-of-type(3):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(4) .special_offer_item:nth-of-type(3):after { content: unset; }
+.special-offer .so_s1 .container .special_offer_items:nth-of-type(2):nth-of-type(4) .special_offer_item:nth-of-type(2):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(3):nth-of-type(4) .special_offer_item:nth-of-type(2):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(4):nth-of-type(4) .special_offer_item:nth-of-type(2):after { content: unset; }
+@media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items:nth-of-type(2), .special-offer .so_s1 .container .special_offer_items:nth-of-type(3), .special-offer .so_s1 .container .special_offer_items:nth-of-type(4) { padding: 10px 0; } }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item { position: relative; width: 24%; padding: 0 10px; }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item:after { content: ''; position: absolute; top: 0; right: 0; display: inline-block; height: 100%; border-right: 2px dotted #ededed; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .special-offer .so_s1 .container .special_offer_items .special_offer_item:after { right: 10px; } }
