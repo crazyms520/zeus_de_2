@@ -74,15 +74,16 @@
 
 	// navbar end
 
-	$('.banner').on('click', function() {
+	$('.btn_1').on('click', function() {
 		let top = $('.form').offset().top;
-	
-		$('.drunk-star-show').click();
 		$('html,body').animate({
 			scrollTop: top,
 		}, 700)
 	})
 
+	// 20230309 母親節活動 拿掉醉神區塊 start
+	// 20230309 母親節活動 拿掉醉神區塊 end 
+	 
 	// elephant slick start
 	$('.slick-items').slick({
 		infinite: true,

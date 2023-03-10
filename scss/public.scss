@@ -148,6 +148,7 @@ header {
 }
 
 .banner {
+	position: relative;
 	background-color: rgba(246, 202, 244, 1.00);
 	cursor: pointer;
 
@@ -164,6 +165,84 @@ header {
 
 			img {
 				width: 100%;
+			}
+		}
+
+		.banner_btn_box {
+			position: absolute;
+			bottom: 10vw;
+			left: 52.5%;
+			display: flex;
+			justify-content: flex-start;
+			// width: 50%;
+
+			@include range-width(1025px, 1441px) {
+				bottom: 8vw;
+			}
+
+			@include range-width(769px, 1025px) {
+				// bottom: 12.5%;
+				left: 50%;
+				bottom: 7vw;
+			}
+
+			@include range-width(451px, 769px) {
+				bottom: 12.5%;
+				left: 47.5%;
+			}
+
+			@include range-width(0, 451px) {
+				bottom: 22%;
+				left: 54.5%;
+				flex-direction: column;
+			}
+			
+
+			.banner_btn {
+				margin: 2rem;
+				padding: .5rem 2rem;
+				border-radius: 5px;
+				background-color: rgba(255, 248, 56, 1.00);
+				cursor: pointer;
+
+				@include range-width(321px, 451px) {
+					margin: .5rem;
+					padding: .5rem 1rem;
+				}
+
+				@include range-width(0, 321px) {
+					margin: 1rem 0 0 0;
+					padding: .25rem 1rem;
+				}
+				
+				span {
+					font-size: 2vw;
+					color: rgba(210, 90, 73, 1.00);
+					vertical-align: middle;
+
+					@include range-width(321px, 451px) {
+						font-size: 4vw;
+					}
+
+					@include range-width(0, 321px) {
+						font-size: 3vw;
+					}
+				}
+
+				a {
+					font-size: 2vw;
+					color: rgba(210, 90, 73, 1.00);
+					text-decoration: none;
+					vertical-align: middle;
+
+					@include range-width(321px, 451px) {
+						font-size: 4vw;
+					}
+
+					@include range-width(0, 321px) {
+						font-size: 3vw;
+					}
+				}
 			}
 		}
 	}
