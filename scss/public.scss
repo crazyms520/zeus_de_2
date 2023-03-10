@@ -313,13 +313,21 @@ header {
 		background-color: #ffebfd;
 	}
 	
+	/* 20230307 母親節活動 新增 drunk_color start */
 	&.drunk_color {
-		background-color: rgba(255, 235, 253, 1);
+		background-color: rgba(255, 210, 255, 1.00);
+		background-image: url(../img/Cfirma_bg.png);
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
+	/* 20230307 母親節活動 新增 drunk_color end */
 
 	.nav {
 		.nav-item {
-			width: 180px;
+			/* 20230307 母親節活動 調整長度維持 navbar 為一行 star */	
+			width: 210px;
+			/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 			border-right: 1px solid #fff;
 			cursor: pointer;
 
@@ -331,19 +339,21 @@ header {
 				width: 116px;
 			}
 
+			/* 20230214 小改版 手機版時 navbar 調整成2個為一行 start */
 			@include range-width(0, 451px) {
 				flex: 1;
-				flex-basis: calc(100% / 3);
+				flex-basis: calc(100% / 2);
 				width: auto;
 
-				&:nth-of-type(3) {
+				&:nth-of-type(even),  {
 					border-right: 1px solid transparent;	
 				}
 
-				&:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6){
-					margin-top: 10px;
+				&:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6){
+					margin-top: 5px;
 				}
 			}
+			/* 20230214 小改版 手機版時 navbar 調整成3個為一行 end */
 			
 			&:last-child {
 				border-right: 1px solid transparent;
@@ -352,22 +362,28 @@ header {
 			span {
 				padding: 4px 1rem;
 				font-family: 'NotoSans TC', sans-serif;
-				font-size: 22px;
+				/* 20230307 母親節活動 調整字體大小維持 navbar 為一行 star */		
+				font-size: 20px;
+				/* 20230307 母親節活動 調整字體大小維持 navbar 為一行 star */	
 				letter-spacing: 1.75px;
 				text-align: center;
 				color: #b695c2;
 				background-color: #f9e5fa;
 
+				/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 				@include range-width(769px, 1025px) {
 					padding: 4px 8px;
-					font-size: 18px;
+					font-size: 15px;
 				}
+				/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 
+				/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 				@include range-width(451px, 769px) {
-					padding: 4px 8px;
-					font-size: 14px;
+					padding: 4px 4px;
+					font-size: 12px;
 					letter-spacing: 1px;
 				}
+				/* 20230307 母親節活動 調整長度維持 navbar 為一行 end */
 
 				@include range-width(376px, 451px) {
 					padding: 4px 8px;
@@ -1434,6 +1450,7 @@ header {
 					padding: 10px 0;
 				}
 
+				/* 20230309 母親節活動 調整產品區塊的虛線顯示 start */
 				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4) {
 					border-top: 2px dotted #ededed;
 
@@ -1459,6 +1476,7 @@ header {
 						padding: 10px 0;
 					}
 				}
+				/* 20230309 母親節活動 調整產品區塊的虛線顯示 end */
 
 				.special_offer_item {
 					position: relative;
@@ -1914,15 +1932,29 @@ header {
 	width: 100%;
 
 	.ds_s1 {
-		padding: 0 0 35px 0;
-		background-color: rgba(255, 235, 253, 1);
+		/* 20230307 母親節活動 start */
+		padding: 35px 0;
+		height: 100vh;
+		background-color: rgba(234, 182, 255, 1);
+		background-image: url(../img/Cfirma_bg.png);
+		overflow: scroll;
+		-ms-overflow-style: none;  
+		scrollbar-width: none;  
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		/* 20230307 母親節活動 end */
 
 		@include range-width(451px, 769px) {
-			padding: 0 0 15px 0;
+			/* 20230307 母親節活動 start */
+			padding: 0;
+			/* 20230307 母親節活動 end */
 		}
 
 		@include range-width(0, 451px) {
-			padding: 0 0 15px 0;
+			/* 20230307 母親節活動 start */
+			padding: 0;
+			/* 20230307 母親節活動 ends */
 		}
 
 		.container {
@@ -1936,7 +1968,9 @@ header {
 			.slider_for {
 				.slider_for_item {
 					position: relative;
-					margin: 0 2rem;
+					/* 20230307 母親節活動 start */
+					margin: 0 auto;
+					/* 20230307 母親節活動 end */
 					max-width: 1000px;
 					max-height: 1000px;
 
@@ -1974,154 +2008,18 @@ header {
 							}
 						}
 					}
-				}
 
-				.slick-dots {
-					bottom: -42px;
-
-					@include range-width(0, 769px) {
-						bottom: -36px;
-					}
-
-					li {
-
-						&.slick-active {
-							button {
-								&:before {
-									color: rgba(227, 255, 0, 1);
-									opacity: 1;
-								}
-							}
-						}
-
-						button {
-							&:before {
-								color: rgba(255, 255, 255, 1);
-								opacity: 1;
-							}
-						}
-					}
-					
-				}
-
-				.slick-prev {
-					left: 0;
-					width: 100px;
-					height: 100%;
-					z-index: 1;
-
-					@include range-width(451px, 769px) {
-						width: 40px;
-					}
-
-					@include range-width(0, 451px) {
-						width: 40px;
-					}
-
-					&:before {
-						display: inline-block;
-						font-size: 60px;
-						color: rgba(90, 90, 90, 1);
-
-						@include range-width(451px, 769px) {
-							font-size: 40px;
-						}
-
-						@include range-width(0, 451px) {
-							font-size: 35px;
-						}
-					}
-				}
-		
-				.slick-next {
-					right: 0;
-					width: 100px;
-					height: 100%;
-					z-index: 1;
-
-					@include range-width(451px, 769px) {
-						width: 40px;
-					}
-
-					@include range-width(0, 451px) {
-						width: 40px;
-					}
-
-					&:before {
-							font-size: 60px;
-							color: rgba(90, 90, 90, 1);
-
-							@include range-width(451px, 769px) {
-								font-size: 40px;
-							}
-							
-							@include range-width(0, 451px) {
-								font-size: 35px;
-							}
-					}
-				}
-			}
-	
-			.slider_nav {
-				max-width: 800px;
-				margin: 0 auto;
-				padding: 0 20px;
-
-				@include range-width(451px, 769px) {
-					max-width: 100%;
-				}
-
-				@include range-width(0, 451px) {
-					max-width: 100%;
-				}
-
-				.slider_nav_item {
-					cursor: pointer;
-					> img {
-						width: auto;
-						height: auto;
-						max-width: 100%;
-						max-height: 100%;
-						padding: 1rem .5rem;
-					}
-				}
-
-				.slick-prev {
-					left: 0;
-					height: calc(100% - 2rem);
-					background: rgba(90, 90, 90, 1);
-					&:before {
-						content: '';
+					/* 20230307 母親節活動 start */
+					iframe {
 						position: absolute;
-						top: calc(50% - 9px);
-						left: 6px;
-						width: 17px;
-						height: 17px;
-						border-bottom: 4px solid;
-   						border-left: 4px solid;
-						transform: rotate(45deg);
-						color: rgba(255, 255, 255, 1);
-						opacity: 1;
+						left: 7%;
+						bottom: 5%;
+						width: 86%;
+						height: 55%;
+						z-index: 1;
+
 					}
-				}
-		
-				.slick-next {
-					right: 0;
-					height: calc(100% - 2rem);
-					background: rgba(90, 90, 90, 1);
-					&:before {
-							content: '';
-							position: absolute;
-							top: calc(50% - 9px);
-							right: 6px;
-							width: 17px;
-							height: 17px;
-							border-bottom: 4px solid;
-							border-left: 4px solid;
-							transform: rotate(-135deg);
-							color: rgba(255, 255, 255, 1);
-							opacity: 1;
-					}
+					/* 20230307 母親節活動 end */
 				}
 			}
 		}

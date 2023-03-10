@@ -3,14 +3,8 @@
 
 	// navbar start
 	$('.brand-origin-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#happy-skin, #special-feature, #special-offer, #where-buy, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法修改 end
-
-		// 20230214 小改版 加入 drunk_color start 
 		$('.navbar').removeClass('spceial_color where_color drunk_color');
-		// 20230214 小改版 加入 drunk_color end
-
 		$('.navbar').addClass('origin_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -24,14 +18,8 @@
 	})
 
 	$('.happy-skin-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#brand-origin, #special-feature, #special-offer, #where-buy, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法修改 end
-
-		// 20230214 小改版 加入 drunk_color start
 		$('.navbar').removeClass('spceial_color origin_color where_color drunk_color');
-		// 20230214 小改版 加入 drunk_color end 
-
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
 		$('#happy-skin').show("slide", { direction: "down" }, 10);
@@ -43,14 +31,8 @@
 	})
 
 	$('.special-feature-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#brand-origin, #happy-skin, #special-offer, #where-buy, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法修改 end
-
-		// 20230214 小改版 加入 drunk_color start 
 		$('.navbar').removeClass('origin_color where_color drunk_color');
-		// 20230214 小改版 加入 drunk_color end
-
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -61,14 +43,8 @@
 	})
 
 	$('.special-offer-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#brand-origin, #happy-skin, #special-feature, #where-buy, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法修改 end
-
-		// 20230214 小改版 加入 drunk_color start 
 		$('.navbar').removeClass('origin_color where_color drunk_color');
-		// 20230214 小改版 加入 drunk_color end
-
 		$('.navbar').addClass('spceial_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -77,13 +53,8 @@
 	})
 
 	$('.where-buy-show').click(function() {
-		// 20230214 小改版 調整隱藏區塊寫法修改 start
 		$('#brand-origin, #happy-skin, #special-feature, #special-offer, #drunk-star').hide();
-		// 20230214 小改版 調整隱藏區塊寫法修改 end 
-
-		// 20230214 小改版 加入 drunk_color start 
 		$('.navbar').removeClass('origin_color spceial_color drunk_color');
-		// 20230214 小改版 加入 drunk_color end
 		$('.navbar').addClass('where_color');
 		$('.nav-link').removeClass('active');
 		$(this).find('.nav-link').addClass('active');
@@ -91,7 +62,6 @@
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 	})
 
-	// 20230214 小改版 醉神修護雙星區塊 start
 	$('.drunk-star-show').click(function() {
 		$('*').removeClass('slide-up slide-up-2 slide-right slide-right-2 slide-right-3 slide-left');
 		$('#brand-origin, #happy-skin, #special-feature, #special-offer, #where-buy').hide();
@@ -101,11 +71,9 @@
 		$(this).find('.nav-link').addClass('active');
 		$('#drunk-star').show("slide", { direction: "right" }, 400);
 	})
-	// 20230214 小改版 醉神修護雙星區塊 end
 
 	// navbar end
 
-	// 20230214 小改版 banner 點擊跳至表單區塊 start
 	$('.banner').on('click', function() {
 		let top = $('.form').offset().top;
 	
@@ -114,41 +82,6 @@
 			scrollTop: top,
 		}, 700)
 	})
-	// 20230214 小改版 banner 點擊跳至表單區塊 end
-
-	// 20230214 小改版 醉神修護雙星區塊輪播 start
-	
-	$('.slider_for').slick({
-		centerMode: true,
-		centerPadding: '100px',
-		slidesToShow: 1,
-		infinite: true,
-		dots: true,
-		variableWidth: true,
-		arrows: true,
-		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					centerPadding: '50px',
-					slidesToShow: 1,
-					variableWidth: false,
-				}
-			},
-			{
-				breakpoint: 451,
-				settings: {
-					centerPadding: '40px',
-					slidesToShow: 1,
-					variableWidth: false,
-				}
-			}
-		]
-	});	
-
-	// drunk star slick end
-	// 20230214 小改版 醉神修護雙星區塊輪播 end
 
 	// elephant slick start
 	$('.slick-items').slick({

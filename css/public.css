@@ -3150,23 +3150,23 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_img picture { margin-top: -20px; width: 100%; } }
 .banner .banner_img picture > img { width: 100%; max-width: 100%; object-fit: cover; }
 
-.navbar { padding: 60px 0 60px 0; background-color: #facae7; z-index: 1; }
+.navbar { padding: 60px 0 60px 0; background-color: #facae7; z-index: 1; /* 20230307 母親節活動 新增 drunk_color start */ /* 20230307 母親節活動 新增 drunk_color end */ }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar { padding: 15px 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar { padding: 15px 0; } }
 .navbar.origin_color { background-color: #ffef02; }
 .navbar.spceial_color { background-color: #f6d6f7; }
 .navbar.where_color { background-color: #ffebfd; }
-.navbar.drunk_color { background-color: #ffebfd; }
-.navbar .nav .nav-item { width: 180px; border-right: 1px solid #fff; cursor: pointer; }
+.navbar.drunk_color { background-color: #ffd2ff; background-image: url(../img/Cfirma_bg.png); background-position: bottom; background-repeat: no-repeat; background-size: cover; }
+.navbar .nav .nav-item { /* 20230307 母親節活動 調整長度維持 navbar 為一行 star */ width: 210px; /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ border-right: 1px solid #fff; cursor: pointer; /* 20230214 小改版 手機版時 navbar 調整成2個為一行 start */ /* 20230214 小改版 手機版時 navbar 調整成3個為一行 end */ }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .navbar .nav .nav-item { width: 155px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar .nav .nav-item { width: 116px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item { flex: 1; flex-basis: calc(100% / 3); width: auto; }
-  .navbar .nav .nav-item:nth-of-type(3) { border-right: 1px solid transparent; }
-  .navbar .nav .nav-item:nth-of-type(4), .navbar .nav .nav-item:nth-of-type(5), .navbar .nav .nav-item:nth-of-type(6) { margin-top: 10px; } }
+@media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item { flex: 1; flex-basis: calc(100% / 2); width: auto; }
+  .navbar .nav .nav-item:nth-of-type(even) { border-right: 1px solid transparent; }
+  .navbar .nav .nav-item:nth-of-type(3), .navbar .nav .nav-item:nth-of-type(4), .navbar .nav .nav-item:nth-of-type(5), .navbar .nav .nav-item:nth-of-type(6) { margin-top: 5px; } }
 .navbar .nav .nav-item:last-child { border-right: 1px solid transparent; }
-.navbar .nav .nav-item span { padding: 4px 1rem; font-family: 'NotoSans TC', sans-serif; font-size: 22px; letter-spacing: 1.75px; text-align: center; color: #b695c2; background-color: #f9e5fa; }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .navbar .nav .nav-item span { padding: 4px 8px; font-size: 18px; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .navbar .nav .nav-item span { padding: 4px 8px; font-size: 14px; letter-spacing: 1px; } }
+.navbar .nav .nav-item span { padding: 4px 1rem; font-family: 'NotoSans TC', sans-serif; /* 20230307 母親節活動 調整字體大小維持 navbar 為一行 star */ font-size: 20px; /* 20230307 母親節活動 調整字體大小維持 navbar 為一行 star */ letter-spacing: 1.75px; text-align: center; color: #b695c2; background-color: #f9e5fa; /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .navbar .nav .nav-item span { padding: 4px 8px; font-size: 15px; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .navbar .nav .nav-item span { padding: 4px 4px; font-size: 12px; letter-spacing: 1px; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .navbar .nav .nav-item span { padding: 4px 8px; font-size: 14px; letter-spacing: 1px; } }
 @media screen and (max-width: 375px) and (min-width: 0) { .navbar .nav .nav-item span { padding: 4px 8px; font-size: 12px; letter-spacing: 1px; } }
 .navbar .nav .nav-item span.active { color: #ff25ae; background-color: #fff; font-weight: bolder; }
@@ -3355,7 +3355,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .special-offer .so_s1 { padding: 30px 0 30px 0; background-color: #fff; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 { padding: 15px 0 15px 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container { padding: 0 1rem; } }
-.special-offer .so_s1 .container .special_offer_items { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; }
+.special-offer .so_s1 .container .special_offer_items { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; /* 20230309 母親節活動 調整產品區塊的虛線顯示 start */ /* 20230309 母親節活動 調整產品區塊的虛線顯示 end */ }
 @media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items { padding: 10px 0; } }
 .special-offer .so_s1 .container .special_offer_items:nth-of-type(2), .special-offer .so_s1 .container .special_offer_items:nth-of-type(3), .special-offer .so_s1 .container .special_offer_items:nth-of-type(4) { border-top: 2px dotted #ededed; }
 .special-offer .so_s1 .container .special_offer_items:nth-of-type(2) .special_offer_item:nth-of-type(3):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(3) .special_offer_item:nth-of-type(3):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(4) .special_offer_item:nth-of-type(3):after { content: unset; }
@@ -3443,12 +3443,13 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .where-buy .wb_s1 .container .table.online tbody tr td a:hover { color: #78baff; }
 
 .drunk-star { position: relative; width: 100%; }
-.drunk-star .ds_s1 { padding: 0 0 35px 0; background-color: #ffebfd; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 { padding: 0 0 15px 0; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 { padding: 0 0 15px 0; } }
+.drunk-star .ds_s1 { /* 20230307 母親節活動 start */ padding: 35px 0; height: 100vh; background-color: #eab6ff; background-image: url(../img/Cfirma_bg.png); overflow: scroll; -ms-overflow-style: none; scrollbar-width: none; /* 20230307 母親節活動 end */ }
+.drunk-star .ds_s1::-webkit-scrollbar { display: none; }
+@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 { /* 20230307 母親節活動 start */ padding: 0; /* 20230307 母親節活動 end */ } }
+@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 { /* 20230307 母親節活動 start */ padding: 0; /* 20230307 母親節活動 ends */ } }
 .drunk-star .ds_s1 .container { max-width: 100%; padding: 0; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container { padding: 0; } }
-.drunk-star .ds_s1 .container .slider_for .slider_for_item { position: relative; margin: 0 2rem; max-width: 1000px; max-height: 1000px; }
+.drunk-star .ds_s1 .container .slider_for .slider_for_item { position: relative; /* 20230307 母親節活動 start */ margin: 0 auto; /* 20230307 母親節活動 end */ max-width: 1000px; max-height: 1000px; /* 20230307 母親節活動 start */ /* 20230307 母親節活動 end */ }
 @media screen and (max-width: 1440px) and (min-width: 1024px) { .drunk-star .ds_s1 .container .slider_for .slider_for_item { max-width: 640px; max-height: 640px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .slider_for .slider_for_item { margin: 0 1rem; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 .container .slider_for .slider_for_item { margin: 0 .5rem; } }
@@ -3456,31 +3457,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .drunk-star .ds_s1 .container .slider_for .slider_for_item picture > img { margin: 0 auto; width: 100%; height: 100%; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .slider_for .slider_for_item picture > img { max-width: 100%; max-height: 100%; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 .container .slider_for .slider_for_item picture > img { max-width: 100%; max-height: 100%; } }
-.drunk-star .ds_s1 .container .slider_for .slick-dots { bottom: -42px; }
-@media screen and (max-width: 768px) and (min-width: 0) { .drunk-star .ds_s1 .container .slider_for .slick-dots { bottom: -36px; } }
-.drunk-star .ds_s1 .container .slider_for .slick-dots li.slick-active button:before { color: #e3ff00; opacity: 1; }
-.drunk-star .ds_s1 .container .slider_for .slick-dots li button:before { color: white; opacity: 1; }
-.drunk-star .ds_s1 .container .slider_for .slick-prev { left: 0; width: 100px; height: 100%; z-index: 1; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .slider_for .slick-prev { width: 40px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 .container .slider_for .slick-prev { width: 40px; } }
-.drunk-star .ds_s1 .container .slider_for .slick-prev:before { display: inline-block; font-size: 60px; color: #5a5a5a; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .slider_for .slick-prev:before { font-size: 40px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 .container .slider_for .slick-prev:before { font-size: 35px; } }
-.drunk-star .ds_s1 .container .slider_for .slick-next { right: 0; width: 100px; height: 100%; z-index: 1; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .slider_for .slick-next { width: 40px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 .container .slider_for .slick-next { width: 40px; } }
-.drunk-star .ds_s1 .container .slider_for .slick-next:before { font-size: 60px; color: #5a5a5a; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .slider_for .slick-next:before { font-size: 40px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 .container .slider_for .slick-next:before { font-size: 35px; } }
-.drunk-star .ds_s1 .container .slider_nav { max-width: 800px; margin: 0 auto; padding: 0 20px; }
-@media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .slider_nav { max-width: 100%; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 .container .slider_nav { max-width: 100%; } }
-.drunk-star .ds_s1 .container .slider_nav .slider_nav_item { cursor: pointer; }
-.drunk-star .ds_s1 .container .slider_nav .slider_nav_item > img { width: auto; height: auto; max-width: 100%; max-height: 100%; padding: 1rem .5rem; }
-.drunk-star .ds_s1 .container .slider_nav .slick-prev { left: 0; height: calc(100% - 2rem); background: #5a5a5a; }
-.drunk-star .ds_s1 .container .slider_nav .slick-prev:before { content: ''; position: absolute; top: calc(50% - 9px); left: 6px; width: 17px; height: 17px; border-bottom: 4px solid; border-left: 4px solid; transform: rotate(45deg); color: white; opacity: 1; }
-.drunk-star .ds_s1 .container .slider_nav .slick-next { right: 0; height: calc(100% - 2rem); background: #5a5a5a; }
-.drunk-star .ds_s1 .container .slider_nav .slick-next:before { content: ''; position: absolute; top: calc(50% - 9px); right: 6px; width: 17px; height: 17px; border-bottom: 4px solid; border-left: 4px solid; transform: rotate(-135deg); color: white; opacity: 1; }
+.drunk-star .ds_s1 .container .slider_for .slider_for_item iframe { position: absolute; left: 7%; bottom: 5%; width: 86%; height: 55%; z-index: 1; }
 
 .mixing { background-color: #ff9dd3; padding: 50px 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing { padding: 25px 0; } }
