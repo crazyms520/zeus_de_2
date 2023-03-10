@@ -3171,12 +3171,12 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .navbar.spceial_color { background-color: #f6d6f7; }
 .navbar.where_color { background-color: #ffebfd; }
 .navbar.drunk_color { background-color: #ffd2ff; background-image: url(../img/Cfirma_bg.png); background-position: bottom; background-repeat: no-repeat; background-size: cover; }
-.navbar .nav .nav-item { /* 20230307 母親節活動 調整長度維持 navbar 為一行 star */ width: 210px; /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ border-right: 1px solid #fff; cursor: pointer; /* 20230214 小改版 手機版時 navbar 調整成2個為一行 start */ /* 20230214 小改版 手機版時 navbar 調整成3個為一行 end */ }
+.navbar .nav .nav-item { /* 20230307 母親節活動 調整長度維持 navbar 為一行 star */ width: 210px; /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ border-right: 1px solid #fff; cursor: pointer; /* 20230307 母親節活動 手機版時 navbar 調整成3個為一行 start */ /* 20230307 母親節活動 手機版時 navbar 調整成3個為一行 end */ }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .navbar .nav .nav-item { width: 155px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar .nav .nav-item { width: 116px; } }
-@media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item { flex: 1; flex-basis: calc(100% / 2); width: auto; }
+@media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item { flex: 1; flex-basis: calc(100% / 3); width: auto; }
   .navbar .nav .nav-item:nth-of-type(even) { border-right: 1px solid transparent; }
-  .navbar .nav .nav-item:nth-of-type(3), .navbar .nav .nav-item:nth-of-type(4), .navbar .nav .nav-item:nth-of-type(5), .navbar .nav .nav-item:nth-of-type(6) { margin-top: 5px; } }
+  .navbar .nav .nav-item:nth-of-type(4), .navbar .nav .nav-item:nth-of-type(5) { margin-top: 5px; } }
 .navbar .nav .nav-item:last-child { border-right: 1px solid transparent; }
 .navbar .nav .nav-item span { padding: 4px 1rem; font-family: 'NotoSans TC', sans-serif; /* 20230307 母親節活動 調整字體大小維持 navbar 為一行 star */ font-size: 20px; /* 20230307 母親節活動 調整字體大小維持 navbar 為一行 star */ letter-spacing: 1.75px; text-align: center; color: #b695c2; background-color: #f9e5fa; /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ /* 20230307 母親節活動 調整長度維持 navbar 為一行 end */ }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .navbar .nav .nav-item span { padding: 4px 8px; font-size: 15px; } }
@@ -3782,6 +3782,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
   to { opacity: 1; transform: translateX(0); } }
 @keyframes slide-left { from { opacity: 0; transform: translateX(100%); }
   to { opacity: 1; transform: translateX(0); } }
+/* 20230309 母親節活動 新增母親過特會組用的 class start */
 .pro-show { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pro-show { display: inline-block; } }
 
@@ -3796,3 +3797,5 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .mmt10 { margin-top: 10px; } }
 
 @media screen and (max-width: 449px) and (min-width: 0) { .le35 { line-height: 35px; } }
+
+/* 20230309 母親節活動 新增母親過特會組用的 class end */

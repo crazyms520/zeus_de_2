@@ -418,21 +418,21 @@ header {
 				width: 116px;
 			}
 
-			/* 20230214 小改版 手機版時 navbar 調整成2個為一行 start */
+			/* 20230307 母親節活動 手機版時 navbar 調整成3個為一行 start */
 			@include range-width(0, 451px) {
 				flex: 1;
-				flex-basis: calc(100% / 2);
+				flex-basis: calc(100% / 3);
 				width: auto;
 
 				&:nth-of-type(even),  {
 					border-right: 1px solid transparent;	
 				}
 
-				&:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6){
+				&:nth-of-type(4), &:nth-of-type(5){
 					margin-top: 5px;
 				}
 			}
-			/* 20230214 小改版 手機版時 navbar 調整成3個為一行 end */
+			/* 20230307 母親節活動 手機版時 navbar 調整成3個為一行 end */
 			
 			&:last-child {
 				border-right: 1px solid transparent;
@@ -3699,7 +3699,7 @@ header {
 	}
 }
 
-
+/* 20230309 母親節活動 新增母親過特會組用的 class start */
 .pro-show {
 	display: none;
 	@include range-width(0, 450px) {
@@ -3741,3 +3741,4 @@ header {
 		line-height: 35px;
 	}
 }
+/* 20230309 母親節活動 新增母親過特會組用的 class end */
