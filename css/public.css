@@ -3351,7 +3351,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .special-feature .sf_s2 .container .item .ph_pic02 h3, .special-feature .sf_s2 .container .item .ph_pic02 .h3 { margin: 15px 0; font-family: 'Noto Sans TC', sans-serif; font-size: 24px; font-weight: bold; text-align: center; color: #ff7679; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s2 .container .item .ph_pic02 h3, .special-feature .sf_s2 .container .item .ph_pic02 .h3 { font-size: 18px; } }
 
-.special-offer { display: none; position: relative; width: 100%; }
+.special-offer { /* 20230309 母親節活動 拿掉 display: none 設為預設頁面 start */ /* 20230309 母親節活動 拿掉 display: none 設為預設頁面 end */ position: relative; width: 100%; }
 .special-offer .so_s1 { padding: 30px 0 30px 0; background-color: #fff; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 { padding: 15px 0 15px 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container { padding: 0 1rem; } }
@@ -3442,13 +3442,16 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .where-buy .wb_s1 .container .table.online tbody tr:first-child td { border-top-width: 3px; }
 .where-buy .wb_s1 .container .table.online tbody tr td a:hover { color: #78baff; }
 
-.drunk-star { position: relative; width: 100%; }
-.drunk-star .ds_s1 { /* 20230307 母親節活動 start */ padding: 35px 0; height: 100vh; background-color: #eab6ff; background-image: url(../img/Cfirma_bg.png); overflow: scroll; -ms-overflow-style: none; scrollbar-width: none; /* 20230307 母親節活動 end */ }
-.drunk-star .ds_s1::-webkit-scrollbar { display: none; }
+.drunk-star { /* 20230309 母親節活動 加上 display: none start */ display: none; /* 20230309 母親節活動 加上 display: none end */ position: relative; width: 100%; }
+.drunk-star .ds_s1 { /* 20230307 母親節活動 start */ padding: 0 0 35px 0; background-color: #eab6ff; background-image: url(../img/Cfirma_bg.png); /* 20230307 母親節活動 end */ /* 20230307 母親節活動 start */ /* 20230307 母親節活動 end */ }
 @media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 { /* 20230307 母親節活動 start */ padding: 0; /* 20230307 母親節活動 end */ } }
 @media screen and (max-width: 450px) and (min-width: 0) { .drunk-star .ds_s1 { /* 20230307 母親節活動 start */ padding: 0; /* 20230307 母親節活動 ends */ } }
 .drunk-star .ds_s1 .container { max-width: 100%; padding: 0; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container { padding: 0; } }
+.drunk-star .ds_s1 .container .slider_for { position: relative; }
+.drunk-star .ds_s1 .container .slider_for .goDownBtnBox { position: fixed; top: 0; left: 0; }
+.drunk-star .ds_s1 .container .slider_for .goDownBtnBox .goDownBtn { position: absolute; top: 50%; right: 10%; }
+.drunk-star .ds_s1 .container .slider_for .goDownBtnBox .goDownBtn > svg { display: inline-block; width: 100px; height: 100px; color: #000; opacity: .8; }
 .drunk-star .ds_s1 .container .slider_for .slider_for_item { position: relative; /* 20230307 母親節活動 start */ margin: 0 auto; /* 20230307 母親節活動 end */ max-width: 1000px; max-height: 1000px; /* 20230307 母親節活動 start */ /* 20230307 母親節活動 end */ }
 @media screen and (max-width: 1440px) and (min-width: 1024px) { .drunk-star .ds_s1 .container .slider_for .slider_for_item { max-width: 640px; max-height: 640px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .drunk-star .ds_s1 .container .slider_for .slider_for_item { margin: 0 1rem; } }

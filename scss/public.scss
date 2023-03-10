@@ -1422,7 +1422,8 @@ header {
 }
 
 .special-offer {
-	display: none;
+	/* 20230309 母親節活動 拿掉 display: none 設為預設頁面 start */ 	
+	/* 20230309 母親節活動 拿掉 display: none 設為預設頁面 end */ 
 	position: relative;
 	width: 100%;
 
@@ -1928,21 +1929,17 @@ header {
 }
 
 .drunk-star {
+	/* 20230309 母親節活動 加上 display: none start */ 
+	display: none;
+	/* 20230309 母親節活動 加上 display: none end */ 
 	position: relative;
 	width: 100%;
 
 	.ds_s1 {
 		/* 20230307 母親節活動 start */
-		padding: 35px 0;
-		height: 100vh;
+		padding: 0 0 35px 0;
 		background-color: rgba(234, 182, 255, 1);
 		background-image: url(../img/Cfirma_bg.png);
-		overflow: scroll;
-		-ms-overflow-style: none;  
-		scrollbar-width: none;  
-		&::-webkit-scrollbar {
-			display: none;
-		}
 		/* 20230307 母親節活動 end */
 
 		@include range-width(451px, 769px) {
@@ -1957,6 +1954,11 @@ header {
 			/* 20230307 母親節活動 ends */
 		}
 
+		/* 20230307 母親節活動 start */
+		
+		
+		/* 20230307 母親節活動 end */
+
 		.container {
 			max-width: 100%;
 			padding: 0;
@@ -1966,6 +1968,27 @@ header {
 			}
 
 			.slider_for {
+				position: relative;
+				// overflow: hidden;
+				.goDownBtnBox {
+					position: fixed;
+					// top: calc(50% - 50px);
+					top: 0;
+					left: 0;
+					
+					.goDownBtn {
+						position: absolute;
+						top: 50%;
+						right: 10%;
+						> svg {
+							display: inline-block;
+							width: 100px;
+							height: 100px;
+							color: #000;
+							opacity: .8;
+						}
+					}
+				}
 				.slider_for_item {
 					position: relative;
 					/* 20230307 母親節活動 start */
