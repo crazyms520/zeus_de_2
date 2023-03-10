@@ -1536,8 +1536,10 @@ header {
 
 					.special_offer_item {
 						&:nth-of-type(3) {
-							&:after {
-								content: unset;
+							@include range-width(451px) {
+								&:after {
+									content: unset;
+								}
 							}
 						}
 					}
