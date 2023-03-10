@@ -194,7 +194,6 @@ header {
 			@include range-width(321px, 451px) {
 				bottom: 32%;
 				left: 50%;
-				// flex-direction: column;
 			}
 
 			@include range-width(0, 321px) {
