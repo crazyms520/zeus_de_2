@@ -2005,18 +2005,6 @@ header {
 						margin: 0 .5rem;
 					}
 
-					&:nth-of-type(1) {
-						background-image: url(../img/Cfirma_01.jpg);
-					}
-
-					&:nth-of-type(2) {
-						background-image: url(../img/Cfirma_02.jpg);
-						background-size: contain;
-						// max-width: 1000px;
-						// max-height: 1000px;
-						height: 100vh;
-						background-attachment: fixed;
-					}
 					picture {
 						
 						display: inline-block;
