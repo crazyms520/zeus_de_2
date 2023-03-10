@@ -1938,6 +1938,11 @@ header {
 		background-color: rgba(234, 182, 255, 1);
 		background-image: url(../img/Cfirma_bg.png);
 		overflow: scroll;
+		-ms-overflow-style: none;  
+		scrollbar-width: none;  
+		&::-webkit-scrollbar {
+			display: none;
+		}
 
 		@include range-width(451px, 769px) {
 			// 20230307 母親節活動 
@@ -1988,8 +1993,8 @@ header {
 					max-height: 1000px;
 
 					@include range-width(1024px, 1441px) {
-						// max-width: 640px;
-						// max-height: 640px;
+						max-width: 640px;
+						max-height: 640px;
 					}
 
 					@include range-width(451px, 769px) {
