@@ -1825,14 +1825,14 @@ header {
 
 							> .buy {
 								@include range-width(0, 451px) {
-									display: block;
+									display: inline-block;
 									margin: 5px 0;
 								}
 							}
 
 							.gift {
 								@include range-width(0, 451px) {
-									display: block;
+									display: inline-block;
 									margin: 5px 0;
 								}
 							}
@@ -3696,5 +3696,48 @@ header {
 	to {
 		opacity: 1;
 		transform: translateX(0);
+	}
+}
+
+
+.pro-show {
+	display: none;
+	@include range-width(0, 450px) {
+		display: inline-block;
+	}
+}
+
+.pro-none {
+	display: inline-block;
+	@include range-width(0, 450px) {
+		display: none;
+	}
+}
+
+.haaborder {
+	@include range-width(0, 450px) {
+		padding: 0 8px 15px 0 !important;
+	}
+}
+
+.nobborder {
+	@include range-width(0, 450px) {
+		padding: 0 0 15px 8px;
+		&:before {
+			border-top: 0 !important;
+			border-left: 2px dotted #ededed !important;
+		}
+	}
+}
+
+.mmt10 {
+	@include range-width(0, 450px) {
+		margin-top: 10px;
+	}
+}
+
+.le35 {
+	@include range-width(0, 450px) {
+		line-height: 35px;
 	}
 }
