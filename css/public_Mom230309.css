@@ -3123,34 +3123,24 @@ header .ShinKong .text_box .text .span_br { display: block; }
 
 .banner { position: relative; background-color: #f6caf4; cursor: pointer; }
 @media screen and (max-width: 768px) and (min-width: 0) { .banner { padding-top: 0; } }
-.banner .banner_box_w { /* 20230519 kv 按鈕調整 start */ /* 20230519 kv 按鈕調整 end */ }
+.banner .banner_box_w { /* 20230309 母親節活動 kv 新增按鈕 start */ /* 20230309 母親節活動 kv 新增按鈕 end */ }
 .banner .banner_box_w picture { display: inline-block; width: 100%; opacity: 0; }
 .banner .banner_box_w picture img { width: 100%; }
-.banner .banner_box_w .banner_btn_box { position: absolute; bottom: 8vw; left: 68%; display: flex; justify-content: flex-start; }
-@media screen and (max-width: 1440px) and (min-width: 1025px) { .banner .banner_box_w .banner_btn_box { bottom: 6vw; left: 64%; } }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box_w .banner_btn_box { bottom: 5vw; left: 63.5%; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_w .banner_btn_box { bottom: 10%; left: 63%; } }
-@media screen and (max-width: 450px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_box { bottom: 9%; left: 20%; } }
-@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_box { bottom: 8%; left: 22.5%; } }
-.banner .banner_box_w .banner_btn_box .banner_btn { margin: 2rem; padding: .5rem 2.5rem; background-color: #fff838; box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.5); cursor: pointer; }
-@media screen and (max-width: 1440px) and (min-width: 1025px) { .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(1) { margin-right: 1.5rem; }
-  .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(2) { margin-left: 1.5rem; } }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box_w .banner_btn_box .banner_btn { padding: .5rem 1.5rem; }
-  .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(1) { margin-right: 1rem; }
+.banner .banner_box_w .banner_btn_box { position: absolute; bottom: 10vw; left: 55%; display: flex; justify-content: flex-start; }
+@media screen and (max-width: 1440px) and (min-width: 1025px) { .banner .banner_box_w .banner_btn_box { bottom: 8vw; left: 52.5%; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box_w .banner_btn_box { bottom: 7vw; left: 50%; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_w .banner_btn_box { bottom: 12.5%; left: 47.5%; } }
+@media screen and (max-width: 450px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_box { bottom: 32%; left: 50%; } }
+@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_box { bottom: 32.5%; left: 50%; } }
+.banner .banner_box_w .banner_btn_box .banner_btn { margin: 2rem; padding: .5rem 2rem; border-radius: 5px; background-color: #fff838; cursor: pointer; }
+@media screen and (max-width: 450px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_box .banner_btn { margin: 0; padding: .25rem .5rem; }
   .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(2) { margin-left: 1rem; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_w .banner_btn_box .banner_btn { padding: .2rem 1rem; }
-  .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(1) { margin-right: .8rem; }
-  .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(2) { margin-left: .8rem; } }
-@media screen and (max-width: 450px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_box .banner_btn { margin: 0; padding: .5rem 1.5rem; }
-  .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(1) { margin-right: 1rem; }
+@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_box .banner_btn { margin: 0; padding: .25rem .5rem; }
   .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(2) { margin-left: 1rem; } }
-@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_box .banner_btn { margin: 0; padding: .25rem 1rem; }
-  .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(1) { margin-right: .5rem; }
-  .banner .banner_box_w .banner_btn_box .banner_btn:nth-of-type(2) { margin-left: .5rem; } }
-.banner .banner_box_w .banner_btn_box .banner_btn span { font-size: 1.5vw; font-weight: bold; font-family: 'NotoSans TC', sans-serif; color: #d25a49; vertical-align: middle; }
+.banner .banner_box_w .banner_btn_box .banner_btn span { font-size: 2vw; font-weight: bold; font-family: 'NotoSans TC', sans-serif; color: #d25a49; vertical-align: middle; }
 @media screen and (max-width: 450px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_box .banner_btn span { font-size: 4vw; } }
 @media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_box .banner_btn span { font-size: 3vw; } }
-.banner .banner_box_w .banner_btn_box .banner_btn a { font-size: 1.5vw; font-weight: bold; font-family: 'NotoSans TC', sans-serif; color: #d25a49; text-decoration: none; vertical-align: middle; }
+.banner .banner_box_w .banner_btn_box .banner_btn a { font-size: 2vw; font-weight: bold; font-family: 'NotoSans TC', sans-serif; color: #d25a49; text-decoration: none; vertical-align: middle; }
 @media screen and (max-width: 450px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_box .banner_btn a { font-size: 4vw; } }
 @media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_box .banner_btn a { font-size: 3vw; } }
 .banner .banner_box_m { position: relative; }
@@ -3178,20 +3168,20 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_img picture { margin-top: -20px; width: 100%; } }
 .banner .banner_img picture > img { width: 100%; max-width: 100%; object-fit: cover; }
 
-.navbar { padding: 60px 0 60px 0; background-color: #facae7; z-index: 1; }
+.navbar { padding: 60px 0 60px 0; background-color: #facae7; z-index: 1; /* 20230309 母親節活動 拿掉 drunk_color */ }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar { padding: 15px 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar { padding: 15px 0; } }
 .navbar.origin_color { background-color: #ffef02; }
 .navbar.spceial_color { background-color: #f6d6f7; }
 .navbar.where_color { background-color: #ffebfd; }
-.navbar .nav .nav-item { width: 210px; border-right: 1px solid #fff; cursor: pointer; }
+.navbar .nav .nav-item { /* 20230309 母親節活動 調整長度維持 navbar 為一行 star */ width: 210px; /* 20230309 母親節活動 調整長度維持 navbar 為一行 end */ border-right: 1px solid #fff; cursor: pointer; }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .navbar .nav .nav-item { width: 155px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar .nav .nav-item { width: 116px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .navbar .nav .nav-item { flex: 1; flex-basis: calc(100% / 3); width: auto; }
   .navbar .nav .nav-item:nth-of-type(even) { border-right: 1px solid transparent; }
   .navbar .nav .nav-item:nth-of-type(4), .navbar .nav .nav-item:nth-of-type(5) { margin-top: 5px; } }
 .navbar .nav .nav-item:last-child { border-right: 1px solid transparent; }
-.navbar .nav .nav-item span { padding: 4px 1rem; font-family: 'NotoSans TC', sans-serif; font-size: 20px; letter-spacing: 1.75px; text-align: center; color: #b695c2; background-color: #f9e5fa; }
+.navbar .nav .nav-item span { padding: 4px 1rem; font-family: 'NotoSans TC', sans-serif; /* 20230309 母親節活動 調整字體大小維持 navbar 為一行 star */ font-size: 20px; /* 20230309 母親節活動 調整字體大小維持 navbar 為一行 end */ letter-spacing: 1.75px; text-align: center; color: #b695c2; background-color: #f9e5fa; /* 20230309 母親節活動 調整長度維持 navbar 為一行 start */ /* 20230309 母親節活動 調整長度維持 navbar 為一行 end */ }
 @media screen and (max-width: 1024px) and (min-width: 769px) { .navbar .nav .nav-item span { padding: 4px 8px; font-size: 15px; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .navbar .nav .nav-item span { padding: 4px 4px; font-size: 12px; letter-spacing: 1px; } }
 @media screen and (max-width: 450px) and (min-width: 376px) { .navbar .nav .nav-item span { padding: 4px 8px; font-size: 14px; letter-spacing: 1px; } }
@@ -3378,14 +3368,16 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .special-feature .sf_s2 .container .item .ph_pic02 h3, .special-feature .sf_s2 .container .item .ph_pic02 .h3 { margin: 15px 0; font-family: 'Noto Sans TC', sans-serif; font-size: 24px; font-weight: bold; text-align: center; color: #ff7679; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-feature .sf_s2 .container .item .ph_pic02 h3, .special-feature .sf_s2 .container .item .ph_pic02 .h3 { font-size: 18px; } }
 
-.special-offer { position: relative; width: 100%; }
+.special-offer { /* 20230309 母親節活動 拿掉 display: none 設為預設頁面 */ position: relative; width: 100%; }
 .special-offer .so_s1 { padding: 30px 0 30px 0; background-color: #fff; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 { padding: 15px 0 15px 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container { padding: 0 1rem; } }
-.special-offer .so_s1 .container .special_offer_items { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; /* 20230519 調整產品區塊的虛線顯示 start */ /* 20230519 調整產品區塊的虛線顯示 end */ }
+.special-offer .so_s1 .container .special_offer_items { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; /* 20230309 母親節活動 調整產品區塊的虛線顯示 start */ /* 20230309 母親節活動 調整產品區塊的虛線顯示 end */ }
 @media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items { padding: 10px 0; } }
-.special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { border-top: 2px dotted #ededed; }
-@media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { padding: 10px 0; } }
+.special-offer .so_s1 .container .special_offer_items:nth-of-type(2), .special-offer .so_s1 .container .special_offer_items:nth-of-type(3), .special-offer .so_s1 .container .special_offer_items:nth-of-type(4) { border-top: 2px dotted #ededed; }
+@media screen and (min-width: 451px) { .special-offer .so_s1 .container .special_offer_items:nth-of-type(2) .special_offer_item:nth-of-type(3):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(3) .special_offer_item:nth-of-type(3):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(4) .special_offer_item:nth-of-type(3):after { content: unset; } }
+.special-offer .so_s1 .container .special_offer_items:nth-of-type(2):nth-of-type(4) .special_offer_item:nth-of-type(2):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(3):nth-of-type(4) .special_offer_item:nth-of-type(2):after, .special-offer .so_s1 .container .special_offer_items:nth-of-type(4):nth-of-type(4) .special_offer_item:nth-of-type(2):after { content: unset; }
+@media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items:nth-of-type(2), .special-offer .so_s1 .container .special_offer_items:nth-of-type(3), .special-offer .so_s1 .container .special_offer_items:nth-of-type(4) { padding: 10px 0; } }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item { position: relative; width: 24%; padding: 0 10px; }
 .special-offer .so_s1 .container .special_offer_items .special_offer_item:after { content: ''; position: absolute; top: 0; right: 0; display: inline-block; height: 100%; border-right: 2px dotted #ededed; }
 @media screen and (max-width: 768px) and (min-width: 451px) { .special-offer .so_s1 .container .special_offer_items .special_offer_item:after { right: 10px; } }
@@ -3467,6 +3459,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .where-buy .wb_s1 .container .table.online tbody tr:first-child td { border-top-width: 3px; }
 .where-buy .wb_s1 .container .table.online tbody tr td a:hover { color: #78baff; }
 
+/* 20230309 母親節活動 拿掉 drunk-star 區塊 */
 .mixing { background-color: #ff9dd3; padding: 50px 0; }
 @media screen and (max-width: 450px) and (min-width: 0) { .mixing { padding: 25px 0; } }
 .mixing .title { padding: 50px 0 0 0; background-image: linear-gradient(-45deg, #e3f2fa 4%, #ffffff 8%, #ffffff 50%, #e3f2fa 50%, #e3f2fa 50%, #ffffff 58%, #ffffff 100%); background-size: 30px 30px; }
@@ -3773,6 +3766,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
   to { opacity: 1; transform: translateX(0); } }
 @keyframes slide-left { from { opacity: 0; transform: translateX(100%); }
   to { opacity: 1; transform: translateX(0); } }
+/* 20230309 母親節活動 新增母親過特會組用的 class start */
 .pro-show { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pro-show { display: inline-block; } }
 
@@ -3787,3 +3781,5 @@ header .ShinKong .text_box .text .span_br { display: block; }
 @media screen and (max-width: 449px) and (min-width: 0) { .mmt10 { margin-top: 10px; } }
 
 @media screen and (max-width: 449px) and (min-width: 0) { .le35 { line-height: 35px; } }
+
+/* 20230309 母親節活動 新增母親過特會組用的 class end */

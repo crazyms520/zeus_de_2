@@ -168,109 +168,65 @@ header {
 			}
 		}
 
-		/* 20230519 kv 按鈕調整 start */
+		/* 20230309 母親節活動 kv 新增按鈕 start */
 		.banner_btn_box {
 			position: absolute;
-			bottom: 8vw;
-			left: 68%;
+			bottom: 10vw;
+			left: 55%;
 			display: flex;
 			justify-content: flex-start;
 
 			@include range-width(1025px, 1441px) {
-				bottom: 6vw;
-				left: 64%;
+				bottom: 8vw;
+				left: 52.5%;
 			}
 
 			@include range-width(769px, 1025px) {
-				bottom: 5vw;
-				left: 63.5%;
+				bottom: 7vw;
+				left: 50%;
 			}
 
 			@include range-width(451px, 769px) {
-				bottom: 10%;
-				left: 63%;
+				bottom: 12.5%;
+				left: 47.5%;
 			}
 
 			@include range-width(321px, 451px) {
-				bottom: 9%;
-				left: 20%;
+				bottom: 32%;
+				left: 50%;
 			}
 
 			@include range-width(0, 321px) {
-				bottom: 8%;
-				left: 22.5%;
+				bottom: 32.5%;
+				left: 50%;
 			}
 			
 
 			.banner_btn {
 				margin: 2rem;
-				padding: .5rem 2.5rem;
+				padding: .5rem 2rem;
+				border-radius: 5px;
 				background-color: rgba(255, 248, 56, 1.00);
-				box-shadow: 6px 6px 5px rgba(0, 0, 0, .5);
 				cursor: pointer;
-
-				@include range-width(1025px, 1441px) {
-					&:nth-of-type(1) {
-						margin-right: 1.5rem;
-					}
-
-					&:nth-of-type(2) {
-						margin-left: 1.5rem;
-					}	
-				}
-
-				@include range-width(769px, 1025px) {
-					padding: .5rem 1.5rem;
-
-					&:nth-of-type(1) {
-						margin-right: 1rem;
-					}
-
-					&:nth-of-type(2) {
-						margin-left: 1rem;
-					}	
-				}
-
-				@include range-width(451px, 769px) {
-					padding: .2rem 1rem;
-
-					&:nth-of-type(1) {
-						margin-right: .8rem;
-					}
-
-					&:nth-of-type(2) {
-						margin-left: .8rem;
-					}	
-				}
 
 				@include range-width(321px, 451px) {
 					margin: 0;
-					padding: .5rem 1.5rem;
-
-					&:nth-of-type(1) {
-						margin-right: 1rem;
-					}
-					
+					padding: .25rem .5rem;
 					&:nth-of-type(2) {
 						margin-left: 1rem;
-					}
+					}	
 				}
 
 				@include range-width(0, 321px) {
 					margin: 0;
-					padding: .25rem 1rem;
-
-					&:nth-of-type(1) {
-						margin-right: .5rem;
-					}
-					
+					padding: .25rem .5rem;
 					&:nth-of-type(2) {
-						margin-left: .5rem;
+						margin-left: 1rem;
 					}
 				}
 				
 				span {
-					font-size: 1.5vw;
+					font-size: 2vw;
 					font-weight: bold;
 					font-family: 'NotoSans TC', sans-serif;
 					color: rgba(210, 90, 73, 1.00);
@@ -286,7 +242,7 @@ header {
 				}
 
 				a {
-					font-size: 1.5vw;
+					font-size: 2vw;
 					font-weight: bold;
 					font-family: 'NotoSans TC', sans-serif;
 					color: rgba(210, 90, 73, 1.00);
@@ -303,7 +259,7 @@ header {
 				}
 			}
 		}
-		/* 20230519 kv 按鈕調整 end */
+		/* 20230309 母親節活動 kv 新增按鈕 end */
 
 	}
 	.banner_box_m {
@@ -451,10 +407,14 @@ header {
 	&.where_color {
 		background-color: #ffebfd;
 	}
+	
+	/* 20230309 母親節活動 拿掉 drunk_color */
 
 	.nav {
-		.nav-item {	
+		.nav-item {
+			/* 20230309 母親節活動 調整長度維持 navbar 為一行 star */	
 			width: 210px;
+			/* 20230309 母親節活動 調整長度維持 navbar 為一行 end */
 			border-right: 1px solid #fff;
 			cursor: pointer;
 
@@ -486,13 +446,16 @@ header {
 
 			span {
 				padding: 4px 1rem;
-				font-family: 'NotoSans TC', sans-serif;	
+				font-family: 'NotoSans TC', sans-serif;
+				/* 20230309 母親節活動 調整字體大小維持 navbar 為一行 star */		
 				font-size: 20px;
+				/* 20230309 母親節活動 調整字體大小維持 navbar 為一行 end */	
 				letter-spacing: 1.75px;
 				text-align: center;
 				color: #b695c2;
 				background-color: #f9e5fa;
 
+				/* 20230309 母親節活動 調整長度維持 navbar 為一行 start */
 				@include range-width(769px, 1025px) {
 					padding: 4px 8px;
 					font-size: 15px;
@@ -503,6 +466,7 @@ header {
 					font-size: 12px;
 					letter-spacing: 1px;
 				}
+				/* 20230309 母親節活動 調整長度維持 navbar 為一行 end */
 
 				@include range-width(376px, 451px) {
 					padding: 4px 8px;
@@ -1541,6 +1505,7 @@ header {
 }
 
 .special-offer {
+	/* 20230309 母親節活動 拿掉 display: none 設為預設頁面 */ 	
 	position: relative;
 	width: 100%;
 
@@ -1568,15 +1533,35 @@ header {
 					padding: 10px 0;
 				}
 
-				/* 20230519 調整產品區塊的虛線顯示 start */
-				&:nth-of-type(2) {
+				/* 20230309 母親節活動 調整產品區塊的虛線顯示 start */
+				&:nth-of-type(2),&:nth-of-type(3),&:nth-of-type(4) {
 					border-top: 2px dotted #ededed;
+
+					.special_offer_item {
+						&:nth-of-type(3) {
+							@include range-width(451px) {
+								&:after {
+									content: unset;
+								}
+							}
+						}
+					}
+
+					&:nth-of-type(4) {
+						.special_offer_item {
+							&:nth-of-type(2) {
+								&:after {
+									content: unset;
+								}
+							}
+						}	
+					}
 
 					@include range-width(0, 769px) {
 						padding: 10px 0;
 					}
 				}
-				/* 20230519 調整產品區塊的虛線顯示 end */
+				/* 20230309 母親節活動 調整產品區塊的虛線顯示 end */
 
 				.special_offer_item {
 					position: relative;
@@ -2026,6 +2011,9 @@ header {
 		}
 	}
 }
+
+/* 20230309 母親節活動 拿掉 drunk-star 區塊 */
+
 
 .mixing {
 	background-color: #ff9dd3;
@@ -3598,6 +3586,7 @@ header {
 	}
 }
 
+/* 20230309 母親節活動 新增母親過特會組用的 class start */
 .pro-show {
 	display: none;
 	@include range-width(0, 450px) {
@@ -3639,3 +3628,4 @@ header {
 		line-height: 35px;
 	}
 }
+/* 20230309 母親節活動 新增母親過特會組用的 class end */
