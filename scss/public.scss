@@ -206,7 +206,7 @@ header {
 				margin: 2rem;
 				padding: .5rem 2.5rem;
 				background-color: rgba(255, 248, 56, 1.00);
-				box-shadow: 6px 6px 5px RGBA(214, 87, 203, 1.00);
+				box-shadow: 6px 6px 5px rgba(214, 87, 203, 1.00);
 				cursor: pointer;
 
 				@include range-width(1025px, 1441px) {
