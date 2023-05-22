@@ -176,6 +176,11 @@ header {
 			display: flex;
 			justify-content: flex-start;
 
+			@include range-width(1441px, 1921px) {
+				bottom: 8vw;
+				left: 66%;
+			}
+
 			@include range-width(1025px, 1441px) {
 				bottom: 6vw;
 				left: 64%;
@@ -192,12 +197,12 @@ header {
 			}
 
 			@include range-width(321px, 451px) {
-				bottom: 9%;
+				bottom: 7%;
 				left: 17%;
 			}
 
 			@include range-width(0, 321px) {
-				bottom: 8%;
+				bottom: 6%;
 				left: 22.5%;
 			}
 			
@@ -206,7 +211,7 @@ header {
 				margin: 2rem;
 				padding: .5rem 2.5rem;
 				background-color: rgba(255, 248, 56, 1.00);
-				box-shadow: 6px 6px 5px rgba(214, 87, 203, 1.00);
+				box-shadow: 6px 6px 0 rgba(214, 87, 203, 1.00);
 				cursor: pointer;
 
 				@include range-width(1025px, 1441px) {
@@ -273,7 +278,7 @@ header {
 					font-size: 1.5vw;
 					font-weight: bold;
 					font-family: 'NotoSans TC', sans-serif;
-					color: rgba(210, 90, 73, 1.00);
+					color: rgba(210, 30, 196, 1.00);
 					vertical-align: middle;
 
 					@include range-width(321px, 451px) {
@@ -289,7 +294,7 @@ header {
 					font-size: 1.5vw;
 					font-weight: bold;
 					font-family: 'NotoSans TC', sans-serif;
-					color: rgba(210, 90, 73, 1.00);
+					color: rgba(210, 30, 196, 1.00);
 					text-decoration: none;
 					vertical-align: middle;
 
