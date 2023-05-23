@@ -172,57 +172,57 @@ header {
 		.banner_btn_boxs {
 			position: absolute;
 			bottom: 7vw;
-			left: 68.5%;
+			left: 65.7%;
 			display: flex;
 			justify-content: flex-start;
 
 			@include range-width(1441px, 1921px) {
-				bottom: 6vw;
-				left: 66.8%;
-			}
-
-			@include range-width(1025px, 1441px) {
-				bottom: 4vw;
-				left: 65%;
-			}
-
-			@include range-width(769px, 1025px) {
-				bottom: 5vw;
+				bottom: 7vw;
 				left: 65.5%;
 			}
 
+			@include range-width(1025px, 1441px) {
+				bottom: 7vw;
+				left: 64%;
+			}
+
+			@include range-width(769px, 1025px) {
+				bottom: 7vw;
+				left: 65%;
+			}
+
 			@include range-width(451px, 769px) {
-				bottom: 6%;
+				bottom: 16%;
 				left: 65%;
 			}
 
 			@include range-width(321px, 451px) {
-				bottom: 8.5%;
+				bottom: 8%;
 				left: 10%;
 			}
 
 			@include range-width(0, 321px) {
-				bottom: 8%;
+				bottom: 8.5%;
 				left: 10%;
 			}
 
 			.banner_btn_box {
 
 				&:nth-of-type(1) {
-					margin-right: 2rem;
+					margin-right: 2.5rem;
 				}
 
 				&:nth-of-type(2) {
-					margin-left: 2rem;
+					margin-left: 2.5rem;
 				}	
 
 				@include range-width(1025px, 1441px) {
 					&:nth-of-type(1) {
-						margin-right: 1.5rem;
+						margin-right: 1.75rem;
 					}
 
 					&:nth-of-type(2) {
-						margin-left: 1.5rem;
+						margin-left: 1.75rem;
 					}	
 				}
 
@@ -238,11 +238,11 @@ header {
 
 				@include range-width(451px, 769px) {
 					&:nth-of-type(1) {
-						margin-right: .8rem;
+						margin-right: 1rem;
 					}
 
 					&:nth-of-type(2) {
-						margin-left: .8rem;
+						margin-left: 1rem;
 					}	
 				}
 
@@ -294,13 +294,21 @@ header {
 			
 
 			.banner_btn {
-				padding: 1rem 3rem;
+				padding: 1.5rem 5rem;
 				background-color: rgba(255, 248, 56, 1.00);
 				box-shadow: 6px 6px 0 rgba(214, 87, 203, 1.00);
 				cursor: pointer;
 
+				@include range-width(1441px, 1921px) {
+					padding: 1rem 3.5rem;
+				}
+
+				@include range-width(1025px, 1441px) {
+					padding: 1rem 3.25rem;
+				}
+
 				@include range-width(769px, 1025px) {
-					padding: .5rem 2rem;
+					padding: .5rem 2.25rem;
 				}
 
 				@include range-width(451px, 769px) {
@@ -308,7 +316,7 @@ header {
 				}
 
 				@include range-width(376px, 451px) {
-					padding: .5rem 2.625rem;
+					padding: .5rem 2.5rem;
 				}
 
 				@include range-width(321px, 376px) {
