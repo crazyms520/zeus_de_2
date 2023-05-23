@@ -197,12 +197,12 @@ header {
 			}
 
 			@include range-width(321px, 451px) {
-				bottom: 8%;
+				bottom: 8.5%;
 				left: 10%;
 			}
 
 			@include range-width(0, 321px) {
-				bottom: 8.5%;
+				bottom: 8%;
 				left: 10%;
 			}
 
