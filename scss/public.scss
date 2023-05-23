@@ -169,50 +169,52 @@ header {
 		}
 
 		/* 20230519 kv 按鈕調整 start */
-		.banner_btn_box {
+		.banner_btn_boxs {
 			position: absolute;
-			bottom: 8vw;
-			left: 68%;
+			bottom: 7vw;
+			left: 68.5%;
 			display: flex;
 			justify-content: flex-start;
 
 			@include range-width(1441px, 1921px) {
-				bottom: 8vw;
-				left: 66%;
+				bottom: 6vw;
+				left: 66.8%;
 			}
 
 			@include range-width(1025px, 1441px) {
-				bottom: 6vw;
-				left: 64%;
+				bottom: 4vw;
+				left: 65%;
 			}
 
 			@include range-width(769px, 1025px) {
 				bottom: 5vw;
-				left: 63.5%;
+				left: 65.5%;
 			}
 
 			@include range-width(451px, 769px) {
-				bottom: 10%;
-				left: 63%;
+				bottom: 6%;
+				left: 65%;
 			}
 
 			@include range-width(321px, 451px) {
-				bottom: 7%;
-				left: 17%;
+				bottom: 7.5%;
+				left: 10%;
 			}
 
 			@include range-width(0, 321px) {
-				bottom: 6%;
-				left: 22.5%;
+				bottom: 8%;
+				left: 10%;
 			}
-			
 
-			.banner_btn {
-				margin: 2rem;
-				padding: .5rem 2.5rem;
-				background-color: rgba(255, 248, 56, 1.00);
-				box-shadow: 6px 6px 0 rgba(214, 87, 203, 1.00);
-				cursor: pointer;
+			.banner_btn_box {
+
+				&:nth-of-type(1) {
+					margin-right: 2rem;
+				}
+
+				&:nth-of-type(2) {
+					margin-left: 2rem;
+				}	
 
 				@include range-width(1025px, 1441px) {
 					&:nth-of-type(1) {
@@ -225,8 +227,6 @@ header {
 				}
 
 				@include range-width(769px, 1025px) {
-					padding: .5rem 1.5rem;
-
 					&:nth-of-type(1) {
 						margin-right: 1rem;
 					}
@@ -237,8 +237,6 @@ header {
 				}
 
 				@include range-width(451px, 769px) {
-					padding: .2rem 1rem;
-
 					&:nth-of-type(1) {
 						margin-right: .8rem;
 					}
@@ -248,10 +246,17 @@ header {
 					}	
 				}
 
-				@include range-width(321px, 451px) {
-					margin: 0;
-					padding: .5rem 1.5rem;
+				@include range-width(376px, 451px) {
+					&:nth-of-type(1) {
+						margin-right: 1.25rem;
+					}
+					
+					&:nth-of-type(2) {
+						margin-left: 1.25rem;
+					}
+				}
 
+				@include range-width(321px, 376px) {
 					&:nth-of-type(1) {
 						margin-right: 1rem;
 					}
@@ -262,16 +267,56 @@ header {
 				}
 
 				@include range-width(0, 321px) {
-					margin: 0;
-					padding: .25rem 1rem;
-
 					&:nth-of-type(1) {
-						margin-right: .5rem;
+						margin-right: 1rem;
 					}
 					
 					&:nth-of-type(2) {
-						margin-left: .5rem;
+						margin-left: 1rem;
 					}
+				}
+
+				.tip {
+					display: inline-block;
+					margin-top: 10px;
+					letter-spacing: 2px;
+					color: #fff;;
+
+					@include range-width(451px, 1025px) {
+						font-size: 12px;
+					}
+
+					@include range-width(0, 451px) {
+						display: none;
+					}
+				}
+			}
+			
+
+			.banner_btn {
+				padding: 1rem 3rem;
+				background-color: rgba(255, 248, 56, 1.00);
+				box-shadow: 6px 6px 0 rgba(214, 87, 203, 1.00);
+				cursor: pointer;
+
+				@include range-width(769px, 1025px) {
+					padding: .5rem 2rem;
+				}
+
+				@include range-width(451px, 769px) {
+					padding: .5rem 1.5rem;
+				}
+
+				@include range-width(376px, 451px) {
+					padding: .5rem 2.625rem;
+				}
+
+				@include range-width(321px, 376px) {
+					padding: .5rem 2.3rem;
+				}
+
+				@include range-width(0, 321px) {
+					padding: .25rem 2rem;
 				}
 				
 				span {
