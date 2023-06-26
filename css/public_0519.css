@@ -3123,17 +3123,16 @@ header .ShinKong .text_box .text .span_br { display: block; }
 
 .banner { position: relative; background-color: #f6caf4; cursor: pointer; }
 @media screen and (max-width: 768px) and (min-width: 0) { .banner { padding-top: 0; } }
-.banner .banner_box_w { /* 20230626 kv 按鈕調整 start */ /* 20230626 kv 按鈕調整 end */ }
+.banner .banner_box_w { /* 20230519 kv 按鈕調整 start */ /* 20230519 kv 按鈕調整 end */ }
 .banner .banner_box_w picture { display: inline-block; width: 100%; opacity: 0; }
 .banner .banner_box_w picture img { width: 100%; }
-.banner .banner_box_w .banner_btn_boxs { position: absolute; bottom: 7vw; left: 52%; display: flex; justify-content: flex-start; }
-@media screen and (max-width: 1920px) and (min-width: 1441px) { .banner .banner_box_w .banner_btn_boxs { bottom: 7vw; left: 49.5%; } }
-@media screen and (max-width: 1440px) and (min-width: 1025px) { .banner .banner_box_w .banner_btn_boxs { bottom: 7vw; left: 50%; } }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box_w .banner_btn_boxs { bottom: 7vw; left: 50%; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_w .banner_btn_boxs { bottom: 16%; left: 50.7%; } }
-@media screen and (max-width: 450px) and (min-width: 376px) { .banner .banner_box_w .banner_btn_boxs { flex-direction: column; bottom: 35%; left: 55%; } }
-@media screen and (max-width: 375px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_boxs { flex-direction: column; bottom: 34%; left: 55.5%; } }
-@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_boxs { flex-direction: column; bottom: 35%; left: 55%; } }
+.banner .banner_box_w .banner_btn_boxs { position: absolute; bottom: 7vw; left: 65.7%; display: flex; justify-content: flex-start; }
+@media screen and (max-width: 1920px) and (min-width: 1441px) { .banner .banner_box_w .banner_btn_boxs { bottom: 7vw; left: 65.5%; } }
+@media screen and (max-width: 1440px) and (min-width: 1025px) { .banner .banner_box_w .banner_btn_boxs { bottom: 7vw; left: 64%; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box_w .banner_btn_boxs { bottom: 7vw; left: 65%; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_w .banner_btn_boxs { bottom: 16%; left: 65%; } }
+@media screen and (max-width: 450px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_boxs { bottom: 8%; left: 10%; } }
+@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_boxs { bottom: 8.5%; left: 10%; } }
 .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(1) { margin-right: 2.5rem; }
 .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(2) { margin-left: 2.5rem; }
 @media screen and (max-width: 1440px) and (min-width: 1025px) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(1) { margin-right: 1.75rem; }
@@ -3142,27 +3141,27 @@ header .ShinKong .text_box .text .span_br { display: block; }
   .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(2) { margin-left: 1rem; } }
 @media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(1) { margin-right: 1rem; }
   .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(2) { margin-left: 1rem; } }
-@media screen and (max-width: 450px) and (min-width: 376px) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(1) { margin-right: 0; margin-bottom: .3rem; }
-  .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(2) { margin-top: .3rem; margin-left: 0; } }
-@media screen and (max-width: 375px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(1) { margin-right: 0; margin-bottom: .3rem; }
-  .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(2) { margin-top: .3rem; margin-left: 0; } }
-@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(1) { margin-right: 0; margin-bottom: .3rem; }
-  .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(2) { margin-top: .3rem; margin-left: 0; } }
+@media screen and (max-width: 450px) and (min-width: 376px) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(1) { margin-right: 1.25rem; }
+  .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(2) { margin-left: 1.25rem; } }
+@media screen and (max-width: 375px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(1) { margin-right: 1rem; }
+  .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(2) { margin-left: 1rem; } }
+@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(1) { margin-right: 1rem; }
+  .banner .banner_box_w .banner_btn_boxs .banner_btn_box:nth-of-type(2) { margin-left: 1rem; } }
 .banner .banner_box_w .banner_btn_boxs .banner_btn_box .tip { display: inline-block; margin-top: 1rem; letter-spacing: 2px; color: #fff; }
 @media screen and (max-width: 1024px) and (min-width: 451px) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box .tip { font-size: 12px; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .banner .banner_box_w .banner_btn_boxs .banner_btn_box .tip { display: none; } }
-.banner .banner_box_w .banner_btn_boxs .banner_btn { padding: 1.5rem 0; width: 350px; background-color: #fff; border-radius: 2px; cursor: pointer; }
-@media screen and (max-width: 1920px) and (min-width: 1441px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { width: 300px; padding: 1rem 0; } }
-@media screen and (max-width: 1440px) and (min-width: 1025px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { width: 220px; padding: 1rem 0; } }
-@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { width: 160px; padding: .5rem 0; } }
-@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { width: 110px; padding: .5rem 0; } }
-@media screen and (max-width: 450px) and (min-width: 376px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { width: 145px; padding: .5rem 0; } }
-@media screen and (max-width: 375px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { width: 130px; padding: .5rem 0; } }
-@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_boxs .banner_btn { width: 110px; padding: .25rem; } }
-.banner .banner_box_w .banner_btn_boxs .banner_btn span { font-size: 2vw; font-weight: normal; font-family: 'NotoSans TC', sans-serif; letter-spacing: 2px; color: #ff3694; vertical-align: middle; }
+.banner .banner_box_w .banner_btn_boxs .banner_btn { padding: 1.5rem 5rem; background-color: #fff838; box-shadow: 6px 6px 0 #d657cb; cursor: pointer; }
+@media screen and (max-width: 1920px) and (min-width: 1441px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { padding: 1rem 3.5rem; } }
+@media screen and (max-width: 1440px) and (min-width: 1025px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { padding: 1rem 3.25rem; } }
+@media screen and (max-width: 1024px) and (min-width: 769px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { padding: .5rem 2.25rem; } }
+@media screen and (max-width: 768px) and (min-width: 451px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { padding: .5rem 1.5rem; } }
+@media screen and (max-width: 450px) and (min-width: 376px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { padding: .5rem 2.5rem; } }
+@media screen and (max-width: 375px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_boxs .banner_btn { padding: .5rem 2.3rem; } }
+@media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_boxs .banner_btn { padding: .25rem 2rem; } }
+.banner .banner_box_w .banner_btn_boxs .banner_btn span { font-size: 1.5vw; font-weight: bold; font-family: 'NotoSans TC', sans-serif; color: #d21ec4; vertical-align: middle; }
 @media screen and (max-width: 450px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_boxs .banner_btn span { font-size: 4vw; } }
 @media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_boxs .banner_btn span { font-size: 3vw; } }
-.banner .banner_box_w .banner_btn_boxs .banner_btn a { font-size: 2vw; font-weight: normal; font-family: 'NotoSans TC', sans-serif; letter-spacing: 2px; color: #ff3694; text-decoration: none; vertical-align: middle; }
+.banner .banner_box_w .banner_btn_boxs .banner_btn a { font-size: 1.5vw; font-weight: bold; font-family: 'NotoSans TC', sans-serif; color: #d21ec4; text-decoration: none; vertical-align: middle; }
 @media screen and (max-width: 450px) and (min-width: 321px) { .banner .banner_box_w .banner_btn_boxs .banner_btn a { font-size: 4vw; } }
 @media screen and (max-width: 320px) and (min-width: 0) { .banner .banner_box_w .banner_btn_boxs .banner_btn a { font-size: 3vw; } }
 .banner .banner_box_m { position: relative; }
@@ -3394,7 +3393,7 @@ header .ShinKong .text_box .text .span_br { display: block; }
 .special-offer .so_s1 { padding: 30px 0 30px 0; background-color: #fff; }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 { padding: 15px 0 15px 0; } }
 @media screen and (max-width: 450px) and (min-width: 0) { .special-offer .so_s1 .container { padding: 0 1rem; } }
-.special-offer .so_s1 .container .special_offer_items { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; }
+.special-offer .so_s1 .container .special_offer_items { display: flex; justify-content: space-between; padding: 20px 0; flex-wrap: wrap; /* 20230519 調整產品區塊的虛線顯示 start */ /* 20230519 調整產品區塊的虛線顯示 end */ }
 @media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items { padding: 10px 0; } }
 .special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { border-top: 2px dotted #ededed; }
 @media screen and (max-width: 768px) and (min-width: 0) { .special-offer .so_s1 .container .special_offer_items:nth-of-type(2) { padding: 10px 0; } }

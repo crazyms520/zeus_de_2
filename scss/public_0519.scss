@@ -168,50 +168,42 @@ header {
 			}
 		}
 
-		/* 20230626 kv 按鈕調整 start */
+		/* 20230519 kv 按鈕調整 start */
 		.banner_btn_boxs {
 			position: absolute;
 			bottom: 7vw;
-			left: 52%;
+			left: 65.7%;
 			display: flex;
 			justify-content: flex-start;
 
 			@include range-width(1441px, 1921px) {
 				bottom: 7vw;
-				left: 49.5%;
+				left: 65.5%;
 			}
 
 			@include range-width(1025px, 1441px) {
 				bottom: 7vw;
-				left: 50%;
+				left: 64%;
 			}
 
 			@include range-width(769px, 1025px) {
 				bottom: 7vw;
-				left: 50%;
+				left: 65%;
 			}
 
 			@include range-width(451px, 769px) {
 				bottom: 16%;
-				left: 50.7%;
+				left: 65%;
 			}
 
-			@include range-width(376px, 451px) {
-				flex-direction: column;
-				bottom: 35%;
-				left: 55%;
-			}
-
-			@include range-width(321px, 376px) {
-				flex-direction: column;
-				bottom: 34%;
-				left: 55.5%;
+			@include range-width(321px, 451px) {
+				bottom: 8%;
+				left: 10%;
 			}
 
 			@include range-width(0, 321px) {
-				flex-direction: column;
-				bottom: 35%;
-				left: 55%;
+				bottom: 8.5%;
+				left: 10%;
 			}
 
 			.banner_btn_box {
@@ -256,37 +248,31 @@ header {
 
 				@include range-width(376px, 451px) {
 					&:nth-of-type(1) {
-						margin-right: 0;
-						margin-bottom: .3rem;
+						margin-right: 1.25rem;
 					}
 					
 					&:nth-of-type(2) {
-						margin-top: .3rem;
-						margin-left: 0;
+						margin-left: 1.25rem;
 					}
 				}
 
 				@include range-width(321px, 376px) {
 					&:nth-of-type(1) {
-						margin-right: 0;
-						margin-bottom: .3rem;
+						margin-right: 1rem;
 					}
 					
 					&:nth-of-type(2) {
-						margin-top: .3rem;
-						margin-left: 0;
+						margin-left: 1rem;
 					}
 				}
 
 				@include range-width(0, 321px) {
 					&:nth-of-type(1) {
-						margin-right: 0;
-						margin-bottom: .3rem;
+						margin-right: 1rem;
 					}
 					
 					&:nth-of-type(2) {
-						margin-top: .3rem;
-						margin-left: 0;
+						margin-left: 1rem;
 					}
 				}
 
@@ -308,53 +294,44 @@ header {
 			
 
 			.banner_btn {
-				padding: 1.5rem 0;
-				width: 350px;
-				background-color: #fff; 
-				border-radius: 2px;
+				padding: 1.5rem 5rem;
+				background-color: rgba(255, 248, 56, 1.00);
+				box-shadow: 6px 6px 0 rgba(214, 87, 203, 1.00);
 				cursor: pointer;
 
 				@include range-width(1441px, 1921px) {
-					width: 300px;
-					padding: 1rem 0;
+					padding: 1rem 3.5rem;
 				}
 
 				@include range-width(1025px, 1441px) {
-					width: 220px;
-					padding: 1rem 0;
+					padding: 1rem 3.25rem;
 				}
 
 				@include range-width(769px, 1025px) {
-					width: 160px;
-					padding: .5rem 0;
+					padding: .5rem 2.25rem;
 				}
 
 				@include range-width(451px, 769px) {
-					width: 110px;
-					padding: .5rem 0;
+					padding: .5rem 1.5rem;
 				}
 
 				@include range-width(376px, 451px) {
-					width: 145px;
-					padding: .5rem 0;
+					padding: .5rem 2.5rem;
 				}
 
 				@include range-width(321px, 376px) {
-					width: 130px;
-					padding: .5rem 0;
+					padding: .5rem 2.3rem;
 				}
 
 				@include range-width(0, 321px) {
-					width: 110px;
-					padding: .25rem;
+					padding: .25rem 2rem;
 				}
 				
 				span {
-					font-size: 2vw;
-					font-weight: normal;
+					font-size: 1.5vw;
+					font-weight: bold;
 					font-family: 'NotoSans TC', sans-serif;
-					letter-spacing: 2px;
-					color: rgba(255, 54, 148, 1.00);
+					color: rgba(210, 30, 196, 1.00);
 					vertical-align: middle;
 
 					@include range-width(321px, 451px) {
@@ -367,11 +344,10 @@ header {
 				}
 
 				a {
-					font-size: 2vw;
-					font-weight: normal;
+					font-size: 1.5vw;
+					font-weight: bold;
 					font-family: 'NotoSans TC', sans-serif;
-					letter-spacing: 2px;
-					color: rgba(255, 54, 148, 1.00);
+					color: rgba(210, 30, 196, 1.00);
 					text-decoration: none;
 					vertical-align: middle;
 
@@ -385,7 +361,7 @@ header {
 				}
 			}
 		}
-		/* 20230626 kv 按鈕調整 end */
+		/* 20230519 kv 按鈕調整 end */
 
 	}
 	.banner_box_m {
@@ -1650,6 +1626,7 @@ header {
 					padding: 10px 0;
 				}
 
+				/* 20230519 調整產品區塊的虛線顯示 start */
 				&:nth-of-type(2) {
 					border-top: 2px dotted #ededed;
 
@@ -1657,6 +1634,7 @@ header {
 						padding: 10px 0;
 					}
 				}
+				/* 20230519 調整產品區塊的虛線顯示 end */
 
 				.special_offer_item {
 					position: relative;
