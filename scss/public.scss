@@ -198,20 +198,20 @@ header {
 
 			@include range-width(376px, 451px) {
 				flex-direction: column;
-				bottom: 35%;
-				left: 55%;
+				bottom: 36.5%;
+				left: 56.5%;
 			}
 
 			@include range-width(321px, 376px) {
 				flex-direction: column;
-				bottom: 34%;
-				left: 55.5%;
+				bottom: 35.5%;
+				left: 56.5%;
 			}
 
 			@include range-width(0, 321px) {
 				flex-direction: column;
-				bottom: 35%;
-				left: 55%;
+				bottom: 36%;
+				left: 57%;
 			}
 
 			.banner_btn_box {
@@ -257,11 +257,11 @@ header {
 				@include range-width(376px, 451px) {
 					&:nth-of-type(1) {
 						margin-right: 0;
-						margin-bottom: .3rem;
+						margin-bottom: .5rem;
 					}
 					
 					&:nth-of-type(2) {
-						margin-top: .3rem;
+						margin-top: .5rem;
 						margin-left: 0;
 					}
 				}
@@ -269,11 +269,11 @@ header {
 				@include range-width(321px, 376px) {
 					&:nth-of-type(1) {
 						margin-right: 0;
-						margin-bottom: .3rem;
+						margin-bottom: .5rem;
 					}
 					
 					&:nth-of-type(2) {
-						margin-top: .3rem;
+						margin-top: .5rem;
 						margin-left: 0;
 					}
 				}
@@ -311,6 +311,8 @@ header {
 				padding: 1.5rem 0;
 				width: 350px;
 				background-color: #fff; 
+				box-shadow: 6px 6px 0 rgba(214, 90, 127, 1.00);
+				border: 1px solid rgba(214, 90, 127, 1.00);
 				border-radius: 2px;
 				cursor: pointer;
 
@@ -335,23 +337,26 @@ header {
 				}
 
 				@include range-width(376px, 451px) {
-					width: 145px;
-					padding: .5rem 0;
+					width: 135px;
+					box-shadow: 3px 3px 0 rgba(214, 90, 127, 1.00);
+					padding: .3rem 0;
 				}
 
 				@include range-width(321px, 376px) {
-					width: 130px;
-					padding: .5rem 0;
+					box-shadow: 3px 3px 0 rgba(214, 90, 127, 1.00);
+					width: 120px;
+					padding: .3rem 0;
 				}
 
 				@include range-width(0, 321px) {
-					width: 110px;
+					box-shadow: 3px 3px 0 rgba(214, 90, 127, 1.00);
+					width: 100px;
 					padding: .25rem;
 				}
 				
 				span {
 					font-size: 2vw;
-					font-weight: normal;
+					font-weight: bold;
 					font-family: 'NotoSans TC', sans-serif;
 					letter-spacing: 2px;
 					color: rgba(255, 54, 148, 1.00);
@@ -368,7 +373,7 @@ header {
 
 				a {
 					font-size: 2vw;
-					font-weight: normal;
+					font-weight: bold;
 					font-family: 'NotoSans TC', sans-serif;
 					letter-spacing: 2px;
 					color: rgba(255, 54, 148, 1.00);
